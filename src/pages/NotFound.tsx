@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Button } from "@/components/ui/button";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   const location = useLocation();

@@ -7,7 +7,7 @@ import ServicesList from '../components/home/ServicesList';
 import WhyChooseUs from '../components/home/WhyChooseUs';
 import ServiceAreas from '../components/home/ServiceAreas';
 import Cta from '../components/home/Cta';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (
