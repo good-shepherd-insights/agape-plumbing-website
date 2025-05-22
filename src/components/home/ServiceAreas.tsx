@@ -48,7 +48,7 @@ const ServiceAreas = () => {
 
         <div className="mt-12 text-center">
           <p className="mb-4 text-lg">Don't see your area listed? Give us a call to confirm service availability.</p>
-          <Button size="lg" className="border-2 border-black bg-plumbing-800 hover:translate-y-[-4px]">Check Service Availability</Button>
+          <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md hover:translate-y-[-4px]">Check Service Availability</Button>
         </div>
       </div>
     </section>

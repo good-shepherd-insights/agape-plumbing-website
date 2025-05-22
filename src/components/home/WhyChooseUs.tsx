@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
               {reasons.map((reason) => (
                 <div key={reason.id} className="flex">
                   <div className="mr-4 mt-1">
-                    <div className="h-6 w-6 border-2 border-black bg-primary flex items-center justify-center">
+                    <div className="h-6 w-6 border-2 border-black rounded-sm bg-primary flex items-center justify-center">
                       <Check className="h-4 w-4 text-white" />
                     </div>
                   </div>
@@ -67,13 +67,13 @@ const WhyChooseUs = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-plumbing-800 p-8 border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)] text-white">
+            <div className="bg-plumbing-800 p-8 border-4 border-black rounded-lg shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)] text-white">
               <h3 className="text-2xl font-bold mb-6 uppercase">Customer Testimonial</h3>
               <blockquote className="text-lg italic mb-6">
                 "Agape Plumbing saved us during a major emergency! They arrived quickly, diagnosed the issue, and fixed it professionally. Their team was courteous and kept us informed throughout the process. I highly recommend their services to anyone needing reliable plumbers."
               </blockquote>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-white border-2 border-black flex items-center justify-center text-plumbing-800 font-bold text-xl mr-4">
+                <div className="w-12 h-12 bg-white border-2 border-black rounded-md flex items-center justify-center text-plumbing-800 font-bold text-xl mr-4">
                   JD
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
                 <span className="ml-2">5.0 Rating</span>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary p-4 border-2 border-black">
+            <div className="absolute -bottom-6 -right-6 bg-primary p-4 border-2 border-black rounded-md">
               <p className="font-bold uppercase">300+ 5-Star Reviews!</p>
             </div>
           </div>

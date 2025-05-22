@@ -76,7 +76,7 @@ const ServicesList = () => {
                 ))}
               </ul>
               <Link to={service.link}>
-                <Button variant="outline" className="w-full border-2 border-black hover:translate-y-[-4px]">Learn More</Button>
+                <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px]">Learn More</Button>
               </Link>
             </div>
           ))}
@@ -84,7 +84,7 @@ const ServicesList = () => {
         
         <div className="text-center mt-12">
           <Link to="/services">
-            <Button size="lg" className="border-2 border-black bg-plumbing-800 hover:translate-y-[-4px]">View All Services</Button>
+            <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md hover:translate-y-[-4px]">View All Services</Button>
           </Link>
         </div>
       </div>
