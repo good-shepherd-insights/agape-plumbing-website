@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-16 md:py-24 border-b-4 border-black">
-      <div className="absolute top-0 right-0 w-24 h-24 bg-primary border-l-2 border-b-2 border-black rounded-bl-lg"></div>
+  return <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-16 md:py-24 border-b-4 border-black">
+      
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -46,32 +43,16 @@ const Hero = () => {
               </h3>
               <form className="space-y-4">
                 <div>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full p-3 brutalist-input"
-                  />
+                  <input type="text" placeholder="Your Name" className="w-full p-3 brutalist-input" />
                 </div>
                 <div>
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="w-full p-3 brutalist-input"
-                  />
+                  <input type="tel" placeholder="Phone Number" className="w-full p-3 brutalist-input" />
                 </div>
                 <div>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full p-3 brutalist-input"
-                  />
+                  <input type="email" placeholder="Email Address" className="w-full p-3 brutalist-input" />
                 </div>
                 <div>
-                  <textarea
-                    placeholder="How can we help you?"
-                    rows={3}
-                    className="w-full p-3 brutalist-input"
-                  ></textarea>
+                  <textarea placeholder="How can we help you?" rows={3} className="w-full p-3 brutalist-input"></textarea>
                 </div>
                 <Button className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
                   Submit Request
@@ -87,8 +68,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

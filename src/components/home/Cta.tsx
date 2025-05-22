@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-
 const Cta = () => {
-  return (
-    <section className="py-16 bg-plumbing-800 text-white overflow-hidden relative border-t-4 border-black">
+  return <section className="py-16 bg-plumbing-800 text-white overflow-hidden relative border-t-4 border-black">
       {/* Brutalist geometric shapes */}
-      <div className="absolute top-0 right-0 w-36 h-36 bg-primary border-l-4 border-b-4 border-black rounded-bl-lg"></div>
-      <div className="absolute bottom-0 left-0 w-24 h-24 bg-black rounded-tr-lg"></div>
+      
+      
       
       <div className="container-custom relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -31,8 +28,6 @@ const Cta = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Cta;
