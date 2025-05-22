@@ -22,7 +22,7 @@ const Cta = () => {
               <Phone className="h-5 w-5" />
               <span className="font-bold">(800) 878-4242</span>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-plumbing-800 rounded-md hover:translate-y-[-4px]">
+            <Button size="lg" variant="outline" className="border-2 border-white hover:bg-white rounded-md hover:translate-y-[-4px] text-slate-950">
               Schedule Online
             </Button>
           </div>
