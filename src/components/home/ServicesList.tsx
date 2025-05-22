@@ -52,10 +52,11 @@ const services = [
 
 const ServicesList = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-24 bg-gray-50 brutalist-section">
       <div className="container-custom">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-plumbing-800 mb-4">Our Professional Services</h2>
+          <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Services</span>
+          <h2 className="text-plumbing-800 mb-4 uppercase">Our Professional Services</h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
             From emergency repairs to new installations, our experienced plumbers provide a comprehensive range of services to meet all your plumbing needs.
           </p>
@@ -63,29 +64,27 @@ const ServicesList = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-plumbing-700">{service.title}</h3>
-                <p className="mb-4 text-gray-600">{service.description}</p>
-                <ul className="mb-6 space-y-2">
-                  {service.features.map((feature, index) => (
-                    <li key={index} className="flex items-start">
-                      <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to={service.link}>
-                  <Button variant="outline" className="w-full">Learn More</Button>
-                </Link>
-              </CardContent>
-            </Card>
+            <div key={service.id} className="brutalist-card p-6">
+              <h3 className="text-xl font-bold mb-3 text-plumbing-700 uppercase">{service.title}</h3>
+              <p className="mb-4 text-gray-600">{service.description}</p>
+              <ul className="mb-6 space-y-2">
+                {service.features.map((feature, index) => (
+                  <li key={index} className="flex items-start">
+                    <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link to={service.link}>
+                <Button variant="outline" className="w-full border-2 border-black hover:translate-y-[-4px]">Learn More</Button>
+              </Link>
+            </div>
           ))}
         </div>
         
         <div className="text-center mt-12">
           <Link to="/services">
-            <Button size="lg">View All Services</Button>
+            <Button size="lg" className="border-2 border-black bg-plumbing-800 hover:translate-y-[-4px]">View All Services</Button>
           </Link>
         </div>
       </div>

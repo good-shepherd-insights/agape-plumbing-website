@@ -5,11 +5,11 @@ import { Phone, Mail, MapPin, Info, Check } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-plumbing-900 text-white pt-16 pb-8">
+    <footer className="bg-plumbing-900 text-white pt-16 pb-8 border-t-4 border-black">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Agape Plumbing & Rooter</h3>
+            <h3 className="text-2xl font-bold mb-4 uppercase">Agape Plumbing & Rooter</h3>
             <p className="mb-4">Quality plumbing services with integrity and professionalism. Licensed, bonded, and insured for your peace of mind.</p>
             <div className="flex items-center mb-2">
               <Phone className="h-5 w-5 mr-2" />
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Our Services</h3>
+            <h3 className="text-xl font-bold mb-4 uppercase border-b border-gray-700 pb-2">Our Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/services/emergency" className="flex items-center hover:text-primary-300 transition-colors">
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Service Areas</h3>
+            <h3 className="text-xl font-bold mb-4 uppercase border-b border-gray-700 pb-2">Service Areas</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/areas/los-angeles" className="hover:text-primary-300 transition-colors">
@@ -99,7 +99,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4 uppercase border-b border-gray-700 pb-2">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="hover:text-primary-300 transition-colors">
@@ -136,18 +136,18 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-plumbing-800 text-center">
-          <p>© {new Date().getFullYear()} Agape Plumbing & Rooter. All Rights Reserved. CA License #992416.</p>
+          <p className="font-mono">© {new Date().getFullYear()} Agape Plumbing & Rooter. All Rights Reserved. CA License #992416.</p>
           <div className="flex justify-center space-x-4 mt-4">
-            <a href="https://facebook.com" className="hover:text-primary-300 transition-colors">
+            <a href="https://facebook.com" className="hover:text-primary-300 transition-colors uppercase text-xs font-bold">
               Facebook
             </a>
-            <a href="https://instagram.com" className="hover:text-primary-300 transition-colors">
+            <a href="https://instagram.com" className="hover:text-primary-300 transition-colors uppercase text-xs font-bold">
               Instagram
             </a>
-            <a href="https://linkedin.com" className="hover:text-primary-300 transition-colors">
+            <a href="https://linkedin.com" className="hover:text-primary-300 transition-colors uppercase text-xs font-bold">
               LinkedIn
             </a>
-            <a href="https://yelp.com" className="hover:text-primary-300 transition-colors">
+            <a href="https://yelp.com" className="hover:text-primary-300 transition-colors uppercase text-xs font-bold">
               Yelp
             </a>
           </div>

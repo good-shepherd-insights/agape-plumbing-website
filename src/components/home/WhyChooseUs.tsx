@@ -37,13 +37,13 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 brutalist-section">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="mb-6">
-              <span className="text-primary font-semibold">WHY CHOOSE US</span>
-              <h2 className="mt-2">Southern California's Most Trusted Plumbing Team</h2>
+              <span className="font-mono uppercase text-sm font-bold border-b-2 border-black">WHY CHOOSE US</span>
+              <h2 className="mt-2 uppercase">Southern California's Most Trusted Plumbing Team</h2>
             </div>
             <p className="text-lg text-gray-700 mb-8">
               At Agape Plumbing, we combine technical expertise with exceptional customer service to deliver plumbing solutions that exceed expectations. Our commitment to quality and integrity has made us the preferred choice for residential and commercial plumbing services throughout Southern California.
@@ -53,12 +53,12 @@ const WhyChooseUs = () => {
               {reasons.map((reason) => (
                 <div key={reason.id} className="flex">
                   <div className="mr-4 mt-1">
-                    <div className="h-6 w-6 rounded-full bg-primary flex items-center justify-center">
+                    <div className="h-6 w-6 border-2 border-black bg-primary flex items-center justify-center">
                       <Check className="h-4 w-4 text-white" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1">{reason.title}</h4>
+                    <h4 className="font-bold mb-1 uppercase">{reason.title}</h4>
                     <p className="text-gray-600">{reason.description}</p>
                   </div>
                 </div>
@@ -67,18 +67,18 @@ const WhyChooseUs = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-plumbing-800 p-8 rounded-lg text-white">
-              <h3 className="text-2xl font-bold mb-6">Customer Testimonial</h3>
+            <div className="bg-plumbing-800 p-8 border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)] text-white">
+              <h3 className="text-2xl font-bold mb-6 uppercase">Customer Testimonial</h3>
               <blockquote className="text-lg italic mb-6">
                 "Agape Plumbing saved us during a major emergency! They arrived quickly, diagnosed the issue, and fixed it professionally. Their team was courteous and kept us informed throughout the process. I highly recommend their services to anyone needing reliable plumbers."
               </blockquote>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-plumbing-800 font-bold text-xl mr-4">
+                <div className="w-12 h-12 bg-white border-2 border-black flex items-center justify-center text-plumbing-800 font-bold text-xl mr-4">
                   JD
                 </div>
                 <div>
                   <p className="font-bold">John Davis</p>
-                  <p className="text-sm">Lakewood, CA</p>
+                  <p className="text-sm uppercase font-mono">Lakewood, CA</p>
                 </div>
               </div>
               <div className="mt-6 flex">
@@ -92,8 +92,8 @@ const WhyChooseUs = () => {
                 <span className="ml-2">5.0 Rating</span>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary p-4 rounded-lg shadow-lg">
-              <p className="font-bold">300+ 5-Star Reviews!</p>
+            <div className="absolute -bottom-6 -right-6 bg-primary p-4 border-2 border-black">
+              <p className="font-bold uppercase">300+ 5-Star Reviews!</p>
             </div>
           </div>
         </div>
