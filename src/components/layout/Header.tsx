@@ -35,8 +35,8 @@ const Header = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl md:text-3xl font-heading font-bold text-primary">
-            Agape<span className="text-secondary">Plumbing</span>
+          <span className="text-2xl md:text-3xl font-heading font-bold">
+            <span className="text-plumbing-800">Agape</span> <span className="text-plumbing-700">Plumbing & Rooter</span>
           </span>
         </Link>
 
@@ -57,7 +57,7 @@ const Header = () => {
           <Link to="/services" className="font-medium hover:text-primary transition-colors">Services</Link>
           <Link to="/about" className="font-medium hover:text-primary transition-colors">About</Link>
           <Link to="/contact" className="font-medium hover:text-primary transition-colors">Contact</Link>
-          <Button className="flex items-center gap-2" size="lg">
+          <Button className="flex items-center gap-2 bg-plumbing-800 hover:bg-plumbing-700" size="lg">
             <Phone className="h-4 w-4" />
             <span className="font-bold">(800) 878-4242</span>
           </Button>
@@ -85,7 +85,7 @@ const Header = () => {
             <Link to="/services" className="text-xl font-medium" onClick={toggleMobileMenu}>Services</Link>
             <Link to="/about" className="text-xl font-medium" onClick={toggleMobileMenu}>About</Link>
             <Link to="/contact" className="text-xl font-medium" onClick={toggleMobileMenu}>Contact</Link>
-            <Button className="flex items-center gap-2 mt-4" size="lg">
+            <Button className="flex items-center gap-2 mt-4 bg-plumbing-800 hover:bg-plumbing-700" size="lg">
               <Phone className="h-4 w-4" />
               <span className="font-bold">(800) 878-4242</span>
             </Button>

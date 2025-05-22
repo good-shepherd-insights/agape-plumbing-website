@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Agape Plumbing | Professional Plumbing Services in Southern California</title>
+        <title>Agape Plumbing & Rooter | Licensed Plumbing Services in Southern California</title>
         <meta name="description" content="Trusted plumbing contractors serving Southern California with 24/7 emergency services, repairs, installations, and more. Licensed, bonded, and insured." />
         <meta name="keywords" content="plumbing contractor, emergency plumber, plumbing repairs, plumbing installation, Southern California plumber" />
         <link rel="canonical" href="https://agapeplumbing.com/" />

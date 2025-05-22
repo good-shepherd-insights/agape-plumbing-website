@@ -5,7 +5,7 @@ import { Phone } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-plumbing-700 to-plumbing-800 text-white py-16 md:py-24">
+    <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-16 md:py-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
@@ -22,21 +22,21 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <span className="inline-block bg-primary px-4 py-1 rounded-full text-sm font-semibold mb-6">
-              24/7 Emergency Service
+              Available 24/7 For Emergencies
             </span>
             <h1 className="mb-6">
-              Professional Plumbing <br className="hidden md:block" />
-              <span className="text-primary-200">You Can Trust</span>
+              Your Trusted <br className="hidden md:block" />
+              <span className="text-primary-200">Plumbing Experts</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-xl">
-              Licensed, bonded, and insured plumbing contractors serving Southern California. From emergency repairs to new installations, our expert team is ready to help.
+              Agape Plumbing & Rooter is your reliable, licensed Southern California plumbing contractor. From minor repairs to major installations, we deliver exceptional service at competitive prices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg font-bold">
-                Request Service
+                Schedule Service
               </Button>
               <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold">
-                Learn More
+                View Our Services
               </Button>
             </div>
             <div className="mt-8 flex items-center">
@@ -44,7 +44,7 @@ const Hero = () => {
                 <Phone className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <p className="text-sm">Call us anytime</p>
+                <p className="text-sm">Call For Immediate Service</p>
                 <p className="text-xl font-bold">(800) 878-4242</p>
               </div>
             </div>
@@ -52,13 +52,13 @@ const Hero = () => {
           <div className="relative animate-fade-in">
             <div className="bg-white p-6 rounded-lg shadow-xl">
               <h3 className="text-plumbing-800 text-2xl font-bold mb-4">
-                Quick Service Request
+                Request Service Online
               </h3>
               <form className="space-y-4">
                 <div>
                   <input
                     type="text"
-                    placeholder="Full Name"
+                    placeholder="Your Name"
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                 </div>
@@ -78,7 +78,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <textarea
-                    placeholder="Describe your plumbing issue"
+                    placeholder="How can we help you?"
                     rows={3}
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   ></textarea>
@@ -88,11 +88,11 @@ const Hero = () => {
                 </Button>
               </form>
               <p className="text-center text-sm text-gray-600 mt-4">
-                We'll respond within 15 minutes during business hours
+                We'll contact you promptly to schedule your service
               </p>
             </div>
             <div className="absolute -bottom-4 -right-4 bg-primary text-white py-2 px-4 rounded-lg shadow-lg transform rotate-3">
-              <p className="font-bold">Same Day Service Available!</p>
+              <p className="font-bold">Free Estimates Available!</p>
             </div>
           </div>
         </div>
