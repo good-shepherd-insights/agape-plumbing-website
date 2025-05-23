@@ -54,16 +54,16 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				plumbing: {
-					50: '#f0f8ff',
-					100: '#e0f0fe',
-					200: '#bae0fd',
-					300: '#7dcbfc',
-					400: '#38aff8',
-					500: '#0e8ce9',
-					600: '#0270c7',
-					700: '#0359a1',
-					800: '#044785',
-					900: '#05386b',
+					50: '#EFF7F8',
+					100: '#DEEEF1',
+					200: '#BDD9DE',
+					300: '#9BC5CB',
+					400: '#7BADB6',
+					500: '#5A95A0',
+					600: '#4A8D99',
+					700: '#3D7580',
+					800: '#356A74',
+					900: '#1F4A52',
 				}
 			},
 			borderRadius: {
