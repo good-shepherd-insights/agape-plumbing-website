@@ -1,7 +1,7 @@
 export const siteCopy = {
   company: {
     name: "Agape Drain & Plumbing LLC",
-    phone: "(240) 739-9853",
+    phone: "(227) 223-9057",
     email: "agape7plumbing@gmail.com",
     address: {
       poBox: "109 Wheeler Ln",
@@ -55,7 +55,7 @@ export const siteCopy = {
     },
     contact: {
       title: "Contact Agape Drain & Plumbing | Professional Plumbers",
-      description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (240) 739-9853 or submit our online form.",
+      description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (227) 223-9057 or submit our online form.",
       keywords: "contact plumber, plumbing company phone number, emergency plumber contact, plumbing quote, plumbing estimate",
       canonical: "https://agapeplumbing.com/contact"
     }
@@ -70,7 +70,7 @@ export const siteCopy = {
       emergencyBanner: "Available 24/7 For Emergencies",
       trustedHeading: "Your Trusted",
       expertSubheading: "Plumbing Experts",
-      description2: "is your reliable, licensed Southern California plumbing contractor. From minor repairs to major installations, we deliver exceptional service at competitive prices.",
+      description2: "is your reliable, licensed Frederick, Maryland plumbing contractor. From minor repairs to major installations, we deliver exceptional service at competitive prices.",
       serviceButtonText: "View Our Services",
       callText: "Call For Immediate Service",
       requestFormTitle: "Request Service Online",
@@ -120,10 +120,10 @@ export const siteCopy = {
       ],
       testimonial: {
         title: "Customer Testimonial",
-        quote: "Agape Plumbing saved us during a major emergency! They arrived quickly, diagnosed the issue, and fixed it professionally. Their team was courteous and kept us informed throughout the process. I highly recommend their services to anyone needing reliable plumbers.",
-        name: "John Davis",
-        initials: "JD",
-        location: "Lakewood, CA",
+        quote: "Agape Plumbing truly exceeded my expectations. When a major plumbing issue caused water to leak from my upstairs bathroom into the downstairs entryway, they responded promptly and fixed the problem efficiently at a fair price. Unfortunately, another pipe burst a few days later, requiring more extensive work. Once again, they were quick to respond and handled the situation professionally, all while maintaining reasonable pricing. Their dedication and reliability are commendable.",
+        name: "Vallee Bunting",
+        initials: "VB",
+        location: "Bowie, MD",
         rating: "5.0 Rating",
         reviewCount: "300+ 5-Star Reviews!"
       }
@@ -352,7 +352,7 @@ export const siteCopy = {
       title: "Get In Touch",
       phone: {
         title: "Phone",
-        number: "(240) 739-9853",
+        number: "(227) 223-9057",
         description: "Available for emergencies"
       },
       email: {
@@ -550,49 +550,70 @@ export const siteCopy = {
     title: "Our Professional Services",
     description: "From emergency repairs to new installations, our experienced plumbers provide a comprehensive range of services to meet all your plumbing needs.",
     services: [
-      {
-        id: 1,
-        title: "Emergency Plumbing",
-        description: "24/7 emergency services for urgent plumbing issues including burst pipes, flooding, and sewer backups.",
-        link: "/services/emergency",
-        features: ["Available 24/7/365", "Fast response times", "Licensed professionals"]
-      },
-      {
-        id: 2,
-        title: "Repairs & Maintenance",
-        description: "Expert repairs and ongoing maintenance for all your household plumbing fixtures and systems.",
-        link: "/services/repairs",
-        features: ["Leak detection & repair", "Fixture repairs", "Preventative maintenance"]
-      },
-      {
-        id: 3,
-        title: "Installations & Replacements",
-        description: "Professional installation of new plumbing systems, fixtures, and appliances for your home or business.",
-        link: "/services/installations",
-        features: ["Fixture installations", "Pipe replacement", "Appliance hookups"]
-      },
-      {
-        id: 4,
-        title: "Water Heater Services",
-        description: "Installation, repair, and maintenance for all types of water heaters including tankless systems.",
-        link: "/services/water-heaters",
-        features: ["Tankless water heaters", "Traditional tanks", "Energy-efficient options"]
-      },
-      {
-        id: 5,
-        title: "Drain Cleaning",
-        description: "Professional drain cleaning services to remove clogs and prevent future blockages in your plumbing.",
-        link: "/services/drain-cleaning",
-        features: ["Hydro jetting", "Camera inspections", "Preventative maintenance"]
-      },
-      {
-        id: 6,
-        title: "Commercial Plumbing",
-        description: "Specialized services for businesses, restaurants, multi-family dwellings, and commercial properties.",
-        link: "/services/commercial",
-        features: ["Minimal business disruption", "Code compliance", "Scheduled maintenance plans"]
-      }
-    ],
+        {
+          id: 1,
+          title: "Emergency Plumbing",
+          description: "24/7 emergency services for urgent plumbing issues including burst pipes, flooding, and sewer backups.",
+          link: "/services/emergency",
+          features: ["Available 24/7/365", "Fast response times", "Licensed professionals"]
+        },
+        {
+          id: 2,
+          title: "Pipe Repair",
+          description: "Expert pipe repair services including leak detection, pipe replacement, and new plumbing line installation.",
+          link: "/services/repairs",
+          features: ["Leak detection & repair", "Pipe replacement", "New pipe installation"]
+        },
+        {
+          id: 3,
+          title: "Faucets & Fixtures",
+          description: "Repairing leaky faucets, replacing outdated fixtures, and installing new kitchen or bathroom faucets.",
+          link: "/services/fixtures",
+          features: ["Faucet repair/replacement", "Fixture installations", "Water-saving upgrades"]
+        },
+        {
+          id: 4,
+          title: "Toilet Services",
+          description: "Fixing running or clogged toilets, replacing old models, and installing new toilets to meet your needs.",
+          link: "/services/toilets",
+          features: ["Toilet repair", "New installations", "Water-efficient options"]
+        },
+        {
+          id: 5,
+          title: "Kitchen Plumbing",
+          description: "Repairing and replacing kitchen sinks, garbage disposals, and fixing drain pipes.",
+          link: "/services/kitchen",
+          features: ["Sink & disposal repair", "Drain pipe replacement", "Fixture upgrades"]
+        },
+        {
+          id: 6,
+          title: "Water Heater Services",
+          description: "Repairing and replacing gas or electric water heaters. Includes expansion tank installation and maintenance.",
+          link: "/services/water-heaters",
+          features: ["Gas/electric units", "Expansion tank installs", "Energy-efficient systems"]
+        },
+        {
+          id: 7,
+          title: "Drain Cleaning",
+          description: "Professional drain cleaning services to remove clogs and prevent future blockages in your plumbing.",
+          link: "/services/drain-cleaning",
+          features: ["Hydro jetting", "Camera inspections", "Preventative maintenance"]
+        },
+        {
+            id: 8,
+            title: "Sewer Services",
+            description: "Expert sewer line repair and replacement services to fix damaged pipes, address root intrusion, and restore proper flow to your sewer system.",
+            link: "/services/sewer-services", 
+            features: ["Sewer line repair", "Full line replacement", "Trenchless solutions"]
+          },
+        // {
+        //   id: 9,
+        //   title: "Commercial Plumbing",
+        //   description: "Specialized services for businesses, restaurants, multi-family dwellings, and commercial properties.",
+        //   link: "/services/commercial",
+        //   features: ["Minimal business disruption", "Code compliance", "Scheduled maintenance plans"]
+        // }
+      ],
     cta: "View All Services"
   },
   

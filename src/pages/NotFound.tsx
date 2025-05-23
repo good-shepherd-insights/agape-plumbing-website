@@ -20,24 +20,33 @@ const NotFound = () => {
 
   return (
     <>
-      <Helmet>
-        <title>404 Not Found | Agape Plumbing</title>
-        <meta name="description" content="The page you're looking for doesn't exist. Return to the homepage for professional plumbing services in Southern California." />
-      </Helmet>
+<Helmet>
+  <title>404 Not Found | Agape Drain & Plumbing LLC</title>
+  <meta
+    name="description"
+    content="The page you're looking for doesn't exist. Return to Agape Drain & Plumbing LLC's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia."
+  />
+  <meta
+    name="keywords"
+    content="Agape Drain & Plumbing, 404 error, page not found, plumbing services DMV, Washington DC plumber, Maryland plumber, Virginia plumber"
+  />
+  <link rel="canonical" href="https://brand.site/AgapePlumbing" />
+</Helmet>
       
       <Header />
-      <div className="flex flex-col items-center justify-center min-h-[70vh] py-20 px-4 text-center">
-        <h1 className="text-6xl md:text-7xl font-bold text-plumbing-700 mb-6">{notFound.title}</h1>
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">{notFound.heading}</h2>
-        <p className="text-xl text-gray-600 max-w-md mb-8">
+      <div className="flex flex-col items-center justify-center min-h-[70vh] py-20 px-4 text-center brutalist-section">
+        <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Error</span>
+        <h1 className="text-6xl md:text-7xl font-bold text-plumbing-700 mb-6 uppercase">{notFound.title}</h1>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase">{notFound.heading}</h2>
+        <p className="text-xl text-gray-600 max-w-md mb-8 border-l-2 border-black pl-4 text-left">
           {notFound.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link to="/">
-            <Button size="lg">{notFound.homeButton}</Button>
+            <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-none hover:translate-y-[-4px] transition-transform uppercase">{notFound.homeButton}</Button>
           </Link>
           <Link to="/contact">
-            <Button variant="outline" size="lg">{notFound.contactButton}</Button>
+            <Button variant="outline" size="lg" className="border-2 border-black rounded-none hover:translate-y-[-4px] transition-transform uppercase">{notFound.contactButton}</Button>
           </Link>
         </div>
       </div>
