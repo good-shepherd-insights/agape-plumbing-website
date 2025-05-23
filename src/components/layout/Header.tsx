@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
+import { useContent } from '@/hooks/use-content';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { navigation, company } = useContent();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +38,7 @@ const Header = () => {
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <span className="text-2xl md:text-3xl font-heading font-bold">
-            <span className="text-plumbing-800">Agape</span> <span className="text-plumbing-700">Plumbing & Rooter</span>
+            <span className="text-plumbing-800">{company.name.split(' ')[0]}</span> <span className="text-plumbing-700">{company.name.split(' ').slice(1).join(' ')}</span>
           </span>
         </Link>
 
@@ -55,13 +57,18 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="font-medium hover:text-primary transition-colors uppercase text-sm">Home</Link>
-          <Link to="/services" className="font-medium hover:text-primary transition-colors uppercase text-sm">Services</Link>
-          <Link to="/about" className="font-medium hover:text-primary transition-colors uppercase text-sm">About</Link>
-          <Link to="/contact" className="font-medium hover:text-primary transition-colors uppercase text-sm">Contact</Link>
+          {navigation.links.map((link, index) => (
+            <Link 
+              key={index}
+              to={link.url} 
+              className="font-medium hover:text-primary transition-colors uppercase text-sm"
+            >
+              {link.title}
+            </Link>
+          ))}
           <Button className="flex items-center gap-2 bg-plumbing-800 hover:bg-plumbing-700 border-2 border-black" size="lg">
             <Phone className="h-4 w-4" />
-            <span className="font-bold">(800) 878-4242</span>
+            <span className="font-bold">{company.phone}</span>
           </Button>
         </nav>
 

@@ -3,29 +3,24 @@ import React from 'react';
 import { MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
-const areas = [
-  { name: 'Los Angeles County', cities: ['Los Angeles', 'Long Beach', 'Glendale', 'Santa Monica'] },
-  { name: 'Orange County', cities: ['Anaheim', 'Santa Ana', 'Irvine', 'Huntington Beach'] },
-  { name: 'Riverside County', cities: ['Riverside', 'Moreno Valley', 'Corona', 'Temecula'] },
-  { name: 'San Bernardino County', cities: ['San Bernardino', 'Fontana', 'Rancho Cucamonga', 'Ontario'] },
-  { name: 'Ventura County', cities: ['Oxnard', 'Thousand Oaks', 'Simi Valley', 'Ventura'] }
-];
+import { useContent } from '@/hooks/use-content';
 
 const ServiceAreas = () => {
+  const { contact } = useContent();
+  
   return (
     <section className="py-16 md:py-24 bg-gray-50 brutalist-section">
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Locations</span>
-          <h2 className="text-plumbing-800 mb-4 uppercase">Our Service Areas</h2>
+          <h2 className="text-plumbing-800 mb-4 uppercase">{contact.serviceAreas.title}</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-600">
-            We proudly serve communities throughout Southern California, providing reliable plumbing services to both residential and commercial customers.
+            {contact.serviceAreas.description}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {areas.map((area, index) => (
+          {contact.serviceAreas.areas.map((area, index) => (
             <div key={index} className="brutalist-card p-6">
               <div className="flex items-center mb-4">
                 <MapPin className="h-5 w-5 text-primary mr-2" />
@@ -47,8 +42,8 @@ const ServiceAreas = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="mb-4 text-lg">Don't see your area listed? Give us a call to confirm service availability.</p>
-          <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md hover:translate-y-[-4px]">Check Service Availability</Button>
+          <p className="mb-4 text-lg">{contact.serviceAreas.cta.description}</p>
+          <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md hover:translate-y-[-4px]">{contact.serviceAreas.cta.text}</Button>
         </div>
       </div>
     </section>

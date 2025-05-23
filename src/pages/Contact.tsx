@@ -1,19 +1,20 @@
-
-import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import { useContent } from '@/hooks/use-content';
 
 const Contact = () => {
+  const { contact, meta, company } = useContent();
+  
   return (
     <>
       <Helmet>
-        <title>Contact Agape Plumbing | 24/7 Professional Plumbers</title>
-        <meta name="description" content="Contact Agape Plumbing for 24/7 emergency service, free estimates, and professional plumbing solutions in Southern California. Call (800) 878-4242 or submit our online form." />
-        <meta name="keywords" content="contact plumber, plumbing company phone number, emergency plumber contact, plumbing quote, plumbing estimate" />
-        <link rel="canonical" href="https://agapeplumbing.com/contact" />
+        <title>{meta.contact.title}</title>
+        <meta name="description" content={meta.contact.description} />
+        <meta name="keywords" content={meta.contact.keywords} />
+        <link rel="canonical" href={meta.contact.canonical} />
       </Helmet>
       
       <Header />
@@ -22,9 +23,9 @@ const Contact = () => {
         <section className="bg-plumbing-800 text-white py-24">
           <div className="container-custom">
             <div className="text-center">
-              <h1 className="mb-4">Contact Us</h1>
+              <h1 className="mb-4">{contact.hero.title}</h1>
               <p className="text-xl max-w-3xl mx-auto">
-                Need plumbing help? We're available 24/7 for emergencies and ready to assist with all your plumbing needs.
+                {contact.hero.description}
               </p>
             </div>
           </div>
@@ -35,7 +36,7 @@ const Contact = () => {
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-plumbing-700 mb-8">Get In Touch</h2>
+                <h2 className="text-3xl font-bold text-plumbing-700 mb-8">{contact.contactInfo.title}</h2>
                 
                 <div className="space-y-6 mb-8">
                   <div className="flex items-start">
@@ -43,9 +44,9 @@ const Contact = () => {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">Phone</h3>
-                      <p className="text-xl font-bold text-plumbing-700">(800) 878-4242</p>
-                      <p className="text-gray-600">Available 24/7 for emergencies</p>
+                      <h3 className="text-lg font-bold">{contact.contactInfo.phone.title}</h3>
+                      <p className="text-xl font-bold text-plumbing-700">{company.phone}</p>
+                      <p className="text-gray-600">{contact.contactInfo.phone.description}</p>
                     </div>
                   </div>
                   
@@ -54,9 +55,9 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">Email</h3>
-                      <p className="text-lg">info@agapeplumbing.com</p>
-                      <p className="text-gray-600">We'll respond within 24 hours</p>
+                      <h3 className="text-lg font-bold">{contact.contactInfo.email.title}</h3>
+                      <p className="text-lg">{company.email}</p>
+                      <p className="text-gray-600">{contact.contactInfo.email.description}</p>
                     </div>
                   </div>
                   
@@ -65,9 +66,9 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">Office Address</h3>
-                      <p className="text-lg">PO Box 3215</p>
-                      <p className="text-lg">Lakewood, CA 90711</p>
+                      <h3 className="text-lg font-bold">{contact.contactInfo.address.title}</h3>
+                      <p className="text-lg">{company.address.poBox}</p>
+                      <p className="text-lg">{company.address.city}, {company.address.state} {company.address.zip}</p>
                     </div>
                   </div>
                   
@@ -76,32 +77,32 @@ const Contact = () => {
                       <Clock className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">Office Hours</h3>
-                      <p className="text-lg">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p className="text-lg">Saturday: 8:00 AM - 4:00 PM</p>
-                      <p className="text-lg">Sunday: Emergency Services Only</p>
-                      <p className="font-bold mt-2">24/7 Emergency Service Available</p>
+                      <h3 className="text-lg font-bold">{contact.contactInfo.hours.title}</h3>
+                      {contact.contactInfo.hours.schedule.map((item, index) => (
+                        <p key={index} className="text-lg">{item}</p>
+                      ))}
+                      <p className="font-bold mt-2">{contact.contactInfo.hours.note}</p>
                     </div>
                   </div>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold mb-4">Service Areas</h3>
+                  <h3 className="text-xl font-bold mb-4">{contact.serviceAreas.title}</h3>
                   <p className="mb-4">
-                    We proudly serve all of Southern California, including Los Angeles County, Orange County, Riverside County, San Bernardino County, and Ventura County.
+                    {contact.serviceAreas.description}
                   </p>
                   <p>
-                    Not sure if we service your area? Give us a call and we'll be happy to assist.
+                    {contact.serviceAreas.note}
                   </p>
                 </div>
               </div>
               
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-bold text-plumbing-700 mb-6">Send Us a Message</h2>
+                <h2 className="text-2xl font-bold text-plumbing-700 mb-6">{contact.contactForm.title}</h2>
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="firstName" className="block mb-2 font-medium">First Name</label>
+                      <label htmlFor="firstName" className="block mb-2 font-medium">{contact.contactForm.fields.firstName}</label>
                       <input
                         type="text"
                         id="firstName"
@@ -110,7 +111,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block mb-2 font-medium">Last Name</label>
+                      <label htmlFor="lastName" className="block mb-2 font-medium">{contact.contactForm.fields.lastName}</label>
                       <input
                         type="text"
                         id="lastName"
@@ -121,7 +122,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block mb-2 font-medium">Email Address</label>
+                    <label htmlFor="email" className="block mb-2 font-medium">{contact.contactForm.fields.email}</label>
                     <input
                       type="email"
                       id="email"
@@ -131,7 +132,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="phone" className="block mb-2 font-medium">Phone Number</label>
+                    <label htmlFor="phone" className="block mb-2 font-medium">{contact.contactForm.fields.phone}</label>
                     <input
                       type="tel"
                       id="phone"
@@ -141,24 +142,19 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="service" className="block mb-2 font-medium">Service Needed</label>
+                    <label htmlFor="service" className="block mb-2 font-medium">{contact.contactForm.fields.service}</label>
                     <select
                       id="service"
                       className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                     >
-                      <option value="">Select a service</option>
-                      <option value="emergency">Emergency Plumbing</option>
-                      <option value="repair">Repair & Maintenance</option>
-                      <option value="installation">Installation</option>
-                      <option value="waterheater">Water Heater Service</option>
-                      <option value="drain">Drain Cleaning</option>
-                      <option value="commercial">Commercial Service</option>
-                      <option value="other">Other</option>
+                      {contact.contactForm.serviceOptions.map((option, index) => (
+                        <option key={index} value={index === 0 ? "" : option.toLowerCase().replace(/\s+/g, '')}>{option}</option>
+                      ))}
                     </select>
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block mb-2 font-medium">Message</label>
+                    <label htmlFor="message" className="block mb-2 font-medium">{contact.contactForm.fields.message}</label>
                     <textarea
                       id="message"
                       rows={5}
@@ -168,7 +164,7 @@ const Contact = () => {
                   </div>
                   
                   <Button type="submit" className="w-full py-6 text-lg font-bold" size="lg">
-                    Send Message
+                    {contact.contactForm.submitButton}
                   </Button>
                 </form>
               </div>
@@ -179,36 +175,17 @@ const Contact = () => {
         {/* FAQ Section */}
         <section className="py-16 bg-gray-50">
           <div className="container-custom">
-            <h2 className="text-3xl font-bold text-plumbing-700 mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-plumbing-700 mb-8 text-center">{contact.faq.title}</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-2">How quickly can you respond to an emergency?</h3>
-                <p className="text-gray-700">
-                  We aim to arrive within 60 minutes for emergency calls. Our technicians are on standby 24/7, including weekends and holidays.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Do you offer free estimates?</h3>
-                <p className="text-gray-700">
-                  Yes, we provide free estimates for most plumbing services. Contact us to schedule an appointment with one of our technicians.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Are your plumbers licensed?</h3>
-                <p className="text-gray-700">
-                  Absolutely. All our plumbers are fully licensed, bonded, and insured. We maintain CA Contractor's License #992416.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Do you offer any warranties?</h3>
-                <p className="text-gray-700">
-                  Yes, we stand behind our work with a satisfaction guarantee and provide warranties on parts and labor for all services we perform.
-                </p>
-              </div>
+              {contact.faq.questions.map((item, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-2">{item.question}</h3>
+                  <p className="text-gray-700">
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
