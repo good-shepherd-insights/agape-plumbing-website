@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {home.whyChooseUs.reasons.map(reason => <div key={reason.id} className="flex">
                   <div className="mr-4 mt-1">
-                    <div className="h-6 w-6 border-2 border-black rounded-sm bg-primary flex items-center justify-center">
+                    <div className="h-6 w-6 border-2 border-black rounded-sm bg-plumbing-800 flex items-center justify-center">
                       <Check className="h-4 w-4 text-white" />
                     </div>
                   </div>
@@ -55,8 +55,8 @@ const WhyChooseUs = () => {
                 <span className="ml-2">{home.whyChooseUs.testimonial.rating}</span>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary p-4 border-2 border-black rounded-md">
-              <p className="font-bold uppercase text-yellow-300">{home.whyChooseUs.testimonial.reviewCount}</p>
+            <div className="absolute -bottom-6 -right-6 bg-plumbing-900 p-4 border-2 border-black rounded-md">
+              <p className="font-bold uppercase text-yellow-400">{home.whyChooseUs.testimonial.reviewCount}</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 
-import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Cta from '../components/home/Cta';
@@ -51,7 +50,7 @@ const About = () => {
                 <ul className="space-y-6 border-l-2 border-black pl-4">
                   {about.milestones.events.map((event, index) => (
                     <li key={index} className="flex">
-                      <div className="font-bold text-primary mr-4">{event.year}</div>
+                      <div className="font-bold text-plumbing-800 mr-4">{event.year}</div>
                       <div>
                         <p>{event.description}</p>
                       </div>
@@ -117,19 +116,19 @@ const About = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
                 <div className="brutalist-card p-4">
-                  <div className="text-3xl font-bold text-primary border-b-2 border-black pb-2 mb-3">CA</div>
+                  <div className="text-3xl font-bold text-plumbing-800 border-b-2 border-black pb-2 mb-3">CA</div>
                   <p className="font-medium uppercase text-sm">CA Contractor's License #992416</p>
                 </div>
                 <div className="brutalist-card p-4">
-                  <div className="text-3xl font-bold text-primary border-b-2 border-black pb-2 mb-3">BBB</div>
+                  <div className="text-3xl font-bold text-plumbing-800 border-b-2 border-black pb-2 mb-3">BBB</div>
                   <p className="font-medium uppercase text-sm">Better Business Bureau A+ Rating</p>
                 </div>
                 <div className="brutalist-card p-4">
-                  <div className="text-3xl font-bold text-primary border-b-2 border-black pb-2 mb-3">EPA</div>
+                  <div className="text-3xl font-bold text-plumbing-800 border-b-2 border-black pb-2 mb-3">EPA</div>
                   <p className="font-medium uppercase text-sm">EPA Certified</p>
                 </div>
                 <div className="brutalist-card p-4">
-                  <div className="text-3xl font-bold text-primary border-b-2 border-black pb-2 mb-3">PHCC</div>
+                  <div className="text-3xl font-bold text-plumbing-800 border-b-2 border-black pb-2 mb-3">PHCC</div>
                   <p className="font-medium uppercase text-sm">Plumbing-Heating-Cooling Contractors Association</p>
                 </div>
               </div>

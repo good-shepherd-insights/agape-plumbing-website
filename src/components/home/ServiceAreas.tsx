@@ -23,7 +23,7 @@ const ServiceAreas = () => {
           {contact.serviceAreas.areas.map((area, index) => (
             <div key={index} className="brutalist-card p-6">
               <div className="flex items-center mb-4">
-                <MapPin className="h-5 w-5 text-primary mr-2" />
+                <MapPin className="h-5 w-5 text-plumbing-800 mr-2" />
                 <h3 className="text-xl font-bold uppercase">{area.name}</h3>
               </div>
               <ul className="mb-4 border-l-2 border-black pl-4">
@@ -31,7 +31,7 @@ const ServiceAreas = () => {
                   <li key={cityIndex} className="mb-1 text-gray-600">{city}</li>
                 ))}
               </ul>
-              <Link to={`/areas/${area.name.toLowerCase().replace(' ', '-')}`} className="text-primary font-bold uppercase hover:underline inline-flex items-center">
+              <Link to={`/areas/${area.name.toLowerCase().replace(' ', '-')}`} className="text-plumbing-800 font-bold uppercase hover:underline inline-flex items-center">
                 View all cities
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -40,7 +40,6 @@ const ServiceAreas = () => {
             </div>
           ))}
         </div>
-
         <div className="mt-12 text-center">
           <p className="mb-4 text-lg">{contact.serviceAreas.cta.description}</p>
           <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md hover:translate-y-[-4px]">{contact.serviceAreas.cta.text}</Button>
