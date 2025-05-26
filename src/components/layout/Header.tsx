@@ -38,7 +38,7 @@ const Header = () => {
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <span className="text-2xl md:text-3xl font-heading font-bold">
-            <span className="text-plumbing-900">{company.name.split(' ')[0]}</span> <span className="text-plumbing-900">{company.name.split(' ').slice(1).join(' ')}</span>
+            <span className="text-plumbing-900 drop-shadow-[0_2.0px_2.0px_rgba(0,0,0,0.1)]">{company.name.split(' ')[0]}</span> <span className="text-plumbing-900 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)]">{company.name.split(' ').slice(1).join(' ')}</span>
           </span>
         </Link>
 
