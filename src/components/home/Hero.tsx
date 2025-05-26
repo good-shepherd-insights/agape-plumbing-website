@@ -5,7 +5,7 @@ import { useContent } from '@/hooks/use-content';
 const Hero = () => {
   const { home, company } = useContent();
   
-  return <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-16 border-b-4 border-black">
+  return <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-8 sm:py-16 border-b-4 border-black">
       
       
       <div className="container-custom relative z-10">
