@@ -62,8 +62,8 @@ export default {
 					500: '#66DBE1',
 					600: '#4fbec7',
 					700: '#46AAB1',
-					800: '#3D979C',
-					900: '#348387',
+					800: '#2A7A7E', // Adjusted for better contrast
+					900: '#226568', // Adjusted for better contrast
 				}
 			},
 			borderRadius: {

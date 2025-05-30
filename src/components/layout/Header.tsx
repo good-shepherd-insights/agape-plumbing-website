@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
-import logo from '@/assets/images/logo.png';
+import logo from '@/assets/images/logo.webp';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
