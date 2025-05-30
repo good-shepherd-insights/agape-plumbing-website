@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 bg-plumbing-900 p-4 border-2 border-black rounded-md">
-              <p className="font-bold uppercase text-yellow-400">{home.whyChooseUs.testimonial.reviewCount}</p>
+              <p className="font-bold uppercase text-white">{home.whyChooseUs.testimonial.reviewCount}</p>
             </div>
           </div>
         </div>

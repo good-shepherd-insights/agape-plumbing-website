@@ -23,7 +23,7 @@ const ServicesList = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesList.services.map((service) => (
             <div key={service.id} className="brutalist-card p-6">
-              <h3 className="text-xl font-bold mb-3 text-plumbing-700 uppercase">{service.title}</h3>
+              <h3 className="text-xl font-bold mb-3 text-plumbing-800 uppercase">{service.title}</h3>
               <p className="mb-4 text-gray-600">{service.description}</p>
               <ul className="mb-6 space-y-2">
                 {service.features.map((feature, index) => (
