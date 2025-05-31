@@ -1,42 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import { visualizer } from 'rollup-plugin-visualizer';
-import critical from 'rollup-plugin-critical';
 
 export default defineConfig(({ mode }) => {
-  const isProduction = mode === 'production';
-  const criticalUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000";
-
   return {
     plugins: [
       react(),
-      isProduction &&
-        critical({
-          criticalBase: './',
-          criticalUrl: criticalUrl,
-          criticalPages: [
-            { uri: '/', template: 'index' },
-            // { uri: 'about', template: 'about/index' },
-            // { uri: 'contact', template: 'contact/index' },
-            // { uri: 'services', template: 'services/index' },
-          ],
-          criticalConfig: {
-            inline: true,
-            extract: true,
-            // minify: true, 
-            ignore: ['@font-face'],
-            width: 1300,
-            height: 900,
-          },
-        }),
-      isProduction &&
-        visualizer({
-          open: true,
-          filename: 'dist/stats.html',
-          gzipSize: true,
-          brotliSize: true,
-        }),
-    ].filter(Boolean),
+    ],
     resolve: {
       alias: {
         '@': '/src',
