@@ -6,6 +6,14 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
     ],
+    build: {
+      cssCodeSplit: false,
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
     resolve: {
       alias: {
         '@': '/src',
