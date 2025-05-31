@@ -30,7 +30,7 @@ const Hero = () => {
                 asChild
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px]"
               >
-                <Link to="/services">{home.hero.serviceButtonText}</Link>
+                <Link  to="/services">{home.hero.serviceButtonText}</Link>
               </Button>
             </div>
             <div className="mt-8 flex items-center">

@@ -10,6 +10,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Preload critical fonts (adjust paths and types based on actual font files used) -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kYpdlcpgHxY_dDwzho.woff2" as="font" type="font/woff2" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="canonical" href="https://agapeplumbinginc.com/" />
 
@@ -57,12 +62,12 @@
         "@type": "GeoCircle",
         "geoMidpoint": {
           "@type": "GeoCoordinates",
-          "latitude": 39.4335, // Center of your primary service area
+          "latitude": 39.4335,
           "longitude": -77.4153
         },
         "geoRadius": 32186.9 // Approx 20 miles in meters - adjust as needed for "surrounding areas"
       },
-      "openingHoursSpecification": [ // Reflects standard hours; emergency service is highlighted in description/text
+      "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
@@ -81,19 +86,15 @@
           "opens": "08:00",
           "closes": "13:00"
         }
-        // For 24/7 emergency service, ensure this is very clear in your website text.
-        // You can also add another OpeningHoursSpecification for "EmergencyService" if you structure it carefully,
-        // or list "24/7 Emergency Service Available" prominently.
       ],
-      "sameAs": [ // Add all your social media and relevant directory profiles
-        "https://www.facebook.com/agapeplumbing", // Example, update if different
-        "https://www.instagram.com/agapeplumbing", // Example, update if different
-        "https://www.yelp.com/biz/your-yelp-listing" // IMPORTANT: Add your Yelp, BBB, etc.
-        // "Your Google Business Profile URL here" (if you can find a stable URL for it)
+      "sameAs": [
+        "https://www.facebook.com/agapeplumbing",
+        "https://www.instagram.com/agapeplumbing",
+        "https://www.yelp.com/biz/your-yelp-listing"
       ],
-      "priceRange": "$$", // Or adjust as appropriate: $, $$, $$$
+      "priceRange": "$$",
       "description": "Agape Drain & Plumbing LLC offers 24/7 emergency plumbing services for residential customers in Frederick, MD and surrounding areas. We specialize in fast response times and exceptional customer service for all urgent plumbing needs, including pipe repair, leak repair, and drain issues. Licensed and insured.",
-      "hasOfferCatalog": { // List your core services
+      "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Plumbing Services",
         "itemListElement": [
@@ -125,7 +126,6 @@
               "name": "Drain Cleaning"
             }
           }
-          // Add more services as relevant
         ]
       }
     }
