@@ -17,9 +17,9 @@
 
   <link rel="canonical" href="https://agapeplumbinginc.com/" />
 
-  <!-- Preload your main CSS bundle to fetch it earlier without blocking rendering -->
-  <link rel="preload" href="/src/index.css" as="style">
-  <link rel="stylesheet" href="/src/index.css">
+  <!-- Asynchronously load your main CSS bundle to prevent render-blocking -->
+  <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
 
   <meta property="og:title" content="24/7 Emergency Plumber in Frederick, MD | Agape Drain & Plumbing LLC" />
   <meta property="og:description" content="Agape Drain & Plumbing LLC offers fast, reliable 24/7 emergency plumbing for residential customers in Frederick, MD. Exceptional customer service guaranteed." />
