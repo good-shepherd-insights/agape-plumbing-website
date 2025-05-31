@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
           ],
           criticalConfig: {
             inline: true,
-            extract: false,
+            extract: true,
             // minify: true, 
             ignore: ['@font-face'],
             width: 1300,
