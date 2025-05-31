@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useContent } from '@/hooks/use-content';
 
 const Hero = () => {
@@ -24,7 +25,7 @@ const Hero = () => {
                 {home.hero.cta}
               </Button>
               <Button variant="outline" size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px]">
-                {home.hero.serviceButtonText}
+                <Link to="/services">{home.hero.serviceButtonText}</Link>
               </Button>
             </div>
             <div className="mt-8 flex items-center">

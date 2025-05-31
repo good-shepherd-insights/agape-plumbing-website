@@ -39,25 +39,25 @@ export const siteCopy = {
       title: "Agape Drain & Plumbing | Licensed Plumbing Services in Frederick, MD",
       description: "Trusted plumbing contractors serving Frederick and surrounding areas with emergency services, repairs, installations, and more. Licensed and insured.",
       keywords: "plumbing contractor, emergency plumber, plumbing repairs, plumbing installation, Frederick plumber",
-      canonical: "https://agapeplumbing.com/"
+      canonical: "https://agapeplumbinginc.com/"
     },
     about: {
       title: "About Agape Drain & Plumbing | Frederick's Trusted Plumbers",
       description: "Learn about Agape Drain & Plumbing - a professional business providing quality plumbing services in Frederick, MD since 2016. Licensed and insured.",
       keywords: "about Agape Plumbing, plumbing company history, plumbing contractors Frederick, licensed plumbers",
-      canonical: "https://agapeplumbing.com/about"
+      canonical: "https://agapeplumbinginc.com/about"
     },
     services: {
       title: "Professional Plumbing Services | Agape Drain & Plumbing",
       description: "Comprehensive plumbing services including repairs, installations, water heater services, drain cleaning, and emergency support. Licensed plumbers serving Frederick, MD.",
       keywords: "plumbing services, emergency plumbing, water heater installation, drain cleaning, plumbing repairs, commercial plumbing",
-      canonical: "https://agapeplumbing.com/services"
+      canonical: "https://agapeplumbinginc.com/services"
     },
     contact: {
       title: "Contact Agape Drain & Plumbing | Professional Plumbers",
       description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (227) 223-9057 or submit our online form.",
       keywords: "contact plumber, plumbing company phone number, emergency plumber contact, plumbing quote, plumbing estimate",
-      canonical: "https://agapeplumbing.com/contact"
+      canonical: "https://agapeplumbinginc.com/contact"
     }
   },
   
@@ -90,7 +90,7 @@ export const siteCopy = {
         {
           id: 1,
           title: 'Licensed & Insured',
-          description: 'CA License #992416. Fully bonded and insured for your protection and peace of mind.'
+          description: 'Fully bonded and insured for your protection and peace of mind.'
         },
         {
           id: 2,
@@ -554,42 +554,42 @@ export const siteCopy = {
           id: 1,
           title: "Emergency Plumbing",
           description: "24/7 emergency services for urgent plumbing issues including burst pipes, flooding, and sewer backups.",
-          link: "/services/emergency",
+          link: "/services/emergency-plumbing",
           features: ["Available 24/7/365", "Fast response times", "Licensed professionals"]
         },
         {
           id: 2,
           title: "Pipe Repair",
           description: "Expert pipe repair services including leak detection, pipe replacement, and new plumbing line installation.",
-          link: "/services/repairs",
+          link: "/services/pipe-repair",
           features: ["Leak detection & repair", "Pipe replacement", "New pipe installation"]
         },
         {
           id: 3,
           title: "Faucets & Fixtures",
           description: "Repairing leaky faucets, replacing outdated fixtures, and installing new kitchen or bathroom faucets.",
-          link: "/services/fixtures",
+          link: "/services/faucets-fixtures",
           features: ["Faucet repair/replacement", "Fixture installations", "Water-saving upgrades"]
         },
         {
           id: 4,
           title: "Toilet Services",
           description: "Fixing running or clogged toilets, replacing old models, and installing new toilets to meet your needs.",
-          link: "/services/toilets",
+          link: "/services/toilet-services",
           features: ["Toilet repair", "New installations", "Water-efficient options"]
         },
         {
           id: 5,
           title: "Kitchen Plumbing",
           description: "Repairing and replacing kitchen sinks, garbage disposals, and fixing drain pipes.",
-          link: "/services/kitchen",
+          link: "/services/kitchen-plumbing",
           features: ["Sink & disposal repair", "Drain pipe replacement", "Fixture upgrades"]
         },
         {
           id: 6,
           title: "Water Heater Services",
           description: "Repairing and replacing gas or electric water heaters. Includes expansion tank installation and maintenance.",
-          link: "/services/water-heaters",
+          link: "/services/water-heater-services",
           features: ["Gas/electric units", "Expansion tank installs", "Energy-efficient systems"]
         },
         {
