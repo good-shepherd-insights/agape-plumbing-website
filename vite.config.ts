@@ -5,7 +5,7 @@ import critical from 'rollup-plugin-critical';
 
 export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
-  const criticalUrl = "http://localhost:8080"; // Use Vercel URL or fallback to localhost
+  const criticalUrl = "https://agape-plumbing.vercel.app/"; // Use Vercel URL or fallback to localhost
 
   return {
     plugins: [
