@@ -39,6 +39,6 @@ export const waterHeaterServicesCopy = {
     title: "Water Heater Repair & Installation Frederick MD | Tankless Water Heaters | Licensed Plumbers",
     description: "Professional water heater services in Frederick, MD. Expert tank & tankless water heater repair, installation & maintenance. Licensed plumbers serving Frederick County, Gaithersburg, Rockville with energy-efficient solutions.",
     keywords: "water heater repair frederick md, tankless water heater frederick, water heater installation frederick, water heater replacement frederick, hot water heater repair frederick, emergency water heater repair frederick, gas water heater frederick, electric water heater frederick, hybrid water heater frederick, water heater maintenance frederick, commercial water heater frederick, residential water heater frederick, water heater contractor frederick, licensed water heater repair frederick, water heater repair gaithersburg, water heater repair rockville, energy efficient water heater frederick, water heater service frederick md, no hot water frederick md",
-    canonical: "https://agapeplumbingfrederick.com/services/water-heater-services"
+    canonical: "https://agapeplumbinginc.com/services/water-heater-services"
   },
 };

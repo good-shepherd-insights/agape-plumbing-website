@@ -9,7 +9,7 @@ const Hero = () => {
   return <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-8 sm:py-16 border-b-4 border-black">
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
+          <div className="">
             <span className="inline-block bg-white text-plumbing-900 px-4 py-2 font-mono uppercase text-sm font-bold mb-6 border-2 border-black rounded-md">
               {home.hero.emergencyBanner}
             </span>
@@ -24,7 +24,12 @@ const Hero = () => {
               <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px]">
                 {home.hero.cta}
               </Button>
-              <Button variant="outline" size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px]">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                asChild
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px]"
+              >
                 <Link to="/services">{home.hero.serviceButtonText}</Link>
               </Button>
             </div>
@@ -38,7 +43,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="relative animate-fade-in">
+          <div className="relative">
             <div className="bg-white p-8 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)]">
               <h2 className="text-plumbing-800 text-2xl font-bold mb-4 uppercase">
                 {home.hero.requestFormTitle}

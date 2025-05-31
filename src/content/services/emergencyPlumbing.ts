@@ -39,6 +39,6 @@ export const emergencyPlumbingCopy = {
     title: "24/7 Emergency Plumber Frederick MD | Burst Pipe Repair | Same-Day Service",
     description: "Emergency plumbing services in Frederick, MD available 24/7. Licensed plumbers for burst pipes, water leaks, clogged drains & plumbing disasters. Serving Frederick County, Gaithersburg, Rockville with rapid response times.",
     keywords: "emergency plumber frederick md, 24/7 plumber frederick, burst pipe repair frederick, emergency plumbing frederick md, water leak repair frederick, emergency drain cleaning frederick, plumbing disaster frederick, same day plumber frederick, weekend plumber frederick, holiday plumber frederick, emergency plumbing gaithersburg, emergency plumbing rockville, licensed emergency plumber frederick, fast plumber frederick md, urgent plumbing repair frederick, emergency water heater repair frederick, emergency toilet repair frederick, flooded basement frederick md, pipe burst frederick md, plumbing emergency montgomery county",
-    canonical: "https://agapeplumbingfrederick.com/services/emergency-plumbing"
+    canonical: "https://agapeplumbinginc.com/services/emergency-plumbing"
   },
 };

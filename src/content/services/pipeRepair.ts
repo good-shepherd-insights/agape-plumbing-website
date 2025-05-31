@@ -39,6 +39,6 @@ export const pipeRepairCopy = {
     title: "Pipe Repair Services Frederick MD | Leak Detection & Repiping | Licensed Plumbers",
     description: "Professional pipe repair services in Frederick, MD. Expert leak detection, pipe replacement & repiping for copper, PEX, PVC pipes. Licensed plumbers serving Frederick County, Gaithersburg, Rockville with advanced equipment.",
     keywords: "pipe repair frederick md, leak detection frederick, pipe replacement frederick, repiping frederick md, copper pipe repair frederick, pex pipe installation frederick, pvc pipe repair frederick, water leak repair frederick, pipe leak detection frederick, emergency pipe repair frederick, slab leak repair frederick, pipe burst repair frederick, underground pipe repair frederick, pipe repair contractor frederick, licensed pipe repair frederick, pipe repair gaithersburg, pipe repair rockville, commercial pipe repair frederick, residential pipe repair frederick, pipe inspection frederick md",
-    canonical: "https://agapeplumbingfrederick.com/services/pipe-repair"
+    canonical: "https://agapeplumbinginc.com/services/pipe-repair"
   },
 };

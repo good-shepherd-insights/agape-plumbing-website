@@ -22,7 +22,7 @@ const Index = () => {
     name="keywords"
     content="Agape Drain & Plumbing, emergency plumber DMV, pipe repair Washington DC, faucet installation Maryland, toilet repair Virginia, sump pump services, water heater replacement, garbage disposal repair, licensed plumber DMV"
   />
-  <link rel="canonical" href="https://brand.site/AgapePlumbing" />
+  <link rel="canonical" href="https://agapeplumbinginc.com/" />
 </Helmet>
       
       <Header />

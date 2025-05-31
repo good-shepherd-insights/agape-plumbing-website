@@ -39,6 +39,6 @@ export const toiletServicesCopy = {
     title: "Toilet Repair & Installation Frederick MD | Running Toilet Fix | Licensed Plumbers",
     description: "Professional toilet repair & installation services in Frederick, MD. Expert toilet repair, replacement & high-efficiency toilet installation. Licensed plumbers serving Frederick County, Gaithersburg, Rockville.",
     keywords: "toilet repair frederick md, toilet installation frederick, running toilet repair frederick, toilet replacement frederick, toilet clog repair frederick, toilet leak repair frederick, high efficiency toilet frederick, toilet service frederick md, emergency toilet repair frederick, commercial toilet repair frederick, residential toilet service frederick, toilet contractor frederick, licensed toilet repair frederick, toilet repair gaithersburg, toilet repair rockville, toilet installation contractor frederick, water saving toilet frederick, toilet plumber frederick md, toilet maintenance frederick",
-    canonical: "https://agapeplumbingfrederick.com/services/toilet-services"
+    canonical: "https://agapeplumbinginc.com/services/toilet-services"
   },
 };

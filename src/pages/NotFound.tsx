@@ -30,7 +30,7 @@ const NotFound = () => {
     name="keywords"
     content="Agape Drain & Plumbing, 404 error, page not found, plumbing services DMV, Washington DC plumber, Maryland plumber, Virginia plumber"
   />
-  <link rel="canonical" href="https://brand.site/AgapePlumbing" />
+  <link rel="canonical" href="https://agapeplumbinginc.com/" />
 </Helmet>
       
       <Header />

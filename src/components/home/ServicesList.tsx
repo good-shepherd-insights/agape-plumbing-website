@@ -22,19 +22,28 @@ const ServicesList = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesList.services.map((service) => (
-            <div key={service.id} className="brutalist-card p-6">
-              <h3 className="text-xl font-bold mb-3 text-plumbing-800 uppercase">{service.title}</h3>
-              <p className="mb-4 text-gray-600">{service.description}</p>
-              <ul className="mb-6 space-y-2">
-                {service.features.map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+            <div key={service.id} className="brutalist-card p-6 flex flex-col justify-between">
+              <div>
+                <h3 className="text-xl font-bold mb-3 text-plumbing-800 uppercase">{service.title}</h3>
+                <p className="mb-4 text-gray-600">{service.description}</p>
+                <ul className="mb-6 space-y-2">
+                  {service.features.map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                      <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <Link to={service.link}>
-                <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px]">Learn More</Button>
+                <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px] group relative overflow-hidden">
+                  <span className="transition-transform duration-300 ease-in-out group-hover:-translate-y-full absolute inset-0 flex items-center justify-center">
+                    Learn More
+                  </span>
+                  <span className="transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0 absolute inset-0 flex items-center justify-center">
+                    Learn More about {service.title}
+                  </span>
+                </Button>
               </Link>
             </div>
           ))}

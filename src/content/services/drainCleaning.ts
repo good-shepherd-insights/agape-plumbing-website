@@ -39,6 +39,6 @@ export const drainCleaningCopy = {
     title: "#1 Drain Cleaning Services Frederick MD | 24/7 Emergency Clog Removal | Licensed Plumbers",
     description: "Professional drain cleaning services in Frederick, MD. Expert hydro jetting, video inspection & emergency clog removal for sinks, showers, tubs & main lines. Licensed plumbers serving Frederick County, Gaithersburg, Rockville. Same-day service available.",
     keywords: "drain cleaning frederick md, emergency drain cleaning frederick, hydro jetting frederick md, clogged drain repair frederick, video drain inspection frederick, sink drain cleaning frederick, shower drain cleaning frederick, main line cleaning frederick, drain snake service frederick, commercial drain cleaning frederick, residential drain cleaning frederick, 24/7 drain cleaning frederick, licensed plumber frederick md, drain cleaning gaithersburg md, drain cleaning rockville md, drain cleaning montgomery county, sewer line cleaning frederick, floor drain cleaning frederick, bathtub drain cleaning frederick",
-    canonical: "https://agapeplumbingfrederick.com/services/drain-cleaning"
+    canonical: "https://agapeplumbinginc.com/services/drain-cleaning"
   },
 };
