@@ -5,24 +5,25 @@ import critical from 'rollup-plugin-critical';
 
 export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
-  const criticalUrl = process.env.VITE_VERCEL_URL || 'http://localhost:4173'; // Use Vercel URL or fallback to localhost
+  const criticalUrl = "https://www.agapeplumbinginc.com"; // Use Vercel URL or fallback to localhost
 
   return {
     plugins: [
       react(),
       isProduction &&
         critical({
+          criticalBase: 'dist/',
           criticalUrl: criticalUrl, // Use the dynamically set URL
           criticalPages: [
-            { uri: '', template: 'index' },
-            { uri: 'about', template: 'about/index' },
-            { uri: 'contact', template: 'contact/index' },
-            { uri: 'services', template: 'services/index' },
+            { uri: '/', template: 'index' },
+            // { uri: 'about', template: 'about/index' },
+            // { uri: 'contact', template: 'contact/index' },
+            // { uri: 'services', template: 'services/index' },
           ],
           criticalConfig: {
             inline: true,
-            extract: true,
-            // minify: true, // Removed as per previous fix
+            extract: false,
+            // minify: true, 
             ignore: ['@font-face'],
             width: 1300,
             height: 900,
