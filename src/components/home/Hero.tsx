@@ -39,9 +39,9 @@ const Hero = () => {
           </div>
           <div className="relative animate-fade-in">
             <div className="bg-white p-8 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)]">
-              <h3 className="text-plumbing-800 text-2xl font-bold mb-4 uppercase">
+              <h2 className="text-plumbing-800 text-2xl font-bold mb-4 uppercase">
                 {home.hero.requestFormTitle}
-              </h3>
+              </h2>
               <form className="space-y-4">
                 <div>
                   <input type="text" placeholder="Your Name" className="w-full p-3 brutalist-input" />

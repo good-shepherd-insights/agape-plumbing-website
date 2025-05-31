@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1 uppercase">{reason.title}</h4>
+                    <h3 className="font-bold mb-1 uppercase">{reason.title}</h3>
                     <p className="text-gray-600">{reason.description}</p>
                   </div>
                 </div>)}
