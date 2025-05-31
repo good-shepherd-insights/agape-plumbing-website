@@ -32,9 +32,8 @@ export default defineConfig(({ mode }) => ({
         inline: true,
         // Extract and defer non-critical CSS
         extract: true,
-        // Minify critical CSS
-        minify: true,
-        // Ignore font-face rules to prevent Google Fonts blocking
+        // Minify critical CSS - REMOVED THIS LINE
+        // ignore font-face rules to prevent Google Fonts blocking
         ignore: {
           atrule: ['@font-face'],
           rule: [/\.font/]
