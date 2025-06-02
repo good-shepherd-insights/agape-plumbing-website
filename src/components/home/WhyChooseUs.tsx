@@ -4,12 +4,13 @@ import { useContent } from '@/hooks/use-content';
 const WhyChooseUs = () => {
   const { home } = useContent();
   
-  return <section className="py-16 md:py-24 brutalist-section">
+  return 
+    <section className="py-16 md:py-24 brutalist-section">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="mb-6">
-              <span className="font-mono uppercase text-sm font-bold border-b-2 border-black">WHY CHOOSE US</span>
+              <span className="font-mono uppercase text-sm font-bold border-b-2 border-black">{home.sections.whyChooseUs}</span>
               <h2 className="mt-2 uppercase">{home.whyChooseUs.heading}</h2>
             </div>
             <p className="text-lg text-gray-700 mb-8">

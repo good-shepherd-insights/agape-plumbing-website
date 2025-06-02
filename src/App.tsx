@@ -13,6 +13,8 @@ import ServiceDetail from "./pages/services/ServiceDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import LocationServices from "./pages/services/LocationServices";
+import LocationServiceDetail from "./pages/services/LocationServiceDetail";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:location" element={<LocationServices />} />
+            {/* New location-based service routes */}
+            <Route path="/services/:location/:serviceSlug" element={<ServiceDetail />} />
+            {/* Keep legacy routes for backward compatibility */}
             <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

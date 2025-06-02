@@ -1,80 +1,145 @@
 import { Button } from '@/components/ui/button';
-import { Phone } from 'lucide-react';
+import { Phone, ArrowRight, Clock, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useContent } from '@/hooks/use-content';
 
 const Hero = () => {
   const { home, company } = useContent();
   
-  return <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-8 sm:py-16 border-b-4 border-black">
+  return (
+    <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-20 md:py-24 border-b-4 border-black overflow-hidden">
+      {/* Performance-optimized background elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-white transform rotate-45"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-plumbing-200 transform -rotate-12"></div>
+      </div>
+      
       <div className="container-custom relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="">
-            <span className="inline-block bg-white text-plumbing-900 px-4 py-2 font-mono uppercase text-sm font-bold mb-6 border-2 border-black rounded-md">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4">
+          <div className="space-y-8">
+            <span className="inline-block bg-white text-plumbing-900 px-6 py-3 font-mono uppercase text-sm font-bold border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
               {home.hero.emergencyBanner}
             </span>
-            <h1 className="mb-6 uppercase">
-              {home.hero.trustedHeading} <br className="hidden md:block" />
-              <span className="text-primary-200">{home.hero.expertSubheading}</span>
-            </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-xl">
-              {company.name} {home.hero.description2}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px]">
+            
+            <div>
+              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-6 leading-tight">
+                {home.hero.trustedHeading} <br className="hidden md:block" />
+                <span className="text-plumbing-200">{home.hero.expertSubheading}</span>
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-xl leading-relaxed font-medium">
+                {company.name} {home.hero.description2}
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Button 
+                size="lg" 
+                className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
+              >
+                <Phone className="h-5 w-5 mr-2" />
                 {home.hero.cta}
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
                 asChild
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px]"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] transition-all duration-300 px-8 py-4"
               >
-                <Link  to="/services">{home.hero.serviceButtonText}</Link>
+                <Link to="/services" className="flex items-center">
+                  {home.hero.serviceButtonText}
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Link>
               </Button>
             </div>
-            <div className="mt-8 flex items-center">
-              <div className="bg-white rounded-md p-2 mr-4 border-2 border-black">
-                <Phone className="h-6 w-6 text-primary" />
+            
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center">
+                <div className="bg-white rounded-md p-3 mr-4 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+                  <Phone className="h-6 w-6 text-plumbing-800" />
+                </div>
+                <div>
+                  <p className="text-sm uppercase font-mono font-bold text-plumbing-200">{home.hero.callText}</p>
+                  <p className="text-2xl font-black">{company.phone}</p>
+                </div>
               </div>
-              <div>
-                <p className="text-sm uppercase font-mono">{home.hero.callText}</p>
-                <p className="text-2xl font-bold">{company.phone}</p>
+              
+              <div className="hidden md:flex items-center space-x-4 text-plumbing-200">
+                <div className="flex items-center">
+                  <Clock className="h-5 w-5 mr-2" />
+                  <span className="text-sm font-bold">24/7 Service</span>
+                </div>
+                <div className="flex items-center">
+                  <Shield className="h-5 w-5 mr-2" />
+                  <span className="text-sm font-bold">Licensed & Insured</span>
+                </div>
               </div>
             </div>
           </div>
+          
           <div className="relative">
-            <div className="bg-white p-8 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)]">
-              <h2 className="text-plumbing-800 text-2xl font-bold mb-4 uppercase">
-                {home.hero.requestFormTitle}
-              </h2>
-              <form className="space-y-4">
-                <div>
-                  <input type="text" placeholder="Your Name" className="w-full p-3 brutalist-input" />
+            <div className="bg-white p-8 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300">
+              <div className="flex items-center mb-6">
+                <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-4">
+                  <ArrowRight className="h-6 w-6" />
                 </div>
-                <div>
-                  <input type="tel" placeholder="Phone Number" className="w-full p-3 brutalist-input" />
+                <h2 className="text-plumbing-800 text-2xl md:text-3xl font-black uppercase">
+                  {home.hero.requestFormTitle}
+                </h2>
+              </div>
+              
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input 
+                    type="text" 
+                    placeholder={home.hero.form.placeholders.name} 
+                    className="w-full p-4 brutalist-input text-lg" 
+                    aria-label="Your Name"
+                  />
+                  <input 
+                    type="tel" 
+                    placeholder={home.hero.form.placeholders.phone} 
+                    className="w-full p-4 brutalist-input text-lg" 
+                    aria-label="Phone Number"
+                  />
                 </div>
-                <div>
-                  <input type="email" placeholder="Email Address" className="w-full p-3 brutalist-input" />
-                </div>
-                <div>
-                  <textarea placeholder="How can we help you?" rows={3} className="w-full p-3 brutalist-input"></textarea>
-                </div>
-                <Button className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
+                <input 
+                  type="email" 
+                  placeholder={home.hero.form.placeholders.email} 
+                  className="w-full p-4 brutalist-input text-lg" 
+                  aria-label="Email Address"
+                />
+                <textarea 
+                  placeholder={home.hero.form.placeholders.message} 
+                  rows={4} 
+                  className="w-full p-4 brutalist-input text-lg resize-none" 
+                  aria-label="Message"
+                ></textarea>
+                
+                <Button 
+                  className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px] transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]" 
+                  size="lg"
+                >
+                  <ArrowRight className="h-5 w-5 mr-2" />
                   {home.hero.requestFormButton}
                 </Button>
               </form>
-              <p className="text-center text-sm text-gray-600 mt-4">
-                {home.hero.requestFormConfirmation}
-              </p>
+              
+              <div className="mt-6 p-4 bg-gray-50 border-2 border-gray-200 rounded-md">
+                <p className="text-center text-sm text-gray-600 font-medium">
+                  {home.hero.requestFormConfirmation}
+                </p>
+              </div>
             </div>
-            {/* <div className="absolute -bottom-4 -right-4 bg-primary text-white py-2 px-4 border-2 border-black rounded-md">
-              <p className="font-bold">{home.hero.estimatesAvailable}</p>
+            
+            {/* Trust indicators */}
+            {/* <div className="absolute -bottom-4 -right-4 bg-plumbing-600 text-white py-3 px-6 border-2 border-black rounded-md shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]">
+              <p className="font-bold text-sm uppercase">Free Estimates</p>
             </div> */}
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

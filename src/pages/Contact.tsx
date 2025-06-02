@@ -1,7 +1,7 @@
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ArrowRight, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useContent } from '@/hooks/use-content';
 
@@ -20,137 +20,174 @@ const Contact = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-plumbing-800 text-white py-24 brutalist-section">
-          <div className="container-custom">
-            <div className="text-center">
-              <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-white">Get In Touch</span>
-              <h1 className="mb-4 uppercase">{contact.hero.title}</h1>
-              <p className="text-xl max-w-3xl mx-auto">
+        <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-20 md:py-32 border-b-4 border-black overflow-hidden">
+          <div className="container-custom relative z-10">
+            <div className="text-center px-4">
+              <span className="inline-block bg-white text-plumbing-900 px-6 py-3 font-mono uppercase text-sm font-bold mb-8 border-2 border-black rounded-md">
+                Get In Touch
+              </span>
+              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
+                {contact.hero.title}
+              </h1>
+              <p className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto font-bold uppercase tracking-wide">
                 {contact.hero.description}
               </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call Now: {company.phone}
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] px-8 py-4"
+                >
+                  Send Message
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Contact Info & Form */}
-        <section className="py-16 brutalist-section">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <section className="py-20 md:py-32">
+          <div className="container-custom px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              {/* Contact Information */}
               <div>
-                <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Contact Info</span>
-                <h2 className="text-3xl font-bold text-plumbing-700 mb-8 uppercase">{contact.contactInfo.title}</h2>
+                <div className="text-center lg:text-left mb-16">
+                  <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Contact Info</span>
+                  <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">
+                    {contact.contactInfo.title}
+                  </h2>
+                </div>
                 
-                <div className="space-y-6 mb-8">
-                  <div className="flex items-start brutalist-card p-4">
-                    <div className="bg-plumbing-800 border-2 border-black rounded-none p-3 mr-4">
-                      <Phone className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold uppercase">{contact.contactInfo.phone.title}</h3>
-                      <p className="text-xl font-bold text-plumbing-700">{company.phone}</p>
-                      <p className="text-gray-600">{contact.contactInfo.phone.description}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start brutalist-card p-4">
-                    <div className="bg-plumbing-800 border-2 border-black rounded-none p-3 mr-4">
-                      <Mail className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold uppercase">{contact.contactInfo.email.title}</h3>
-                      <p className="text-lg">{company.email}</p>
-                      <p className="text-gray-600">{contact.contactInfo.email.description}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start brutalist-card p-4">
-                    <div className="bg-plumbing-800 border-2 border-black rounded-none p-3 mr-4">
-                      <MapPin className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold uppercase">{contact.contactInfo.address.title}</h3>
-                      <p className="text-lg">{company.address.poBox}</p>
-                      <p className="text-lg">{company.address.city}, {company.address.state} {company.address.zip}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start brutalist-card p-4">
-                    <div className="bg-plumbing-800 border-2 border-black rounded-none p-3 mr-4">
-                      <Clock className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold uppercase">{contact.contactInfo.hours.title}</h3>
-                      <div className="border-l-2 border-black pl-4 mt-2">
-                        {contact.contactInfo.hours.schedule.map((item, index) => (
-                          <p key={index} className="text-lg">{item}</p>
-                        ))}
+                <div className="space-y-8 mb-12">
+                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                    <div className="flex items-start p-8">
+                      <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
+                        <Phone className="h-6 w-6" />
                       </div>
-                      <p className="font-bold mt-2">{contact.contactInfo.hours.note}</p>
+                      <div>
+                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.phone.title}</h3>
+                        <p className="text-2xl font-bold text-plumbing-800 mb-2">{company.phone}</p>
+                        <p className="text-gray-600">{contact.contactInfo.phone.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                    <div className="flex items-start p-8">
+                      <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
+                        <Mail className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.email.title}</h3>
+                        <p className="text-lg font-bold text-plumbing-800 mb-2">{company.email}</p>
+                        <p className="text-gray-600">{contact.contactInfo.email.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                    <div className="flex items-start p-8">
+                      <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
+                        <MapPin className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.address.title}</h3>
+                        <p className="text-lg font-bold text-plumbing-800">{company.address.poBox}</p>
+                        <p className="text-lg font-bold text-plumbing-800 mb-2">{company.address.city}, {company.address.state} {company.address.zip}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                    <div className="flex items-start p-8">
+                      <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
+                        <Clock className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.hours.title}</h3>
+                        <div className="border-l-4 border-plumbing-800 pl-4 mt-2">
+                          {contact.contactInfo.hours.schedule.map((item, index) => (
+                            <p key={index} className="text-lg font-medium mb-1">{item}</p>
+                          ))}
+                        </div>
+                        <p className="font-bold mt-3 text-plumbing-800">{contact.contactInfo.hours.note}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
-                <div className="brutalist-card p-6 border-t-4 border-black">
-                  <h3 className="text-xl font-bold mb-4 uppercase">{contact.serviceAreas.title}</h3>
-                  <p className="mb-4">
+                {/* Service Areas Card */}
+                <div className="brutalist-card bg-plumbing-800 text-white p-8 hover:translate-y-[-4px] transition-all duration-300">
+                  <h3 className="text-2xl font-black uppercase mb-6">{contact.serviceAreas.title}</h3>
+                  <p className="text-lg mb-6">
                     {contact.serviceAreas.description}
                   </p>
-                  <p className="border-l-2 border-black pl-4 font-mono text-sm">
-                    {contact.serviceAreas.note}
-                  </p>
+                  <div className="bg-white text-plumbing-800 p-4 border-2 border-black rounded-md">
+                    <p className="font-mono text-sm font-bold">
+                      {contact.serviceAreas.note}
+                    </p>
+                  </div>
                 </div>
               </div>
               
-              <div className="brutalist-card p-8 border-2 border-black">
-                <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Message Us</span>
-                <h2 className="text-2xl font-bold text-plumbing-700 mb-6 uppercase">{contact.contactForm.title}</h2>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Contact Form */}
+              <div className="brutalist-card p-8 md:p-12 bg-gray-50 hover:translate-y-[-4px] transition-all duration-300">
+                <div className="text-center mb-8">
+                  <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Message Us</span>
+                  <h2 className="text-3xl font-black uppercase text-plumbing-800 mb-6">{contact.contactForm.title}</h2>
+                </div>
+                
+                <form className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="firstName" className="block mb-2 font-medium uppercase text-sm">{contact.contactForm.fields.firstName}</label>
+                      <label htmlFor="firstName" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.firstName}</label>
                       <input
                         type="text"
                         id="firstName"
-                        className="w-full p-3 border-2 border-black rounded-none focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
                         required
                       />
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block mb-2 font-medium uppercase text-sm">{contact.contactForm.fields.lastName}</label>
+                      <label htmlFor="lastName" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.lastName}</label>
                       <input
                         type="text"
                         id="lastName"
-                        className="w-full p-3 border-2 border-black rounded-none focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
                         required
                       />
                     </div>
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block mb-2 font-medium uppercase text-sm">{contact.contactForm.fields.email}</label>
+                    <label htmlFor="email" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.email}</label>
                     <input
                       type="email"
                       id="email"
-                      className="w-full p-3 border-2 border-black rounded-none focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
                       required
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="phone" className="block mb-2 font-medium uppercase text-sm">{contact.contactForm.fields.phone}</label>
+                    <label htmlFor="phone" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.phone}</label>
                     <input
                       type="tel"
                       id="phone"
-                      className="w-full p-3 border-2 border-black rounded-none focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
                       required
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="service" className="block mb-2 font-medium uppercase text-sm">{contact.contactForm.fields.service}</label>
+                    <label htmlFor="service" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.service}</label>
                     <select
                       id="service"
-                      className="w-full p-3 border-2 border-black rounded-none focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
                     >
                       {contact.contactForm.serviceOptions.map((option, index) => (
                         <option key={index} value={index === 0 ? "" : option.toLowerCase().replace(/\s+/g, '')}>{option}</option>
@@ -159,16 +196,21 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block mb-2 font-medium uppercase text-sm">{contact.contactForm.fields.message}</label>
+                    <label htmlFor="message" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.message}</label>
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full p-3 border-2 border-black rounded-none focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all resize-none"
                       required
                     ></textarea>
                   </div>
                   
-                  <Button type="submit" className="w-full py-6 text-lg font-bold border-2 border-black bg-plumbing-800 rounded-none hover:translate-y-[-4px] transition-transform uppercase" size="lg">
+                  <Button 
+                    type="submit" 
+                    className="w-full py-6 text-lg font-bold border-2 border-black bg-plumbing-800 hover:bg-plumbing-700 text-white rounded-md hover:translate-y-[-4px] active:translate-y-0 shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] transition-all duration-200 uppercase" 
+                    size="lg"
+                  >
+                    <ArrowRight className="h-5 w-5 mr-2" />
                     {contact.contactForm.submitButton}
                   </Button>
                 </form>
@@ -178,22 +220,52 @@ const Contact = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 brutalist-section">
-          <div className="container-custom">
-            <div className="text-center mb-12">
-              <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Questions</span>
-              <h2 className="text-3xl font-bold text-plumbing-700 uppercase">{contact.faq.title}</h2>
+        <section className="py-20 md:py-32 bg-gray-50">
+          <div className="container-custom px-4">
+            <div className="text-center mb-16">
+              <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Questions</span>
+              <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">{contact.faq.title}</h2>
+              <p className="text-lg max-w-3xl mx-auto text-gray-600">
+                Find answers to common questions about our plumbing services
+              </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {contact.faq.questions.map((item, index) => (
-                <div key={index} className="brutalist-card p-6 border-t-4 border-black">
-                  <h3 className="text-xl font-bold mb-2 uppercase">{item.question}</h3>
-                  <p className="text-gray-700 border-l-2 border-black pl-4">
-                    {item.answer}
-                  </p>
+                <div key={index} className="brutalist-card bg-white p-8 group hover:translate-y-[-4px] transition-all duration-300">
+                  <div className="flex items-start">
+                    <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors flex-shrink-0">
+                      <CheckCircle className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700">{item.question}</h3>
+                      <p className="text-gray-700 border-l-4 border-plumbing-800 pl-4 leading-relaxed">
+                        {item.answer}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Emergency CTA */}
+        <section className="py-20 md:py-32">
+          <div className="container-custom px-4">
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-10 md:p-16 border-4 border-black rounded-lg shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-4px] transition-all duration-300">
+                <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">
+                  Plumbing Emergency?
+                </h2>
+                <p className="text-xl mb-8 max-w-2xl mx-auto">
+                  Don't wait! Our emergency plumbing team is available 24/7 to help you.
+                </p>
+                <Button size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
+                  <Phone className="h-6 w-6 mr-2" />
+                  Emergency Service: {company.phone}
+                </Button>
+              </div>
             </div>
           </div>
         </section>

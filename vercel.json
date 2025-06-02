@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/services/:location/:service",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/services/:location",
+      "destination": "/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

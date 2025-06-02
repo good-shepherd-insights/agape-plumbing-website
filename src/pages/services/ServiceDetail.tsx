@@ -5,6 +5,8 @@ import Footer from '../../components/layout/Footer';
 import Cta from '../../components/home/Cta';
 import { Helmet } from 'react-helmet-async';
 import { useServiceContent } from '@/hooks/use-service-content';
+import { Button } from '@/components/ui/button';
+import { Phone, CheckCircle } from 'lucide-react';
 
 const ServiceDetail = () => {
   const { serviceSlug } = useParams<{ serviceSlug: string }>();
@@ -14,11 +16,12 @@ const ServiceDetail = () => {
     return (
       <>
         <Header />
-        <main className="py-24">
-          <div className="container-custom text-center">
+        <main className="py-32">
+          <div className="container-custom text-center px-4">
             <div className="animate-pulse">
-              <div className="h-8 bg-gray-300 rounded w-1/2 mx-auto mb-4"></div>
-              <div className="h-4 bg-gray-300 rounded w-3/4 mx-auto"></div>
+              <div className="h-12 bg-gray-300 rounded w-1/2 mx-auto mb-6"></div>
+              <div className="h-6 bg-gray-300 rounded w-3/4 mx-auto mb-4"></div>
+              <div className="h-6 bg-gray-300 rounded w-2/3 mx-auto"></div>
             </div>
           </div>
         </main>
@@ -49,63 +52,120 @@ const ServiceDetail = () => {
       </Helmet>
       
       <Header />
+      
       <main>
         {/* Hero Section */}
-        <section className="bg-plumbing-800 text-white py-24 brutalist-section">
-          <div className="container-custom">
-            <div className="text-center mb-12">
-              <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-white">
+        <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-20 md:py-32 border-b-4 border-black">
+          <div className="container-custom relative z-10">
+            <div className="text-center px-4">
+              <span className="inline-block bg-white text-plumbing-900 px-6 py-3 font-mono uppercase text-sm font-bold mb-8 border-2 border-black rounded-md">
                 {content.hero.subtitle}
               </span>
-              <h1 className="mb-4 uppercase">{content.hero.title}</h1>
-              <p className="text-xl max-w-3xl mx-auto">
+              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
+                {content.hero.title}
+              </h1>
+              <p className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto font-bold uppercase tracking-wide">
                 {content.hero.description}
               </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call Now: (301) 658-0110
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] px-8 py-4"
+                >
+                  Get Free Estimate
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Service Introduction */}
-        <section className="py-16 brutalist-section">
-          <div className="container-custom">
-            <div className="max-w-4xl mx-auto mb-16">
-              <h2 className="text-plumbing-700 mb-6 uppercase text-center">{content.intro.title}</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {content.intro.description}
-              </p>
-            </div>
+        <div className="py-20 md:py-32">
+          <div className="container-custom px-4">
+            
+            {/* Service Introduction */}
+            <section className="mb-20 md:mb-32">
+              <div className="text-center mb-16">
+                <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Service Details</span>
+                <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">
+                  {content.intro.title}
+                </h2>
+              </div>
+              <div className="max-w-4xl mx-auto">
+                <div className="brutalist-card bg-white p-10 md:p-12">
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    {content.intro.description}
+                  </p>
+                </div>
+              </div>
+            </section>
 
             {/* Why Choose Us Section */}
-            <div className="mb-16">
-              <div className="text-center mb-12">
-                <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Why Choose Us</span>
-                <h2 className="text-plumbing-700 uppercase mb-8">{content.whyChooseUs.title}</h2>
+            <section className="brutalist-section bg-gray-50 mb-20 md:mb-32 p-12 md:p-16">
+              <div className="text-center mb-16">
+                <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Why Choose Us</span>
+                <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">
+                  {content.whyChooseUs.title}
+                </h2>
               </div>
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {content.whyChooseUs.reasons.map((reason, index) => (
-                  <div key={index} className="brutalist-card p-6 border-l-4 border-plumbing-800">
-                    <h3 className="text-xl font-bold mb-3 uppercase">{reason.title}</h3>
-                    <p className="text-gray-700">{reason.description}</p>
+                  <div key={index} className="brutalist-card bg-white p-8 border-l-4 border-plumbing-800">
+                    <div className="flex items-start">
+                      <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-6 flex-shrink-0">
+                        <CheckCircle className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700">
+                          {reason.title}
+                        </h3>
+                        <p className="text-gray-700 leading-relaxed">
+                          {reason.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>
-            </div>
+            </section>
 
             {/* Call to Action Section */}
-            <div className="text-center bg-gray-50 p-12 brutalist-card">
-              <h2 className="text-plumbing-700 mb-4 uppercase">{content.cta.title}</h2>
-              <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-                {content.cta.description}
-              </p>
-              <button className="bg-plumbing-800 text-white px-8 py-3 border-2 border-black font-bold uppercase hover:translate-y-[-2px] transition-all">
-                {content.cta.buttonText}
-              </button>
-            </div>
+            <section className="mb-20 md:mb-32">
+              <div className="brutalist-card bg-plumbing-800 text-white p-10 md:p-16">
+                <div className="text-center">
+                  <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">
+                    {content.cta.title}
+                  </h2>
+                  <p className="text-xl mb-8 max-w-3xl mx-auto">
+                    {content.cta.description}
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                    <Button size="lg" className="text-xl font-bold bg-white text-plumbing-800 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
+                      <Phone className="h-6 w-6 mr-2" />
+                      {content.cta.buttonText}
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="lg" 
+                      className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-xl font-bold rounded-md hover:translate-y-[-4px] px-10 py-6"
+                    >
+                      Request Quote
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-        </section>
+        </div>
 
         <Cta />
       </main>
+      
       <Footer />
     </>
   );
