@@ -55,7 +55,7 @@ const Header = () => {
             />
           </div>
           <span className="text-2xl md:text-3xl font-heading font-black">
-            <span className="text-plumbing-900 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.15)]">{company.name.split(' ')[0]}</span>{' '}
+            <span className="text-plumbing-800 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.15)]">{company.name.split(' ')[0]}</span>{' '}
             <span className="text-plumbing-800 drop-shadow-[0_1px_1px_rgba(0,0,0,0.1)]">{company.name.split(' ').slice(1).join(' ')}</span>
           </span>
         </Link>
