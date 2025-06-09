@@ -91,22 +91,22 @@ export const footer = {
     // }
   ],
   socialLinks: [
-    {
-      title: "Facebook",
-      link: "https://facebook.com"
-    },
-    {
-      title: "Instagram",
-      link: "https://instagram.com"
-    },
-    {
-      title: "LinkedIn",
-      link: "https://linkedin.com"
-    },
-    {
-      title: "Yelp",
-      link: "https://yelp.com"
-    }
+    // {
+    //   title: "Facebook",
+    //   link: "https://facebook.com"
+    // },
+    // {
+    //   title: "Instagram",
+    //   link: "https://instagram.com"
+    // },
+    // {
+    //   title: "LinkedIn",
+    //   link: "https://linkedin.com"
+    // },
+    // {
+    //   title: "Yelp",
+    //   link: "https://yelp.com"
+    // }
   ],
   copyright: "© {year} Agape Drain & Plumbing LLC. All Rights Reserved.",
   sections: {
