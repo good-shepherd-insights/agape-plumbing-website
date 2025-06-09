@@ -2,24 +2,36 @@ export const footer = {
   description: "Quality plumbing services with integrity and professionalism. Licensed and insured for your peace of mind.",
   services: [
     {
-      title: "24/7 Emergency Service",
-      link: "/services/emergency"
+      title: "Emergency Plumbing",
+      link: "/services/emergency-plumbing"
     },
     {
-      title: "Repairs & Maintenance",
-      link: "/services/repairs"
+      title: "Pipe Repair",
+      link: "/services/pipe-repair"
     },
     {
-      title: "Installations",
-      link: "/services/installations"
+      title: "Faucets & Fixtures",
+      link: "/services/faucets-fixtures"
     },
     {
-      title: "Water Heaters",
-      link: "/services/water-heaters"
+      title: "Toilet Services",
+      link: "/services/toilet-services"
     },
     {
-      title: "Drain & Sewer Cleaning",
+      title: "Kitchen Plumbing",
+      link: "/services/kitchen-plumbing"
+    },
+    {
+      title: "Water Heater Services",
+      link: "/services/water-heater-services"
+    },
+    {
+      title: "Drain Cleaning",
       link: "/services/drain-cleaning"
+    },
+    {
+      title: "Sewer Services",
+      link: "/services/sewer-services"
     },
     {
       title: "Commercial Plumbing",
@@ -44,8 +56,12 @@ export const footer = {
       link: "/areas/new-market"
     },
     {
-      title: "Thurmont",
-      link: "/areas/thurmont"
+      title: "Gaithersburg",
+      link: "/areas/gaithersburg"
+    },
+    {
+      title: "Rockville",
+      link: "/areas/rockville"
     }
   ],
   quickLinks: [
@@ -57,22 +73,22 @@ export const footer = {
       title: "Contact Us",
       link: "/contact"
     },
-    {
-      title: "Reviews",
-      link: "/testimonials"
-    },
-    {
-      title: "FAQs",
-      link: "/faqs"
-    },
-    {
-      title: "Privacy Policy",
-      link: "/privacy-policy"
-    },
-    {
-      title: "Terms of Service",
-      link: "/terms-of-service"
-    }
+    // {
+    //   title: "Reviews",
+    //   link: "/testimonials"
+    // },
+    // {
+    //   title: "FAQs",
+    //   link: "/faqs"
+    // },
+    // {
+    //   title: "Privacy Policy",
+    //   link: "/privacy-policy"
+    // },
+    // {
+    //   title: "Terms of Service",
+    //   link: "/terms-of-service"
+    // }
   ],
   socialLinks: [
     {

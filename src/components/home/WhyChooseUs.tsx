@@ -4,7 +4,7 @@ import { useContent } from '@/hooks/use-content';
 const WhyChooseUs = () => {
   const { home } = useContent();
   
-  return 
+  return (
     <section className="py-16 md:py-24 brutalist-section">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-bold mb-1 uppercase">{reason.title}</h3>
+                    <h3 className="font-bold text-2xl mb-1 uppercase">{reason.title}</h3>
                     <p className="text-gray-600">{reason.description}</p>
                   </div>
                 </div>)}
@@ -62,6 +62,6 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section> );
 };
 export default WhyChooseUs;

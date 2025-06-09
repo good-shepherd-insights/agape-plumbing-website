@@ -1,6 +1,6 @@
 export const emergencyPlumbingCopy = {
   hero: {
-    title: "Emergency Plumbing Services Near Me | 24/7 Rapid Response",
+    title: "Emergency Plumbing Services | Near Me",
     subtitle: "Your Trusted Local Emergency Plumbers in Frederick, MD & Surrounding Areas",
     description: "When plumbing disasters strike, you need immediate, reliable help. Our emergency plumbing services are available 24/7 to address urgent issues like burst pipes, severe leaks, and overflowing toilets, ensuring quick resolution and minimal damage.",
     imageAlt: "Emergency plumber fixing a burst pipe in Frederick, MD",

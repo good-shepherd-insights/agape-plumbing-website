@@ -75,13 +75,13 @@ const Services = () => {
                   <p className="text-gray-700 font-medium">{services.emergency.conclusion}</p>
                 </div>
                 <div className="brutalist-card bg-white p-8 md:p-12">
-                  <h3 className="text-xl md:text-2xl font-black mb-6 uppercase text-plumbing-700">{services.emergencyBenefits.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-black mb-6 uppercase text-black-100">{services.emergencyBenefits.title}</h3>
                   <ul className="space-y-6">
                     {services.emergencyBenefits.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start">
                         <div className="bg-plumbing-800 text-white border-2 border-black w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 font-bold">{index + 1}</div>
                         <div>
-                          <h4 className="font-black uppercase text-plumbing-700 mb-2">{benefit.title}</h4>
+                          <h4 className="font-black uppercase text-plumbing-900 mb-2">{benefit.title}</h4>
                           <p className="text-gray-700">{benefit.description}</p>
                         </div>
                       </li>
@@ -96,14 +96,14 @@ const Services = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="order-2 lg:order-1 brutalist-card bg-white p-8 md:p-12">
                   <div className="flex items-center mb-6">
-                    <h3 className="text-xl md:text-2xl font-black uppercase text-plumbing-700">{services.installationProcess.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-black uppercase text-black">{services.installationProcess.title}</h3>
                   </div>
                   <ol className="space-y-6">
                     {services.installationProcess.steps.map((step, index) => (
                       <li key={index} className="flex items-start">
                         <div className="bg-plumbing-800 text-white border-2 border-black w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 font-bold">{index + 1}</div>
                         <div>
-                          <h4 className="font-black uppercase text-plumbing-700 mb-2">{step.title}</h4>
+                          <h4 className="font-black uppercase text-plumbing-900 mb-2">{step.title}</h4>
                           <p className="text-gray-700">{step.description}</p>
                         </div>
                       </li>
@@ -147,7 +147,7 @@ const Services = () => {
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-flex items-center justify-center mr-4">
                         <Wrench className="h-6 w-6" />
                       </div>
-                      <h3 className="text-xl font-black uppercase text-plumbing-700 group-hover:text-plumbing-600">{service.title}</h3>
+                      <h3 className="text-xl font-black uppercase group-hover:text-plumbing-900">{service.title}</h3>
                     </div>
                     <ul className="space-y-3 border-l-4 border-plumbing-800 pl-6">
                       {service.features.map((feature, featureIndex) => (
@@ -205,7 +205,7 @@ const Services = () => {
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-flex items-center justify-center mb-6">
                         <IconComponent className="h-8 w-8" />
                       </div>
-                      <h3 className="text-lg font-black uppercase mb-4 text-plumbing-700">
+                      <h3 className="text-lg font-black uppercase mb-4 text-black">
                         {benefit.title}
                       </h3>
                       <p className="text-gray-600 text-sm">

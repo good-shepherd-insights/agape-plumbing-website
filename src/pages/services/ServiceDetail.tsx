@@ -62,7 +62,17 @@ const ServiceDetail = () => {
                 {content.hero.subtitle}
               </span>
               <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
-                {content.hero.title}
+              {content.hero.title.includes('|') ? (
+                  <>
+                    {content.hero.title.split('|')[0].trim()}
+                    <br />
+                    <span className="text-plumbing-200">
+                      {content.hero.title.split('|')[1]?.trim()}
+                    </span>
+                  </>
+                ) : (
+                  content.hero.title
+                )}
               </h1>
               <p className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto font-bold uppercase tracking-wide">
                 {content.hero.description}
@@ -84,11 +94,11 @@ const ServiceDetail = () => {
           </div>
         </section>
 
-        <div className="py-20 md:py-32">
+        <div className="py-20">
           <div className="container-custom px-4">
             
             {/* Service Introduction */}
-            <section className="mb-20 md:mb-32">
+            <section className="mb-20">
               <div className="text-center mb-16">
                 <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Service Details</span>
                 <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">
@@ -105,7 +115,7 @@ const ServiceDetail = () => {
             </section>
 
             {/* Why Choose Us Section */}
-            <section className="brutalist-section bg-gray-50 mb-20 md:mb-32 p-12 md:p-16">
+            <section className="brutalist-section bg-gray-50 mb-20 p-12 md:p-16">
               <div className="text-center mb-16">
                 <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Why Choose Us</span>
                 <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">
@@ -121,7 +131,7 @@ const ServiceDetail = () => {
                         <CheckCircle className="h-6 w-6" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700">
+                        <h3 className="text-xl font-black uppercase mb-4">
                           {reason.title}
                         </h3>
                         <p className="text-gray-700 leading-relaxed">
@@ -135,7 +145,7 @@ const ServiceDetail = () => {
             </section>
 
             {/* Call to Action Section */}
-            <section className="mb-20 md:mb-32">
+            <section className="mb-20">
               <div className="brutalist-card bg-plumbing-800 text-white p-10 md:p-16">
                 <div className="text-center">
                   <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">

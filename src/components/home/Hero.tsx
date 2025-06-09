@@ -7,7 +7,7 @@ const Hero = () => {
   const { home, company } = useContent();
   
   return (
-    <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-20 md:py-24 border-b-4 border-black overflow-hidden">
+    <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-14 md:py-14 border-b-4 border-black overflow-hidden">
       {/* Performance-optimized background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white transform rotate-45"></div>
@@ -32,13 +32,15 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button 
-                size="lg" 
-                className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                {home.hero.cta}
-              </Button>
+              <a href={`tel:${company.phone.replace(/\D/g, '')}`}>
+                <Button 
+                  size="lg" 
+                  className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
+                >
+                  <Phone className="h-5 w-5 mr-2" />
+                  {home.hero.cta}
+                </Button>
+              </a>
               <Button 
                 variant="outline" 
                 size="lg" 
@@ -59,7 +61,9 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-sm uppercase font-mono font-bold text-plumbing-200">{home.hero.callText}</p>
-                  <p className="text-2xl font-black">{company.phone}</p>
+                  <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="text-2xl font-black hover:underline">
+                    {company.phone}
+                  </a>
                 </div>
               </div>
               

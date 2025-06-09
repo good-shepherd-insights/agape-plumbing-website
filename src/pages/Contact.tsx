@@ -69,7 +69,7 @@ const Contact = () => {
                         <Phone className="h-6 w-6" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.phone.title}</h3>
+                        <h3 className="text-lg font-black uppercase mb-2">{contact.contactInfo.phone.title}</h3>
                         <p className="text-2xl font-bold text-plumbing-800 mb-2">{company.phone}</p>
                         <p className="text-gray-600">{contact.contactInfo.phone.description}</p>
                       </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                         <Mail className="h-6 w-6" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.email.title}</h3>
+                        <h3 className="text-lg font-black uppercase mb-2">{contact.contactInfo.email.title}</h3>
                         <p className="text-lg font-bold text-plumbing-800 mb-2">{company.email}</p>
                         <p className="text-gray-600">{contact.contactInfo.email.description}</p>
                       </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                         <MapPin className="h-6 w-6" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.address.title}</h3>
+                        <h3 className="text-lg font-black uppercase mb-2">{contact.contactInfo.address.title}</h3>
                         <p className="text-lg font-bold text-plumbing-800">{company.address.poBox}</p>
                         <p className="text-lg font-bold text-plumbing-800 mb-2">{company.address.city}, {company.address.state} {company.address.zip}</p>
                       </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                         <Clock className="h-6 w-6" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-black uppercase mb-2 text-plumbing-700">{contact.contactInfo.hours.title}</h3>
+                        <h3 className="text-lg font-black uppercase mb-2">{contact.contactInfo.hours.title}</h3>
                         <div className="border-l-4 border-plumbing-800 pl-4 mt-2">
                           {contact.contactInfo.hours.schedule.map((item, index) => (
                             <p key={index} className="text-lg font-medium mb-1">{item}</p>
@@ -220,7 +220,7 @@ const Contact = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 md:py-32 bg-gray-50">
+        <section className="bg-gray-50">
           <div className="container-custom px-4">
             <div className="text-center mb-16">
               <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Questions</span>
@@ -238,7 +238,7 @@ const Contact = () => {
                       <CheckCircle className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700">{item.question}</h3>
+                      <h3 className="text-xl font-black uppercase mb-4">{item.question}</h3>
                       <p className="text-gray-700 border-l-4 border-plumbing-800 pl-4 leading-relaxed">
                         {item.answer}
                       </p>

@@ -57,13 +57,13 @@ const About = () => {
                     <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-4">
                       <Clock className="h-6 w-6" />
                     </div>
-                    <h3 className="text-2xl font-black uppercase text-plumbing-800">{about.milestones.title}</h3>
+                    <h3 className="text-2xl font-black uppercase text-black">{about.milestones.title}</h3>
                   </div>
                   <ul className="space-y-6 border-l-4 border-plumbing-800 pl-6">
                     {about.milestones.events.map((event, index) => (
                       <li key={index} className="relative">
                         <div className="absolute -left-8 w-4 h-4 bg-plumbing-800 border-2 border-white rounded-full"></div>
-                        <div className="font-black text-plumbing-800 text-lg mb-2">{event.year}</div>
+                        <div className="font-black text-plumbing-900 text-lg mb-2">{event.year}</div>
                         <p className="text-gray-700 leading-relaxed">{event.description}</p>
                       </li>
                     ))}
@@ -86,7 +86,7 @@ const About = () => {
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <Target className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700 group-hover:text-plumbing-600">{about.mission.title}</h3>
+                  <h3 className="text-xl font-black uppercase mb-4 group-hover:text-plumbing-600">{about.mission.title}</h3>
                   <p className="text-gray-700 leading-relaxed">
                     {about.mission.description}
                   </p>
@@ -96,7 +96,7 @@ const About = () => {
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <Eye className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700 group-hover:text-plumbing-600">{about.vision.title}</h3>
+                  <h3 className="text-xl font-black uppercase mb-4 group-hover:text-plumbing-600">{about.vision.title}</h3>
                   <p className="text-gray-700 leading-relaxed">
                     {about.vision.description}
                   </p>
@@ -106,7 +106,7 @@ const About = () => {
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <Heart className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-black uppercase mb-4 text-plumbing-700 group-hover:text-plumbing-600">{about.values.title}</h3>
+                  <h3 className="text-xl font-black uppercase mb-4 group-hover:text-plumbing-600">{about.values.title}</h3>
                   <ul className="text-gray-700 space-y-3 text-left">
                     {about.values.items.map((item, index) => (
                       <li key={index} className="flex items-start">
@@ -167,15 +167,15 @@ const About = () => {
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <Shield className="h-8 w-8" />
                   </div>
-                  <div className="text-2xl font-black text-plumbing-800 mb-3">CA</div>
-                  <p className="font-bold uppercase text-sm text-gray-700">CA Contractor's License #992416</p>
+                  <div className="text-2xl font-black mb-3">MD</div>
+                  <p className="font-bold uppercase text-sm text-gray-700">MD Contractor's License #992416</p>
                 </div>
                 
                 <div className="brutalist-card bg-white group hover:translate-y-[-4px] transition-all duration-300 p-8 text-center">
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <Award className="h-8 w-8" />
                   </div>
-                  <div className="text-2xl font-black text-plumbing-800 mb-3">BBB</div>
+                  <div className="text-2xl font-black mb-3">BBB</div>
                   <p className="font-bold uppercase text-sm text-gray-700">Better Business Bureau A+ Rating</p>
                 </div>
                 
@@ -183,7 +183,7 @@ const About = () => {
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <CheckCircle className="h-8 w-8" />
                   </div>
-                  <div className="text-2xl font-black text-plumbing-800 mb-3">EPA</div>
+                  <div className="text-2xl font-black mb-3">EPA</div>
                   <p className="font-bold uppercase text-sm text-gray-700">EPA Certified</p>
                 </div>
                 
@@ -191,7 +191,7 @@ const About = () => {
                   <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                     <Users className="h-8 w-8" />
                   </div>
-                  <div className="text-2xl font-black text-plumbing-800 mb-3">PHCC</div>
+                  <div className="text-2xl font-black mb-3">PHCC</div>
                   <p className="font-bold uppercase text-sm text-gray-700">Plumbing-Heating-Cooling Contractors Association</p>
                 </div>
               </div>
