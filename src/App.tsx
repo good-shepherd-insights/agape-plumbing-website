@@ -31,7 +31,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             {/* Use different prefixes to avoid conflicts */}
             <Route path="/areas/:location" element={<LocationServices />} />
-            <Route path="/services/areas/:location/:serviceSlug" element={<ServiceDetail />} />
+            <Route path="/services/:location/:serviceSlug" element={<ServiceDetail />} />
             <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
