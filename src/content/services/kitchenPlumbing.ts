@@ -36,9 +36,9 @@ export const kitchenPlumbingCopy = {
     buttonText: "Schedule Kitchen Plumbing Service",
   },
   meta: {
-    title: "Kitchen Plumbing Services Frederick MD | Sink, Faucet & Disposal Repair | Licensed Plumbers",
-    description: "Professional kitchen plumbing services in Frederick, MD. Expert sink installation, faucet repair, garbage disposal service & dishwasher hookups. Licensed plumbers serving Frederick County, Gaithersburg, Rockville.",
-    keywords: "kitchen plumbing frederick md, kitchen sink installation frederick, kitchen faucet repair frederick, garbage disposal repair frederick, dishwasher installation frederick, kitchen drain cleaning frederick, kitchen plumbing renovation frederick, kitchen sink repair frederick, kitchen faucet installation frederick, garbage disposal installation frederick, kitchen plumbing contractor frederick, licensed kitchen plumber frederick, kitchen plumbing gaithersburg, kitchen plumbing rockville, kitchen remodel plumbing frederick, commercial kitchen plumbing frederick, kitchen pipe repair frederick, kitchen water line repair frederick, kitchen plumbing emergency frederick",
+    title: "Kitchen Plumbing Frederick MD | Sink, Faucet & Disposal Repair",
+    description: "Expert kitchen plumbing services in Frederick MD. Sink installation, faucet repair, garbage disposal service, dishwasher hookups by licensed plumbers.",
+    keywords: "kitchen plumbing frederick md, kitchen sink installation, kitchen faucet repair, garbage disposal repair, dishwasher installation, kitchen drain cleaning, kitchen remodel plumbing, emergency kitchen plumbing, licensed kitchen plumber frederick",
     canonical: "https://agapeplumbinginc.com/services/kitchen-plumbing"
   },
 };

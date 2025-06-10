@@ -36,9 +36,9 @@ export const sewerServicesCopy = {
     buttonText: "Schedule Sewer Service",
   },
   meta: {
-    title: "Sewer Line Repair Frederick MD | Camera Inspection & Trenchless Replacement | Licensed Plumbers",
-    description: "Professional sewer line services in Frederick, MD. Expert sewer repair, replacement, camera inspection & trenchless solutions. Licensed plumbers serving Frederick County, Gaithersburg, Rockville with advanced equipment.",
-    keywords: "sewer line repair frederick md, sewer camera inspection frederick, trenchless sewer repair frederick, sewer line replacement frederick, sewer backup frederick md, sewer cleaning frederick, sewer line clog frederick, emergency sewer repair frederick, sewer pipe repair frederick, sewer line installation frederick, commercial sewer service frederick, residential sewer repair frederick, sewer root removal frederick, sewer line contractor frederick, licensed sewer repair frederick, sewer repair gaithersburg, sewer repair rockville, sewer line cleaning frederick md, sewer inspection frederick, main sewer line repair frederick",
+    title: "Sewer Line Repair Frederick MD | Camera Inspection & Cleaning",
+    description: "Expert sewer line repair & replacement in Frederick MD. Camera inspection, trenchless repair, emergency sewer service by licensed plumbers.",
+    keywords: "sewer line repair frederick md, sewer camera inspection, trenchless sewer repair, sewer line replacement, sewer backup repair, emergency sewer service, sewer cleaning frederick, sewer root removal, main sewer line repair, licensed sewer contractor frederick",
     canonical: "https://agapeplumbinginc.com/services/sewer-services"
   },
 };
