@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Critical font preloading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="/src/App.css" as="style">
+  
   <link rel="icon" type="image/svg+xml" href="/favico.ico" />
   <title>Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD</title>
-
+  
+  <!-- Critical CSS inline for LCP -->
+  <style>
+    /* Critical above-the-fold styles */
+    .hero-text-critical {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      max-width: 36rem;
+      line-height: 1.625;
+    }
+    @media (min-width: 768px) {
+      .hero-text-critical {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+    /* Prevent layout shift */
+    #root {
+      min-height: 100vh;
+    }
+  </style>
+  
   <meta name="keywords" content="plumber Frederick MD, emergency plumbing, drain cleaning, water heater repair, pipe repair, plumbing services Frederick Maryland">
   <meta name="author" content="Agape Drain & Plumbing LLC">
   <meta name="robots" content="index, follow">

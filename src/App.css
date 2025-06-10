@@ -105,3 +105,20 @@
 .read-the-docs {
   color: #888;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    font-display: swap;
+  }
+  
+  /* Reduce animations on mobile for performance */
+  .hero-text-critical {
+    will-change: auto;
+  }
+  
+  /* Optimize shadows for mobile */
+  .shadow-\[4px_4px_0px_0px_rgba\(0\,0\,0\,0\.3\)\] {
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.3);
+  }
+}

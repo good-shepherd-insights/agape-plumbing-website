@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, ArrowRight, Clock, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -8,8 +9,8 @@ const Hero = () => {
   
   return (
     <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-14 md:py-14 border-b-4 border-black overflow-hidden">
-      {/* Performance-optimized background elements */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Simplified background for mobile performance */}
+      <div className="absolute inset-0 opacity-10 hidden md:block">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white transform rotate-45"></div>
         <div className="absolute bottom-20 right-10 w-24 h-24 bg-plumbing-200 transform -rotate-12"></div>
       </div>
@@ -26,7 +27,8 @@ const Hero = () => {
                 {home.hero.trustedHeading} <br className="hidden md:block" />
                 <span className="text-plumbing-200">{home.hero.expertSubheading}</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-xl leading-relaxed font-medium">
+              {/* Optimized LCP element with critical CSS class */}
+              <p className="hero-text-critical text-xl md:text-2xl mb-8 max-w-xl leading-relaxed font-medium">
                 {company.name} {home.hero.description2}
               </p>
             </div>

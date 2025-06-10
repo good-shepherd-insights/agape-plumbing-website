@@ -1,37 +1,38 @@
 
-import React from 'react';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import Hero from '../components/home/Hero';
-import ServicesList from '../components/home/ServicesList';
-import WhyChooseUs from '../components/home/WhyChooseUs';
-import ServiceAreas from '../components/home/ServiceAreas';
-import Cta from '../components/home/Cta';
+import React, { Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useContent } from '@/hooks/use-content';
+import Header from '@/components/layout/Header';
+import Hero from '@/components/home/Hero';
+import Footer from '@/components/layout/Footer';
+
+// Lazy load non-critical components
+const ServicesList = React.lazy(() => import('@/components/home/ServicesList'));
+const WhyChooseUs = React.lazy(() => import('@/components/home/WhyChooseUs'));
+const ServiceAreas = React.lazy(() => import('@/components/home/ServiceAreas'));
+const Cta = React.lazy(() => import('@/components/home/Cta'));
 
 const Index = () => {
+  const { meta } = useContent();
+  
   return (
     <>
-<Helmet>
-  <title>Agape Drain & Plumbing LLC | Trusted Plumbing Services in the DMV Area</title>
-  <meta
-    name="description"
-    content="Agape Drain & Plumbing LLC offers expert plumbing services across Washington DC, Maryland, and Virginia. Our licensed professionals provide 24/7 emergency repairs, installations, and maintenance for residential and commercial clients."
-  />
-  <meta
-    name="keywords"
-    content="Agape Drain & Plumbing, emergency plumber DMV, pipe repair Washington DC, faucet installation Maryland, toilet repair Virginia, sump pump services, water heater replacement, garbage disposal repair, licensed plumber DMV"
-  />
-  <link rel="canonical" href="https://agapeplumbinginc.com/" />
-</Helmet>
+      <Helmet>
+        <title>{meta.home.title}</title>
+        <meta name="description" content={meta.home.description} />
+        <meta name="keywords" content={meta.home.keywords} />
+        <link rel="canonical" href={meta.home.canonical} />
+      </Helmet>
       
       <Header />
       <main>
         <Hero />
-        <ServicesList />
-        <WhyChooseUs />
-        <ServiceAreas />
-        <Cta />
+        <Suspense fallback={<div className="h-96 bg-gray-100 animate-pulse" />}>
+          <ServicesList />
+          <WhyChooseUs />
+          <ServiceAreas />
+          <Cta />
+        </Suspense>
       </main>
       <Footer />
     </>
