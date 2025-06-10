@@ -1,11 +1,27 @@
 {
   "rewrites": [
     {
-      "source": "/services/:location/:service",
+      "source": "/services/areas/:location/:serviceSlug",
       "destination": "/index.html"
     },
     {
-      "source": "/services/:location",
+      "source": "/services/:serviceSlug",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/areas/:location",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contact",
       "destination": "/index.html"
     },
     {
