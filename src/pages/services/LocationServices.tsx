@@ -95,7 +95,7 @@ const LocationServices = () => {
         <title>Plumbing Services in {locationData.fullName} | Agape Plumbing</title>
         <meta name="description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
         <meta name="keywords" content={`plumbing services ${locationData.slug}, plumber ${locationData.slug}, ${locationData.county} plumbing`} />
-        <link rel="canonical" href={`https://agapeplumbinginc.com/services/${locationData.slug}`} />
+        <link rel="canonical" href={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
       </Helmet>
       
       <Header />
@@ -159,7 +159,7 @@ const LocationServices = () => {
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
                         <IconComponent className="h-8 w-8" />
                       </div>
-                      <h3 className="text-lg font-black uppercase mb-4 text-plumbing-700 group-hover:text-plumbing-600">
+                      <h3 className="text-lg font-black uppercase mb-4 group-hover:text-plumbing-600">
                         {service.name}
                       </h3>
                       <p className="text-gray-600 text-sm mb-6">
