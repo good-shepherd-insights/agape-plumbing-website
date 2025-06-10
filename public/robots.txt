@@ -1,17 +1,116 @@
+# Robots.txt for Agape Drain & Plumbing LLC
+# Optimized for plumbing services SEO in Frederick, MD area
+
+# Allow major search engines full access
 User-agent: Googlebot
 Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
+Allow: /site.webmanifest
 
-User-agent: PerplexityBot
-Allow: /
-
+# Allow Bing for local search visibility
 User-agent: Bingbot
 Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
 
+# Allow social media crawlers for sharing
 User-agent: Twitterbot
 Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
 
 User-agent: facebookexternalhit
 Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
 
-User-agent: *
+# Allow AI search engines for better visibility
+User-agent: PerplexityBot
 Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
+
+User-agent: Claude-Web
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
+
+# Block unnecessary crawlers that don't contribute to SEO
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+# Block development and admin paths (if they exist)
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tsconfig.json
+Disallow: /vite.config.ts
+Disallow: /tailwind.config.ts
+Disallow: /vercel.json
+
+# Allow all other legitimate crawlers
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /about
+Allow: /contact
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico
+Allow: /site.webmanifest
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Sitemap location for better indexing
+Sitemap: https://agapeplumbinginc.com/sitemap.xml

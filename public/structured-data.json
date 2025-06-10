@@ -1,0 +1,193 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://agapeplumbinginc.com/#organization",
+      "name": "Agape Drain & Plumbing LLC",
+      "url": "https://agapeplumbinginc.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://agapeplumbinginc.com/images/logo.png",
+        "width": 300,
+        "height": 100
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-240-739-9866",
+        "contactType": "customer service",
+        "availableLanguage": "English",
+        "areaServed": "US-MD"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "109 Wheeler Ln",
+        "addressLocality": "Frederick",
+        "addressRegion": "MD",
+        "postalCode": "21702",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/agapeplumbing",
+        "https://www.instagram.com/agapeplumbing",
+        "https://www.yelp.com/biz/agape-drain-plumbing"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://agapeplumbinginc.com/#localbusiness",
+      "name": "Agape Drain & Plumbing LLC",
+      "image": "https://agapeplumbinginc.com/images/storefront.jpg",
+      "telephone": "+1-240-739-9866",
+      "email": "service@agapeplumbinginc.com",
+      "url": "https://agapeplumbinginc.com/",
+      "paymentAccepted": "Cash, Credit Card, Check",
+      "currenciesAccepted": "USD",
+      "openingHours": [
+        "Mo-Fr 08:00-18:00",
+        "Sa 08:00-13:00"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.4335,
+        "longitude": -77.4153
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "109 Wheeler Ln",
+        "addressLocality": "Frederick",
+        "addressRegion": "MD",
+        "postalCode": "21702",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Frederick",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Maryland"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gaithersburg",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Maryland"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Rockville",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Maryland"
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Plumbing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Plumbing Services",
+              "description": "24/7 emergency plumbing repairs and installations",
+              "provider": {
+                "@id": "https://agapeplumbinginc.com/#organization"
+              },
+              "areaServed": "Frederick County, MD"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Drain Cleaning",
+              "description": "Professional drain cleaning and unclogging services",
+              "provider": {
+                "@id": "https://agapeplumbinginc.com/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Water Heater Services",
+              "description": "Water heater installation, repair, and maintenance",
+              "provider": {
+                "@id": "https://agapeplumbinginc.com/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pipe Repair",
+              "description": "Professional pipe repair and replacement services",
+              "provider": {
+                "@id": "https://agapeplumbinginc.com/#organization"
+              }
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://agapeplumbinginc.com/#website",
+      "url": "https://agapeplumbinginc.com/",
+      "name": "Agape Drain & Plumbing LLC",
+      "description": "Professional plumbing services in Frederick, MD and surrounding areas",
+      "publisher": {
+        "@id": "https://agapeplumbinginc.com/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://agapeplumbinginc.com/services?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://agapeplumbinginc.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://agapeplumbinginc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://agapeplumbinginc.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Service Areas",
+          "item": "https://agapeplumbinginc.com/areas"
+        }
+      ]
+    }
+  ]
+}
