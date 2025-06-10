@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Clock, Star, ArrowRight, Wrench, Droplets, AlertTriangle, ChefHat, Trash2, Toilet, Flame } from 'lucide-react';

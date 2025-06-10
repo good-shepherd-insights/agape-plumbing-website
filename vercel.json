@@ -5,11 +5,11 @@
       "destination": "/index.html"
     },
     {
-      "source": "/services/:serviceSlug",
+      "source": "/areas/:location",
       "destination": "/index.html"
     },
     {
-      "source": "/areas/:location",
+      "source": "/services/:serviceSlug",
       "destination": "/index.html"
     },
     {
