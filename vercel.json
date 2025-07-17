@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/services/areas/:location/:serviceSlug",
+      "source": "/areas/:location/:serviceSlug",
       "destination": "/index.html"
     },
     {
