@@ -6,6 +6,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import Cta from '../../components/home/Cta';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { useLocationServiceContent } from '@/hooks/use-location-service-content';
 
 const LocationServiceDetail = () => {
@@ -76,14 +77,13 @@ const LocationServiceDetail = () => {
                 <Phone className="h-5 w-5 mr-2" />
                 Call Now: (227) 223-9057
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] px-8 py-4"
+              <Link 
+                to="/contact"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 hover:translate-y-[-4px]"
               >
                 Get Free Estimate
                 <ArrowRight className="h-5 w-5 ml-2" />
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

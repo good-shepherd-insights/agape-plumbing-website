@@ -1,12 +1,36 @@
+import React, { useRef, useState } from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, ArrowRight, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useContent } from '@/hooks/use-content';
+import { sendContactEmail } from '@/lib/emailjs';
 
 const Contact = () => {
   const { contact, meta, company } = useContent();
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      await sendContactEmail(form.current);
+      setSubmitStatus('success');
+      form.current.reset();
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   
   return (
     <>
@@ -33,14 +57,20 @@ const Contact = () => {
                 {contact.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
+                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 px-8 py-4">
                   <Phone className="h-5 w-5 mr-2" />
                   Call Now: {company.phone}
                 </Button>
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] px-8 py-4"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md px-8 py-4"
+                  onClick={() => {
+                    document.getElementById('message-us-form')?.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                  }}
                 >
                   Send Message
                 </Button>
@@ -63,7 +93,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="space-y-8 mb-12">
-                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                  <div className="brutalist-card group transition-all duration-300">
                     <div className="flex items-start p-8">
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
                         <Phone className="h-6 w-6" />
@@ -76,7 +106,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                  <div className="brutalist-card group transition-all duration-300">
                     <div className="flex items-start p-8">
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
                         <Mail className="h-6 w-6" />
@@ -89,7 +119,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                  <div className="brutalist-card group transition-all duration-300">
                     <div className="flex items-start p-8">
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
                         <MapPin className="h-6 w-6" />
@@ -102,7 +132,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="brutalist-card group hover:translate-y-[-4px] transition-all duration-300">
+                  <div className="brutalist-card group transition-all duration-300">
                     <div className="flex items-start p-8">
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors">
                         <Clock className="h-6 w-6" />
@@ -121,7 +151,7 @@ const Contact = () => {
                 </div>
                 
                 {/* Service Areas Card */}
-                <div className="brutalist-card bg-plumbing-800 text-white p-8 hover:translate-y-[-4px] transition-all duration-300">
+                <div className="brutalist-card bg-plumbing-800 text-white p-8 transition-all duration-300">
                   <h3 className="text-2xl font-black uppercase mb-6">{contact.serviceAreas.title}</h3>
                   <p className="text-lg mb-6">
                     {contact.serviceAreas.description}
@@ -135,19 +165,20 @@ const Contact = () => {
               </div>
               
               {/* Contact Form */}
-              <div className="brutalist-card p-8 md:p-12 bg-gray-50 hover:translate-y-[-4px] transition-all duration-300 self-start">
+              <div id="message-us-form" className="brutalist-card p-8 md:p-12 bg-gray-50 transition-all duration-300 self-start">
                 <div className="text-center mb-8">
                   <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Message Us</span>
                   <h2 className="text-3xl font-black uppercase text-plumbing-800 mb-6">{contact.contactForm.title}</h2>
                 </div>
                 
-                <form className="space-y-6">
+                <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.firstName}</label>
                       <input
                         type="text"
                         id="firstName"
+                        name="first_name"
                         className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all"
                         required
                       />
@@ -157,6 +188,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="lastName"
+                        name="last_name"
                         className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all appearance-none"
                         required
                       />
@@ -168,6 +200,7 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
+                      name="user_email"
                       className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all"
                       required
                     />
@@ -178,6 +211,7 @@ const Contact = () => {
                     <input
                       type="tel"
                       id="phone"
+                      name="user_phone"
                       className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all"
                       required
                     />
@@ -188,6 +222,7 @@ const Contact = () => {
                     <div className="relative">
                       <select
                         id="service"
+                        name="service_type"
                         className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all appearance-none pr-10"
                       >
                          {contact.contactForm.serviceOptions.map((option, index) => (
@@ -210,6 +245,7 @@ const Contact = () => {
                     <label htmlFor="message" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.message}</label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={5}
                       className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all resize-none"
                       required
@@ -218,12 +254,29 @@ const Contact = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full py-6 text-lg font-bold border-2 border-black bg-plumbing-800 hover:bg-plumbing-700 text-white rounded-md hover:translate-y-[-4px] active:translate-y-0 shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] transition-all duration-200 uppercase" 
+                    disabled={isSubmitting}
+                    className="w-full py-6 text-lg font-bold border-2 border-black bg-plumbing-800 hover:bg-plumbing-700 text-white rounded-md active:translate-y-0 shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] transition-all duration-200 uppercase disabled:opacity-50 disabled:cursor-not-allowed" 
                     size="lg"
                   >
                     <ArrowRight className="h-5 w-5 mr-2" />
-                    {contact.contactForm.submitButton}
+                    {isSubmitting ? 'Sending...' : contact.contactForm.submitButton}
                   </Button>
+                  
+                  {/* Status Message */}
+                  {submitStatus !== 'idle' && (
+                    <div className={`p-4 border-2 rounded-md transition-all duration-300 ${
+                      submitStatus === 'success' ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'
+                    }`}>
+                      <p className={`text-center text-sm font-medium ${
+                        submitStatus === 'success' ? 'text-green-600' : 'text-red-600'
+                      }`}>
+                        {submitStatus === 'success' 
+                          ? 'Message sent successfully! We\'ll get back to you soon.' 
+                          : 'Failed to send message. Please try again or call us directly.'
+                        }
+                      </p>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
@@ -243,7 +296,7 @@ const Contact = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {contact.faq.questions.map((item, index) => (
-                <div key={index} className="brutalist-card bg-white p-8 group hover:translate-y-[-4px] transition-all duration-300">
+                <div key={index} className="brutalist-card bg-white p-8 group transition-all duration-300">
                   <div className="flex items-start">
                     <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-6 group-hover:bg-plumbing-700 transition-colors flex-shrink-0">
                       <CheckCircle className="h-5 w-5" />
@@ -265,14 +318,14 @@ const Contact = () => {
         <section className="py-20 md:py-32">
           <div className="container-custom px-4">
             <div className="text-center">
-              <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-10 md:p-16 border-4 border-black rounded-lg shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-4px] transition-all duration-300">
+              <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-10 md:p-16 border-4 border-black rounded-lg shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)] transition-all duration-300">
                 <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">
                   Plumbing Emergency?
                 </h2>
                 <p className="text-xl mb-8 max-w-2xl mx-auto">
                   Don't wait! Our emergency plumbing team is available 24/7 to help you.
                 </p>
-                <Button size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
+                <Button size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 px-10 py-6">
                   <Phone className="h-6 w-6 mr-2" />
                   Emergency Service: {company.phone}
                 </Button>

@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, ArrowRight, Clock, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useContent } from '@/hooks/use-content';
+import { sendHeroEmail } from '@/lib/emailjs';
 
 const Hero = () => {
   const { home, company } = useContent();
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      await sendHeroEmail(form.current);
+      setSubmitStatus('success');
+      form.current.reset();
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   
   return (
     <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-14 md:py-14 border-b-4 border-black overflow-hidden">
@@ -93,46 +116,66 @@ const Hero = () => {
                 </h2>
               </div>
               
-              <form className="space-y-6">
+              <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input 
                     type="text" 
+                    name="user_name"
                     placeholder={home.hero.form.placeholders.name} 
                     className="w-full p-4 brutalist-input text-lg text-black" 
                     aria-label="Your Name"
+                    required
                   />
                   <input 
                     type="tel" 
+                    name="user_phone"
                     placeholder={home.hero.form.placeholders.phone} 
                     className="w-full p-4 brutalist-input text-lg text-black" 
                     aria-label="Phone Number"
+                    required
                   />
                 </div>
                 <input 
                   type="email" 
+                  name="user_email"
                   placeholder={home.hero.form.placeholders.email} 
                   className="w-full p-4 brutalist-input text-lg text-black" 
                   aria-label="Email Address"
+                  required
                 />
                 <textarea 
+                  name="message"
                   placeholder={home.hero.form.placeholders.message} 
                   rows={4} 
                   className="w-full p-4 brutalist-input text-lg resize-none text-black" 
                   aria-label="Message"
+                  required
                 ></textarea>
                 
                 <Button 
-                  className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px] transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]" 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px] transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] disabled:opacity-50 disabled:cursor-not-allowed" 
                   size="lg"
                 >
                   <ArrowRight className="h-5 w-5 mr-2" />
-                  {home.hero.requestFormButton}
+                  {isSubmitting ? 'Sending...' : home.hero.requestFormButton}
                 </Button>
               </form>
               
-              <div className="mt-6 p-4 bg-gray-50 border-2 border-gray-200 rounded-md">
-                <p className="text-center text-sm text-gray-600 font-medium">
-                  {home.hero.requestFormConfirmation}
+              <div className={`mt-6 p-4 border-2 rounded-md transition-all duration-300 ${
+                submitStatus === 'success' ? 'bg-green-50 border-green-200' :
+                submitStatus === 'error' ? 'bg-red-50 border-red-200' :
+                'bg-gray-50 border-gray-200'
+              }`}>
+                <p className={`text-center text-sm font-medium ${
+                  submitStatus === 'success' ? 'text-green-600' :
+                  submitStatus === 'error' ? 'text-red-600' :
+                  'text-gray-600'
+                }`}>
+                  {submitStatus === 'success' ? 'Message sent successfully! We\'ll get back to you soon.' :
+                   submitStatus === 'error' ? 'Failed to send message. Please try again or call us directly.' :
+                   home.hero.requestFormConfirmation}
                 </p>
               </div>
             </div>

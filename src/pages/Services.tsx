@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { Check, Phone, Wrench, Clock, Star } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const { services, meta } = useContent();
@@ -38,13 +39,12 @@ const Services = () => {
                   <Phone className="h-5 w-5 mr-2" />
                   Call Now: (227) 223-9057
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] px-8 py-4"
+                <Link 
+                  to="/contact"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 hover:translate-y-[-4px]"
                 >
                   Get Free Estimate
-                </Button>
+                </Link>
               </div>
             </div>
           </div>
