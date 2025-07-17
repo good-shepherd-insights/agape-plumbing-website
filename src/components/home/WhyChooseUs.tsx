@@ -4,6 +4,11 @@ import { useContent } from '@/hooks/use-content';
 const WhyChooseUs = () => {
   const { home } = useContent();
   
+  // Early return if home data is not available
+  if (!home || !home.whyChooseUs || !home.whyChooseUs.reasons) {
+    return null;
+  }
+  
   return (
     <section className="py-16 md:py-24 brutalist-section">
       <div className="container-custom">
@@ -18,7 +23,7 @@ const WhyChooseUs = () => {
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {home.whyChooseUs.reasons.map(reason => <div key={reason.id} className="flex">
+              {home.whyChooseUs.reasons?.map(reason => <div key={reason.id} className="flex">
                   <div className="mr-4 mt-1">
                     <div className="h-6 w-6 border-2 border-black rounded-sm bg-plumbing-800 flex items-center justify-center">
                       <Check className="h-4 w-4 text-white" />

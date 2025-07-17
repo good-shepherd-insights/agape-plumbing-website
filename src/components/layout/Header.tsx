@@ -10,6 +10,11 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { navigation, company } = useContent();
+  
+  // Early return if navigation or company data is not available
+  if (!navigation || !company) {
+    return null;
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,7 +80,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          {navigation.links.map((link, index) => (
+          {navigation.links?.map((link, index) => (
             <Link 
               key={index}
               to={link.url} 
@@ -84,7 +89,7 @@ const Header = () => {
               {link.title}
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-plumbing-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-          ))}
+          )) || []}
           <Button 
             className="flex items-center gap-2 bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black rounded-md hover:translate-y-[-2px] active:translate-y-0 shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] transition-all duration-200" 
             size="lg"
@@ -111,7 +116,7 @@ const Header = () => {
             </button>
           </div>
           <nav className="flex flex-col pt-6">
-            {navigation.links.map((link, index) => (
+            {navigation.links?.map((link, index) => (
               <Link 
                 key={index}
                 to={link.url} 
@@ -125,7 +130,7 @@ const Header = () => {
                   </svg>
                 </span>
               </Link>
-            ))}
+            )) || []}
             <div className="p-6">
               <Button 
                 className="flex items-center gap-2 w-full bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black rounded-md shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] hover:translate-y-[-2px] active:translate-y-0 transition-all duration-200" 

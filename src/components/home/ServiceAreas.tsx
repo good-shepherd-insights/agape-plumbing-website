@@ -18,6 +18,11 @@ const ServiceAreas = () => {
   const { contact } = useContent();
   const isMobile = useIsMobile();
   
+  // Early return if contact or serviceAreas data is not available
+  if (!contact || !contact.serviceAreas || !contact.serviceAreas.areas) {
+    return null;
+  }
+  
   // Create a reference to the carousel API
   const [api, setApi] = React.useState<any>(null);
   
@@ -39,9 +44,9 @@ const ServiceAreas = () => {
         <h3 className="text-xl font-bold uppercase">{area.name}</h3>
       </div>
       <ul className="mb-4 border-l-2 border-black pl-4">
-        {area.cities.map((city: string, cityIndex: number) => (
+        {area.cities?.map((city: string, cityIndex: number) => (
           <li key={cityIndex} className="mb-1 text-gray-600">{city}</li>
-        ))}
+        )) || []}
       </ul>
       <Link to={`/areas/${area.name.toLowerCase().replace(' ', '-')}`} className="text-plumbing-800 font-bold uppercase hover:underline inline-flex items-center">
         View all cities

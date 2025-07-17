@@ -1,16 +1,14 @@
 
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useContent } from '@/hooks/use-content';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/home/Hero';
 import Footer from '@/components/layout/Footer';
-
-// Lazy load non-critical components
-const ServicesList = React.lazy(() => import('@/components/home/ServicesList'));
-const WhyChooseUs = React.lazy(() => import('@/components/home/WhyChooseUs'));
-const ServiceAreas = React.lazy(() => import('@/components/home/ServiceAreas'));
-const Cta = React.lazy(() => import('@/components/home/Cta'));
+import ServicesList from '@/components/home/ServicesList';
+import WhyChooseUs from '@/components/home/WhyChooseUs';
+import ServiceAreas from '@/components/home/ServiceAreas';
+import Cta from '@/components/home/Cta';
 
 const Index = () => {
   const { meta } = useContent();
@@ -27,12 +25,10 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <Suspense fallback={<div className="h-96 bg-gray-100 animate-pulse" />}>
-          <ServicesList />
-          <WhyChooseUs />
-          <ServiceAreas />
-          <Cta />
-        </Suspense>
+        <ServicesList />
+        <WhyChooseUs />
+        <ServiceAreas />
+        <Cta />
       </main>
       <Footer />
     </>

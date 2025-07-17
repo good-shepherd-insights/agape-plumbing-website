@@ -18,6 +18,11 @@ const ServicesList = () => {
   const { servicesList } = useContent();
   const isMobile = useIsMobile();
   
+  // Early return if servicesList is not available
+  if (!servicesList || !servicesList.services) {
+    return null;
+  }
+  
   // Create a reference to the carousel API
   const [api, setApi] = React.useState<any>(null);
   
@@ -38,12 +43,12 @@ const ServicesList = () => {
         <h3 className="text-xl font-bold mb-3 text-plumbing-800 uppercase">{service.title}</h3>
         <p className="mb-4 text-gray-600">{service.description}</p>
         <ul className="mb-6 space-y-2">
-          {service.features.map((feature: string, index: number) => (
+          {service.features?.map((feature: string, index: number) => (
             <li key={index} className="flex items-start">
               <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
               <span>{feature}</span>
             </li>
-          ))}
+          )) || []}
         </ul>
       </div>
       <Link to={service.link}>
