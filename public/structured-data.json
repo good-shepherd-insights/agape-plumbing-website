@@ -28,7 +28,7 @@
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+1-240-739-9866",
+          "telephone": "+1-227-223-9057",
           "contactType": "customer service",
           "availableLanguage": "English",
           "areaServed": "US-MD",
@@ -39,7 +39,7 @@
         },
         {
           "@type": "ContactPoint",
-          "telephone": "+1-240-739-9866",
+          "telephone": "+1-227-223-9057",
           "contactType": "emergency",
           "availableLanguage": "English",
           "areaServed": "US-MD",
@@ -88,7 +88,7 @@
       "image": {
         "@id": "https://agapeplumbinginc.com/#logo"
       },
-      "telephone": "+1-240-739-9866",
+      "telephone": "+1-227-223-9057",
       "email": "info@agapeplumbinginc.com",
       "url": "https://agapeplumbinginc.com/",
       "paymentAccepted": "Cash, Check, Credit Card, Debit Card",
@@ -202,7 +202,7 @@
               "areaServed": "Frederick County, MD",
               "availableChannel": {
                 "@type": "ServiceChannel",
-                "servicePhone": "+1-240-739-9866",
+                "servicePhone": "+1-227-223-9057",
                 "availableLanguage": "English"
               }
             },
