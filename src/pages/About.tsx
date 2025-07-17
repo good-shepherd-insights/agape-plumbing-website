@@ -1,4 +1,5 @@
 
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Cta from '../components/home/Cta';
@@ -9,6 +10,7 @@ import { Button } from '@/components/ui/button';
 
 const About = () => {
   const { about, meta } = useContent();
+  const navigate = useNavigate();
   
   return (
     <>
@@ -40,12 +42,21 @@ const About = () => {
                   <Phone className="h-5 w-5 mr-2" />
                   Call Now: (227) 223-9057
                 </Button>
-                <Link 
-                  to="/contact"
+                <Button 
+                   onClick={() => {
+                    navigate('/contact');
+                    // Use setTimeout to ensure navigation completes before scrolling
+                    setTimeout(() => {
+                      document.getElementById('message-us-form')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                      });
+                    }, 100);
+                  }}
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800"
                 >
                   Get Free Estimate
-                </Link>
+                </Button>
               </div>
           </div>
         </section>

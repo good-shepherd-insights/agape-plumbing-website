@@ -5,10 +5,11 @@ import { Helmet } from 'react-helmet-async';
 import { Check, Phone, Wrench, Clock, Star } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
   const { services, meta } = useContent();
+  const navigate = useNavigate();
   
   return (
     <>
@@ -35,16 +36,25 @@ const Services = () => {
                 {services.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
+                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md  hover:bg-gray-100 h-11">
                   <Phone className="h-5 w-5 mr-2" />
                   Call Now: (227) 223-9057
                 </Button>
-                <Link 
-                  to="/contact"
+                <Button 
+                   onClick={() => {
+                    navigate('/contact');
+                    // Use setTimeout to ensure navigation completes before scrolling
+                    setTimeout(() => {
+                      document.getElementById('message-us-form')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                      });
+                    }, 100);
+                  }}
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800"
                 >
                   Get Free Estimate
-                </Link>
+                </Button>
               </div>
             </div>
           </div>
