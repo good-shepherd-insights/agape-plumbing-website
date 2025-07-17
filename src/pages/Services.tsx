@@ -35,13 +35,13 @@ const Services = () => {
                 {services.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
+                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
                   <Phone className="h-5 w-5 mr-2" />
                   Call Now: (227) 223-9057
                 </Button>
                 <Link 
                   to="/contact"
-                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 hover:translate-y-[-4px]"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800"
                 >
                   Get Free Estimate
                 </Link>
@@ -142,7 +142,7 @@ const Services = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {services.additionalServices.map((service, index) => (
-                  <div key={index} className="brutalist-card bg-gray-50 p-8 border-t-4 border-plumbing-800 hover:translate-y-[-4px] transition-all duration-300 group">
+                  <div key={index} className="brutalist-card bg-gray-50 p-8 border-t-4 border-plumbing-800 transition-all duration-300 group">
                     <div className="flex items-center mb-6">
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-flex items-center justify-center mr-4">
                         <Wrench className="h-6 w-6" />
@@ -201,7 +201,7 @@ const Services = () => {
                 ].map((benefit, index) => {
                   const IconComponent = benefit.icon;
                   return (
-                    <div key={index} className="brutalist-card bg-white p-8 text-center hover:translate-y-[-4px] transition-all duration-300">
+                    <div key={index} className="brutalist-card bg-white p-8 text-center transition-all duration-300">
                       <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-flex items-center justify-center mb-6">
                         <IconComponent className="h-8 w-8" />
                       </div>

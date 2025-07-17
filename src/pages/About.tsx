@@ -4,7 +4,8 @@ import Footer from '../components/layout/Footer';
 import Cta from '../components/home/Cta';
 import { Helmet } from 'react-helmet-async';
 import { useContent } from '@/hooks/use-content';
-import { Users, Target, Eye, Heart, Award, Shield, Clock, CheckCircle } from 'lucide-react';
+import { Users, Target, Eye, Heart, Award, Shield, Clock, CheckCircle, Link, Phone } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const About = () => {
   const { about, meta } = useContent();
@@ -34,6 +35,18 @@ const About = () => {
                 {about.hero.description}
               </p>
             </div>
+                          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call Now: (227) 223-9057
+                </Button>
+                <Link 
+                  to="/contact"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800"
+                >
+                  Get Free Estimate
+                </Link>
+              </div>
           </div>
         </section>
 
