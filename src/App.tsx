@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { StagewiseToolbar } from "@stagewise/toolbar-react";
+import  ReactPlugin  from "@stagewise-plugins/react";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -24,6 +26,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <StagewiseToolbar config={{ plugins: [ReactPlugin] }} />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>

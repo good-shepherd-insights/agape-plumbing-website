@@ -135,7 +135,7 @@ const Contact = () => {
               </div>
               
               {/* Contact Form */}
-              <div className="brutalist-card p-8 md:p-12 bg-gray-50 hover:translate-y-[-4px] transition-all duration-300">
+              <div className="brutalist-card p-8 md:p-12 bg-gray-50 hover:translate-y-[-4px] transition-all duration-300 self-start">
                 <div className="text-center mb-8">
                   <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Message Us</span>
                   <h2 className="text-3xl font-black uppercase text-plumbing-800 mb-6">{contact.contactForm.title}</h2>
@@ -148,7 +148,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="firstName"
-                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
+                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all"
                         required
                       />
                     </div>
@@ -157,7 +157,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="lastName"
-                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
+                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all appearance-none"
                         required
                       />
                     </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
-                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all"
                       required
                     />
                   </div>
@@ -178,21 +178,32 @@ const Contact = () => {
                     <input
                       type="tel"
                       id="phone"
-                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all"
                       required
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="service" className="block mb-3 font-bold uppercase text-sm text-plumbing-800">{contact.contactForm.fields.service}</label>
-                    <select
-                      id="service"
-                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all"
-                    >
-                      {contact.contactForm.serviceOptions.map((option, index) => (
-                        <option key={index} value={index === 0 ? "" : option.toLowerCase().replace(/\s+/g, '')}>{option}</option>
-                      ))}
-                    </select>
+                    <div className="relative">
+                      <select
+                        id="service"
+                        className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all appearance-none pr-10"
+                      >
+                         {contact.contactForm.serviceOptions.map((option, index) => (
+                           <option key={index} value={index === 0 ? "" : option.toLowerCase().replace(/\s+/g, '')}>{option}</option>
+                         ))}
+                       </select>
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-plumbing-800">
+                        <svg
+                          className="fill-current h-4 w-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                   
                   <div>
@@ -200,7 +211,7 @@ const Contact = () => {
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white transition-all resize-none"
+                      className="w-full p-4 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-plumbing-800 focus:border-plumbing-800 bg-white text-black transition-all resize-none"
                       required
                     ></textarea>
                   </div>

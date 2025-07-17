@@ -111,7 +111,7 @@ const LocationServices = () => {
               <span className="text-plumbing-200">{locationData.fullName}</span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto font-bold uppercase tracking-wide">
-              Serving {locationData.neighborhoods.join(', ')} and all of {locationData.county}
+              Serving <span className="text-plumbing-300">{locationData.neighborhoods.join(', ')}</span> and all of <span className="text-plumbing-300">{locationData.county}</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
@@ -164,7 +164,7 @@ const LocationServices = () => {
                       <p className="text-gray-600 text-sm mb-6">
                         {service.description}
                       </p>
-                      <div className="flex items-center justify-center text-plumbing-600 font-bold uppercase text-sm group-hover:translate-x-1 transition-transform">
+                      <div className="flex items-center justify-center text-black font-bold uppercase text-sm group-hover:translate-x-1 transition-transform">
                         Learn More <ArrowRight className="h-4 w-4 ml-2" />
                       </div>
                     </div>
@@ -238,7 +238,7 @@ const LocationServices = () => {
                       <Phone className="h-5 w-5 mr-2" />
                       Call (301) 658-0110
                     </Button>
-                    <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
+                    <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px] text-black" size="lg">
                       Request Online Quote
                     </Button>
                   </div>

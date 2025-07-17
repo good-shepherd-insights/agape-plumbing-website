@@ -1,6 +1,6 @@
 export const faucetsFixturesCopy = {
   hero: {
-    title: "Faucet & Fixture Installation Services ",
+    title: "Faucet & Fixture Services ",
     subtitle: "Professional Faucet Repair & Fixture Replacement",
     description: "Upgrade your kitchen and bathroom with our professional faucet and fixture installation services. From fixing leaky faucets to complete fixture replacements, our skilled plumbers ensure quality workmanship and lasting results.",
     imageAlt: "Plumber installing a modern kitchen faucet in Frederick, MD home",

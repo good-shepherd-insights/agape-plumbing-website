@@ -65,6 +65,36 @@ export default {
 					700: '#46AAB1',
 					800: '#2A7A7E', // Adjusted for better contrast
 					900: '#226568', // Adjusted for better contrast
+				},
+				// Extended Plumbing Palette
+				'plumbing-extended': {
+					25: '#D6F8FA',  // Ultra light teal
+					600: '#379CA3', // Medium teal
+					950: '#1B5052', // Ultra dark teal
+				},
+				// Neutral Grays
+				neutral: {
+					25: '#F8FAFB',  // Ultra light gray
+					300: '#CBD5E1', // Light gray
+					800: '#1E293B', // Dark gray
+				},
+				// Brand Blues
+				'brand-blue': {
+					900: '#001B4D', // Ultra dark blue
+					700: '#004080', // Dark blue
+					600: '#0059B3', // Medium blue
+				},
+				// Success/Nature Greens
+				success: {
+					50: '#E7F8F1',  // Light green
+					500: '#3BAA99', // Medium green
+					700: '#1F6F67', // Dark green
+				},
+				// Warm Accent Colors
+				warm: {
+					50: '#FFEEDB',  // Light warm
+					100: '#FDF6E3', // Very light warm
+					300: '#FFD29D', // Medium warm
 				}
 			},
 			borderRadius: {

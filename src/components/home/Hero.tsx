@@ -98,26 +98,26 @@ const Hero = () => {
                   <input 
                     type="text" 
                     placeholder={home.hero.form.placeholders.name} 
-                    className="w-full p-4 brutalist-input text-lg" 
+                    className="w-full p-4 brutalist-input text-lg text-black" 
                     aria-label="Your Name"
                   />
                   <input 
                     type="tel" 
                     placeholder={home.hero.form.placeholders.phone} 
-                    className="w-full p-4 brutalist-input text-lg" 
+                    className="w-full p-4 brutalist-input text-lg text-black" 
                     aria-label="Phone Number"
                   />
                 </div>
                 <input 
                   type="email" 
                   placeholder={home.hero.form.placeholders.email} 
-                  className="w-full p-4 brutalist-input text-lg" 
+                  className="w-full p-4 brutalist-input text-lg text-black" 
                   aria-label="Email Address"
                 />
                 <textarea 
                   placeholder={home.hero.form.placeholders.message} 
                   rows={4} 
-                  className="w-full p-4 brutalist-input text-lg resize-none" 
+                  className="w-full p-4 brutalist-input text-lg resize-none text-black" 
                   aria-label="Message"
                 ></textarea>
                 
