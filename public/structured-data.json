@@ -437,7 +437,7 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://agapeplumbinginc.com/#faq",
+      "@id": "https://agapeplumbinginc.com/contact#faq",
       "mainEntity": [
         {
           "@type": "Question",

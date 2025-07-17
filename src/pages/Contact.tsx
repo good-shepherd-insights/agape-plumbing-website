@@ -284,7 +284,7 @@ const Contact = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="bg-gray-50">
+        <section id="FAQ" className="bg-gray-50">
           <div className="container-custom px-4">
             <div className="text-center mb-16">
               <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Questions</span>
