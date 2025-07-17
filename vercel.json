@@ -13,6 +13,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/areas",
+      "destination": "/index.html"
+    },
+    {
       "source": "/services/:serviceSlug",
       "destination": "/index.html"
     },

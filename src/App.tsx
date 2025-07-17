@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import LocationServices from "./pages/services/LocationServices";
 import LocationServiceDetail from "./pages/services/LocationServiceDetail";
+import Areas from "./pages/Areas";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
             {/* Support both URL patterns for location-service combinations */}
             <Route path="/services/:location/:serviceSlug" element={<LocationServiceDetail />} />
+            <Route path="/areas" element={<Areas />} />
             <Route path="/areas/:location" element={<LocationServices />} />
             {/* Use a more explicit path for location-specific services */}
             <Route path="/areas/:location/:serviceSlug" element={<LocationServiceDetail />} />

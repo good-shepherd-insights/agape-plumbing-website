@@ -15,7 +15,7 @@ import {
 import type { EmblaOptionsType } from 'embla-carousel';
 
 const ServiceAreas = () => {
-  const { contact } = useContent();
+  const { contact, company } = useContent();
   const isMobile = useIsMobile();
   
   // Early return if contact or serviceAreas data is not available
@@ -48,7 +48,7 @@ const ServiceAreas = () => {
           <li key={cityIndex} className="mb-1 text-gray-600">{city}</li>
         )) || []}
       </ul>
-      <Link to={`/areas/${area.name.toLowerCase().replace(' ', '-')}`} className="text-plumbing-800 font-bold uppercase hover:underline inline-flex items-center">
+      <Link to={`/areas`} className="text-plumbing-800 font-bold uppercase hover:underline inline-flex items-center">
         View all cities
         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -99,7 +99,9 @@ const ServiceAreas = () => {
         
         <div className="mt-12 text-center">
           <p className="mb-4 text-lg">{contact.serviceAreas.cta.description}</p>
-          <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md hover:translate-y-[-4px]">{contact.serviceAreas.cta.text}</Button>
+          <a href={`tel:${company.phone.replace(/[^0-9+]/g, '')}`}>
+          <Button size="lg" className="border-2 border-black bg-plumbing-800 rounded-md">{contact.serviceAreas.cta.text}</Button>
+          </a>
         </div>
       </div>
     </section>
