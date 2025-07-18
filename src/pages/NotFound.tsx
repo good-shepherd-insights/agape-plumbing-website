@@ -29,7 +29,7 @@ const NotFound = () => {
   <title>404 Not Found | Agape Drain & Plumbing LLC</title>
   <meta
     name="description"
-    content="The page you're looking for doesn't exist. Return to Agape Drain & Plumbing LLC's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia."
+    content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia."
   />
   <meta
     name="keywords"
@@ -37,12 +37,12 @@ const NotFound = () => {
   />
   <link rel="canonical" href="https://agapeplumbinginc.com/404" />
   <meta property="og:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
-  <meta property="og:description" content="The page you're looking for doesn't exist. Return to Agape Drain & Plumbing LLC's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
+  <meta property="og:description" content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
   <meta property="og:url" content="https://agapeplumbinginc.com/404" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
-  <meta name="twitter:description" content="The page you're looking for doesn't exist. Return to Agape Drain & Plumbing LLC's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
+  <meta name="twitter:description" content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
 </Helmet>
       
       <Header />
