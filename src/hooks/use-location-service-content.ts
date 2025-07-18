@@ -63,7 +63,7 @@ export const useLocationServiceContent = (
         const baseContent = await serviceLoader();
         
         // Customize content for location
-        const locationContent = customizeContentForLocation(baseContent, location);
+        const locationContent = customizeContentForLocation(baseContent, location, serviceSlug);
         
         setContent({
           ...locationContent,
@@ -84,7 +84,7 @@ export const useLocationServiceContent = (
 };
 
 // Function to customize content for specific location
-const customizeContentForLocation = (baseContent: ServiceContent, location: Location): ServiceContent => {
+const customizeContentForLocation = (baseContent: ServiceContent, location: Location, serviceSlug: string): ServiceContent => {
   const serviceName = baseContent.hero.title.toLowerCase();
   
   return {
@@ -121,7 +121,7 @@ const customizeContentForLocation = (baseContent: ServiceContent, location: Loca
         /frederick/gi,
         location.slug
       ),
-      canonical: `https://agapeplumbinginc.com/services/${location.slug}/${baseContent.meta.canonical?.split('/').pop()}`,
+      canonical: `https://agapeplumbinginc.com/services/${location.slug}/${serviceSlug}`,
     },
   };
 };
