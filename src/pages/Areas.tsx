@@ -80,7 +80,7 @@ const Areas = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
                 <Phone className="h-5 w-5 mr-2" />
-                Call Now: (301) 658-0110
+                Call Now: (227) 223-9057
               </Button>
               <Button 
                 onClick={() => {
@@ -239,7 +239,7 @@ const Areas = () => {
                   <div className="space-y-4">
                     <Button className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
                       <Phone className="h-5 w-5 mr-2" />
-                      Call (301) 658-0110
+                      Call (227) 223-9057
                     </Button>
                     <Button 
                       onClick={() => {
@@ -274,7 +274,7 @@ const Areas = () => {
               </p>
               <Button size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
                 <Phone className="h-6 w-6 mr-2" />
-                Emergency Service: (301) 658-0110
+                Emergency Service: (227) 223-9057
               </Button>
             </div>
           </section>
