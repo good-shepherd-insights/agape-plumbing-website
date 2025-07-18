@@ -38,6 +38,7 @@ const App = () => (
             {/* Support both URL patterns for location-service combinations */}
             <Route path="/services/:location/:serviceSlug" element={<LocationServiceDetail />} />
             <Route path="/areas" element={<Areas />} />
+            <Route path="/areas/:location" element={<LocationServices />} />
             {/* Use a more explicit path for location-specific services */}
             <Route path="/areas/:location/:serviceSlug" element={<LocationServiceDetail />} />
             <Route path="/about" element={<About />} />
