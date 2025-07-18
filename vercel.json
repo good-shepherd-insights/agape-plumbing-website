@@ -9,10 +9,6 @@
       "destination": "/index.html"
     },
     {
-      "source": "/areas/:location",
-      "destination": "/index.html"
-    },
-    {
       "source": "/areas",
       "destination": "/index.html"
     },
