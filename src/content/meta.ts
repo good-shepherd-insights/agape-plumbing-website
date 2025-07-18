@@ -13,13 +13,13 @@ export const meta = {
   },
   services: {
     title: "Professional Plumbing Services | Agape Drain & Plumbing",
-    description: "Comprehensive plumbing services including repairs, installations, water heater services, drain cleaning, and emergency support. Licensed plumbers serving Frederick, MD.",
+    description: "Comprehensive plumbing services including repairs, installations, water heater services, drain cleaning. Licensed plumbers in Frederick, MD.",
     keywords: "plumbing services, emergency plumbing, water heater installation, drain cleaning, plumbing repairs, commercial plumbing",
     canonical: "https://agapeplumbinginc.com/services"
   },
   contact: {
     title: "Contact Agape Drain & Plumbing | Professional Plumbers",
-    description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (227) 223-9057 or submit our online form.",
+    description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (227) 223-9057.",
     keywords: "contact plumber, plumbing company phone number, emergency plumber contact, plumbing quote, plumbing estimate",
     canonical: "https://agapeplumbinginc.com/contact"
   }

@@ -31,14 +31,34 @@ export const toiletServicesCopy = {
     ],
   },
   cta: {
-    title: "Toilet Problems?",
-    description: "From running toilets to complete installations, our toilet service experts are ready to help. Contact us today for reliable toilet solutions.",
+    title: "Toilet Problems? We Can Fix Them!",
+    description: "From running toilets to complete replacements, our toilet repair experts are ready to help. Contact us today for reliable toilet solutions.",
     buttonText: "Schedule Toilet Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Faucets & Fixtures",
+        description: "Professional bathroom fixture installation and repair services.",
+        link: "/services/faucets-fixtures"
+      },
+      {
+        title: "Drain Cleaning",
+        description: "Expert drain cleaning for toilet and bathroom drain issues.",
+        link: "/services/drain-cleaning"
+      },
+      {
+        title: "Emergency Plumbing",
+        description: "24/7 emergency services for toilet overflows and urgent repairs.",
+        link: "/services/emergency-plumbing"
+      }
+    ]
+  },
   meta: {
-    title: "Toilet Repair Frederick MD | Installation & Running Toilet Fix",
-    description: "Professional toilet repair & installation in Frederick MD. Fix running toilets, clogs, leaks. High-efficiency toilet installation by licensed plumbers.",
-    keywords: "toilet repair frederick md, running toilet fix, toilet installation frederick, toilet replacement, toilet clog repair, toilet leak repair, high efficiency toilet installation, emergency toilet repair, commercial residential toilet service, licensed toilet contractor frederick",
+    title: "Toilet Repair & Installation Services | Agape Plumbing",
+    description: "Professional toilet repair & installation services. Fix running toilets, clogs, leaks. High-efficiency toilet installation by licensed plumbers.",
+    keywords: "toilet repair, running toilet fix, toilet installation, toilet replacement, toilet clog repair, toilet leak repair, high efficiency toilet installation, emergency toilet repair, commercial residential toilet service, licensed toilet contractor",
     canonical: "https://agapeplumbinginc.com/services/toilet-services"
   },
 };

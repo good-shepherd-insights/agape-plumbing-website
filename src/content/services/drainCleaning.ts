@@ -35,6 +35,26 @@ export const drainCleaningCopy = {
     description: "Contact our team today to schedule professional drain cleaning services in Frederick, Gaithersburg, Rockville, and surrounding areas. Restore proper flow to your plumbing system with our expert solutions.",
     buttonText: "Schedule Drain Cleaning Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Sewer Services",
+        description: "Professional sewer line repair, replacement, and maintenance services.",
+        link: "/services/sewer-services"
+      },
+      {
+        title: "Emergency Plumbing",
+        description: "24/7 emergency plumbing services for urgent drain and pipe issues.",
+        link: "/services/emergency-plumbing"
+      },
+      {
+        title: "Pipe Repair",
+        description: "Expert pipe repair and replacement for residential and commercial properties.",
+        link: "/services/pipe-repair"
+      }
+    ]
+  },
   meta: {
     title: "Drain Cleaning Frederick MD | Hydro Jetting & Clog Removal",
     description: "Professional drain cleaning services in Frederick MD. Hydro jetting, video inspection, emergency clog removal for all drains by licensed plumbers.",

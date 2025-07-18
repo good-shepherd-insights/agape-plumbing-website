@@ -20,6 +20,13 @@ const Index = () => {
         <meta name="description" content={meta.home.description} />
         <meta name="keywords" content={meta.home.keywords} />
         <link rel="canonical" href={meta.home.canonical} />
+        <meta property="og:title" content={meta.home.title} />
+        <meta property="og:description" content={meta.home.description} />
+        <meta property="og:url" content={meta.home.canonical} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.home.title} />
+        <meta name="twitter:description" content={meta.home.description} />
       </Helmet>
       
       <Header />

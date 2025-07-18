@@ -45,6 +45,7 @@ const LocationServiceDetail = () => {
         )}
         <meta property="og:title" content={content.meta.title} />
         <meta property="og:description" content={content.meta.description} />
+        <meta property="og:url" content={content.meta.canonical} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
@@ -215,6 +216,43 @@ const LocationServiceDetail = () => {
           </div>
         </div>
       </section>
+                  
+      {/* Related Services */}
+      {content.relatedServices && (
+        <section className="py-16 bg-white">
+          <div className="container-custom">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-block mb-6">
+                  <Wrench className="h-8 w-8" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">
+                  {content.relatedServices.title}
+                </h2>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {content.relatedServices.services.map((service, index) => (
+                  <Link
+                    key={index}
+                    to={service.link}
+                    className="brutalist-card bg-gray-50 p-8 border-t-4 border-plumbing-800 hover:translate-y-[-4px] transition-all duration-300 group block"
+                  >
+                    <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black inline-block mb-6">
+                      <ArrowRight className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-xl font-black uppercase mb-4 text-plumbing-800 group-hover:text-plumbing-900">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Emergency Service Banner */}
       <section className="py-16 bg-plumbing-800 text-white border-t-4 border-black">

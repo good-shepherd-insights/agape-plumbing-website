@@ -35,6 +35,26 @@ export const kitchenPlumbingCopy = {
     description: "From leaky faucets to garbage disposal issues, our kitchen plumbing experts are ready to help. Contact us today for reliable kitchen plumbing solutions.",
     buttonText: "Schedule Kitchen Plumbing Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Faucets & Fixtures",
+        description: "Professional faucet installation and fixture replacement services.",
+        link: "/services/faucets-fixtures"
+      },
+      {
+        title: "Drain Cleaning",
+        description: "Expert drain cleaning and clog removal for kitchen sinks and drains.",
+        link: "/services/drain-cleaning"
+      },
+      {
+        title: "Pipe Repair",
+        description: "Professional pipe repair and leak detection for kitchen plumbing.",
+        link: "/services/pipe-repair"
+      }
+    ]
+  },
   meta: {
     title: "Kitchen Plumbing Frederick MD | Sink, Faucet & Disposal Repair",
     description: "Expert kitchen plumbing services in Frederick MD. Sink installation, faucet repair, garbage disposal service, dishwasher hookups by licensed plumbers.",

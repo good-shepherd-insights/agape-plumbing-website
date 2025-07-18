@@ -35,10 +35,30 @@ export const sewerServicesCopy = {
     description: "Don't let sewer issues disrupt your life or damage your property. Contact our sewer service experts for professional diagnosis and repair.",
     buttonText: "Schedule Sewer Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Drain Cleaning",
+        description: "Professional drain cleaning and clog removal services.",
+        link: "/services/drain-cleaning"
+      },
+      {
+        title: "Pipe Repair",
+        description: "Expert pipe repair and underground pipe replacement.",
+        link: "/services/pipe-repair"
+      },
+      {
+        title: "Emergency Plumbing",
+        description: "24/7 emergency services for sewer backups and urgent repairs.",
+        link: "/services/emergency-plumbing"
+      }
+    ]
+  },
   meta: {
-    title: "Sewer Line Repair Frederick MD | Camera Inspection & Cleaning",
-    description: "Expert sewer line repair & replacement in Frederick MD. Camera inspection, trenchless repair, emergency sewer service by licensed plumbers.",
-    keywords: "sewer line repair frederick md, sewer camera inspection, trenchless sewer repair, sewer line replacement, sewer backup repair, emergency sewer service, sewer cleaning frederick, sewer root removal, main sewer line repair, licensed sewer contractor frederick",
+    title: "Sewer Line Services & Repair | Agape Plumbing",
+    description: "Expert sewer line repair & replacement services. Camera inspection, trenchless repair, emergency sewer service by licensed plumbers.",
+    keywords: "sewer line repair, sewer camera inspection, trenchless sewer repair, sewer line replacement, sewer backup repair, emergency sewer service, sewer cleaning, sewer root removal, main sewer line repair, licensed sewer contractor",
     canonical: "https://agapeplumbinginc.com/services/sewer-services"
   },
 };

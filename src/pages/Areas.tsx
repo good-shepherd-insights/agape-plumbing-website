@@ -54,6 +54,7 @@ const Areas = () => {
         <link rel="canonical" href="https://agapeplumbinginc.com/areas" />
         <meta property="og:title" content="Service Areas | Professional Plumbing Services | Agape Plumbing" />
         <meta property="og:description" content="Agape Plumbing serves Montgomery County, Frederick County and surrounding areas. Find professional plumbing services in your location." />
+        <meta property="og:url" content="https://agapeplumbinginc.com/areas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Service Areas | Professional Plumbing Services | Agape Plumbing" />

@@ -30,7 +30,14 @@ const NotFound = () => {
     name="keywords"
     content="Agape Drain & Plumbing, 404 error, page not found, plumbing services DMV, Washington DC plumber, Maryland plumber, Virginia plumber"
   />
-  <link rel="canonical" href="https://agapeplumbinginc.com/" />
+  <link rel="canonical" href="https://agapeplumbinginc.com/404" />
+  <meta property="og:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
+  <meta property="og:description" content="The page you're looking for doesn't exist. Return to Agape Drain & Plumbing LLC's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
+  <meta property="og:url" content="https://agapeplumbinginc.com/404" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
+  <meta name="twitter:description" content="The page you're looking for doesn't exist. Return to Agape Drain & Plumbing LLC's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
 </Helmet>
       
       <Header />

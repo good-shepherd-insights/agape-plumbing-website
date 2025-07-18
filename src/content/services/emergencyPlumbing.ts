@@ -35,6 +35,26 @@ export const emergencyPlumbingCopy = {
     description: "Don't let a plumbing emergency cause extensive damage to your property. Contact our 24/7 emergency plumbing team for immediate assistance.",
     buttonText: "Call Emergency Plumber Now",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Pipe Repair",
+        description: "Professional pipe repair and leak detection services for all pipe types.",
+        link: "/services/pipe-repair"
+      },
+      {
+        title: "Sewer Services",
+        description: "Comprehensive sewer line repair, cleaning, and camera inspection.",
+        link: "/services/sewer-services"
+      },
+      {
+        title: "Water Heater Services",
+        description: "Emergency water heater repair and replacement services.",
+        link: "/services/water-heater-services"
+      }
+    ]
+  },
   meta: {
     title: "24/7 Emergency Plumber Frederick MD | Burst Pipe Repair",
     description: "Emergency plumbing services Frederick MD available 24/7. Burst pipe repair, water leaks, clogged drains. Licensed emergency plumbers with rapid response.",

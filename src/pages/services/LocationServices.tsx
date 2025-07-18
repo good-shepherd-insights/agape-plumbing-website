@@ -92,10 +92,17 @@ const LocationServices = () => {
   return (
     <>
       <Helmet>
-        <title>Plumbing Services in {locationData.fullName} | Agape Plumbing</title>
+        <title>{locationData.name} Plumbing Services | Agape Plumbing</title>
         <meta name="description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
         <meta name="keywords" content={`plumbing services ${locationData.slug}, plumber ${locationData.slug}, ${locationData.county} plumbing`} />
         <link rel="canonical" href={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
+        <meta property="og:title" content={`${locationData.name} Plumbing Services | Agape Plumbing`} />
+        <meta property="og:description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
+        <meta property="og:url" content={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${locationData.name} Plumbing Services | Agape Plumbing`} />
+        <meta name="twitter:description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
       </Helmet>
       
       <Header />

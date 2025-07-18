@@ -35,6 +35,26 @@ export const waterHeaterServicesCopy = {
     description: "From no hot water to inefficient heating, our water heater experts can help. Contact us today for reliable water heater solutions.",
     buttonText: "Schedule Water Heater Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Pipe Repair",
+        description: "Professional pipe repair and water line installation services.",
+        link: "/services/pipe-repair"
+      },
+      {
+        title: "Emergency Plumbing",
+        description: "24/7 emergency services for water heater failures and leaks.",
+        link: "/services/emergency-plumbing"
+      },
+      {
+        title: "Faucets & Fixtures",
+        description: "Hot water fixture installation and repair services.",
+        link: "/services/faucets-fixtures"
+      }
+    ]
+  },
   meta: {
     title: "Water Heater Repair Frederick MD | Tankless Installation",
     description: "Expert water heater repair & installation in Frederick MD. Tank & tankless systems. Licensed plumbers serving Frederick County with 24/7 service.",

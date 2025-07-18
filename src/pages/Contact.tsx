@@ -39,6 +39,13 @@ const Contact = () => {
         <meta name="description" content={meta.contact.description} />
         <meta name="keywords" content={meta.contact.keywords} />
         <link rel="canonical" href={meta.contact.canonical} />
+        <meta property="og:title" content={meta.contact.title} />
+        <meta property="og:description" content={meta.contact.description} />
+        <meta property="og:url" content={meta.contact.canonical} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.contact.title} />
+        <meta name="twitter:description" content={meta.contact.description} />
       </Helmet>
       
       <Header />

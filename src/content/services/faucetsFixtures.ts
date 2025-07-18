@@ -35,10 +35,30 @@ export const faucetsFixturesCopy = {
     description: "Contact us today to schedule faucet repair or fixture installation services in Frederick, Gaithersburg, Rockville, and surrounding areas. Transform your kitchen or bathroom with new, efficient fixtures.",
     buttonText: "Schedule Fixture Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Kitchen Plumbing",
+        description: "Complete kitchen plumbing services including sink installation and repairs.",
+        link: "/services/kitchen-plumbing"
+      },
+      {
+        title: "Toilet Services",
+        description: "Professional toilet installation, repair, and replacement services.",
+        link: "/services/toilet-services"
+      },
+      {
+        title: "Water Heater Services",
+        description: "Water heater installation, repair, and maintenance by licensed plumbers.",
+        link: "/services/water-heater-services"
+      }
+    ]
+  },
   meta: {
     title: "Faucet Installation Frederick MD | Fixture Repair & Replacement",
-    description: "Professional faucet & fixture installation in Frederick MD. Kitchen & bathroom faucet repair, fixture replacement by licensed plumbers.",
-    keywords: "faucet installation frederick md, bathroom fixture replacement, kitchen faucet repair, shower installation frederick, sink installation, faucet repair gaithersburg, fixture installation rockville, water efficient fixtures, licensed fixture contractor frederick",
+    description: "Professional faucet installation & fixture repair in Frederick MD. Kitchen & bathroom faucet replacement by licensed plumbers. Water-saving upgrades.",
+    keywords: "faucet installation frederick md, fixture repair frederick, kitchen faucet replacement, bathroom faucet repair, water saving fixtures, licensed plumber frederick",
     canonical: "https://agapeplumbinginc.com/services/faucets-fixtures"
   },
 };

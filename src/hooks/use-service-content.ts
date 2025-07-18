@@ -35,6 +35,14 @@ export interface ServiceContent {
     description: string;
     buttonText: string;
   };
+  relatedServices?: {
+    title: string;
+    services: Array<{
+      title: string;
+      description: string;
+      link: string;
+    }>;
+  };
   meta: {
     title: string;
     description: string;

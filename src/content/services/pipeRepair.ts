@@ -35,6 +35,26 @@ export const pipeRepairCopy = {
     description: "Don't let pipe leaks or failures cause extensive damage to your property. Contact our pipe repair experts for fast, reliable solutions.",
     buttonText: "Schedule Pipe Repair Service",
   },
+  relatedServices: {
+    title: "Related Plumbing Services",
+    services: [
+      {
+        title: "Emergency Plumbing",
+        description: "24/7 emergency plumbing services for urgent pipe repairs and leaks.",
+        link: "/services/emergency-plumbing"
+      },
+      {
+        title: "Sewer Services",
+        description: "Professional sewer line repair and underground pipe services.",
+        link: "/services/sewer-services"
+      },
+      {
+        title: "Water Heater Services",
+        description: "Water heater installation and pipe connection services.",
+        link: "/services/water-heater-services"
+      }
+    ]
+  },
   meta: {
     title: "Pipe Repair Frederick MD | Leak Detection & Repiping",
     description: "Professional pipe repair & leak detection in Frederick MD. Copper, PEX, PVC pipe repair & replacement. Emergency pipe burst repair by licensed plumbers.",

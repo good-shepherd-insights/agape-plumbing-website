@@ -19,6 +19,13 @@ const About = () => {
         <meta name="description" content={meta.about.description} />
         <meta name="keywords" content={meta.about.keywords} />
         <link rel="canonical" href={meta.about.canonical} />
+        <meta property="og:title" content={meta.about.title} />
+        <meta property="og:description" content={meta.about.description} />
+        <meta property="og:url" content={meta.about.canonical} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.about.title} />
+        <meta name="twitter:description" content={meta.about.description} />
       </Helmet>
       
       <Header />

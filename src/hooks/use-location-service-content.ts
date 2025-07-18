@@ -112,7 +112,7 @@ const customizeContentForLocation = (baseContent: ServiceContent, location: Loca
     },
     meta: {
       ...baseContent.meta,
-      title: baseContent.meta.title.replace('Frederick MD', location.fullName),
+      title: baseContent.meta.title.replace(/Frederick MD|Frederick, MD/g, location.fullName),
       description: baseContent.meta.description.replace(
         /Frederick, MD|Frederick County, Gaithersburg, Rockville/g,
         `${location.fullName}, ${location.county}`

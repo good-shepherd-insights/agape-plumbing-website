@@ -18,6 +18,13 @@ const Services = () => {
         <meta name="description" content={meta.services.description} />
         <meta name="keywords" content={meta.services.keywords} />
         <link rel="canonical" href={meta.services.canonical} />
+        <meta property="og:title" content={meta.services.title} />
+        <meta property="og:description" content={meta.services.description} />
+        <meta property="og:url" content={meta.services.canonical} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.services.title} />
+        <meta name="twitter:description" content={meta.services.description} />
       </Helmet>
       
       <Header />
