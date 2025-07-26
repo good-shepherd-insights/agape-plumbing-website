@@ -13,11 +13,11 @@
       "destination": "/index.html"
     },
     {
-      "source": "/areas",
+      "source": "/services/:serviceSlug",
       "destination": "/index.html"
     },
     {
-      "source": "/services/:serviceSlug",
+      "source": "/areas",
       "destination": "/index.html"
     },
     {
