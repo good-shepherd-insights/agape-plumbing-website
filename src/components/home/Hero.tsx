@@ -57,10 +57,10 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6">
-              <a href={`tel:${company.phone.replace(/\D/g, '')}`}>
+              <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
-                  className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
+                  className="w-full text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
                 >
                   <Phone className="h-5 w-5 mr-2" />
                   {home.hero.cta}
@@ -70,7 +70,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 asChild
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] transition-all duration-300 px-8 py-4"
+                className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-lg font-bold rounded-md hover:translate-y-[-4px] transition-all duration-300 px-8 py-4"
               >
                 <Link to="/services" className="flex items-center">
                   {home.hero.serviceButtonText}
@@ -105,13 +105,13 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative">
-            <div className="bg-white p-8 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300">
-              <div className="flex items-center mb-6">
-                <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-4">
+          <div className="relative w-full">
+            <div className="bg-white p-2 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300 w-full max-w-none">
+              <div className="flex items-center mb-6 mt-4">
+                <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-2 md:mr-4">
                   <ArrowRight className="h-6 w-6" />
                 </div>
-                <h2 className="text-plumbing-800 text-2xl md:text-3xl font-black uppercase">
+                <h2 className="text-plumbing-800 text-lg sm:text-xl md:text-2xl lg:text-3xl font-black uppercase">
                   {home.hero.requestFormTitle}
                 </h2>
               </div>
