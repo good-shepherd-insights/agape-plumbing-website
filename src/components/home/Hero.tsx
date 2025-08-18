@@ -106,7 +106,7 @@ const Hero = () => {
           </div>
           
           <div className="relative w-full">
-            <div className="bg-white p-2 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300 w-full max-w-none">
+            <div className="bg-white p-3 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300 w-full max-w-none">
               <div className="flex items-center mb-6 mt-4">
                 <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-2 md:mr-4">
                   <ArrowRight className="h-6 w-6" />
