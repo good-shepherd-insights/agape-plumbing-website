@@ -26,20 +26,23 @@ const NotFound = () => {
   return (
     <>
 <Helmet>
-  <title>404 Not Found | Agape Drain & Plumbing LLC</title>
-  <meta
-    name="description"
-    content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia."
-  />
-  <meta
-    name="keywords"
-    content="Agape Drain & Plumbing, 404 error, page not found, plumbing services DMV, Washington DC plumber, Maryland plumber, Virginia plumber"
-  />
-  <link rel="canonical" href="https://agapeplumbinginc.com/404" />
-  <meta property="og:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
-  <meta property="og:description" content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
-  <meta property="og:url" content="https://agapeplumbinginc.com/404" />
+  <title>{notFound.meta.title}</title>
+  <meta name="description" content={notFound.meta.description} />
+  <meta name="keywords" content={notFound.meta.keywords} />
+  <link rel="canonical" href={notFound.meta.canonical} />
+  <meta property="og:title" content={notFound.meta.title} />
+  <meta property="og:description" content={notFound.meta.description} />
+  <meta property="og:url" content={notFound.meta.canonical} />
   <meta property="og:type" content="website" />
+  {/* <meta property="og:image" content="https://agapeplumbinginc.com/og-image.svg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Agape Plumbing - Professional Plumbing Services" /> */}
+  <meta property="og:site_name" content="Agape Plumbing" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={notFound.meta.title} />
+  <meta name="twitter:description" content={notFound.meta.description} />
+  {/* <meta name="twitter:image" content="https://agapeplumbinginc.com/og-image.svg" /> */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
   <meta name="twitter:description" content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />

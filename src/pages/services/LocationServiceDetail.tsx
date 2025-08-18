@@ -58,9 +58,15 @@ const LocationServiceDetail = () => {
         <meta property="og:description" content={content.meta.description} />
         <meta property="og:url" content={content.meta.canonical} />
         <meta property="og:type" content="website" />
+        {/* <meta property="og:image" content="https://agapeplumbinginc.com/og-image.svg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
+        <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
         <meta name="twitter:description" content={content.meta.description} />
+        {/* <meta name="twitter:image" content="https://agapeplumbinginc.com/og-image.svg" /> */}
       </Helmet>
       
       <Header />

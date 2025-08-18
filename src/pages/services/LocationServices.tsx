@@ -111,9 +111,15 @@ const LocationServices = () => {
         <meta property="og:description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
         <meta property="og:url" content={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
         <meta property="og:type" content="website" />
+        {/* <meta property="og:image" content="https://agapeplumbinginc.com/og-image.svg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Agape Plumbing - Professional Plumbing Services" /> */}
+        <meta property="og:site_name" content="Agape Plumbing" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${locationData.name} Plumbing Services | Agape Plumbing`} />
         <meta name="twitter:description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
+        {/* <meta name="twitter:image" content="https://agapeplumbinginc.com/og-image.svg" /> */}
       </Helmet>
       
       <Header />

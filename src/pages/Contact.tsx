@@ -43,9 +43,15 @@ const Contact = () => {
         <meta property="og:description" content={meta.contact.description} />
         <meta property="og:url" content={meta.contact.canonical} />
         <meta property="og:type" content="website" />
+        {/* <meta property="og:image" content={meta.contact.ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Contact Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
+        <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.contact.title} />
         <meta name="twitter:description" content={meta.contact.description} />
+        {/* <meta name="twitter:image" content={meta.contact.ogImage} /> */}
       </Helmet>
       
       <Header />

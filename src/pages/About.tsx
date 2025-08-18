@@ -23,9 +23,15 @@ const About = () => {
         <meta property="og:description" content={meta.about.description} />
         <meta property="og:url" content={meta.about.canonical} />
         <meta property="og:type" content="website" />
+        {/* <meta property="og:image" content={meta.about.ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
+        <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.about.title} />
         <meta name="twitter:description" content={meta.about.description} />
+        {/* <meta name="twitter:image" content={meta.about.ogImage} /> */}
       </Helmet>
       
       <Header />
