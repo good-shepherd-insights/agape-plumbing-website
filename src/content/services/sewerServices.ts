@@ -56,7 +56,7 @@ export const sewerServicesCopy = {
     ]
   },
   meta: {
-    title: "Sewer Line Services & Repair | Agape Plumbing",
+    title: "Sewer Line Repair Frederick MD | Agape Drain & Plumbing",
     description: "Expert sewer line repair & replacement services. Camera inspection, trenchless repair, emergency sewer service by licensed plumbers.",
     keywords: "sewer line repair, sewer camera inspection, trenchless sewer repair, sewer line replacement, sewer backup repair, emergency sewer service, sewer cleaning, sewer root removal, main sewer line repair, licensed sewer contractor",
     canonical: "https://agapeplumbinginc.com/services/sewer-services"

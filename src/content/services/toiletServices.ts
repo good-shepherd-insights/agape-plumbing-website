@@ -56,7 +56,7 @@ export const toiletServicesCopy = {
     ]
   },
   meta: {
-    title: "Toilet Repair & Installation Services | Agape Plumbing",
+    title: "Toilet Repair Frederick MD | Agape Drain & Plumbing",
     description: "Professional toilet repair & installation services. Fix running toilets, clogs, leaks. High-efficiency toilet installation by licensed plumbers.",
     keywords: "toilet repair, running toilet fix, toilet installation, toilet replacement, toilet clog repair, toilet leak repair, high efficiency toilet installation, emergency toilet repair, commercial residential toilet service, licensed toilet contractor",
     canonical: "https://agapeplumbinginc.com/services/toilet-services"

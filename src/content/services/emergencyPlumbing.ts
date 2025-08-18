@@ -56,7 +56,7 @@ export const emergencyPlumbingCopy = {
     ]
   },
   meta: {
-    title: "24/7 Emergency Plumber Frederick MD | Burst Pipe Repair",
+    title: "Emergency Plumber Frederick MD | Agape Drain & Plumbing",
     description: "Emergency plumbing services Frederick MD available 24/7. Burst pipe repair, water leaks, clogged drains. Licensed emergency plumbers with rapid response.",
     keywords: "emergency plumber frederick md, 24/7 plumber frederick, burst pipe repair, emergency plumbing service, water leak repair, emergency drain cleaning, same day plumber, weekend emergency plumber, licensed emergency plumber frederick, rapid response plumbing",
     canonical: "https://agapeplumbinginc.com/services/emergency-plumbing"

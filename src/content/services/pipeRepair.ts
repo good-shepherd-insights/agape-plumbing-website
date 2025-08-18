@@ -56,7 +56,7 @@ export const pipeRepairCopy = {
     ]
   },
   meta: {
-    title: "Pipe Repair Frederick MD | Leak Detection & Repiping",
+    title: "Pipe Leak Repair Frederick MD | Agape Drain & Plumbing",
     description: "Professional pipe repair & leak detection in Frederick MD. Copper, PEX, PVC pipe repair & replacement. Emergency pipe burst repair by licensed plumbers.",
     keywords: "pipe repair frederick md, leak detection frederick, pipe replacement, repiping services, copper pipe repair, pex pipe installation, emergency pipe repair, pipe burst repair, underground pipe repair, licensed pipe contractor frederick",
     canonical: "https://agapeplumbinginc.com/services/pipe-repair"

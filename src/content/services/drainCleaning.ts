@@ -56,7 +56,7 @@ export const drainCleaningCopy = {
     ]
   },
   meta: {
-    title: "Drain Cleaning Frederick MD | Hydro Jetting & Clog Removal",
+    title: "Drain Cleaning Frederick MD | Agape Drain & Plumbing",
     description: "Professional drain cleaning services in Frederick MD. Hydro jetting, video inspection, emergency clog removal for all drains by licensed plumbers.",
     keywords: "drain cleaning frederick md, hydro jetting frederick, emergency drain cleaning, clogged drain repair, video drain inspection, sink drain cleaning, shower drain cleaning, main line cleaning, commercial drain cleaning, licensed drain cleaning frederick",
     canonical: "https://agapeplumbinginc.com/services/drain-cleaning"

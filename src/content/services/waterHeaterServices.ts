@@ -56,7 +56,7 @@ export const waterHeaterServicesCopy = {
     ]
   },
   meta: {
-    title: "Water Heater Repair Frederick MD | Tankless Installation",
+    title: "Water Heater Repair Frederick MD | Agape Drain & Plumbing",
     description: "Expert water heater repair & installation in Frederick MD. Tank & tankless systems. Licensed plumbers serving Frederick County with 24/7 service.",
     keywords: "water heater repair frederick md, tankless water heater installation, water heater replacement frederick, emergency water heater repair, gas electric water heater service, hybrid heat pump water heater, water heater maintenance frederick, licensed water heater contractor, energy efficient water heater, commercial residential water heater repair",
     canonical: "https://agapeplumbinginc.com/services/water-heater-services"

@@ -56,7 +56,7 @@ export const faucetsFixturesCopy = {
     ]
   },
   meta: {
-    title: "Faucet Installation Frederick MD | Fixture Repair & Replacement",
+    title: "Faucet Installation Frederick MD | Agape Drain & Plumbing",
     description: "Professional faucet installation & fixture repair in Frederick MD. Kitchen & bathroom faucet replacement by licensed plumbers. Water-saving upgrades.",
     keywords: "faucet installation frederick md, fixture repair frederick, kitchen faucet replacement, bathroom faucet repair, water saving fixtures, licensed plumber frederick",
     canonical: "https://agapeplumbinginc.com/services/faucets-fixtures"
