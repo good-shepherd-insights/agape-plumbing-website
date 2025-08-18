@@ -8,10 +8,21 @@ import Cta from '../../components/home/Cta';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { useLocationServiceContent } from '@/hooks/use-location-service-content';
+import { useCanonicalValidation, generateCanonicalUrl, buildCanonicalPath } from '../../hooks/useCanonicalValidation';
 
 const LocationServiceDetail = () => {
   const { location, serviceSlug } = useParams<{ location: string; serviceSlug: string }>();
   const { content, loading, error } = useLocationServiceContent(location, serviceSlug);
+
+  // Validate canonical URL for this page
+  const expectedCanonicalPath = buildCanonicalPath(location, serviceSlug);
+  const expectedCanonical = generateCanonicalUrl(expectedCanonicalPath);
+  
+  useCanonicalValidation({
+    expectedCanonical,
+    pageIdentifier: `Service Detail - ${location}/${serviceSlug}`,
+    enableLogging: true
+  });
 
   if (loading) {
     return (

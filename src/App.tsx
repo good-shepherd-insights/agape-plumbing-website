@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import LocationServices from "./pages/services/LocationServices";
 import LocationServiceDetail from "./pages/services/LocationServiceDetail";
+import ServiceOrLocationHandler from "./components/LocationRedirect";
 import Areas from "./pages/Areas";
 
 const queryClient = new QueryClient();
@@ -31,13 +32,12 @@ const App = () => (
             <Route path="/" element={<Index />} />
             {/* Keep general services under /services */}
             <Route path="/services" element={<Services />} />
-            <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
-            {/* Support both URL patterns for location-service combinations */}
+            {/* Service detail pages or location redirect - this will handle valid service slugs or redirect location slugs */}
+            <Route path="/services/:serviceSlug" element={<ServiceOrLocationHandler />} />
+            {/* Location-service combinations use /services pattern for canonical URLs */}
             <Route path="/services/:location/:serviceSlug" element={<LocationServiceDetail />} />
             <Route path="/areas" element={<Areas />} />
             <Route path="/areas/:location" element={<LocationServices />} />
-            {/* Use a more explicit path for location-specific services */}
-            <Route path="/areas/:location/:serviceSlug" element={<LocationServiceDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

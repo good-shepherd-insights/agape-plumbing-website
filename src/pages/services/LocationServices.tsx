@@ -6,6 +6,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { getLocationBySlug } from '@/content/locations';
+import { useCanonicalValidation, generateCanonicalUrl, buildCanonicalPath } from '@/hooks/useCanonicalValidation';
 
 const LocationServices = () => {
   const { location } = useParams<{ location: string }>();
@@ -14,6 +15,16 @@ const LocationServices = () => {
   if (!locationData) {
     return <Navigate to="/404" replace />;
   }
+
+  // Validate canonical URL for this page
+  const expectedCanonicalPath = buildCanonicalPath(location);
+  const expectedCanonical = generateCanonicalUrl(expectedCanonicalPath);
+  
+  useCanonicalValidation({
+    expectedCanonical,
+    pageIdentifier: `Location Services - ${location}`,
+    enableLogging: true
+  });
 
   const services = [
     { 
