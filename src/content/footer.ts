@@ -70,6 +70,10 @@ export const footer = {
       link: "/about"
     },
     {
+      title: "Blog",
+      link: "/blog"
+    },
+    {
       title: "Contact Us",
       link: "/contact"
     },

@@ -9,6 +9,10 @@ export const navigation = {
       url: "/services"
     },
     {
+      title: "Blog",
+      url: "/blog"
+    },
+    {
       title: "About",
       url: "/about"
     },
