@@ -14,6 +14,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import CategoryBlog from "./pages/CategoryBlog";
 import NotFound from "./pages/NotFound";
 import LocationServices from "./pages/services/LocationServices";
 import LocationServiceDetail from "./pages/services/LocationServiceDetail";
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/blog/category/:categorySlug" element={<CategoryBlog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

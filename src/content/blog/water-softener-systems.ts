@@ -4,8 +4,8 @@ export const waterSoftenerSystemsPost = {
   slug: "water-softener-systems",
   excerpt: "Nearly 85 percent of U.S. homes contend with hard water that leaves scale buildup in pipes, reduces appliance efficiency, and dries out skin and hair. Water softener systems use ion exchange or salt-free conditioning to remove calcium and magnesium ions, protect plumbing infrastructure, and boost household comfort.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-02-02T10:00:00Z",
-  updatedAt: "2024-02-02T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "maintenance",
   tags: ["water softener", "hard water", "water treatment", "plumbing maintenance", "water quality"],
   featured: false,
@@ -20,20 +20,17 @@ export const waterSoftenerSystemsPost = {
     sections: [
       {
         heading: "What Are Water Softener Systems and How Do They Work?",
-        content: "A water softener system is a water treatment device that removes hardness minerals to prevent scale formation and improve water quality. By exchanging calcium and magnesium ions for sodium or potassium ions, these systems deliver consistent soft water throughout the home. For example, a salt-based unit passes hard water through a resin bed where sodium-coated beads capture hardness minerals—then regenerates automatically to restore softening capacity, preparing the system for the next cycle. Understanding core mechanisms leads us into the specific nature of hard water and its impact."
+        content: "A water softener system is a water treatment device that removes hardness minerals to prevent scale formation and improve water quality. By exchanging calcium and magnesium ions for sodium or potassium ions, these systems deliver consistent soft water throughout the home. For example, a salt-based unit passes hard water through a resin bed where sodium-coated beads capture hardness minerals—then regenerates automatically to restore softening capacity, preparing the system for the next cycle. Understanding core mechanisms leads us into the specific nature of hard water and its impact.",
+        image: "![Modern water softener system in a home setting, emphasizing water quality improvement](https://storage.googleapis.com/content-assistant-images-temp/3fc7b342-2597-428a-af7c-4def4d69f0f7.webp)"
       },
       {
         heading: "What Is Hard Water and Why Does It Matter?",
         content: "Hard water contains elevated levels of dissolved calcium and magnesium, causing scale buildup in pipes, reduced soap lather, and grayish spots on dishes. Hardness minerals accumulate inside water heaters and dishwashers, decreasing thermal efficiency and shortening appliance lifespan."
       },
       {
-        heading: "Hard Water Effects on Appliances",
-        content: "Hard water can significantly reduce the efficiency and lifespan of household appliances due to the buildup of mineral scale. This scale accumulation can lead to increased energy consumption and potential damage to heating elements and other components within appliances like water heaters and dishwashers.",
-        additionalContent: "Electric Power Research Institute, \"Impact of Water Quality on Residential Appliances\" (2018)"
-      },
-      {
         heading: "How Does Ion Exchange Remove Hard Minerals?",
-        content: "Ion exchange softening works by passing hard water through resin beads charged with sodium or potassium, which swap places with calcium and magnesium ions. This chemical exchange neutralizes hardness and produces soft water that prevents scale. A typical system uses resin beads rated for 30,000 grains of hardness—after treatment, the resin recharges itself by flushing brine solution from a salt tank, preparing for the next service cycle. Examining regeneration details explains how systems remain effective over time."
+        content: "Ion exchange softening works by passing hard water through resin beads charged with sodium or potassium, which swap places with calcium and magnesium ions. This chemical exchange neutralizes hardness and produces soft water that prevents scale. A typical system uses resin beads rated for 30,000 grains of hardness—after treatment, the resin recharges itself by flushing brine solution from a salt tank, preparing for the next service cycle. Examining regeneration details explains how systems remain effective over time.",
+        image: "![Illustration of ion exchange process in water softeners, showing resin beads and mineral exchange](https://storage.googleapis.com/content-assistant-images-temp/abd02cc9-c913-47cd-ab1d-065188500a87.webp)"
       },
       {
         heading: "What Is the Regeneration Cycle in Water Softeners?",
@@ -46,11 +43,6 @@ export const waterSoftenerSystemsPost = {
       {
         heading: "How Much Do Water Softener Systems Cost?",
         content: "Water softener systems cost varies widely based on system type, capacity, and installation complexity. Typical investment ranges from $500 for basic salt-free units up to $6,000 for high-capacity dual-tank salt-based systems with demand-initiated regeneration. For instance, a mid-range 48,000-grain salt-based softener plus professional labor often totals around $2,000. Breaking down these cost elements provides clarity on budget planning."
-      },
-      {
-        heading: "Water Softener Costs and Benefits",
-        content: "The initial investment in a water softener system can range widely, but the long-term benefits often include reduced energy costs and extended appliance lifespans. Softened water also improves the effectiveness of soaps and detergents, leading to further savings and enhanced cleaning performance.",
-        additionalContent: "Consumer Reports, \"Water Softeners Buying Guide\" (2022)"
       },
       {
         heading: "What Is the Average Price Range for Water Softener Systems?",
@@ -96,7 +88,8 @@ export const waterSoftenerSystemsPost = {
       },
       {
         heading: "How Is a Water Softener System Installed?",
-        content: "Proper water softener systems installation involves selecting a suitable location near the main water line, connecting a bypass valve, drain line, and control valve, and programming the regeneration schedule. A methodical installation ensures reliable performance and ease of maintenance. These steps can be tackled by experienced DIYers or licensed professionals depending on skill level and local codes."
+        content: "Proper water softener systems installation involves selecting a suitable location near the main water line, connecting a bypass valve, drain line, and control valve, and programming the regeneration schedule. A methodical installation ensures reliable performance and ease of maintenance. These steps can be tackled by experienced DIYers or licensed professionals depending on skill level and local codes.",
+        image: "![Professional installing a water softener system, highlighting plumbing components and installation process](https://storage.googleapis.com/content-assistant-images-temp/dfb72a04-7eb8-4ed9-ad6e-03bedc466b3a.webp)"
       },
       {
         heading: "What Are the Steps for DIY Water Softener Installation?",

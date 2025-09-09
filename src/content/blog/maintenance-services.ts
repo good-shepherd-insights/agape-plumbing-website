@@ -4,8 +4,8 @@ export const maintenanceServicesPost = {
   slug: "maintenance-services",
   excerpt: "Preventing costly breakdowns and ensuring uninterrupted operations starts with proactive maintenance services designed to safeguard property, optimize performance, and extend asset lifespan. In this guide, you will discover the core concepts behind maintenance services, explore specialized plumbing, HVAC, and electrical solutions, review commercial and emergency protocols, and learn how to select a provider whose certified technicians deliver reliability, cost efficiency, and tailored support.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-24T10:00:00Z",
-  updatedAt: "2024-01-24T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "maintenance",
   tags: ["maintenance services", "plumbing maintenance", "HVAC maintenance", "electrical maintenance", "preventive maintenance"],
   featured: false,
@@ -21,7 +21,8 @@ export const maintenanceServicesPost = {
       {
         heading: "What Are Maintenance Services and Why Are They Essential?",
         content: "Maintenance services encompass systematic inspections, servicing, and repairs of building systems and equipment to prevent failures, ensure safety, and maximize operational efficiency. By identifying issues before they escalate, these services reduce downtime, lower repair costs, and extend equipment life—illustrating why every facility relies on regular upkeep. For example, routine lubrication of mechanical bearings can prevent motor seizure and costly production delays.",
-        additionalContent: "Reliable maintenance services reduce equipment failure and promote uninterrupted productivity, establishing the foundation for specialized plumbing, HVAC, and electrical solutions."
+        additionalContent: "Reliable maintenance services reduce equipment failure and promote uninterrupted productivity, establishing the foundation for specialized plumbing, HVAC, and electrical solutions.",
+        image: "![Technicians performing maintenance services on plumbing, HVAC, and electrical systems in a commercial setting](https://storage.googleapis.com/content-assistant-images-temp/f645a4e9-d442-401c-b811-eeaef08de21e.webp)"
       },
       {
         heading: "What Types of Maintenance Services Are Available?",
@@ -51,11 +52,6 @@ export const maintenanceServicesPost = {
         additionalContent: "Predictive maintenance's real-time insights complement preventive schedules, creating a balanced program that maximizes reliability and asset health."
       },
       {
-        heading: "Benefits of Preventive Maintenance",
-        content: "Preventive maintenance, including scheduled inspections and servicing, is a key strategy for reducing unplanned downtime and lowering overall maintenance costs. Implementing these strategies can lead to significant cost savings and improved equipment lifespan, as well as a reduction in unexpected failures.",
-        additionalContent: "Smith, A., & Jones, B. \"The Impact of Preventive Maintenance on Operational Efficiency.\" Journal of Facilities Management (2022)"
-      },
-      {
         heading: "How Do Plumbing Maintenance Services Protect Your Property?",
         content: "Plumbing maintenance services involve inspecting pipes, fixtures, and appliances to prevent leaks, blockages, and water damage. By addressing hidden leaks and worn components early, these services safeguard structural integrity and ensure reliable water delivery. For instance, detecting a pinhole leak in a supply line averts costly drywall repairs and mold remediation."
       },
@@ -69,7 +65,8 @@ export const maintenanceServicesPost = {
           "Examining drain lines and traps for slow drainage or odors.",
           "Verifying valve operation to ensure emergency shutoff functionality."
         ],
-        additionalContent: "These tasks maintain system integrity and prepare the facility for more advanced preventive programs or emergency interventions."
+        additionalContent: "These tasks maintain system integrity and prepare the facility for more advanced preventive programs or emergency interventions.",
+        image: "![Technician inspecting plumbing systems for maintenance tasks](https://storage.googleapis.com/content-assistant-images-temp/5de5e99b-8605-4992-abe4-26b2be5faf9b.webp)"
       },
       {
         heading: "How Does Leak Detection Prevent Water Damage?",
@@ -118,7 +115,8 @@ export const maintenanceServicesPost = {
           "Lubricating motors and bearings to reduce friction losses.",
           "Calibrating thermostats and controls for accurate temperature regulation.",
           "Assessing duct integrity to prevent air leakage and pressure imbalances."
-        ]
+        ],
+        image: "![HVAC technician performing maintenance on an air conditioning unit](https://storage.googleapis.com/content-assistant-images-temp/32c0a91b-4c03-4e51-b35d-2cd5321b47ec.webp)"
       },
       {
         heading: "How Does Regular AC Repair Improve System Efficiency?",

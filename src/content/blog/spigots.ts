@@ -4,8 +4,8 @@ export const spigotsPost = {
   slug: "spigots",
   excerpt: "A spigot is the unsung hero of outdoor plumbing, delivering water where you need it most and integrating seamlessly with gardening, irrigation, and construction systems. Yet choosing, installing, and caring for the right spigot can feel overwhelming: frost damage, leaks, and material failure threaten performance.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-28T10:00:00Z",
-  updatedAt: "2024-01-28T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "plumbing-services",
   tags: ["spigots", "outdoor plumbing", "irrigation", "plumbing fixtures", "water conservation"],
   featured: false,
@@ -21,7 +21,8 @@ export const spigotsPost = {
       {
         heading: "What Is a Spigot? Definition, Function, and Key Components",
         content: "A spigot is an outdoor valve fixture that controls water release from a pressurized pipe by opening or closing an internal passage, allowing efficient irrigation, washing, or filling tasks while protecting plumbing from backflow or freezing. For example, a standard hose bib spigot connects a garden hose directly to mains water, blending convenience with durability.",
-        additionalContent: "Spigots deliver water flow control through a valve mechanism and spout assembly, making them essential for outdoor watering systems. These elements ensure precise operation and long-term reliability, laying the groundwork for understanding specialized spigot types and maintenance practices."
+        additionalContent: "Spigots deliver water flow control through a valve mechanism and spout assembly, making them essential for outdoor watering systems. These elements ensure precise operation and long-term reliability, laying the groundwork for understanding specialized spigot types and maintenance practices.",
+        image: "![Various types of spigots in a garden setting, showcasing outdoor plumbing solutions](https://storage.googleapis.com/content-assistant-images-temp/d2720562-8ed0-41a3-bb35-d4ab4987371d.webp)"
       },
       {
         heading: "How Does a Spigot Control Water Flow?",
@@ -53,7 +54,8 @@ export const spigotsPost = {
           "Ball Valve Spigot: Uses a quarter-turn ball for rapid shut-off, ideal for quick adjustments.",
           "Yard Hydrant: Mounted above ground for large-scale water use on farms and estates.",
           "Sillcock: Wall-mounted outdoor faucet often found on building exteriors."
-        ]
+        ],
+        image: "![Various types of spigots in a garden setting, showcasing outdoor plumbing solutions](https://storage.googleapis.com/content-assistant-images-temp/6660bac2-2a0c-4afe-8667-22d51d58f35b.webp)"
       },
       {
         heading: "What Is a Hose Bib Spigot and Why Is It Popular for Gardening?",
@@ -70,11 +72,6 @@ export const spigotsPost = {
         content: "Anti-siphon spigots integrate a vacuum breaker to stop backflow and protect potable water. This backflow prevention feature meets many plumbing codes, ensuring garden chemicals or stagnant water never compromise drinking water lines."
       },
       {
-        heading: "Anti-Siphon Spigots and Water Safety",
-        content: "Anti-siphon spigots are designed with a vacuum breaker to prevent the backflow of contaminated water into the main water supply. This feature is crucial for protecting potable water and is often required by plumbing codes.",
-        additionalContent: "International Association of Plumbing and Mechanical Officials, Plumbing Code (2021)"
-      },
-      {
         heading: "When Should You Use Ball Valve, Yard Hydrant, or Sillcock Spigots?",
         content: "Choose a ball valve spigot for quarter-turn operation and tight shut-off in utility zones. Opt for a yard hydrant if you require elevated, frost-resistant water outlets in large yards or agricultural settings. Install a sillcock on exterior walls for basic water access with decorative or lockable handle options. Each style balances ease of use, freeze protection, and installation complexity to suit specific outdoor scenarios."
       },
@@ -88,11 +85,6 @@ export const spigotsPost = {
           ["Plastic (PVC/ABS)", "Moderate", "Fair", "Low–Moderate", "Temporary setups, low-pressure"],
           ["Bronze", "High", "Very Good", "High", "Decorative outdoor faucets"]
         ]
-      },
-      {
-        heading: "Spigot Materials and Corrosion Resistance",
-        content: "The choice of material significantly impacts a spigot's lifespan and resistance to environmental factors. Brass and stainless steel are often favored for their durability and corrosion resistance, while plastic offers a more budget-friendly option, though with some limitations.",
-        additionalContent: "American Society for Testing and Materials, Standard Specification for Brass Spigots (2022)"
       },
       {
         heading: "Why Are Brass Spigots Considered the Gold Standard for Longevity?",
@@ -119,11 +111,13 @@ export const spigotsPost = {
           "Attach and Seal: Insert the spigot stem, secure with mounting flange, and apply plumber's tape or sealant to threaded connections for watertight performance.",
           "Connect Water Supply: Fasten the spigot to the water line using compression fittings or soldered joints.",
           "Test Operation: Open the valve fully, inspect for leaks, and adjust packing nuts for smooth handle operation without drips."
-        ]
+        ],
+        image: "![Person installing an outdoor spigot, demonstrating the installation process with tools and materials](https://storage.googleapis.com/content-assistant-images-temp/5de9afc5-3dfb-4f33-989e-c3e02a931e24.webp)"
       },
       {
         heading: "How Can You Repair a Leaking Spigot? Common Causes and Fixes",
-        content: "Replace worn packing washers and O-rings to stop drips from the handle, then tighten the packing nut to compress new seals around the stem. If the spout drips when closed, remove and replace the valve seat or compression washer inside the valve body. Corroded threads may require a new spigot assembly to restore reliable shut-off performance."
+        content: "Replace worn packing washers and O-rings to stop drips from the handle, then tighten the packing nut to compress new seals around the stem. If the spout drips when closed, remove and replace the valve seat or compression washer inside the valve body. Corroded threads may require a new spigot assembly to restore reliable shut-off performance.",
+        image: "![Close-up of a person repairing a leaking spigot, highlighting tools and replacement parts](https://storage.googleapis.com/content-assistant-images-temp/64f71645-a035-4cc2-afce-6ccb90c9da29.webp)"
       },
       {
         heading: "What Is the Best Way to Winterize Your Spigot to Prevent Damage?",

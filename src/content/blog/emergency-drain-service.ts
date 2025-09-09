@@ -4,8 +4,8 @@ export const emergencyDrainServicePost = {
   slug: "emergency-drain-service",
   excerpt: "A sudden sewer backup or burst pipe can threaten your home's structure and health at any hour. Emergency drain service delivers immediate response and expert solutions to restore proper drainage, prevent water damage, and eliminate health hazards.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-20T10:00:00Z",
-  updatedAt: "2024-01-20T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "emergency",
   tags: ["emergency drain service", "drain cleaning", "emergency plumbing", "sewer backup", "plumbing repairs"],
   featured: false,
@@ -28,7 +28,8 @@ export const emergencyDrainServicePost = {
           "Recurring foul odors without an apparent source",
           "Slow drainage coupled with multiple blocked fixtures",
           "Unexpected pooling of water around floor or shower drains"
-        ]
+        ],
+        image: "![Homeowner observing water backing up in a sink, indicating an emergency drain problem](https://storage.googleapis.com/content-assistant-images-temp/76d85a1b-bdfd-4bfc-ba21-b37203393a5e.webp)"
       },
       {
         heading: "Emergency Drain Symptoms Overview",
@@ -89,7 +90,8 @@ export const emergencyDrainServicePost = {
       },
       {
         heading: "How Does Hydro Jetting Work for Emergency Drain Cleaning?",
-        content: "Hydro jetting employs pressurized water streams that cut through grease, scale, roots, and sediment. By adjusting pressure settings, technicians protect pipe walls while blasting obstructions. This method improves cleaning efficacy, extends pipe life, and supports preventive maintenance by fully restoring pipe diameter."
+        content: "Hydro jetting employs pressurized water streams that cut through grease, scale, roots, and sediment. By adjusting pressure settings, technicians protect pipe walls while blasting obstructions. This method improves cleaning efficacy, extends pipe life, and supports preventive maintenance by fully restoring pipe diameter.",
+        image: "![Technician using hydro jetting equipment to clear a clogged drain](https://storage.googleapis.com/content-assistant-images-temp/600b6430-1a28-4d1f-8481-23bdc62fe044.webp)"
       },
       {
         heading: "When Is Drain Snaking the Best Solution for Urgent Clogs?",

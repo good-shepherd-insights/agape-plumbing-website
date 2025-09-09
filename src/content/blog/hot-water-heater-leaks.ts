@@ -4,8 +4,8 @@ export const hotWaterHeaterLeaksPost = {
   slug: "hot-water-heater-leaks",
   excerpt: "Water seeping from your hot water heater is a clear sign of trouble brewing, potentially leading to expensive repairs and flooding in your home. This comprehensive guide will walk you through the most common reasons for leaks, how to pinpoint them, effective repair methods, when to consider a replacement, essential maintenance for prevention, crucial safety tips, differences between heater types, and specific fixes for individual parts.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-29T10:00:00Z",
-  updatedAt: "2024-01-29T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "maintenance",
   tags: ["hot water heater", "leaks", "water heater repair", "plumbing maintenance", "water damage"],
   featured: false,
@@ -29,7 +29,8 @@ export const hotWaterHeaterLeaksPost = {
           ["Faulty Valves", "Worn-out T&P or drain valves not sealing properly", "Causes continuous dripping or spraying"],
           ["Loose Connections", "Vibrations causing inlet/outlet pipes to loosen", "Results in intermittent weeping at fittings"],
           ["Age-Related Wear", "Materials weakening after 8–10 years of use", "Can lead to cracked tanks or failed seals"]
-        ]
+        ],
+        image: "![Hot water heater with visible leaks in a utility room, highlighting the issue of water damage](https://storage.googleapis.com/content-assistant-images-temp/be602bc6-a25b-46cc-9db0-1f740dbb2603.webp)"
       },
       {
         heading: "Leak Causes Summary",
@@ -78,7 +79,8 @@ export const hotWaterHeaterLeaksPost = {
           "The side of the tank or any pipe fittings",
           "Surface condensation versus actual water drips",
           "Visible signs of cracks or corrosion on the tank"
-        ]
+        ],
+        image: "![A technician carefully inspecting a hot water heater to identify the source of water leaks, demonstrating diagnostic techniques](https://storage.googleapis.com/content-assistant-images-temp/527222b2-fc71-4340-adc2-281947d52987.webp)"
       },
       {
         heading: "Leak Diagnosis Tips",
@@ -117,7 +119,8 @@ export const hotWaterHeaterLeaksPost = {
           "Repair or replace a leaking drain valve",
           "Use epoxy-based sealants for minor corrosion holes in the tank",
           "Install a new anode rod to prevent future corrosion"
-        ]
+        ],
+        image: "![A person is shown fixing a leaking hot water heater by replacing a valve and tightening pipe connections, demonstrating effective repair methods](https://storage.googleapis.com/content-assistant-images-temp/52b4fc40-9411-4f6d-9301-9347f49dce1c.webp)"
       },
       {
         heading: "Repair Options Summary",

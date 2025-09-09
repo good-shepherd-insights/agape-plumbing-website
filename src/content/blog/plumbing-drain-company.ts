@@ -4,8 +4,8 @@ export const plumbingDrainCompanyPost = {
   slug: "plumbing-drain-company",
   excerpt: "Struggling with slow drains or unexpected leaks? A plumbing and drain company near me provides prompt local expertise to restore water flow, prevent property damage, and ensure peace of mind. This guide outlines how expert plumbers diagnose issues, deploy advanced technologies, and deliver transparent pricing for both routine maintenance and emergency repairs.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-25T10:00:00Z",
-  updatedAt: "2024-01-25T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "plumbing-services",
   tags: ["plumbing drain company", "drain cleaning", "plumbing services", "emergency plumbing", "sewer repair"],
   featured: false,
@@ -28,7 +28,8 @@ export const plumbingDrainCompanyPost = {
           "Water Heater Services – Installing, repairing, and maintaining hot water systems.",
           "Leak Detection & Repair – Locating hidden leaks using acoustic and thermal methods.",
           "Emergency Plumbing – Providing 24/7 response for burst pipes, sewage backups, and urgent repairs."
-        ]
+        ],
+        image: "![Professional plumber working on residential plumbing system with modern tools](https://storage.googleapis.com/content-assistant-images-temp/940dc477-8a75-4f32-a2b9-18ec0bc1639d.webp)"
       },
       {
         heading: "Service Benefits Overview",
@@ -50,7 +51,8 @@ export const plumbingDrainCompanyPost = {
           "A drain snake performs rooter service by unwinding obstruction bundles.",
           "Hydro jetting clears stubborn blockages with high-pressure water streams.",
           "Biodegradable enzyme treatments prevent future buildup without harsh chemicals."
-        ]
+        ],
+        image: "![Plumber using hydro jetting machine to clear clogged drain with high-pressure water](https://storage.googleapis.com/content-assistant-images-temp/99e772e6-5b81-4d18-87b7-f9c4d6f35a0c.webp)"
       },
       {
         heading: "Hydro Jetting Benefits",
@@ -97,7 +99,8 @@ export const plumbingDrainCompanyPost = {
           "Portable pumps extract sewage during backups.",
           "Temporary bypass valves maintain water supply to unaffected areas."
         ],
-        additionalContent: "Having a 24/7 emergency plan ensures minimal disruption and leads us into recognizing and resolving everyday drain problems."
+        additionalContent: "Having a 24/7 emergency plan ensures minimal disruption and leads us into recognizing and resolving everyday drain problems.",
+        image: "![Emergency plumbers responding to a plumbing crisis at night with tools and urgency](https://storage.googleapis.com/content-assistant-images-temp/cc28de5f-cdd5-4574-b659-f2f3c440d61d.webp)"
       },
       {
         heading: "How Can You Identify and Fix Common Drain Problems?",

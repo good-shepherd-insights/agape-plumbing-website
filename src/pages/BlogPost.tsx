@@ -103,6 +103,17 @@ const BlogPost = () => {
           {postContent.content.introduction}
         </p>
 
+        {postContent.content.image && (
+          <div className="mb-8">
+            <img
+              src={postContent.content.image.match(/\((.*?)\)/)?.[1] || ''}
+              alt={postContent.content.image.match(/!\[(.*?)\]/)?.[1] || ''}
+              className="w-full max-w-2xl mx-auto rounded-lg shadow-lg border-4 border-white"
+              loading="lazy"
+            />
+          </div>
+        )}
+
         {postContent.content.sections.map((section: any, index: number) => (
           <section key={index} className="mb-12">
             <h2 className="text-2xl md:text-3xl font-black uppercase mb-6 text-plumbing-800 border-b-4 border-plumbing-800 pb-2">
@@ -117,6 +128,18 @@ const BlogPost = () => {
               {section.additionalContent && (
                 <p className="text-lg leading-relaxed mb-4">
                   {section.additionalContent}
+                </p>
+              )}
+
+              {section.additionalContent2 && (
+                <p className="text-lg leading-relaxed mb-4">
+                  {section.additionalContent2}
+                </p>
+              )}
+
+              {section.additionalContent3 && (
+                <p className="text-lg leading-relaxed mb-4">
+                  {section.additionalContent3}
                 </p>
               )}
             </div>
@@ -143,6 +166,26 @@ const BlogPost = () => {
                   </li>
                 ))}
               </ol>
+            )}
+
+            {section.image && (
+              <div className="mb-6">
+                <img
+                  src={section.image.match(/\((.*?)\)/)?.[1] || ''}
+                  alt={section.image.match(/!\[(.*?)\]/)?.[1] || ''}
+                  className="w-full max-w-2xl mx-auto rounded-lg shadow-lg border-4 border-white"
+                  loading="lazy"
+                />
+              </div>
+            )}
+
+            {section.table && (
+              <div className="mb-6 overflow-x-auto">
+                <div
+                  className="prose prose-lg max-w-none"
+                  dangerouslySetInnerHTML={{ __html: section.table }}
+                />
+              </div>
             )}
           </section>
         ))}

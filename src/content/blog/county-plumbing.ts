@@ -4,8 +4,8 @@ export const countyPlumbingPost = {
   slug: "county-plumbing",
   excerpt: "Every minute counts when a plumbing failure threatens your home or business, and county plumbing experts deliver rapid, licensed response to safeguard property and health. By combining local expertise, certified technicians, and cutting-edge equipment, these comprehensive county plumbing services span emergency repairs, drain and sewer maintenance, water heater solutions, backflow prevention, leak detection, residential and commercial installations, code compliance, and guaranteed customer care.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-18T10:00:00Z",
-  updatedAt: "2024-01-18T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "plumbing-services",
   tags: ["county plumbing", "plumbing services", "emergency plumbing", "licensed plumbers", "drain cleaning"],
   featured: false,
@@ -26,7 +26,8 @@ export const countyPlumbingPost = {
           "Burst Pipe Repair: Sealing or replacing broken pipes under pressure.",
           "Sewer Backup Mitigation: Clearing blockages and sanitizing wastewater.",
           "24/7 Rapid Response: Around-the-clock service availability for any plumbing emergency."
-        ]
+        ],
+        image: "![Licensed plumber repairing a residential plumbing system under a kitchen sink](https://storage.googleapis.com/content-assistant-images-temp/a684651c-be3c-4181-b8a1-c15a98b1a77f.webp)"
       },
       {
         heading: "Emergency Services Overview",
@@ -45,7 +46,8 @@ export const countyPlumbingPost = {
       },
       {
         heading: "How Does 24/7 Emergency Plumbing Service Work in Your County?",
-        content: "County plumbing's 24/7 emergency framework dispatches licensed technicians typically within 60 minutes of notification. Each technician carries diagnostic tools, repair parts, and temporary containment kits to address immediate threats. After triaging, they provide a transparent repair estimate, complete urgent fixes, and schedule follow-up maintenance to avoid repeat emergencies."
+        content: "County plumbing's 24/7 emergency framework dispatches licensed technicians typically within 60 minutes of notification. Each technician carries diagnostic tools, repair parts, and temporary containment kits to address immediate threats. After triaging, they provide a transparent repair estimate, complete urgent fixes, and schedule follow-up maintenance to avoid repeat emergencies.",
+        image: "![Plumber responding to an emergency plumbing situation outside a residential home](https://storage.googleapis.com/content-assistant-images-temp/29bde04b-67b7-4524-afe8-8054fa96dd34.webp)"
       },
       {
         heading: "Which Drain Cleaning and Sewer Services Does County Plumbing Offer?",
@@ -70,7 +72,8 @@ export const countyPlumbingPost = {
       },
       {
         heading: "What Are the Benefits of Hydro Jetting Services?",
-        content: "Hydro jetting services use pressurized water to eliminate even the toughest mineral deposits, tree root intrusions, and scale accumulation. This method fully scours pipe walls without chemicals, extends pipe lifespan by reducing corrosion, and restores optimal flow rates—delivering a sustainable and environmentally friendly solution."
+        content: "Hydro jetting services use pressurized water to eliminate even the toughest mineral deposits, tree root intrusions, and scale accumulation. This method fully scours pipe walls without chemicals, extends pipe lifespan by reducing corrosion, and restores optimal flow rates—delivering a sustainable and environmentally friendly solution.",
+        image: "![Hydro jetting machine cleaning a sewer line with high-pressure water jets](https://storage.googleapis.com/content-assistant-images-temp/630943e5-ee34-4f89-9733-4b13dfc19a46.webp)"
       },
       {
         heading: "Hydro Jetting Benefits",

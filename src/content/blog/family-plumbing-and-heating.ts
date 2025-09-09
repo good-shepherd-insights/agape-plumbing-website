@@ -4,8 +4,8 @@ export const familyPlumbingAndHeatingPost = {
   slug: "family-plumbing-and-heating",
   excerpt: "Unexpected leaks or furnace breakdowns can jeopardize home safety and comfort in minutes. Family Plumbing And Heating Inc combines decades of family-owned values with certified expertise to resolve plumbing and heating emergencies, improve energy efficiency, and support indoor air quality.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-22T10:00:00Z",
-  updatedAt: "2024-01-22T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "plumbing-services",
   tags: ["family plumbing", "heating services", "plumbing and heating", "emergency plumbing", "HVAC services"],
   featured: false,
@@ -20,7 +20,8 @@ export const familyPlumbingAndHeatingPost = {
     sections: [
       {
         heading: "Why Choose Family Plumbing And Heating for Your Plumbing and Heating Needs?",
-        content: "Selecting a provider with deep community ties and proven performance ensures lasting results for everything from a dripping faucet to a malfunctioning boiler. Family Plumbing And Heating Inc delivers personalized care, transparent pricing, and rapid response backed by certified technicians and decades of local reputation. For example, our preventive maintenance plans have reduced emergency visits by over 20%, protecting property and peace of mind. Exploring our unique values, professional credentials, and round-the-clock availability reveals why homeowners trust our full-spectrum solutions."
+        content: "Selecting a provider with deep community ties and proven performance ensures lasting results for everything from a dripping faucet to a malfunctioning boiler. Family Plumbing And Heating Inc delivers personalized care, transparent pricing, and rapid response backed by certified technicians and decades of local reputation. For example, our preventive maintenance plans have reduced emergency visits by over 20%, protecting property and peace of mind. Exploring our unique values, professional credentials, and round-the-clock availability reveals why homeowners trust our full-spectrum solutions.",
+        image: "![Family-owned plumbing and heating service team in front of a home, showcasing community trust and expertise](https://storage.googleapis.com/content-assistant-images-temp/d9b81f84-5a5f-4d9b-8581-86d4bfda4e98.webp)"
       },
       {
         heading: "What Makes Family-Owned Plumbing And Heating Services Unique?",
@@ -50,7 +51,8 @@ export const familyPlumbingAndHeatingPost = {
           "High-capacity drain clearing and hydro-jetting for severe blockages threatening backups.",
           "On-site diagnostics and temporary heating solutions when central systems fail in cold weather."
         ],
-        additionalContent: "Our round-the-clock availability and fully stocked trucks ensure immediate action, safeguarding your home and setting the stage for an overview of core plumbing offerings."
+        additionalContent: "Our round-the-clock availability and fully stocked trucks ensure immediate action, safeguarding your home and setting the stage for an overview of core plumbing offerings.",
+        image: "![Certified technician repairing a burst pipe in a home, demonstrating emergency plumbing services](https://storage.googleapis.com/content-assistant-images-temp/f90d0998-71bd-4beb-befa-01ed9fcdb17e.webp)"
       },
       {
         heading: "What Plumbing Services Does Family Plumbing And Heating Offer?",
@@ -86,7 +88,8 @@ export const familyPlumbingAndHeatingPost = {
           ["Traditional", "0.90 EF", "Cost-effective solution for moderate use"],
           ["Hybrid Heat Pump", "2.5 UEF", "Maximum energy savings in mild climates"]
         ],
-        additionalContent: "Selecting the right system balances upfront cost with lifetime energy savings, improving comfort and utility budgets while reducing your carbon footprint. Next, precise leak detection prevents unseen damage."
+        additionalContent: "Selecting the right system balances upfront cost with lifetime energy savings, improving comfort and utility budgets while reducing your carbon footprint. Next, precise leak detection prevents unseen damage.",
+        image: "![Technician installing a tankless water heater, emphasizing home comfort and energy efficiency](https://storage.googleapis.com/content-assistant-images-temp/06254c0f-383a-4077-873c-c2415fab67cf.webp)"
       },
       {
         heading: "How Is Leak Detection Performed to Prevent Water Damage?",

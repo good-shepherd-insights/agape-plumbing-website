@@ -4,8 +4,8 @@ export const professionalPlumberDrainCleaningPost = {
   slug: "professional-plumber-drain-cleaning",
   excerpt: "Clogged drains can turn routine chores into major headaches, and knowing what to expect from a professional plumber for drain cleaning ensures fast, reliable results without guessing games. This guide delivers clear value by mapping out six core themes: recognizing warning signs, following a proven cleaning process, weighing benefits, understanding costs, comparing professional versus DIY approaches, and maintaining healthy drains afterward.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-02-03T10:00:00Z",
-  updatedAt: "2024-02-03T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "drain-cleaning",
   tags: ["drain cleaning", "plumber services", "clogged drains", "professional plumbing", "drain maintenance"],
   featured: false,
@@ -20,7 +20,8 @@ export const professionalPlumberDrainCleaningPost = {
     sections: [
       {
         heading: "When Should You Call a Professional Plumber for Drain Cleaning?",
-        content: "You should call a professional plumber for drain cleaning when persistent symptoms like slow drainage, foul odors, or recurring backups signal that basic DIY fixes won't address underlying blockages effectively."
+        content: "You should call a professional plumber for drain cleaning when persistent symptoms like slow drainage, foul odors, or recurring backups signal that basic DIY fixes won't address underlying blockages effectively.",
+        image: "![Professional plumber using a drain snake to clear a clogged sink in a kitchen](https://storage.googleapis.com/content-assistant-images-temp/270ce880-0e87-43c5-aaf5-871efeba0804.webp)"
       },
       {
         heading: "What Are the Common Signs of a Clogged Drain?",
@@ -61,7 +62,8 @@ export const professionalPlumberDrainCleaningPost = {
       },
       {
         heading: "What Happens During a Drain Camera Inspection?",
-        content: "Drain camera inspection employs a flexible, fiber-optic camera pushed through the pipe to capture real-time video of the interior. This non-invasive diagnostic method locates blockages, reveals pipe damage, and guides the selection of the most effective cleaning technique."
+        content: "Drain camera inspection employs a flexible, fiber-optic camera pushed through the pipe to capture real-time video of the interior. This non-invasive diagnostic method locates blockages, reveals pipe damage, and guides the selection of the most effective cleaning technique.",
+        image: "![Drain camera inspection showing real-time footage of pipe interior](https://storage.googleapis.com/content-assistant-images-temp/fce1532b-ff7e-42ab-bed7-d2ad20e4fb36.webp)"
       },
       {
         heading: "How Is the Right Cleaning Method Selected?",

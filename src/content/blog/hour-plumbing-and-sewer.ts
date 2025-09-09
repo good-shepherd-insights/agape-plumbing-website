@@ -4,8 +4,8 @@ export const hourPlumbingAndSewerPost = {
   slug: "hour-plumbing-and-sewer",
   excerpt: "Water damage claims from burst pipes cost U.S. homeowners over $2.5 billion annually, making rapid intervention essential. In this guide, you'll discover how 24 hour plumbing and sewer services deliver immediate emergency repairs, transparent pricing, advanced technologies, and proactive prevention strategies.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-23T10:00:00Z",
-  updatedAt: "2024-01-23T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "emergency",
   tags: ["24 hour plumbing", "emergency plumbing", "sewer services", "emergency repairs", "plumbing services"],
   featured: false,
@@ -21,7 +21,8 @@ export const hourPlumbingAndSewerPost = {
       {
         heading: "Cost of Water Damage from Burst Pipes",
         content: "Water damage from burst pipes is a significant expense for homeowners in the U.S., costing billions of dollars annually. Rapid intervention is essential to mitigate the damage and reduce the overall costs associated with these emergencies.",
-        additionalContent: "Insurance Information Institute, Facts and Statistics: Homeowners and renters insurance (2024)"
+        additionalContent: "Insurance Information Institute, Facts and Statistics: Homeowners and renters insurance (2024)",
+        image: "![Professional plumber repairing a burst pipe in a residential home, showcasing emergency plumbing services](https://storage.googleapis.com/content-assistant-images-temp/d3101b57-3537-4b94-bbcf-13d64cd0cad3.webp)"
       },
       {
         heading: "What Are the Most Common 24 Hour Plumbing and Sewer Emergencies?",
@@ -33,7 +34,8 @@ export const hourPlumbingAndSewerPost = {
           "Sewer Backups introducing raw sewage into living spaces",
           "Undetected Leaks that silently compromise walls, ceilings, and foundations",
           "Water Heater or Gas Line Failures risking scalding, gas hazards, and service interruption"
-        ]
+        ],
+        image: "![Illustration of common plumbing emergencies including clogged drains and leaking pipes, highlighting urgent repair needs](https://storage.googleapis.com/content-assistant-images-temp/7606933d-a330-4fba-a444-857f9bae3a6e.webp)"
       },
       {
         heading: "Common Plumbing Emergencies",
@@ -104,7 +106,8 @@ export const hourPlumbingAndSewerPost = {
           "Damp Walls or Floors with no visible source.",
           "Continuous Sound of Running Water when fixtures are off.",
           "Mold or Mildew Growth in isolated areas."
-        ]
+        ],
+        image: "![Technician using thermal imaging to detect hidden leaks in a residential property, illustrating emergency leak detection services](https://storage.googleapis.com/content-assistant-images-temp/65b88a13-7e40-41b9-9081-763260c87cf3.webp)"
       },
       {
         heading: "Leak Detection Benefits",

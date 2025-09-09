@@ -4,8 +4,8 @@ export const dayPlumbingServicePost = {
   slug: "day-plumbing-service",
   excerpt: "A burst pipe can flood a home in minutes, turning a minor drip into thousands of dollars in damage. Same day plumbing service near me delivers on-demand emergency repairs by dispatching licensed plumbers within hours, preventing water damage, restoring vital fixtures, and giving homeowners peace of mind.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-19T10:00:00Z",
-  updatedAt: "2024-01-19T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "emergency",
   tags: ["same day plumbing", "emergency plumbing", "plumbing services", "emergency repairs", "licensed plumbers"],
   featured: false,
@@ -21,7 +21,8 @@ export const dayPlumbingServicePost = {
       {
         heading: "What Is Same Day Plumbing Service and Why Is It Essential?",
         content: "Same day plumbing service delivers immediate emergency repairs by dispatching licensed technicians within hours, mitigating water damage and restoring essential utilities for homes and businesses.",
-        additionalContent: "This urgent intervention minimizes disruption, prevents structural harm, and preserves property value while ensuring safety and comfort."
+        additionalContent: "This urgent intervention minimizes disruption, prevents structural harm, and preserves property value while ensuring safety and comfort.",
+        image: "![Professional plumber repairing a burst pipe in a home, emphasizing urgent plumbing services](https://storage.googleapis.com/content-assistant-images-temp/954c409a-e8a2-437e-9fc7-c83e7fcef9b3.webp)"
       },
       {
         heading: "What Qualifies as a Plumbing Emergency Requiring Same Day Service?",
@@ -33,7 +34,8 @@ export const dayPlumbingServicePost = {
           "Complete Water Heater Failures leaving occupants without hot water",
           "Major Water Leaks undermining structural integrity"
         ],
-        additionalContent: "Recognizing these critical issues guides homeowners to seek rapid resolution and prevents minor faults from escalating into costly repairs."
+        additionalContent: "Recognizing these critical issues guides homeowners to seek rapid resolution and prevents minor faults from escalating into costly repairs.",
+        image: "![Various plumbing emergencies including burst pipes and sewage backups, highlighting urgent repair needs](https://storage.googleapis.com/content-assistant-images-temp/b4a7f8ae-85fc-4af0-8db7-7d05c687e324.webp)"
       },
       {
         heading: "How Does Same Day Plumbing Service Prevent Water Damage and Costly Repairs?",
@@ -71,7 +73,8 @@ export const dayPlumbingServicePost = {
       },
       {
         heading: "How Does Same Day Drain Cleaning Address Clogged Drains and Toilets?",
-        content: "Same day drain cleaning clears blockages in sinks, showers, and toilets using high-pressure hydro jetting or professional-grade augers. The process begins with a camera inspection to assess clog type—hair, grease, mineral buildup, or foreign objects—then selects the optimal tool to pulverize or extract the obstruction. Restoring proper flow prevents backflow, foul odors, and potential overflow damage."
+        content: "Same day drain cleaning clears blockages in sinks, showers, and toilets using high-pressure hydro jetting or professional-grade augers. The process begins with a camera inspection to assess clog type—hair, grease, mineral buildup, or foreign objects—then selects the optimal tool to pulverize or extract the obstruction. Restoring proper flow prevents backflow, foul odors, and potential overflow damage.",
+        image: "![Plumber using hydro jetting to clear a clogged drain, demonstrating effective emergency plumbing solutions](https://storage.googleapis.com/content-assistant-images-temp/9bbf4290-12bb-4a82-932f-61e6b9722dd7.webp)"
       },
       {
         heading: "When Is Emergency Sewer Line Repair Needed and How Is It Performed?",

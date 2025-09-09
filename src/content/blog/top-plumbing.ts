@@ -4,8 +4,8 @@ export const topPlumbingPost = {
   slug: "top-plumbing",
   excerpt: "Professional plumbing solutions integrate advanced techniques, reliable diagnostics, and skilled technicians to ensure every pipe, fixture, and system functions flawlessly. Plumbing emergencies, hidden leaks, aging water heaters, clogged drains, and large-scale commercial projects create stress, property risk, and unexpected expenses.",
   author: "Agape Plumbing Team",
-  publishedAt: "2024-01-31T10:00:00Z",
-  updatedAt: "2024-01-31T10:00:00Z",
+  publishedAt: "2025-09-08T10:00:00Z",
+  updatedAt: "2025-09-08T10:00:00Z",
   category: "plumbing-services",
   tags: ["top plumbing", "plumbing services", "emergency plumbing", "leak detection", "water heater repair"],
   featured: false,
@@ -28,7 +28,8 @@ export const topPlumbingPost = {
           "Drain and Sewer Maintenance: Hydro-jetting, rooter services, and trenchless sewer line replacement",
           "Residential & Commercial Plumbing: Fixture installation, repiping, grease trap servicing, backflow prevention"
         ],
-        additionalContent: "Each service category addresses specific pain points from water damage prevention to energy savings, forming a unified strategy for uninterrupted plumbing reliability."
+        additionalContent: "Each service category addresses specific pain points from water damage prevention to energy savings, forming a unified strategy for uninterrupted plumbing reliability.",
+        image: "![Professional plumber repairing a pipe in a modern kitchen, showcasing expert plumbing solutions](https://storage.googleapis.com/content-assistant-images-temp/a66b69e0-2e2d-4df1-b1e5-c79af38cdcc6.webp)"
       },
       {
         heading: "Which Emergency Plumbing Services Are Available 24/7?",
@@ -38,7 +39,8 @@ export const topPlumbingPost = {
           "Overflowing Toilet & Fixture Cleanup – Sanitary restoration and clog removal to prevent contamination.",
           "Gas Leak Response – Safety shutdown and line inspection to eliminate fire risks.",
           "Sump Pump Failure Fix – Pump replacement and basin cleaning to avert basement flooding."
-        ]
+        ],
+        image: "![Plumber responding to a plumbing emergency, emphasizing 24/7 emergency services](https://storage.googleapis.com/content-assistant-images-temp/dc5dca91-7b8c-43d5-b1a2-0a91c0d2053f.webp)"
       },
       {
         heading: "How Does Advanced Leak Detection Improve Plumbing Reliability?",
@@ -59,11 +61,6 @@ export const topPlumbingPost = {
           ["Storage Tank", "Pre-heated reservoir", "Lower upfront cost, simple repair"],
           ["Hybrid", "Heat pump integration", "Superior efficiency, lower bills"]
         ]
-      },
-      {
-        heading: "Water Heater Efficiency and Technology",
-        content: "Modern water heaters, including tankless, storage tank, and hybrid models, offer varying levels of efficiency and benefits. Tankless water heaters provide on-demand heating, potentially leading to energy savings, while hybrid models integrate heat pump technology for superior efficiency and lower energy bills.",
-        additionalContent: "U.S. Department of Energy"
       },
       {
         heading: "How Do Drain Cleaning and Sewer Line Services Prevent Plumbing Issues?",
@@ -166,12 +163,7 @@ export const topPlumbingPost = {
           "Hissing or whistling sounds within walls",
           "Rapid drop in household water pressure"
         ],
-        additionalContent: "Overflowing toilets may exhibit:",
-        list: [
-          "Continuous flushing without refilling",
-          "Water backup in adjacent drains",
-          "Gurgling noises during other fixture use"
-        ]
+        additionalContent: "Overflowing toilets may exhibit: Continuous flushing without refilling, Water backup in adjacent drains, Gurgling noises during other fixture use"
       },
       {
         heading: "How Is Rapid Response Critical in Plumbing Emergencies?",
@@ -212,7 +204,8 @@ export const topPlumbingPost = {
           "High-efficiency low-flow faucets, toilets, and showerheads",
           "Greywater recycling for irrigation and toilet flushing",
           "Heat recovery ventilators in water heater systems"
-        ]
+        ],
+        image: "![Modern eco-friendly plumbing fixtures in a stylish bathroom, showcasing smart and sustainable solutions](https://storage.googleapis.com/content-assistant-images-temp/efbded23-a824-43fe-a9f1-158961ea0d84.webp)"
       },
       {
         heading: "How Do Smart Water Heaters and Leak Detectors Enhance Efficiency?",
@@ -266,11 +259,6 @@ export const topPlumbingPost = {
           "Clearing slow drains to avoid complete clogs",
           "Seasonal winterization to protect exposed piping"
         ]
-      },
-      {
-        heading: "Preventative Plumbing Maintenance",
-        content: "Regular drain cleaning, including the use of enzymatic treatments, helps prevent clogs and the intrusion of tree roots. Routine maintenance, such as annual inspections and flushing, can extend the lifespan of plumbing systems and prevent costly repairs.",
-        additionalContent: "International Association of Plumbing and Mechanical Officials (IAPMO)"
       },
       {
         heading: "What Are Essential Seasonal Plumbing Maintenance Tips?",
