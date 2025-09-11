@@ -6,9 +6,10 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1a1a1a",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "scope": "/",
   "lang": "en-US",
+  "dir": "ltr",
   "categories": ["business", "utilities", "lifestyle"],
   "icons": [
     {
@@ -52,7 +53,8 @@
         {
           "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/png"
+          "type": "image/png",
+          "purpose": "any"
         }
       ]
     },
@@ -65,7 +67,8 @@
         {
           "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/png"
+          "type": "image/png",
+          "purpose": "any"
         }
       ]
     },
@@ -78,7 +81,148 @@
         {
           "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/png"
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Drain Cleaning",
+      "short_name": "Drains",
+      "description": "Expert drain cleaning services",
+      "url": "/services/drain-cleaning",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Faucets & Fixtures",
+      "short_name": "Fixtures",
+      "description": "Repair and install faucets and fixtures",
+      "url": "/services/faucets-fixtures",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Sewer Services",
+      "short_name": "Sewer",
+      "description": "Sewer line repair and maintenance",
+      "url": "/services/sewer-services",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Toilet Services",
+      "short_name": "Toilets",
+      "description": "Toilet repair and unclogging",
+      "url": "/services/toilet-services",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Water Heater Services",
+      "short_name": "Heaters",
+      "description": "Water heater repair and installation",
+      "url": "/services/water-heater-services",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen Plumbing",
+      "short_name": "Kitchen",
+      "description": "Kitchen plumbing solutions",
+      "url": "/services/kitchen-plumbing",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Pipe Repair",
+      "short_name": "Pipes",
+      "description": "Pipe repair and replacement",
+      "url": "/services/pipe-repair",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Drain Cleaning Tips",
+      "short_name": "Drains Blog",
+      "description": "Learn about drain cleaning services",
+      "url": "/blog/drain-cleaning-services",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Emergency Sewer Guide",
+      "short_name": "Sewer Blog",
+      "description": "Emergency sewer and drain advice",
+      "url": "/blog/emergency-sewer-and-drain",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Water Softeners",
+      "short_name": "Softeners",
+      "description": "Guide to water softener systems",
+      "url": "/blog/water-softener-systems",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any"
         }
       ]
     }

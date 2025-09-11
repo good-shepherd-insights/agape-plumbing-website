@@ -33,6 +33,42 @@ const Blog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={blog.meta.title} />
         <meta name="twitter:description" content={blog.meta.description} />
+        <meta property="og:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+        <meta name="twitter:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": blog.meta.title,
+            "description": blog.meta.description,
+            "url": blog.meta.canonical,
+            "publisher": {
+              "@id": "https://agapeplumbinginc.com/#organization"
+            },
+            "itemListElement": [
+              ...blog.categories.map((category, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                  "@type": "Thing",
+                  "name": category.name,
+                  "url": `https://agapeplumbinginc.com/blog/category/${category.slug}`
+                }
+              })),
+              ...featuredPosts.map((post, index) => ({
+                "@type": "ListItem",
+                "position": blog.categories.length + index + 1,
+                "item": {
+                  "@type": "Thing",
+                  "name": post.title,
+                  "url": `https://agapeplumbinginc.com/blog/${post.slug}`
+                }
+              }))
+            ]
+          })}
+        </script>
+        <meta property="og:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+        <meta name="twitter:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
       </Helmet>
 
       <Header />

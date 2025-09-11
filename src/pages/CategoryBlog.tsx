@@ -55,6 +55,30 @@ const CategoryBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${category.name} | Plumbing Blog | Agape Drain & Plumbing`} />
         <meta name="twitter:description" content={`Read expert plumbing tips and advice in our ${category.name.toLowerCase()} category.`} />
+        <meta property="og:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+        <meta name="twitter:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": `${category.name} | Plumbing Blog | Agape Drain & Plumbing`,
+            "description": `Read expert plumbing tips and advice in our ${category.name.toLowerCase()} category. Stay informed about your plumbing system.`,
+            "url": `https://agapeplumbinginc.com/blog/category/${category.slug}`,
+            "publisher": {
+              "@id": "https://agapeplumbinginc.com/#organization"
+            },
+            "articleSection": category.name,
+            "itemListElement": categoryPosts.map((post, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "Thing",
+                "name": post.title,
+                "url": `https://agapeplumbinginc.com/blog/${post.slug}`
+              }
+            }))
+          })}
+        </script>
       </Helmet>
 
       <Header />

@@ -8,6 +8,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 Allow: /*.css
 Allow: /*.js
 Allow: /*.png
@@ -25,6 +27,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 
 # Allow social media crawlers for sharing
 User-agent: Twitterbot
@@ -33,6 +37,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 
 User-agent: facebookexternalhit
 Allow: /
@@ -40,6 +46,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 
 # Allow AI search engines for better visibility
 User-agent: PerplexityBot
@@ -48,6 +56,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 
 User-agent: ChatGPT-User
 Allow: /
@@ -55,6 +65,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 
 User-agent: Claude-Web
 Allow: /
@@ -62,6 +74,8 @@ Allow: /services/
 Allow: /areas/
 Allow: /about
 Allow: /contact
+Allow: /blog/
+Allow: /blog/category/
 
 # Block unnecessary crawlers that don't contribute to SEO
 User-agent: AhrefsBot

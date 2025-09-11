@@ -235,6 +235,8 @@ const BlogPost = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.meta.title} />
         <meta name="twitter:description" content={post.meta.description} />
+        <meta property="og:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+        <meta name="twitter:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -256,6 +258,7 @@ const BlogPost = () => {
               "@id": `https://agapeplumbinginc.com/blog/${post.slug}`
             },
             "articleSection": blog.categories.find(cat => cat.slug === post.category)?.name,
+            "image": "https://agapeplumbinginc.com/assets/images/logo-og.webp",
             "keywords": post.tags.join(", ")
           })}
         </script>
