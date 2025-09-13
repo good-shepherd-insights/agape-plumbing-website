@@ -72,12 +72,48 @@ export const services = {
   },
   additionalServices: [
     {
-      title: "Drain & Sewer Services",
+      title: "Emergency Plumbing",
       features: [
-        "Hydro jetting",
-        "Drain cleaning",
-        "Sewer line inspections",
-        "Sewer repairs & replacements"
+        "24/7 emergency response",
+        "Burst pipe repair",
+        "Leak detection",
+        "Water damage prevention"
+      ]
+    },
+    {
+      title: "Pipe Repair",
+      features: [
+        "Pipe leak repair",
+        "Pipe replacement",
+        "Frozen pipe thawing",
+        "Pipe insulation"
+      ]
+    },
+    {
+      title: "Faucets & Fixtures",
+      features: [
+        "Faucet repair/replacement",
+        "Shower & tub fixtures",
+        "Fixture upgrades",
+        "Water-efficient options"
+      ]
+    },
+    {
+      title: "Toilet Services",
+      features: [
+        "Toilet repair",
+        "New installations",
+        "Water-efficient options",
+        "Clog removal"
+      ]
+    },
+    {
+      title: "Kitchen Plumbing",
+      features: [
+        "Sink & disposal repair",
+        "Drain pipe replacement",
+        "Fixture upgrades",
+        "Dishwasher installation"
       ]
     },
     {
@@ -87,6 +123,24 @@ export const services = {
         "Traditional tank heaters",
         "Water heater repairs",
         "Maintenance & flushing"
+      ]
+    },
+    {
+      title: "Drain Cleaning",
+      features: [
+        "Hydro jetting",
+        "Camera inspections",
+        "Preventative maintenance",
+        "Clog removal"
+      ]
+    },
+    {
+      title: "Sewer Services",
+      features: [
+        "Sewer line repair",
+        "Full line replacement",
+        "Trenchless solutions",
+        "Sewer line inspections"
       ]
     },
     {

@@ -3,7 +3,7 @@ export const faucetsFixturesCopy = {
     title: "Faucet & Fixture Services ",
     subtitle: "Professional Faucet Repair & Fixture Replacement",
     description: "Upgrade your kitchen and bathroom with our professional faucet and fixture installation services. From fixing leaky faucets to complete fixture replacements, our skilled plumbers ensure quality workmanship and lasting results.",
-    imageAlt: "Plumber installing a modern kitchen faucet in Frederick, MD home",
+    imageAlt: "Licensed plumber installing modern kitchen faucet in residential home",
   },
   intro: {
     title: "Expert Faucet & Fixture Services",
@@ -32,7 +32,7 @@ export const faucetsFixturesCopy = {
   },
   cta: {
     title: "Ready to Upgrade Your Faucets & Fixtures?",
-    description: "Contact us today to schedule faucet repair or fixture installation services in Frederick, Gaithersburg, Rockville, and surrounding areas. Transform your kitchen or bathroom with new, efficient fixtures.",
+    description: "Contact us today to schedule faucet repair or fixture installation services. Transform your kitchen or bathroom with new, efficient fixtures.",
     buttonText: "Schedule Fixture Service",
   },
   relatedServices: {
@@ -56,9 +56,9 @@ export const faucetsFixturesCopy = {
     ]
   },
   meta: {
-    title: "Faucet Installation Frederick MD | Agape Drain & Plumbing",
-    description: "Professional faucet installation & fixture repair in Frederick MD. Kitchen & bathroom faucet replacement by licensed plumbers. Water-saving upgrades.",
-    keywords: "faucet installation frederick md, fixture repair frederick, kitchen faucet replacement, bathroom faucet repair, water saving fixtures, licensed plumber frederick",
+    title: "Faucet Repair | Fixture Installation | Agape",
+    description: "Expert faucet repair: fixture installation, shower repair, bathroom remodeling. Licensed plumbers for kitchen & bathroom fixtures.",
+    keywords: "faucet repair, fixture installation, shower repair, bathroom remodeling, kitchen faucet installation, bathroom fixture replacement, sink installation, licensed plumber fixtures",
     canonical: "https://agapeplumbinginc.com/services/faucets-fixtures"
   },
 };

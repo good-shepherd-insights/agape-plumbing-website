@@ -48,6 +48,52 @@ const ServiceDetail = () => {
         <meta property="og:description" content={content.meta.description} />
         <meta property="og:url" content={content.meta.canonical} />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": content.hero.title,
+            "description": content.hero.description,
+            "provider": {
+              "@type": "LocalBusiness",
+              "@id": "https://agapeplumbinginc.com/#localbusiness",
+              "name": "Agape Drain & Plumbing LLC",
+              "telephone": "+1-227-223-9057",
+              "email": "agape7plumbing@gmail.com",
+              "url": "https://agapeplumbinginc.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "109 Wheeler Ln",
+                "addressLocality": "Frederick",
+                "addressRegion": "MD",
+                "postalCode": "21702",
+                "addressCountry": "US"
+              }
+            },
+            "serviceType": content.hero.title,
+            "url": content.meta.canonical,
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "businessFunction": "https://purl.org/goodrelations/v1#Sell",
+              "description": "Professional " + content.hero.title.toLowerCase() + " services"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Maryland"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": content.hero.title,
+              "itemListElement": content.whyChooseUs?.reasons?.map((reason, index) => ({
+                "@type": "Offer",
+                "name": reason.title,
+                "description": reason.description,
+                "position": index + 1
+              })) || []
+            }
+          })}
+        </script>
         {/* <meta property="og:image" content="https://agapeplumbinginc.com/og-image.svg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

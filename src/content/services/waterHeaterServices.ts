@@ -3,7 +3,7 @@ export const waterHeaterServicesCopy = {
     title: "Water Heater Services",
     subtitle: "Expert Water Heater Repair & Installation",
     description: "From traditional tank water heaters to modern tankless systems, our licensed plumbers provide comprehensive water heater services including repairs, maintenance, and professional installation.",
-    imageAlt: "Plumber installing a tankless water heater in Frederick, MD home",
+    imageAlt: "Licensed water heater repair and tankless installation services",
   },
   intro: {
     title: "Complete Water Heater Solutions",
@@ -26,7 +26,7 @@ export const waterHeaterServicesCopy = {
       },
       {
         title: "Professional Installation",
-        description: "Our certified installations ensure your new water heater operates safely and efficiently, meeting all local codes and manufacturer specifications.",
+        description: "Our certified installations ensure your new water heater operates safely and efficiently, meeting all building codes and manufacturer specifications.",
       },
     ],
   },
@@ -56,9 +56,9 @@ export const waterHeaterServicesCopy = {
     ]
   },
   meta: {
-    title: "Water Heater Repair Frederick MD | Agape Drain & Plumbing",
-    description: "Expert water heater repair & installation in Frederick MD. Tank & tankless systems. Licensed plumbers serving Frederick County with 24/7 service.",
-    keywords: "water heater repair frederick md, tankless water heater installation, water heater replacement frederick, emergency water heater repair, gas electric water heater service, hybrid heat pump water heater, water heater maintenance frederick, licensed water heater contractor, energy efficient water heater, commercial residential water heater repair",
+    title: "Water Heater Repair | Tankless Installation | Agape",
+    description: "Expert water heater repair: tankless installation, gas & electric service, emergency repairs. Licensed plumbers for replacement & maintenance.",
+    keywords: "water heater repair, tankless water heater installation, gas water heater replacement, electric water heater repair, water heater maintenance, emergency water heater service, hot water heater installation, licensed water heater contractor",
     canonical: "https://agapeplumbinginc.com/services/water-heater-services"
   },
 };

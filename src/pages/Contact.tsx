@@ -43,6 +43,77 @@ const Contact = () => {
         <meta property="og:description" content={meta.contact.description} />
         <meta property="og:url" content={meta.contact.canonical} />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": meta.contact.title,
+            "description": meta.contact.description,
+            "url": meta.contact.canonical,
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "@id": "https://agapeplumbinginc.com/#localbusiness",
+              "name": "Agape Drain & Plumbing LLC",
+              "telephone": "+1-227-223-9057",
+              "email": "agape7plumbing@gmail.com",
+              "url": "https://agapeplumbinginc.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "109 Wheeler Ln",
+                "addressLocality": "Frederick",
+                "addressRegion": "MD",
+                "postalCode": "21702",
+                "addressCountry": "US"
+              },
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+1-227-223-9057",
+                  "contactType": "customer service",
+                  "availableLanguage": "English",
+                  "hoursAvailable": {
+                    "@type": "OpeningHoursSpecification",
+                    "description": "24/7 Emergency Service Available"
+                  }
+                },
+                {
+                  "@type": "ContactPoint",
+                  "email": "agape7plumbing@gmail.com",
+                  "contactType": "customer service",
+                  "availableLanguage": "English"
+                }
+              ]
+            },
+            "hasPart": {
+              "@type": "FAQPage",
+              "mainEntity": contact.faq.questions.map((faq) => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer
+                }
+              }))
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://agapeplumbinginc.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Contact",
+                  "item": "https://agapeplumbinginc.com/contact"
+                }
+              ]
+            }
+          })}
+        </script>
         {/* <meta property="og:image" content={meta.contact.ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

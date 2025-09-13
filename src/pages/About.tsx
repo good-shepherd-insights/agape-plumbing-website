@@ -23,6 +23,70 @@ const About = () => {
         <meta property="og:description" content={meta.about.description} />
         <meta property="og:url" content={meta.about.canonical} />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": meta.about.title,
+            "description": meta.about.description,
+            "url": meta.about.canonical,
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "@id": "https://agapeplumbinginc.com/#localbusiness",
+              "name": "Agape Drain & Plumbing LLC",
+              "description": about.hero.description,
+              "foundingDate": "2016",
+              "founder": {
+                "@type": "Person",
+                "name": "Sui"
+              },
+              "telephone": "+1-227-223-9057",
+              "email": "agape7plumbing@gmail.com",
+              "url": "https://agapeplumbinginc.com/",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "109 Wheeler Ln",
+                "addressLocality": "Frederick",
+                "addressRegion": "MD",
+                "postalCode": "21702",
+                "addressCountry": "US"
+              },
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "name": "Licensed Plumber",
+                  "credentialCategory": "Professional License",
+                  "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "State of Maryland"
+                  }
+                },
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "name": "Certified Backflow Prevention Technician",
+                  "credentialCategory": "Professional Certification"
+                }
+              ]
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://agapeplumbinginc.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://agapeplumbinginc.com/about"
+                }
+              ]
+            }
+          })}
+        </script>
         {/* <meta property="og:image" content={meta.about.ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

@@ -3,7 +3,7 @@ export const drainCleaningCopy = {
     title: "Professional Drain Cleaning Services ",
     subtitle: "Expert Drain Cleaning Solutions",
     description: "From clogged sinks and showers to main line blockages, our skilled plumbers provide comprehensive drain cleaning services using advanced techniques and equipment to restore proper flow to your plumbing system.",
-    imageAlt: "Plumber cleaning a drain in Frederick, MD home",
+    imageAlt: "Plumber cleaning a residential drain",
   },
   intro: {
     title: "Effective Drain Cleaning Solutions",
@@ -32,7 +32,7 @@ export const drainCleaningCopy = {
   },
   cta: {
     title: "Dealing with Clogged Drains?",
-    description: "Contact our team today to schedule professional drain cleaning services in Frederick, Gaithersburg, Rockville, and surrounding areas. Restore proper flow to your plumbing system with our expert solutions.",
+    description: "Contact our team today to schedule professional drain cleaning services. Restore proper flow to your plumbing system with our expert solutions.",
     buttonText: "Schedule Drain Cleaning Service",
   },
   relatedServices: {
@@ -56,9 +56,9 @@ export const drainCleaningCopy = {
     ]
   },
   meta: {
-    title: "Drain Cleaning Frederick MD | Agape Drain & Plumbing",
-    description: "Professional drain cleaning services in Frederick MD. Hydro jetting, video inspection, emergency clog removal for all drains by licensed plumbers.",
-    keywords: "drain cleaning frederick md, hydro jetting frederick, emergency drain cleaning, clogged drain repair, video drain inspection, sink drain cleaning, shower drain cleaning, main line cleaning, commercial drain cleaning, licensed drain cleaning frederick",
+    title: "Drain Cleaning | Clog Removal | Agape",
+    description: "Professional drain cleaning: clog removal, hydro jetting, drain snaking, sewer line cleaning. Licensed plumbers for emergency drain service.",
+    keywords: "drain cleaning, clog removal, hydro jetting, drain snaking, sewer line cleaning, emergency drain service, kitchen drain cleaning, bathroom drain cleaning, licensed drain cleaner",
     canonical: "https://agapeplumbinginc.com/services/drain-cleaning"
   },
 };

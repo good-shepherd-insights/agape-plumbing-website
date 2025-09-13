@@ -19,11 +19,11 @@
       "image": {
         "@id": "https://agapeplumbinginc.com/#logo"
       },
-      "description": "Professional plumbing services in Frederick, MD and surrounding areas. Licensed, insured, and available 24/7 for emergency plumbing needs.",
-      "foundingDate": "2020",
+      "description": "Professional plumbing services providing reliable solutions for residential and commercial customers. Licensed, insured, and available 24/7 for emergency plumbing needs.",
+      "foundingDate": "2016",
       "founder": {
         "@type": "Person",
-        "name": "Owner Name"
+        "name": "Sui"
       },
       "contactPoint": [
         {
@@ -89,7 +89,7 @@
         "@id": "https://agapeplumbinginc.com/#logo"
       },
       "telephone": "+1-227-223-9057",
-      "email": "info@agapeplumbinginc.com",
+      "email": "agape7plumbing@gmail.com",
       "url": "https://agapeplumbinginc.com/",
       "paymentAccepted": "Cash, Check, Credit Card, Debit Card",
       "currenciesAccepted": "USD",
@@ -97,7 +97,7 @@
         "Mo-Su 00:00-23:59"
       ],
       "priceRange": "$$",
-      "description": "Professional plumbing contractor serving Frederick County and Montgomery County, Maryland. Specializing in emergency repairs, drain cleaning, water heater services, and all residential and commercial plumbing needs.",
+      "description": "Professional plumbing contractor providing comprehensive plumbing services including emergency repairs, drain cleaning, water heater services, pipe repair, toilet services, faucet and fixture installation, kitchen plumbing, and sewer line services for residential and commercial customers.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "109 Wheeler Ln",
@@ -106,7 +106,23 @@
         "postalCode": "21702",
         "addressCountry": "US"
       },
-      "areaServed": [
+      "serviceType": [
+          "Emergency Plumbing Services",
+          "Drain Cleaning",
+          "Water Heater Services",
+          "Pipe Repair & Replacement",
+          "Toilet Services",
+          "Faucets & Fixtures",
+          "Kitchen Plumbing",
+          "Sewer Line Services",
+          "Leak Detection",
+          "Hydro Jetting",
+          "Camera Inspections",
+          "Trenchless Repair",
+          "Commercial Plumbing",
+          "Backflow Prevention"
+        ],
+        "areaServed": [
         {
           "@type": "City",
           "name": "Frederick",
@@ -343,7 +359,19 @@
         {
           "@type": "Offer",
           "name": "24/7 Emergency Service",
-          "description": "Round-the-clock emergency plumbing services",
+          "description": "Round-the-clock emergency plumbing services with fast response times",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Licensed & Insured Service",
+          "description": "All work performed by licensed and insured professionals",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Quality Guarantee",
+          "description": "Comprehensive warranties on all workmanship",
           "availability": "https://schema.org/InStock"
         }
       ],
@@ -357,7 +385,17 @@
         "Kitchen Plumbing",
         "Sewer Line Services",
         "Leak Detection",
-        "Plumbing Maintenance"
+        "Plumbing Maintenance",
+        "Hydro Jetting",
+        "Camera Inspections",
+        "Trenchless Repair",
+        "Backflow Prevention",
+        "Commercial Plumbing",
+        "Garbage Disposal Services",
+        "Water Filtration Systems",
+        "Sump Pump Installation",
+        "Gas Line Services",
+        "Repiping Services"
       ],
       "hasCredential": [
         {
@@ -373,6 +411,15 @@
           "@type": "EducationalOccupationalCredential",
           "name": "Insured Contractor",
           "credentialCategory": "Insurance"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certified Backflow Prevention Technician",
+          "credentialCategory": "Professional Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "State of Maryland"
+          }
         }
       ]
     },
@@ -444,7 +491,7 @@
           "name": "Do you provide 24/7 emergency plumbing services?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide 24/7 emergency plumbing services throughout Frederick County and Montgomery County, Maryland. Call (240) 739-9866 for immediate assistance."
+            "text": "Yes, we provide 24/7 emergency plumbing services throughout our service area. Call (227) 223-9057 for immediate assistance with burst pipes, water heater failures, sewer backups, and other urgent plumbing issues."
           }
         },
         {
@@ -452,7 +499,7 @@
           "name": "What areas do you serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We serve Frederick, Gaithersburg, Rockville, Walkersville, Middletown, New Market, Thurmont, and surrounding areas in Frederick County and Montgomery County, Maryland."
+            "text": "We serve residential and commercial customers throughout our service area, providing comprehensive plumbing services for all types of properties."
           }
         },
         {
@@ -460,7 +507,7 @@
           "name": "Are you licensed and insured?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Agape Drain & Plumbing LLC is fully licensed and insured in the state of Maryland. We carry comprehensive liability insurance for your protection."
+            "text": "Yes, Agape Drain & Plumbing LLC is fully licensed and insured. We are also certified backflow prevention technicians, ensuring all work meets professional standards and regulations."
           }
         },
         {
@@ -468,7 +515,31 @@
           "name": "Do you offer free estimates?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide free estimates on all plumbing services. Contact us at (240) 739-9866 to schedule your free estimate."
+            "text": "Yes, we provide free estimates on all plumbing services. Contact us at (227) 223-9057 to schedule your free estimate and consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of plumbing services do you provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide comprehensive plumbing services including emergency repairs, drain cleaning, water heater installation and repair, pipe repair and replacement, toilet services, faucet and fixture installation, kitchen plumbing, sewer line services, leak detection, hydro jetting, and commercial plumbing services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you respond to emergency calls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide fast emergency response and aim to arrive quickly to minimize damage and restore your plumbing system. Our emergency service is available 24/7, including weekends and holidays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work on both residential and commercial properties?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide plumbing services for both residential and commercial properties, including restaurants, office buildings, multi-family properties, and code compliance updates."
           }
         }
       ]

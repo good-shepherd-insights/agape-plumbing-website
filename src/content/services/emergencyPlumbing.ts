@@ -1,9 +1,9 @@
 export const emergencyPlumbingCopy = {
   hero: {
-    title: "Emergency Plumbing Services | Near Me",
-    subtitle: "Your Trusted Local Emergency Plumbers in Frederick, MD & Surrounding Areas",
+    title: "Emergency Plumbing Services ",
+    subtitle: "Your Trusted Emergency Plumbers Available 24/7",
     description: "When plumbing disasters strike, you need immediate, reliable help. Our emergency plumbing services are available 24/7 to address urgent issues like burst pipes, severe leaks, and overflowing toilets, ensuring quick resolution and minimal damage.",
-    imageAlt: "Emergency plumber fixing a burst pipe in Frederick, MD",
+    imageAlt: "Emergency plumber fixing a burst pipe in residential home",
   },
   intro: {
     title: "Fast & Reliable Emergency Plumbing Solutions",
@@ -18,7 +18,7 @@ export const emergencyPlumbingCopy = {
       },
       {
         title: "Rapid Response Time",
-        description: "Our local teams are strategically located throughout Frederick and surrounding areas to ensure the fastest possible response to your emergency call, reducing potential water damage and restoring functionality quickly.",
+        description: "Our teams are strategically positioned to ensure the fastest possible response to your emergency call, reducing potential water damage and restoring functionality quickly.",
       },
       {
         title: "Experienced & Certified Plumbers",
@@ -56,9 +56,9 @@ export const emergencyPlumbingCopy = {
     ]
   },
   meta: {
-    title: "Emergency Plumber Frederick MD | Agape Drain & Plumbing",
-    description: "Emergency plumbing services Frederick MD available 24/7. Burst pipe repair, water leaks, clogged drains. Licensed emergency plumbers with rapid response.",
-    keywords: "emergency plumber frederick md, 24/7 plumber frederick, burst pipe repair, emergency plumbing service, water leak repair, emergency drain cleaning, same day plumber, weekend emergency plumber, licensed emergency plumber frederick, rapid response plumbing",
+    title: "Emergency Plumber | 24/7 Service | Agape",
+    description: "24/7 emergency plumber: burst pipes, water leaks, sewer backups, gas leaks. Licensed emergency plumbers for fast response.",
+    keywords: "emergency plumber, 24/7 plumber, burst pipe repair, water leak emergency, sewer backup emergency, gas leak plumber, emergency water heater repair, licensed emergency plumber",
     canonical: "https://agapeplumbinginc.com/services/emergency-plumbing"
   },
 };

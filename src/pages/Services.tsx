@@ -2,10 +2,10 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Cta from '../components/home/Cta';
 import { Helmet } from 'react-helmet-async';
-import { Check, Phone, Wrench, Clock, Star } from 'lucide-react';
+import { Check, Phone, Wrench, Clock, Star, ArrowRight } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Services = () => {
   const { services, meta } = useContent();
@@ -22,6 +22,53 @@ const Services = () => {
         <meta property="og:description" content={meta.services.description} />
         <meta property="og:url" content={meta.services.canonical} />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": meta.services.title,
+            "description": meta.services.description,
+            "url": meta.services.canonical,
+            "mainEntity": {
+              "@type": "ItemList",
+              "name": "Professional Plumbing Services",
+              "description": "Comprehensive plumbing services for residential and commercial customers",
+              "itemListElement": services.additionalServices.map((service, index) => ({
+                "@type": "Service",
+                "name": service.title,
+                "description": service.features.join(", "),
+                "provider": {
+                  "@type": "LocalBusiness",
+                  "@id": "https://agapeplumbinginc.com/#localbusiness",
+                  "name": "Agape Drain & Plumbing LLC"
+                },
+                "position": index + 1
+              }))
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://agapeplumbinginc.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://agapeplumbinginc.com/services"
+                }
+              ]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "@id": "https://agapeplumbinginc.com/#organization",
+              "name": "Agape Drain & Plumbing LLC"
+            }
+          })}
+        </script>
         {/* <meta property="og:image" content={meta.services.ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -164,26 +211,39 @@ const Services = () => {
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {services.additionalServices.map((service, index) => (
-                  <div key={index} className="brutalist-card bg-gray-50 p-8 border-t-4 border-plumbing-800 transition-all duration-300 group">
-                    <div className="flex items-center mb-6">
-                      <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-flex items-center justify-center mr-4">
-                        <Wrench className="h-6 w-6" />
+                {services.additionalServices.map((service, index) => {
+                  // Create the service slug based on the title format in servicesList.ts
+                  const serviceSlug = service.title.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
+                  
+                  return (
+                    <Link 
+                      key={index} 
+                      to={`/services/${serviceSlug}`}
+                      className="brutalist-card bg-gray-50 p-8 border-t-4 border-plumbing-800 hover:translate-y-[-4px] transition-all duration-300 group"
+                    >
+                      <div className="flex items-center mb-6">
+                        <div className="bg-plumbing-800 text-white p-4 rounded-md border-2 border-black inline-flex items-center justify-center mr-4">
+                          <Wrench className="h-6 w-6" />
+                        </div>
+                        <h3 className="text-xl font-black uppercase group-hover:text-plumbing-900">{service.title}</h3>
                       </div>
-                      <h3 className="text-xl font-black uppercase group-hover:text-plumbing-900">{service.title}</h3>
-                    </div>
-                    <ul className="space-y-3 border-l-4 border-plumbing-800 pl-6">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center">
-                          <div className="bg-plumbing-800 text-white p-1 rounded-md border-2 border-black mr-3 flex-shrink-0">
-                            <Check className="h-3 w-3" />
-                          </div>
-                          <span className="text-gray-700 text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                      <ul className="space-y-3 border-l-4 border-plumbing-800 pl-6 mb-6">
+                        {service.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-center">
+                            <div className="bg-plumbing-800 text-white p-1 rounded-md border-2 border-black mr-3 flex-shrink-0">
+                              <Check className="h-3 w-3" />
+                            </div>
+                            <span className="text-gray-700 text-sm">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="flex items-center text-plumbing-800 font-semibold group-hover:text-plumbing-900">
+                        <span>Learn More</span>
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </section>
 
