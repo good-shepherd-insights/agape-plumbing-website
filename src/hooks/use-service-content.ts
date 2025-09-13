@@ -1,5 +1,24 @@
 import { useState, useEffect } from 'react';
 
+// Service benefits mapping for meta title template
+const serviceBenefits: Record<string, string> = {
+  'drain-cleaning': 'Fast Clog Removal & Prevention',
+  'emergency-plumbing': '24/7 Emergency Response',
+  'faucets-fixtures': 'Expert Installation & Repair',
+  'kitchen-plumbing': 'Complete Kitchen Solutions',
+  'pipe-repair': 'Professional Leak Detection',
+  'sewer-services': 'Advanced Sewer Solutions',
+  'toilet-services': 'Reliable Toilet Repair',
+  'water-heater-services': 'Efficient Water Heating'
+};
+
+// Generate meta title using template: [Service] | [Compelling Benefit] | Agape Drain & Plumbing
+const generateServiceTitle = (serviceTitle: string, serviceSlug: string): string => {
+  const cleanServiceTitle = serviceTitle.replace(/\s+(Services?|Service)\s*$/i, '').trim();
+  const benefit = serviceBenefits[serviceSlug] || 'Professional Solutions';
+  return `${cleanServiceTitle} | ${benefit} | Agape Drain & Plumbing`;
+};
+
 // Service content mapping
 const serviceContentMap: Record<string, () => Promise<any>> = {
   'drain-cleaning': () => import('@/content/services/drainCleaning').then(m => m.drainCleaningCopy),
@@ -72,7 +91,15 @@ export function useServiceContent(serviceSlug: string | undefined): UseServiceCo
 
       try {
         const serviceContent = await serviceContentMap[serviceSlug]();
-        setContent(serviceContent);
+        // Apply new meta title template
+        const updatedContent = {
+          ...serviceContent,
+          meta: {
+            ...serviceContent.meta,
+            title: generateServiceTitle(serviceContent.hero.title, serviceSlug)
+          }
+        };
+        setContent(updatedContent);
       } catch (err) {
         console.error('Error loading service content:', err);
         setError(true);

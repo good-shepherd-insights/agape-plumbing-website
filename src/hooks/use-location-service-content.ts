@@ -2,6 +2,24 @@ import { useState, useEffect } from 'react';
 import { ServiceContent } from './use-service-content';
 import { getLocationBySlug, Location } from '@/content/locations';
 
+// Service benefits mapping for meta title template
+const serviceBenefits: Record<string, string> = {
+  'drain-cleaning': 'Fast Clog Removal & Prevention',
+  'emergency-plumbing': '24/7 Emergency Response',
+  'faucets-fixtures': 'Expert Installation & Repair',
+  'kitchen-plumbing': 'Complete Kitchen Solutions',
+  'pipe-repair': 'Professional Leak Detection',
+  'sewer-services': 'Advanced Sewer Solutions',
+  'toilet-services': 'Reliable Toilet Repair',
+  'water-heater-services': 'Efficient Water Heating'
+};
+
+// Generate meta title using template: {Service} Near Me | {City}, {State Abbreviation} | Agape Drain & Plumbing
+const generateLocationServiceTitle = (serviceTitle: string, location: Location, serviceSlug: string): string => {
+  const cleanServiceTitle = serviceTitle.replace(/\s+(Services?|Service)\s*$/i, '').trim();
+  return `${cleanServiceTitle} Near Me | ${location.name}, MD | Agape Drain & Plumbing`;
+};
+
 // Service content mapping (same as existing)
 const serviceContentMap: Record<string, () => Promise<any>> = {
   'drain-cleaning': () => import('@/content/services/drainCleaning').then(m => m.drainCleaningCopy),
@@ -112,7 +130,7 @@ const customizeContentForLocation = (baseContent: ServiceContent, location: Loca
     },
     meta: {
       ...baseContent.meta,
-      title: baseContent.meta.title.replace(/Frederick MD|Frederick, MD/g, location.fullName),
+      title: generateLocationServiceTitle(baseContent.hero.title, location, serviceSlug),
       description: baseContent.meta.description.replace(
         /Frederick, MD|Frederick County, Gaithersburg, Rockville/g,
         `${location.fullName}, ${location.county}`

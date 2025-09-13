@@ -1,12 +1,12 @@
 export const faucetsFixturesCopy = {
   hero: {
-    title: "Faucet & Fixture Services ",
+    title: "Faucet Repair Services",
     subtitle: "Professional Faucet Repair & Fixture Replacement",
     description: "Upgrade your kitchen and bathroom with our professional faucet and fixture installation services. From fixing leaky faucets to complete fixture replacements, our skilled plumbers ensure quality workmanship and lasting results.",
     imageAlt: "Licensed plumber installing modern kitchen faucet in residential home",
   },
   intro: {
-    title: "Expert Faucet & Fixture Services",
+    title: "Expert Faucet Repair Services",
     description: "Your faucets and fixtures are among the most frequently used components in your home. When they malfunction or become outdated, it affects your daily routine and can waste water and money. Our comprehensive faucet and fixture services include repairs for leaky or malfunctioning faucets, installation of new fixtures, and upgrades to water-efficient models that can reduce your utility bills. We work with all major brands and styles, helping you select the perfect fixtures to match your home's aesthetic while providing reliable functionality.",
   },
   whyChooseUs: {
