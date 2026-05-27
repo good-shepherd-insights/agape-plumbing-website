@@ -189,7 +189,7 @@ export const choosingLocalPlumbingCompanyPost = {
     callToAction: {
       text: "Ready to find the best local plumbing company? Contact our licensed professionals for reliable service and transparent pricing.",
       buttonText: "Get a Free Quote",
-      buttonLink: "tel:+12272239057"
+      buttonLink: "tel:+12404167902"
     }
   }
 };

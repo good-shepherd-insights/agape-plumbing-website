@@ -249,7 +249,7 @@ export const choosingSewerDrainServiceGuidePost = {
     callToAction: {
       text: "Need professional sewer and drain service? Contact our licensed experts for reliable, transparent solutions.",
       buttonText: "Schedule Service",
-      buttonLink: "tel:+12272239057"
+      buttonLink: "tel:+12404167902"
     }
   }
 };

@@ -54,7 +54,7 @@ const Contact = () => {
               "@type": "LocalBusiness",
               "@id": "https://agapeplumbinginc.com/#localbusiness",
               "name": "Agape Drain & Plumbing LLC",
-              "telephone": "+1-227-223-9057",
+              "telephone": "+1-240-416-7902",
               "email": "agape7plumbing@gmail.com",
               "url": "https://agapeplumbinginc.com/",
               "address": {
@@ -68,7 +68,7 @@ const Contact = () => {
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
-                  "telephone": "+1-227-223-9057",
+                  "telephone": "+1-240-416-7902",
                   "contactType": "customer service",
                   "availableLanguage": "English",
                   "hoursAvailable": {

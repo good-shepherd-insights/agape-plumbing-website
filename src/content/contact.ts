@@ -7,7 +7,7 @@ export const contact = {
     title: "Get In Touch",
     phone: {
       title: "Phone",
-      number: "(227) 223-9057",
+      number: "(240) 416-7902",
       description: "Available for emergencies"
     },
     email: {

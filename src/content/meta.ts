@@ -22,7 +22,7 @@ export const meta = {
   },
   contact: {
     title: "Contact Our Plumbers Frederick MD | Agape Drain & Plumbing",
-    description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (227) 223-9057.",
+    description: "Contact Agape Drain & Plumbing for emergency service, free estimates, and professional plumbing solutions in Frederick, MD. Call (240) 416-7902.",
     keywords: "contact plumber, plumbing company phone number, emergency plumber contact, plumbing quote, plumbing estimate",
     canonical: "https://agapeplumbinginc.com/contact",
     ogImage: "https://agapeplumbinginc.com/og-image-contact.svg"

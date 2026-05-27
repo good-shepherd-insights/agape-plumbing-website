@@ -83,7 +83,7 @@ export const emergencyPlumbingPost = {
     callToAction: {
       text: "Don't face plumbing emergencies alone. Our 24/7 emergency team is standing by to help. Call now for immediate assistance.",
       buttonText: "Call Emergency Line",
-      buttonLink: "tel:+12272239057"
+      buttonLink: "tel:+12404167902"
     }
   }
 };

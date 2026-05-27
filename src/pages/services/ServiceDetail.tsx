@@ -58,7 +58,7 @@ const ServiceDetail = () => {
               "@type": "LocalBusiness",
               "@id": "https://agapeplumbinginc.com/#localbusiness",
               "name": "Agape Drain & Plumbing LLC",
-              "telephone": "+1-227-223-9057",
+              "telephone": "+1-240-416-7902",
               "email": "agape7plumbing@gmail.com",
               "url": "https://agapeplumbinginc.com/",
               "address": {
@@ -134,7 +134,7 @@ const ServiceDetail = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
                   <Phone className="h-5 w-5 mr-2" />
-                  Call Now: (227) 223-9057
+                  Call Now: (240) 416-7902
                 </Button>
                 <Link 
                   to="/contact"
