@@ -39,8 +39,8 @@ const Header = () => {
     <header 
       className={`sticky top-0 z-40 w-full transition-all duration-200 ${
         isScrolled 
-          ? 'bg-white border-b-4 border-black py-2 shadow-[0_4px_0_0_rgba(0,0,0,0.1)]' 
-          : 'bg-transparent py-4'
+          ? 'bg-white border-b border-sky-100 py-2 shadow-sm' 
+          : 'bg-white/95 py-3'
       }`}
     >
       <div className="container-custom flex items-center justify-between">
@@ -63,7 +63,7 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <button 
-          className="md:hidden bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black p-2 rounded-md transition-transform hover:translate-y-[-2px] active:translate-y-0 shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] duration-200"
+          className="md:hidden bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black p-2 rounded-md transition-transform hover:translate-y-[-2px] active:translate-y-0 shadow-md hover:shadow-lg active:shadow-[2px_2px_0_0_#000] duration-200"
           onClick={toggleMobileMenu}
           aria-label={navigation.mobileMenu.toggle}
         >
@@ -88,7 +88,7 @@ const Header = () => {
           )) || []}
           <a 
             href={`tel:${company.phone.replace(/[^0-9+]/g, '')}`}
-            className="flex items-center gap-2 bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black rounded-md hover:translate-y-[-2px] active:translate-y-0 shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] transition-all duration-200 h-11 px-8 text-sm font-medium"
+            className="flex items-center gap-2 bg-plumbing-800 hover:bg-plumbing-700 text-white border border-sky-200 rounded-md hover:translate-y-[-2px] active:translate-y-0 shadow-md hover:shadow-lg active:shadow-[2px_2px_0_0_#000] transition-all duration-200 h-11 px-8 text-sm font-medium"
           >
             <Phone className="h-4 w-4" />
             <span className="font-bold md:hidden lg:inline">{company.phone}</span>
@@ -130,7 +130,7 @@ const Header = () => {
             <div className="p-6">
               <a 
                 href={`tel:${company.phone.replace(/[^0-9+]/g, '')}`}
-                className="flex items-center gap-2 w-full bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black rounded-md shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] active:shadow-[2px_2px_0_0_#000] hover:translate-y-[-2px] active:translate-y-0 transition-all duration-200 h-11 px-8 text-sm font-medium justify-center"
+                className="flex items-center gap-2 w-full bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black rounded-md shadow-md hover:shadow-lg active:shadow-[2px_2px_0_0_#000] hover:translate-y-[-2px] active:translate-y-0 transition-all duration-200 h-11 px-8 text-sm font-medium justify-center"
                 onClick={toggleMobileMenu}
               >
                 <Phone className="h-4 w-4" />

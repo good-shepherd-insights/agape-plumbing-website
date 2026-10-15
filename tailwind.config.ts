@@ -55,23 +55,23 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				plumbing: {
-					50: '#F0FBFD',
-					100: '#E0F7F9',
-					200: '#C2F0F3',
-					300: '#A3E9ED',
-					400: '#85E2E7',
-					500: '#66DBE1',
-					600: '#4fbec7',
-					700: '#46AAB1',
-					800: '#2A7A7E', // Adjusted for better contrast
-					900: '#226568', // Adjusted for better contrast
-				},
-				// Extended Plumbing Palette
+          50: '#F1FAFF',
+          100: '#E3F5FF',
+          200: '#C5EBFF',
+          300: '#93DBFF',
+          400: '#54C4FA',
+          500: '#14A8EE',
+          600: '#008DDB',
+          700: '#006FB5',
+          800: '#07548B',
+          900: '#08375E',
+        },
+        // Extended Plumbing Palette
 				'plumbing-extended': {
-					25: '#D6F8FA',  // Ultra light teal
-					600: '#379CA3', // Medium teal
-					950: '#1B5052', // Ultra dark teal
-				},
+          25: '#F6FCFF',
+          600: '#007FC7',
+          950: '#062847',
+        },
 				// Neutral Grays
 				neutral: {
 					25: '#F8FAFB',  // Ultra light gray
