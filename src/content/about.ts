@@ -1,57 +1,31 @@
 export const about = {
   hero: {
     title: "About Agape Drain & Plumbing",
-    description: "Frederick's trusted plumbing professionals since 2016. Licensed and insured for your peace of mind."
+    description: "A local, family-owned plumbing business serving Frederick, Maryland, with personal service and 24/7 emergency help."
   },
   story: {
     title: "Our Story",
     paragraphs: [
-      "Agape Drain & Plumbing was founded in 2016 by Sui with a simple mission: to provide honest, reliable, and professional plumbing services to the Frederick, MD community.",
-      "What began as a small family operation has grown into a trusted plumbing company with a team of licensed technicians serving both residential and commercial customers across the region.",
-      "Throughout our growth, we've maintained our founding principles of integrity, quality workmanship, and exceptional customer service. Our name \"Agape\" reflects our approach to business—serving others with selfless care and dedication.",
-      "Today, we're proud to be among Frederick's most trusted plumbing contractors, with thousands of satisfied customers and a reputation for excellence in everything we do."
+      "Agape Drain & Plumbing is a local, family-owned business proudly serving Frederick, Maryland, and nearby communities. We believe in honest communication, dependable plumbing work, and treating every customer like a neighbor.",
+      "Customer satisfaction is at the heart of what we do. We listen to your concerns, explain the work clearly, and focus on quality repairs and respectful service. Whether it's a routine plumbing issue or a 24/7 emergency, our goal is to earn your trust through the work we provide."
     ]
   },
   milestones: {
-    title: "Company Milestones",
+    title: "What Matters to Us",
     events: [
-      {
-        year: "2016",
-        description: "Founded by Sui as a small residential service company"
-      },
-      {
-        year: "2018",
-        description: "Expanded services to include commercial properties"
-      },
-      {
-        year: "2019",
-        description: "Became Certified Backflow Prevention Technicians"
-      },
-      {
-        year: "2020",
-        description: "Introduced emergency plumbing services"
-      },
-      {
-        year: "2021",
-        description: "Expanded service area to cover more of Frederick County"
-      },
-      {
-        year: "2022",
-        description: "Achieved 1,000+ completed service calls"
-      },
-      {
-        year: "Today",
-        description: "Continuing to grow while maintaining our commitment to quality"
-      }
+      { year: "Local", description: "Proud to serve Frederick and neighboring Maryland communities" },
+      { year: "Family-owned", description: "Personal service and accountability from a local business" },
+      { year: "24/7", description: "Emergency plumbing help when unexpected problems arise" },
+      { year: "Every visit", description: "Respectful communication and care for your property" }
     ]
   },
   mission: {
     title: "Our Mission",
-    description: "To deliver exceptional plumbing services that exceed customer expectations through technical excellence, reliability, and unwavering integrity."
+    description: "To help our neighbors with reliable plumbing work, clear communication, and respect for every home and customer."
   },
   vision: {
     title: "Our Vision",
-    description: "To be the most trusted name in plumbing across Frederick and surrounding areas, recognized for our quality workmanship, customer-first approach, and technical expertise."
+    description: "To earn the trust of Frederick-area families and property owners, one service call at a time."
   },
   values: {
     title: "Our Values",
@@ -63,12 +37,12 @@ export const about = {
     ]
   },
   team: {
-    title: "Our Leadership Team",
+    title: "Meet the Owner",
     members: [
       {
         name: "Sui",
         position: "Founder & Owner",
-        description: "Certified plumber with years of experience in the industry."
+        description: "Local business owner committed to dependable service and treating customers like neighbors."
       }
     ]
   },

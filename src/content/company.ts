@@ -1,5 +1,5 @@
 export const company = {
-  name: "Agape Drain & Plumbing LLC",
+  name: "Agape Drain And Plumbing, LLC",
   phone: "(227) 223-9057",
   email: "agape7plumbing@gmail.com",
   address: {
