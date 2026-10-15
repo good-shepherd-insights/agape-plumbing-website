@@ -31,7 +31,7 @@ const Hero = () => {
   };
   
   return (
-    <section className="relative bg-gradient-to-r from-plumbing-800 to-plumbing-900 text-white py-14 md:py-14 border-b-4 border-black overflow-hidden">
+    <section className="relative bg-gradient-to-br from-plumbing-900 via-plumbing-800 to-sky-600 text-white py-12 md:py-16 border-b-4 border-sky-300 overflow-hidden">
       {/* Simplified background for mobile performance */}
       <div className="absolute inset-0 opacity-10 hidden md:block">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white transform rotate-45"></div>
@@ -41,14 +41,14 @@ const Hero = () => {
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4">
           <div className="space-y-8">
-            <span className="inline-block bg-white text-plumbing-900 px-6 py-3 font-mono uppercase text-sm font-bold border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
+            <span className="inline-block bg-amber-300 text-plumbing-900 px-6 py-3 font-mono uppercase text-sm font-bold border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)]">
               {home.hero.emergencyBanner}
             </span>
             
             <div>
               <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-6 leading-tight">
                 {home.hero.trustedHeading} <br className="hidden md:block" />
-                <span className="text-plumbing-200">{home.hero.expertSubheading}</span>
+                <span className="text-sky-200">{home.hero.expertSubheading}</span>
               </h1>
               {/* Optimized LCP element with critical CSS class */}
               <p className="hero-text-critical text-xl md:text-2xl mb-8 max-w-xl leading-relaxed font-medium">
@@ -56,11 +56,12 @@ const Hero = () => {
               </p>
             </div>
             
+            <div className="flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">★ 10+ Years of Experience</span><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Frederick & Surrounding Areas</span><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Faithful Service • Honest Work</span></div>
             <div className="flex flex-col sm:flex-row gap-6">
               <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
-                  className="w-full text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
+                  className="w-full text-lg font-bold bg-amber-400 text-plumbing-900 border-2 border-amber-200 rounded-md hover:bg-gray-100 hover:translate-y-[-4px] transition-all duration-300 px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]"
                 >
                   <Phone className="h-5 w-5 mr-2" />
                   {home.hero.cta}
@@ -108,7 +109,7 @@ const Hero = () => {
           <div className="relative w-full space-y-6">
             <figure className="overflow-hidden rounded-2xl border border-sky-200 shadow-xl bg-white">
               <img src="/agape-plumber-sui.jpg" alt="Agape Drain and Plumbing plumber Sui repairing plumbing beneath a kitchen sink in Frederick, Maryland" className="w-full h-[280px] sm:h-[340px] lg:h-[400px] object-cover object-top" loading="eager" fetchPriority="high" />
-              <figcaption className="px-5 py-3 text-plumbing-900 font-semibold text-sm">Meet Sui • Faithful service. Honest work.</figcaption>
+              <figcaption className="px-5 py-3 text-plumbing-900 font-semibold text-sm">Professional plumbing service • 10+ years of experience</figcaption>
             </figure>
             <div className="bg-white p-3 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300 w-full max-w-none">
               <div className="flex items-center mb-6 mt-4">
