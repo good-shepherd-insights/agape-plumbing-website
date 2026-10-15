@@ -16,19 +16,19 @@ const Footer = () => {
   const copyright = footer.copyright?.replace('{year}', currentYear.toString()) || '';
   
   return (
-    <footer className="bg-plumbing-900 text-white pt-16 pb-8 border-t-4 border-black">
+    <footer className="bg-plumbing-900 text-white pt-16 pb-8 border-t border-sky-800">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 uppercase">{company.name}</h3>
-            <p className="mb-4">{footer.description}</p>
+            <p className="mb-3">{footer.description}</p><p className="text-sky-200 font-semibold mb-4">Faithful service. Honest work.</p>
             <div className="flex items-center mb-2">
               <Phone className="h-5 w-5 mr-2" />
-              <span>{company.phone}</span>
+              <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="hover:text-sky-200">{company.phone}</a>
             </div>
             <div className="flex items-center mb-2">
               <Mail className="h-5 w-5 mr-2" />
-              <span>{company.email}</span>
+              <a href={`mailto:${company.email}`} className="hover:text-sky-200 break-all">{company.email}</a>
             </div>
             <div className="flex items-start mb-2">
               <MapPin className="h-5 w-5 mr-2 mt-1" />
@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footer.services?.map((service, index) => (
                 <li key={index}>
-                  <Link to={service.link} className="flex items-center hover:text-primary-300 transition-colors">
+                  <Link to={service.link} className="flex items-center hover:text-sky-200 transition-colors">
                     <Check className="h-4 w-4 mr-2" />
                     {service.title}
                   </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footer.serviceAreas?.map((area, index) => (
                 <li key={index}>
-                  <Link to={area.link} className="hover:text-primary-300 transition-colors">
+                  <Link to={area.link} className="hover:text-sky-200 transition-colors">
                     {area.title}
                   </Link>
                 </li>
@@ -68,7 +68,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footer.quickLinks?.map((link, index) => (
                 <li key={index}>
-                  <Link to={link.link} className="hover:text-primary-300 transition-colors">
+                  <Link to={link.link} className="hover:text-sky-200 transition-colors">
                     {link.title}
                   </Link>
                 </li>
@@ -81,7 +81,7 @@ const Footer = () => {
           <p className="font-mono">{copyright}</p>
           <div className="flex justify-center space-x-4 mt-4">
             {footer.socialLinks?.map((social, index) => (
-              <a key={index} href={social.link} className="hover:text-primary-300 transition-colors uppercase text-xs font-bold">
+              <a key={index} href={social.link} className="hover:text-sky-200 transition-colors uppercase text-xs font-bold">
                 {social.title}
               </a>
             )) || []}

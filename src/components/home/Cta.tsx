@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
@@ -22,12 +23,11 @@ const Cta = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Button size="lg" className="flex items-center gap-2 bg-white text-plumbing-800 hover:bg-gray-100 border-2 border-black rounded-md hover:translate-y-[-4px]">
-              <Phone className="h-5 w-5" />
-              <span className="font-bold">{company.phone}</span>
+            <Button asChild size="lg" className="flex items-center gap-2 bg-white text-plumbing-800 hover:bg-gray-100 border-2 border-black rounded-md hover:translate-y-[-4px]">
+              <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="flex items-center gap-2"><Phone className="h-5 w-5" /><span className="font-bold">{company.phone}</span></a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white hover:bg-white rounded-md hover:translate-y-[-4px] text-slate-950">
-              {home.cta.buttonText}
+            <Button asChild size="lg" variant="outline" className="border-2 border-white hover:bg-white rounded-md hover:translate-y-[-4px] text-slate-950">
+              <Link to="/contact">{home.cta.buttonText}</Link>
             </Button>
           </div>
         </div>

@@ -5,9 +5,9 @@ export const home = {
     description: "Frederick's trusted plumbing professionals providing quality service with integrity since 2016.",
     cta: "Schedule Service",
     emergencyBanner: "Available 24/7 For Emergencies",
-    trustedHeading: "Your Trusted",
-    expertSubheading: "Plumbing Experts",
-    description2: "is your reliable, licensed Frederick, Maryland plumbing contractor. From minor repairs to major installations, we deliver exceptional service at competitive prices.",
+    trustedHeading: "Frederick, MD",
+    expertSubheading: "Plumbing & Drain Services",
+    description2: "provides drain cleaning, leak repairs, water heater services, and plumbing solutions in Frederick and nearby Maryland communities. Faithful service. Honest work.",
     serviceButtonText: "View Our Services",
     callText: "Call For Immediate Service",
     requestFormTitle: "Request Service Online",
@@ -71,7 +71,7 @@ export const home = {
       initials: "VB",
       location: "Bowie, MD",
       rating: "5.0 Rating",
-      reviewCount: "300+ 5-Star Reviews!"
+      reviewCount: "See our customer reviews"
     }
   },
   serviceAreas: {

@@ -141,9 +141,8 @@ const Contact = () => {
                 {contact.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 px-8 py-4">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Call Now: {company.phone}
+                <Button asChild size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 px-8 py-4">
+                  <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="flex items-center"><Phone className="h-5 w-5 mr-2" />Call Now: {company.phone}</a>
                 </Button>
                 <Button 
                   variant="outline" 

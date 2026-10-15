@@ -52,20 +52,15 @@ const ServicesList = () => {
         </ul>
       </div>
       <Link to={service.link}>
-        <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px] group relative overflow-hidden">
-          <span className="transition-transform duration-300 ease-in-out group-hover:-translate-y-full absolute inset-0 flex items-center justify-center">
-            Learn More
-          </span>
-          <span className="transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0 absolute inset-0 flex items-center justify-center">
-            Learn More about {service.title}
-          </span>
+        <Button variant="outline" className="w-full border border-sky-200 rounded-lg hover:bg-sky-50 text-plumbing-800">
+          <span>Learn more about {service.title}</span>
         </Button>
       </Link>
     </div>
   );
   
   return (
-    <section className="py-16 md:py-24 bg-gray-50 brutalist-section">
+    <section className="py-16 md:py-24 bg-sky-50 brutalist-section">
       <div className="container-custom">
         <div className="text-center mb-12 md:mb-16">
           <span className="inline-block font-mono uppercase text-sm font-bold mb-2 border-b-2 border-black">Services</span>

@@ -27,7 +27,7 @@ export const navigation = {
     toggle: "Toggle menu"
   },
   accessibility: {
-    companyLogo: "Company Logo",
+    companyLogo: "Agape Drain & Plumbing — Faithful service. Honest work.",
     toggleSidebar: "Toggle Sidebar",
     previousSlide: "Previous slide",
     nextSlide: "Next slide",
