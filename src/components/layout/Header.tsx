@@ -52,10 +52,10 @@ const Header = () => {
           <div className="relative">
             <img 
               src={logo} 
-              width={80} 
+              width={440} 
               height="auto" 
               alt={navigation.accessibility.companyLogo} 
-              className="h-12 sm:h-16 lg:h-20 w-auto max-w-[200px] sm:max-w-[280px] lg:max-w-[340px] object-contain mr-3 transition-all duration-200" 
+              className="w-[190px] sm:w-[260px] lg:w-[360px] xl:w-[430px] h-auto max-w-full object-contain mr-2 transition-all duration-200" 
               loading="eager"
             />
           </div>
