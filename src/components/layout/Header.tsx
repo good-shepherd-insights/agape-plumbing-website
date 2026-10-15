@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
-import logo from '@/assets/images/logo.webp';
+const logo = '/agape-logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,15 +55,11 @@ const Header = () => {
               width={80} 
               height="auto" 
               alt={navigation.accessibility.companyLogo} 
-              className="h-16 w-auto mr-3 border-2 border-transparent group-hover:border-plumbing-800 rounded-md transition-all duration-200" 
+              className="h-12 sm:h-16 lg:h-20 w-auto max-w-[200px] sm:max-w-[280px] lg:max-w-[340px] object-contain mr-3 transition-all duration-200" 
               loading="eager"
             />
           </div>
-          <span className="text-2xl md:text-3xl font-heading font-black">
-            <span className="text-plumbing-800 drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.15)]">{company.name.split(' ')[0]}</span>{' '}
-            <span className="text-plumbing-800 drop-shadow-[0_1px_1px_rgba(0,0,0,0.1)]">{company.name.split(' ').slice(1).join(' ')}</span>
-          </span>
-        </Link>
+          </Link>
 
         {/* Mobile menu button */}
         <button 
