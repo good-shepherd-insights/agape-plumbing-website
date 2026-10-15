@@ -33,7 +33,7 @@ const About = () => {
             "mainEntity": {
               "@type": "LocalBusiness",
               "@id": "https://agapeplumbinginc.com/#localbusiness",
-              "name": "Agape Drain & Plumbing LLC",
+              "name": "Agape Drain And Plumbing, LLC",
               "description": about.hero.description,
               "foundingDate": "2016",
               "founder": {
@@ -90,8 +90,8 @@ const About = () => {
         {/* <meta property="og:image" content={meta.about.ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
-        <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
+        <meta property="og:image:alt" content="Agape Drain And Plumbing, LLC - Professional Plumbing Services in Frederick, MD" /> */}
+        <meta property="og:site_name" content="Agape Drain And Plumbing, LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.about.title} />
         <meta name="twitter:description" content={meta.about.description} />
