@@ -61,9 +61,15 @@ const WhyChooseUs = () => {
                 <span className="ml-2">{home.whyChooseUs.testimonial.rating}</span>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-plumbing-900 p-4 border-2 border-black rounded-md">
-              <p className="font-bold uppercase text-white">{home.whyChooseUs.testimonial.reviewCount}</p>
-            </div>
+            <a
+              href="https://www.thumbtack.com/md/frederick/affordable-plumbing-services/agape-drain-plumbing/service/377401459502891016"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Read Agape Drain and Plumbing customer reviews on Thumbtack (opens in a new tab)"
+              className="inline-block mt-5 bg-plumbing-900 p-4 border-2 border-black rounded-md text-white font-bold uppercase hover:bg-plumbing-700 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-plumbing-800"
+            >
+              Read Customer Reviews on Thumbtack ↗
+            </a>
           </div>
         </div>
       </div>
