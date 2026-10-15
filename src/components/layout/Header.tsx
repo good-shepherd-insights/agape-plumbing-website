@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
 import { useContent } from '@/hooks/use-content';
-const logo = '/agape-logo.png';
+const logo = '/agape-logo.png?v=20261015-clean';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
