@@ -6,7 +6,7 @@ export const about = {
   story: {
     title: "Our Story",
     paragraphs: [
-      "Agape Drain & Plumbing is a local, family-owned business proudly serving Frederick, Maryland, and nearby communities. Owner Sui believes in honest communication, dependable plumbing work, and treating every customer like a neighbor.",
+      "Agape Drain & Plumbing is a local, family-owned business proudly serving Frederick, Maryland, and nearby communities. We believe in honest communication, dependable plumbing work, and treating every customer like a neighbor.",
       "Customer satisfaction is at the heart of what we do. We listen to your concerns, explain the work clearly, and focus on quality repairs and respectful service. Whether it's a routine plumbing issue or a 24/7 emergency, our goal is to earn your trust through the work we provide."
     ]
   },
