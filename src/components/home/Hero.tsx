@@ -105,7 +105,11 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative w-full">
+          <div className="relative w-full space-y-6">
+            <figure className="overflow-hidden rounded-2xl border border-sky-200 shadow-xl bg-white">
+              <img src="/agape-plumber-sui.jpg" alt="Agape Drain and Plumbing plumber Sui repairing plumbing beneath a kitchen sink in Frederick, Maryland" className="w-full h-[280px] sm:h-[340px] lg:h-[310px] object-cover object-center" loading="eager" fetchPriority="high" />
+              <figcaption className="px-5 py-3 text-plumbing-900 font-semibold text-sm">Meet Sui • Faithful service. Honest work.</figcaption>
+            </figure>
             <div className="bg-white p-3 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300 w-full max-w-none">
               <div className="flex items-center mb-6 mt-4">
                 <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-2 md:mr-4">
