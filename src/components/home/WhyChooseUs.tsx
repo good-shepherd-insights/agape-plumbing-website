@@ -62,10 +62,10 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Agape%20Drain%20And%20Plumbing%2C%20LLC%20Frederick%20MD"
+              href="https://share.google/QrSrt1mMKO4gVdArH"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Find Agape Drain And Plumbing customer reviews on Google Maps (opens in a new tab)"
+              aria-label="See Agape Drain And Plumbing on Google (opens in a new tab)"
               className="inline-block mt-5 bg-plumbing-900 p-4 border-2 border-black rounded-md text-white font-bold uppercase hover:bg-plumbing-700 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-plumbing-800"
             >
               See Our Google Reviews ↗
