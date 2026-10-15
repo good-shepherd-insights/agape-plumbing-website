@@ -1,8 +1,8 @@
 export const home = {
   hero: {
-    title: "Professional Plumbing Services",
+    title: "Family-Owned Plumbing in Frederick, MD",
     subtitle: "Licensed & Insured",
-    description: "Frederick's trusted plumbing professionals providing quality service with integrity since 2016.",
+    description: "Local, family-owned plumbing service with honest communication, careful work, and 24/7 emergency help.",
     cta: "Schedule Service",
     emergencyBanner: "Available 24/7 For Emergencies",
     trustedHeading: "Frederick, MD",
@@ -24,14 +24,14 @@ export const home = {
       }
   },
   services: {
-    heading: "Our Professional Services",
-    description: "From emergency repairs to new installations, our experienced plumbers provide a comprehensive range of services to meet all your plumbing needs.",
+    heading: "Our Plumbing Services",
+    description: "From clogged drains to urgent repairs, we're here to help our Frederick-area neighbors with dependable plumbing service.",
     cta: "View All Services"
   },
 
   whyChooseUs: {
     heading: "Why Choose Agape Drain & Plumbing?",
-    description: "With our experience and expertise, we've built our reputation on quality workmanship, honest pricing, and exceptional customer service.",
+    description: "We're a local, family-owned business focused on treating customers like neighbors and earning trust through dependable service.",
     reasons: [
       {
         id: 1,
