@@ -62,13 +62,13 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <a
-              href="https://www.thumbtack.com/md/frederick/affordable-plumbing-services/agape-drain-plumbing/service/377401459502891016"
+              href="https://www.google.com/maps/search/?api=1&query=Agape%20Drain%20And%20Plumbing%2C%20LLC%20Frederick%20MD"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Read Agape Drain and Plumbing customer reviews on Thumbtack (opens in a new tab)"
+              aria-label="Find Agape Drain And Plumbing customer reviews on Google Maps (opens in a new tab)"
               className="inline-block mt-5 bg-plumbing-900 p-4 border-2 border-black rounded-md text-white font-bold uppercase hover:bg-plumbing-700 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-plumbing-800"
             >
-              Read Customer Reviews on Thumbtack ↗
+              See Our Google Reviews ↗
             </a>
           </div>
         </div>
