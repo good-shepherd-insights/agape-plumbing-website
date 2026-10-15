@@ -116,7 +116,7 @@ export const footer = {
     //   link: "https://yelp.com"
     // }
   ],
-  copyright: "© {year} Agape Drain & Plumbing LLC. All Rights Reserved.",
+  copyright: "© {year} Agape Drain And Plumbing, LLC. All Rights Reserved.",
   sections: {
     ourServices: "Our Services",
     serviceAreas: "Service Areas",
