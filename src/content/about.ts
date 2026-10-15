@@ -1,57 +1,33 @@
 export const about = {
   hero: {
     title: "About Agape Drain & Plumbing",
-    description: "Frederick's trusted plumbing professionals since 2016. Licensed and insured for your peace of mind."
+    description: "A local, family-owned plumbing business serving Frederick, Maryland, with personal service and 24/7 emergency help."
   },
   story: {
-    title: "Our Story",
+    title: "A Local Family Business Built on Trust",
     paragraphs: [
-      "Agape Drain & Plumbing was founded in 2016 by Sui with a simple mission: to provide honest, reliable, and professional plumbing services to the Frederick, MD community.",
-      "What began as a small family operation has grown into a trusted plumbing company with a team of licensed technicians serving both residential and commercial customers across the region.",
-      "Throughout our growth, we've maintained our founding principles of integrity, quality workmanship, and exceptional customer service. Our name \"Agape\" reflects our approach to business—serving others with selfless care and dedication.",
-      "Today, we're proud to be among Frederick's most trusted plumbing contractors, with thousands of satisfied customers and a reputation for excellence in everything we do."
+      "Agape Drain & Plumbing is a family-owned plumbing business rooted in the Frederick, Maryland community. Owner Sui believes customers deserve straightforward communication, careful work, and the kind of personal attention that comes from dealing with a local business.",
+      "We know that a plumbing problem can disrupt your day or your family's routine. Whether you need help with a clogged drain, a leaking pipe, or an urgent plumbing issue, our goal is to listen, explain the next steps clearly, and treat your home with respect.",
+      "As a small local business, our reputation depends on the trust of our neighbors. We value honest recommendations, dependable service, and relationships that last beyond a single repair.",
+      "We're proud to serve Frederick and nearby Maryland communities, and we're available 24/7 when a plumbing emergency cannot wait. Thank you for considering our family business for your home or property."
     ]
   },
   milestones: {
-    title: "Company Milestones",
+    title: "What Matters to Us",
     events: [
-      {
-        year: "2016",
-        description: "Founded by Sui as a small residential service company"
-      },
-      {
-        year: "2018",
-        description: "Expanded services to include commercial properties"
-      },
-      {
-        year: "2019",
-        description: "Became Certified Backflow Prevention Technicians"
-      },
-      {
-        year: "2020",
-        description: "Introduced emergency plumbing services"
-      },
-      {
-        year: "2021",
-        description: "Expanded service area to cover more of Frederick County"
-      },
-      {
-        year: "2022",
-        description: "Achieved 1,000+ completed service calls"
-      },
-      {
-        year: "Today",
-        description: "Continuing to grow while maintaining our commitment to quality"
-      }
+      { year: "Local", description: "Proud to serve Frederick and neighboring Maryland communities" },
+      { year: "Family-owned", description: "Personal service and accountability from a local business" },
+      { year: "24/7", description: "Emergency plumbing help when unexpected problems arise" },
+      { year: "Every visit", description: "Respectful communication and care for your property" }
     ]
   },
   mission: {
     title: "Our Mission",
-    description: "To deliver exceptional plumbing services that exceed customer expectations through technical excellence, reliability, and unwavering integrity."
+    description: "To help our neighbors with reliable plumbing work, clear communication, and respect for every home and customer."
   },
   vision: {
     title: "Our Vision",
-    description: "To be the most trusted name in plumbing across Frederick and surrounding areas, recognized for our quality workmanship, customer-first approach, and technical expertise."
+    description: "To earn the trust of Frederick-area families and property owners, one service call at a time."
   },
   values: {
     title: "Our Values",
@@ -63,12 +39,12 @@ export const about = {
     ]
   },
   team: {
-    title: "Our Leadership Team",
+    title: "Meet the Owner",
     members: [
       {
         name: "Sui",
         position: "Founder & Owner",
-        description: "Certified plumber with years of experience in the industry."
+        description: "Local business owner committed to dependable service and treating customers like neighbors."
       }
     ]
   },
