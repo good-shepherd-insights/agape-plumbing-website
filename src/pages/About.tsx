@@ -5,7 +5,7 @@ import Footer from '../components/layout/Footer';
 import Cta from '../components/home/Cta';
 import { Helmet } from 'react-helmet-async';
 import { useContent } from '@/hooks/use-content';
-import { Users, Target, Eye, Heart, Award, Shield, Clock, CheckCircle, Link, Phone } from 'lucide-react';
+import { Users, Target, Eye, Heart, Award, Shield, CheckCircle, Link, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const About = () => {
@@ -143,7 +143,7 @@ const About = () => {
             
             {/* Company Story */}
             <section className="mb-20 md:mb-32">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="grid grid-cols-1 gap-12 items-center">
                 <div>
                   <span className="inline-block font-mono uppercase text-sm font-bold mb-4 border-b-2 border-black">Our Story</span>
                   <h2 className="text-3xl md:text-4xl font-black uppercase text-plumbing-800 mb-6">{about.story.title}</h2>
@@ -153,23 +153,7 @@ const About = () => {
                     </p>
                   ))}
                 </div>
-                <div className="brutalist-card p-8 md:p-12 bg-gray-50">
-                  <div className="flex items-center mb-6">
-                    <div className="bg-plumbing-800 text-white p-3 rounded-md border-2 border-black mr-4">
-                      <Clock className="h-6 w-6" />
-                    </div>
-                    <h3 className="text-2xl font-black uppercase text-black">{about.milestones.title}</h3>
-                  </div>
-                  <ul className="space-y-6 border-l-4 border-plumbing-800 pl-6">
-                    {about.milestones.events.map((event, index) => (
-                      <li key={index} className="relative">
-                        <div className="absolute -left-8 w-4 h-4 bg-plumbing-800 border-2 border-white rounded-full"></div>
-                        <div className="font-black text-plumbing-900 text-lg mb-2">{event.year}</div>
-                        <p className="text-gray-700 leading-relaxed">{event.description}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+
               </div>
             </section>
 
