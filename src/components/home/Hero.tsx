@@ -34,7 +34,7 @@ const Hero = () => {
     <section className="relative bg-gradient-to-br from-plumbing-900 via-plumbing-800 to-sky-600 text-white py-12 md:py-16 border-b-4 border-sky-300 overflow-hidden">
       {/* Simplified background for mobile performance */}
       <div className="absolute inset-0 opacity-10 hidden md:block">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-white transform rotate-45"></div>
+        <div aria-hidden="true" className="absolute top-14 left-12 w-36 h-44"><div className="absolute left-1/2 top-0 h-full w-8 -translate-x-1/2 rounded-sm bg-white"></div><div className="absolute left-0 top-12 h-8 w-full rounded-sm bg-white"></div></div>
         <div className="absolute bottom-20 right-10 w-24 h-24 bg-plumbing-200 transform -rotate-12"></div>
       </div>
       
