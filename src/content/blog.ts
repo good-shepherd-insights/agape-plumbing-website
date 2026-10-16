@@ -1,11 +1,11 @@
 export const blog = {
   hero: {
     title: "Plumbing Insights & Tips",
-    description: "Expert advice, maintenance tips, and industry insights from our licensed plumbers. Stay informed about your plumbing system and home improvements."
+    description: "Practical plumbing maintenance tips and helpful guides for homeowners. Stay informed about your plumbing system and home improvements."
   },
   meta: {
     title: "Plumbing Blog | Expert Tips & Advice | Agape Drain & Plumbing",
-    description: "Read expert plumbing tips, maintenance advice, and industry insights from licensed plumbers in Frederick, MD. Stay informed about your home's plumbing system.",
+    description: "Read practical plumbing maintenance advice and helpful guides for homeowners in Frederick, MD. Stay informed about your home's plumbing system.",
     keywords: "plumbing blog, plumbing tips, plumbing maintenance, plumbing advice, home improvement tips, plumbing repairs",
     canonical: "https://agapeplumbinginc.com/blog"
   },
