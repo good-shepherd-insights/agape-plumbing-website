@@ -2,7 +2,7 @@ export const waterHeaterServicesCopy = {
   hero: {
     title: "Water Heater Services",
     subtitle: "Expert Water Heater Repair & Installation",
-    description: "From traditional tank water heaters to modern tankless systems, our licensed plumbers provide comprehensive water heater services including repairs, maintenance, and professional installation.",
+    description: "From traditional tank water heaters to modern tankless systems, our plumbing team provide comprehensive water heater services including repairs, maintenance, and professional installation.",
     imageAlt: "Licensed water heater repair and tankless installation services",
   },
   intro: {
@@ -26,7 +26,7 @@ export const waterHeaterServicesCopy = {
       },
       {
         title: "Professional Installation",
-        description: "Our certified installations ensure your new water heater operates safely and efficiently, meeting all building codes and manufacturer specifications.",
+        description: "Our installation work ensure your new water heater operates safely and efficiently, meeting all building codes and manufacturer specifications.",
       },
     ],
   },
@@ -56,8 +56,8 @@ export const waterHeaterServicesCopy = {
     ]
   },
   meta: {
-    title: "Water Heater Repair | Tankless Installation | Agape",
-    description: "Expert water heater repair: tankless installation, gas & electric service, emergency repairs. Licensed plumbers for replacement & maintenance.",
+    title: "Water Heater Services in Frederick, MD | Agape",
+    description: "Water heater repair and replacement in Frederick, MD. See before-and-after project photos and contact Agape at (227) 223-9057.",
     keywords: "water heater repair, tankless water heater installation, gas water heater replacement, electric water heater repair, water heater maintenance, emergency water heater service, hot water heater installation, licensed water heater contractor",
     canonical: "https://agapeplumbinginc.com/services/water-heater-services"
   },
