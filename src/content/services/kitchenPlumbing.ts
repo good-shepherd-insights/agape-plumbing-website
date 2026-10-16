@@ -3,7 +3,7 @@ export const kitchenPlumbingCopy = {
     title: "Kitchen Plumbing Services ",
     subtitle: "Complete Kitchen Plumbing Solutions",
     description: "From sink and faucet installations to garbage disposal repairs and drain cleaning, our professional plumbers provide comprehensive kitchen plumbing services to keep your kitchen functioning perfectly.",
-    imageAlt: "Licensed plumber repairing kitchen sink in residential home",
+    imageAlt: "plumber repairing kitchen sink in residential home",
   },
   intro: {
     title: "Expert Kitchen Plumbing Services",
@@ -56,8 +56,8 @@ export const kitchenPlumbingCopy = {
     ]
   },
   meta: {
-    title: "Kitchen Plumbing | Sink Installation | Agape",
-    description: "Expert kitchen plumbing: sink installation, faucet repair, garbage disposal service, dishwasher hookups. Licensed plumbers for kitchen remodel, emergency repairs.",
+    title: "Kitchen Plumbing in Frederick, MD | Agape",
+    description: "Kitchen sink, faucet, drain, and garbage disposal plumbing in Frederick, MD. See real project photos and call Agape at (227) 223-9057.",
     keywords: "kitchen plumbing, sink installation, kitchen faucet repair, garbage disposal repair, dishwasher installation, kitchen drain cleaning, kitchen remodel plumbing, emergency kitchen plumber, licensed kitchen plumber",
     canonical: "https://agapeplumbinginc.com/services/kitchen-plumbing"
   },
