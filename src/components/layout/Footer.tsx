@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className="flex items-start mb-2">
               <MapPin className="h-5 w-5 mr-2 mt-1" />
-              <span>{company.address.poBox}<br />{company.address.city}, {company.address.state} {company.address.zip}</span>
+              <span>Based in {company.address.city}, {company.address.state}<br />Service calls by appointment; no walk-in visits</span>
             </div>
           </div>
           
