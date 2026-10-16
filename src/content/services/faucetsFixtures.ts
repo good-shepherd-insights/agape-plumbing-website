@@ -3,7 +3,7 @@ export const faucetsFixturesCopy = {
     title: "Faucet Repair Services",
     subtitle: "Professional Faucet Repair & Fixture Replacement",
     description: "Upgrade your kitchen and bathroom with our professional faucet and fixture installation services. From fixing leaky faucets to complete fixture replacements, our skilled plumbers ensure quality workmanship and lasting results.",
-    imageAlt: "Licensed plumber installing modern kitchen faucet in residential home",
+    imageAlt: "plumber installing modern kitchen faucet in residential home",
   },
   intro: {
     title: "Expert Faucet Repair Services",
@@ -50,15 +50,15 @@ export const faucetsFixturesCopy = {
       },
       {
         title: "Water Heater Services",
-        description: "Water heater installation, repair, and maintenance by licensed plumbers.",
+        description: "Water heater installation, repair, and maintenance by plumbers.",
         link: "/services/water-heater-services"
       }
     ]
   },
   meta: {
-    title: "Faucet Repair | Fixture Installation | Agape",
-    description: "Expert faucet repair: fixture installation, shower repair, bathroom remodeling. Licensed plumbers for kitchen & bathroom fixtures.",
-    keywords: "faucet repair, fixture installation, shower repair, bathroom remodeling, kitchen faucet installation, bathroom fixture replacement, sink installation, licensed plumber fixtures",
+    title: "Faucet & Fixture Repair in Frederick, MD | Agape",
+    description: "Faucet repair and fixture replacement in Frederick, MD. Get help with leaking faucets, sinks, and shower fixtures. Call (227) 223-9057.",
+    keywords: "faucet repair, fixture installation, shower repair, bathroom remodeling, kitchen faucet installation, bathroom fixture replacement, sink installation, plumber fixtures",
     canonical: "https://agapeplumbinginc.com/services/faucets-fixtures"
   },
 };
