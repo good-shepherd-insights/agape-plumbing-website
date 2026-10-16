@@ -4,10 +4,10 @@ export const home = {
     subtitle: "Local, Family-Owned Plumbing",
     description: "Local, family-owned plumbing service with honest communication, careful work, and 24/7 emergency help.",
     cta: "Schedule Service",
-    emergencyBanner: "Available 24/7 For Emergencies",
+    emergencyBanner: "24/7 Emergency Plumbing — Day & Night",
     trustedHeading: "Frederick, MD",
     expertSubheading: "Plumbing & Drain Services",
-    description2: "provides drain cleaning, leak repairs, water heater services, and plumbing solutions in Frederick and nearby Maryland communities. Faithful service. Honest work.",
+    description2: "provides drain cleaning, leak repairs, water heater services, and 24/7 emergency plumbing in Frederick and nearby Maryland communities. Faithful service. Honest work.",
     serviceButtonText: "View Our Services",
     callText: "Call For Immediate Service",
     requestFormTitle: "Request Service Online",
@@ -41,7 +41,7 @@ export const home = {
       {
         id: 2,
         title: '24/7 Emergency Service',
-        description: 'Available around the clock for urgent plumbing emergencies when you need help most.'
+        description: 'Emergency plumbing service is available 24 hours a day, seven days a week, including overnight calls.'
       },
       {
         id: 3,
