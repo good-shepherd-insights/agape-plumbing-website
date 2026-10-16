@@ -1,7 +1,7 @@
 export const home = {
   hero: {
     title: "Family-Owned Plumbing in Frederick, MD",
-    subtitle: "Licensed & Insured",
+    subtitle: "Local, Family-Owned Plumbing",
     description: "Local, family-owned plumbing service with honest communication, careful work, and 24/7 emergency help.",
     cta: "Schedule Service",
     emergencyBanner: "Available 24/7 For Emergencies",
@@ -35,7 +35,7 @@ export const home = {
     reasons: [
       {
         id: 1,
-        title: 'Licensed & Insured',
+        title: 'Local Plumbing Experience',
         description: 'Our team includes a Maryland journeyman plumber. Ask about qualifications for your project.'
       },
       {
@@ -55,13 +55,13 @@ export const home = {
       },
       {
         id: 5,
-        title: 'Satisfaction Guaranteed',
+        title: 'Customer-Focused Service',
         description: 'We focus on careful work, clear communication, and customer satisfaction.'
       },
       {
         id: 6,
-        title: 'Latest Equipment & Techniques',
-        description: 'We utilize modern technology and proven methods to solve your plumbing problems efficiently.'
+        title: 'Practical Plumbing Solutions',
+        description: 'We focus on diagnosing the issue and explaining practical repair options.'
       }
     ],
     testimonial: {
