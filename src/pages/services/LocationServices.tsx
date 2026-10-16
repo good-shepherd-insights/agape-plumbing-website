@@ -90,7 +90,7 @@ const LocationServices = () => {
     },
     {
       title: 'Local Plumbing Experience',
-      description: 'Family-owned plumbing service with a Maryland journeyman plumber',
+      description: 'Family-owned plumbing service focused on clear communication and careful work',
       icon: Star
     },
     {
@@ -103,11 +103,11 @@ const LocationServices = () => {
   return (
     <>
       <Helmet>
-        <title>{`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain & Plumbing`}</title>
+        <title>{`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain And Plumbing, LLC`}</title>
         <meta name="description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
         <meta name="keywords" content={`plumbing services ${locationData.slug}, plumber ${locationData.slug}, ${locationData.county} plumbing`} />
         <link rel="canonical" href={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
-        <meta property="og:title" content={`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain & Plumbing`} />
+        <meta property="og:title" content={`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain And Plumbing, LLC`} />
         <meta property="og:description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
         <meta property="og:url" content={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
         <meta property="og:type" content="website" />
@@ -117,7 +117,7 @@ const LocationServices = () => {
         <meta property="og:image:alt" content="Agape Plumbing - Professional Plumbing Services" /> */}
         <meta property="og:site_name" content="Agape Plumbing" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain & Plumbing`} />
+        <meta name="twitter:title" content={`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain And Plumbing, LLC`} />
         <meta name="twitter:description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
         {/* <meta name="twitter:image" content="https://agapeplumbinginc.com/og-image.svg" /> */}
       </Helmet>
