@@ -77,10 +77,6 @@ export const footer = {
       title: "Contact Us",
       link: "/contact"
     },
-    {
-      title: "404 Page",
-      link: "/404"
-    },
     // {
     //   title: "Reviews",
     //   link: "/testimonials"
