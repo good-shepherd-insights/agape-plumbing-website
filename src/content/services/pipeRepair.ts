@@ -3,7 +3,7 @@ export const pipeRepairCopy = {
     title: "Expert Pipe Repair Services ",
     subtitle: "Professional Pipe Repair & Replacement",
     description: "From small leaks to major pipe failures, our skilled plumbers provide comprehensive pipe repair services to restore your plumbing system quickly and effectively, minimizing damage to your property.",
-    imageAlt: "Licensed plumber performing pipe repair and leak detection",
+    imageAlt: "plumber performing pipe repair and leak detection",
   },
   intro: {
     title: "Complete Pipe Repair & Replacement Solutions",
@@ -56,8 +56,8 @@ export const pipeRepairCopy = {
     ]
   },
   meta: {
-    title: "Pipe Repair | Leak Detection | Agape",
-    description: "Expert pipe repair: leak detection, copper PEX PVC replacement, emergency pipe burst repair. Licensed plumbers for repiping, underground pipes.",
+    title: "Pipe & Leak Repair in Frederick, MD | Agape",
+    description: "Pipe repairs and help with plumbing leaks in Frederick, MD. Contact Agape Drain & Plumbing to discuss your issue: (227) 223-9057.",
     keywords: "pipe repair, leak detection, pipe replacement, repiping services, copper pipe repair, pex pipe installation, emergency pipe repair, pipe burst repair, underground pipe repair, licensed pipe contractor",
     canonical: "https://agapeplumbinginc.com/services/pipe-repair"
   },
