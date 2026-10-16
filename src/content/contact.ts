@@ -95,10 +95,6 @@ export const contact = {
       {
         question: "Do you offer free estimates?",
         answer: "Contact us to discuss your plumbing needs and ask about estimate options before scheduling."
-      },
-      {
-        question: "Are your plumbers licensed?",
-        answer: "Our team includes a Maryland journeyman plumber. Contact us if you need details about licensing or insurance for your project."
       }
     ]
   },
