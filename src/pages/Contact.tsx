@@ -53,18 +53,11 @@ const Contact = () => {
             "mainEntity": {
               "@type": "LocalBusiness",
               "@id": "https://agapeplumbinginc.com/#localbusiness",
-              "name": "Agape Drain & Plumbing LLC",
+              "name": "Agape Drain And Plumbing, LLC",
               "telephone": "+1-227-223-9057",
               "email": "agape7plumbing@gmail.com",
               "url": "https://agapeplumbinginc.com/",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "109 Wheeler Ln",
-                "addressLocality": "Frederick",
-                "addressRegion": "MD",
-                "postalCode": "21702",
-                "addressCountry": "US"
-              },
+              "areaServed": "Frederick, Maryland",
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
@@ -209,7 +202,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="text-lg font-black uppercase mb-2">{contact.contactInfo.address.title}</h3>
-                        <p className="text-lg font-bold text-plumbing-800">{company.address.poBox}</p>
+                        <p className="text-sm text-gray-600">Service-area business; no walk-in visits.</p>
                         <p className="text-lg font-bold text-plumbing-800 mb-2">{company.address.city}, {company.address.state} {company.address.zip}</p>
                       </div>
                     </div>
