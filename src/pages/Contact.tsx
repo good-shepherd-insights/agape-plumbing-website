@@ -338,6 +338,7 @@ const Contact = () => {
                     {isSubmitting ? 'Sending...' : contact.contactForm.submitButton}
                   </Button>
                   
+                  <p className="text-center text-sm text-gray-600">See <a href="https://share.google/FX9D6o5rvn6WNewnX" target="_blank" rel="noopener noreferrer" className="font-semibold text-plumbing-800 underline">our customer reviews on Google</a> before requesting service.</p>
                   {/* Status Message */}
                   {submitStatus !== 'idle' && (
                     <div className={`p-4 border-2 rounded-md transition-all duration-300 ${
@@ -401,9 +402,8 @@ const Contact = () => {
                 <p className="text-xl mb-8 max-w-2xl mx-auto">
                   Don't wait! Our emergency plumbing team is available 24/7 to help you.
                 </p>
-                <Button size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 px-10 py-6">
-                  <Phone className="h-6 w-6 mr-2" />
-                  Emergency Service: {company.phone}
+                <Button asChild size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 px-10 py-6">
+                  <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="inline-flex items-center"><Phone className="h-6 w-6 mr-2" />Emergency Service: {company.phone}</a>
                 </Button>
               </div>
             </div>
