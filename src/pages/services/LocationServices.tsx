@@ -104,7 +104,7 @@ const LocationServices = () => {
     <>
       <Helmet>
         <title>{`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain And Plumbing, LLC`}</title>
-        <meta name="description" content={`Professional plumbing services in ${locationData.fullName}. Serving ${locationData.neighborhoods.join(', ')} and all of ${locationData.county}.`} />
+        <meta name="description" content={`Plumbing and drain cleaning in ${locationData.fullName}, including 24/7 emergency plumbing. Call (227) 223-9057 for assistance.`} />
         <meta name="keywords" content={`plumbing services ${locationData.slug}, plumber ${locationData.slug}, ${locationData.county} plumbing`} />
         <link rel="canonical" href={`https://agapeplumbinginc.com/areas/${locationData.slug}`} />
         <meta property="og:title" content={`Plumbing Services Near Me | ${locationData.name}, MD | Agape Drain And Plumbing, LLC`} />
