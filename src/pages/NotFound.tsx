@@ -29,7 +29,7 @@ const NotFound = () => {
   <title>{notFound.meta.title}</title>
   <meta name="description" content={notFound.meta.description} />
   <meta name="keywords" content={notFound.meta.keywords} />
-  <link rel="canonical" href={notFound.meta.canonical} />
+  <meta name="robots" content="noindex, follow" />
   <meta property="og:title" content={notFound.meta.title} />
   <meta property="og:description" content={notFound.meta.description} />
   <meta property="og:url" content={notFound.meta.canonical} />
@@ -44,8 +44,8 @@ const NotFound = () => {
   <meta name="twitter:description" content={notFound.meta.description} />
   {/* <meta name="twitter:image" content="https://agapeplumbinginc.com/og-image.svg" /> */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="404 Not Found | Agape Drain & Plumbing LLC" />
-  <meta name="twitter:description" content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services across Washington, D.C., Maryland, and Virginia." />
+  <meta name="twitter:title" content="404 Not Found | Agape Drain And Plumbing, LLC" />
+  <meta name="twitter:description" content="Page not found. Return to Agape Plumbing's homepage for expert plumbing services in Frederick, Maryland." />
 </Helmet>
       
       <Header />
