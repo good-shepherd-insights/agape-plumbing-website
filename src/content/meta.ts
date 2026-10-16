@@ -1,7 +1,7 @@
 export const meta = {
   home: {
     title: "Frederick MD Plumber | Drain Cleaning & Repairs | Agape Plumbing",
-    description: "Need plumbing or drain cleaning in Frederick, MD? Family-owned Agape Drain And Plumbing, LLC helps with clogged drains, leaks and water heaters. Call (227) 223-9057.",
+    description: "Frederick, MD plumbing and drain cleaning by Agape Drain And Plumbing, LLC. 24/7 emergency plumbing, leak repairs and water heater service. Call (227) 223-9057.",
     keywords: "plumbing contractor, emergency plumber, plumbing repairs, plumbing installation, Frederick plumber",
     canonical: "https://agapeplumbinginc.com/",
     ogImage: "https://agapeplumbinginc.com/og-image-home.svg"
@@ -15,14 +15,14 @@ export const meta = {
   },
   services: {
     title: "Plumbing Services Frederick MD | Agape Drain And Plumbing, LLC",
-    description: "Explore drain cleaning, water heater repair, leak detection, pipe repair, toilet and faucet services in Frederick, MD and surrounding communities.",
+    description: "Explore plumbing and drain cleaning in Frederick, MD, including 24/7 emergency plumbing, water heater service, pipe repairs, toilets and faucets.",
     keywords: "plumbing services, emergency plumbing, water heater installation, drain cleaning, plumbing repairs, commercial plumbing",
     canonical: "https://agapeplumbinginc.com/services",
     ogImage: "https://agapeplumbinginc.com/og-image-services.svg"
   },
   contact: {
     title: "Contact Our Plumbers Frederick MD | Agape Drain And Plumbing, LLC",
-    description: "Contact Agape Drain And Plumbing, LLC for emergency service, estimates, and plumbing solutions in Frederick, MD. Call (227) 223-9057.",
+    description: "Call Agape Drain And Plumbing, LLC at (227) 223-9057 for 24/7 emergency plumbing in Frederick, MD, or request an appointment online.",
     keywords: "contact plumber, plumbing company phone number, emergency plumber contact, plumbing quote, plumbing estimate",
     canonical: "https://agapeplumbinginc.com/contact",
     ogImage: "https://agapeplumbinginc.com/og-image-contact.svg"
