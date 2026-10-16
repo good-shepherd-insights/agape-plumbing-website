@@ -67,8 +67,7 @@ const Blog = () => {
             ]
           })}
         </script>
-        <meta property="og:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
-        <meta name="twitter:image" content="https://agapeplumbinginc.com/assets/images/logo-og.webp" />
+
       </Helmet>
 
       <Header />
