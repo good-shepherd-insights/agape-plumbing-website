@@ -40,6 +40,29 @@ const Index = () => {
         <Hero />
         <ServicesList />
         <WhyChooseUs />
+
+        <section aria-labelledby="recent-work-heading" className="py-16 bg-white">
+          <div className="container-custom px-4">
+            <h2 id="recent-work-heading" className="text-3xl md:text-4xl font-black text-plumbing-800 mb-4">Our Recent Plumbing Work</h2>
+            <p className="text-gray-700 mb-8 max-w-3xl">See before-and-after photos from real plumbing projects completed by Agape Drain And Plumbing, LLC.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { image: '/water-heater-replacement.webp', title: 'Water heater replacement', link: '/services' },
+                { image: '/bathroom-faucet-valves.webp', title: 'Bathroom faucet and shutoff valve replacement', link: '/services' },
+                { image: '/shower-fixture-replacement.webp', title: 'Shower fixture replacement', link: '/services' },
+                { image: '/kitchen-faucet-replacement.webp', title: 'Kitchen faucet replacement', link: '/services' },
+                { image: '/toilet-replacement.webp', title: 'Toilet replacement', link: '/services' },
+                { image: '/pipe-valve-repair.webp', title: 'Pipe and valve repair', link: '/services' },
+                { image: '/kitchen-sink-faucet-drain-garbage-disposal-before-after.webp', title: 'Kitchen sink, faucet, drain and disposal installation', link: '/services' },
+              ].map((project) => (
+                <a key={project.image} href={project.link} className="block overflow-hidden rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                  <img src={project.image} alt={`Before-and-after photos of ${project.title.toLowerCase()} completed by Agape Drain And Plumbing`} loading="lazy" decoding="async" className="w-full aspect-square object-contain bg-gray-50" />
+                  <h3 className="p-4 text-lg font-bold text-plumbing-800">{project.title}</h3>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
         <ServiceAreas />
         <Cta />
       </main>
