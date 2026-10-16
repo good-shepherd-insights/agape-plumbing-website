@@ -28,7 +28,7 @@ const Index = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
-        <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
+        <meta property="og:site_name" content="Agape Drain And Plumbing, LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.home.title} />
         <meta name="twitter:description" content={meta.home.description} />
