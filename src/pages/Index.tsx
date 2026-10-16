@@ -63,6 +63,19 @@ const Index = () => {
             </div>
           </div>
         </section>
+        <section aria-labelledby="frederick-plumbing-heading" className="py-14 bg-sky-50">
+          <div className="container-custom px-4 max-w-5xl">
+            <h2 id="frederick-plumbing-heading" className="text-3xl md:text-4xl font-bold text-plumbing-800 mb-4">Drain Cleaning and Plumbing Help in Frederick, MD</h2>
+            <p className="text-gray-700 text-lg mb-5">Dealing with a slow sink, clogged shower, leaking pipe, or water heater problem? Agape Drain And Plumbing, LLC serves Frederick and nearby Maryland communities. Tell us what is happening so we can discuss the next steps and appointment availability.</p>
+            <nav aria-label="Popular Frederick plumbing services" className="flex flex-wrap gap-3">
+              <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/drain-cleaning">Drain cleaning</a>
+              <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/sewer-services">Sewer services</a>
+              <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/emergency-plumbing">Emergency plumbing</a>
+              <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/areas/frederick">Plumbing in Frederick</a>
+              <a className="inline-block rounded-lg bg-plumbing-800 px-4 py-3 font-semibold text-white hover:opacity-90" href="/contact">Request plumbing service</a>
+            </nav>
+          </div>
+        </section>
         <ServiceAreas />
         <Cta />
       </main>
