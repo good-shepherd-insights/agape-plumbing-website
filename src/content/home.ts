@@ -30,13 +30,13 @@ export const home = {
   },
 
   whyChooseUs: {
-    heading: "Why Choose Agape Drain & Plumbing?",
+    heading: "Why Choose Agape Drain And Plumbing?",
     description: "We're a local, family-owned business focused on treating customers like neighbors and earning trust through dependable service.",
     reasons: [
       {
         id: 1,
         title: 'Local Plumbing Experience',
-        description: 'Our team includes a Maryland journeyman plumber. Ask about qualifications for your project.'
+        description: 'We focus on clear explanations, careful work, and practical plumbing solutions for Frederick-area customers.'
       },
       {
         id: 2,
@@ -46,7 +46,7 @@ export const home = {
       {
         id: 3,
         title: 'Experienced Technicians',
-        description: 'Our team consists of skilled professionals with years of industry experience.'
+        description: 'We discuss the problem and the available repair options before beginning work.'
       },
       {
         id: 4,
