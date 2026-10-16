@@ -1,5 +1,5 @@
 export const footer = {
-  description: "Quality plumbing services with integrity and professionalism. Licensed and insured for your peace of mind.",
+  description: "Family-owned plumbing service based in Frederick, Maryland. Drain cleaning, leak repairs, fixtures, water heaters, and 24/7 emergency help.",
   services: [
     {
       title: "Emergency Plumbing",
@@ -32,10 +32,6 @@ export const footer = {
     {
       title: "Sewer Services",
       link: "/services/sewer-services"
-    },
-    {
-      title: "Commercial Plumbing",
-      link: "/services/commercial"
     }
   ],
   serviceAreas: [
