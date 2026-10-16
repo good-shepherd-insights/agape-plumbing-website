@@ -7,14 +7,14 @@ export const drainCleaningCopy = {
   },
   intro: {
     title: "Effective Drain Cleaning Solutions",
-    description: "Clogged drains are more than just an inconvenience—they can lead to water damage, foul odors, and even health hazards if not addressed properly. Our professional drain cleaning services go beyond temporary fixes, addressing the root cause of blockages to prevent recurring problems. We utilize advanced equipment including high-definition video inspection cameras, hydro jetting technology, and professional-grade drain snakes to effectively clear even the most stubborn clogs. Whether you're dealing with a slow-draining sink, a backed-up shower, or a main sewer line blockage, our experienced team can quickly diagnose and resolve the issue.",
+    description: "Clogged drains are more than just an inconvenience—they can lead to water damage, foul odors, and even health hazards if not addressed properly. Our professional drain cleaning services go beyond temporary fixes, addressing the root cause of blockages to prevent recurring problems. We discuss the symptoms, assess the blockage, and recommend a practical cleaning or repair approach for the affected drain. Whether you're dealing with a slow-draining sink, a backed-up shower, or a main sewer line blockage, our experienced team can quickly diagnose and resolve the issue.",
   },
   whyChooseUs: {
     title: "Why Choose Us for Drain Cleaning?",
     reasons: [
       {
         title: "Advanced Technology",
-        description: "We use state-of-the-art equipment including video inspection cameras and hydro jetting to thoroughly clean drains and identify underlying issues.",
+        description: "We assess the problem and explain the recommended approach before work begins.",
       },
       {
         title: "Comprehensive Service",
@@ -22,7 +22,7 @@ export const drainCleaningCopy = {
       },
       {
         title: "Preventative Maintenance",
-        description: "Beyond emergency cleaning, we offer preventative maintenance programs to keep your drains flowing freely and prevent future clogs.",
+        description: "Beyond emergency cleaning, we can discuss preventative maintenance to keep your drains flowing freely and prevent future clogs.",
       },
       {
         title: "Eco-Friendly Options",
@@ -56,8 +56,8 @@ export const drainCleaningCopy = {
     ]
   },
   meta: {
-    title: "Drain Cleaning | Clog Removal | Agape",
-    description: "Professional drain cleaning: clog removal, hydro jetting, drain snaking, sewer line cleaning. Licensed plumbers for emergency drain service.",
+    title: "Drain Cleaning in Frederick, MD | Agape Plumbing",
+    description: "Drain cleaning and clog removal in Frederick, MD. Get help with slow sinks, backed-up showers, and blocked household drains. Call Agape at (227) 223-9057.",
     keywords: "drain cleaning, clog removal, hydro jetting, drain snaking, sewer line cleaning, emergency drain service, kitchen drain cleaning, bathroom drain cleaning, licensed drain cleaner",
     canonical: "https://agapeplumbinginc.com/services/drain-cleaning"
   },
