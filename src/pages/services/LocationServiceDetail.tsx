@@ -66,14 +66,13 @@ const LocationServiceDetail = () => {
             "description": content.hero.description,
             "provider": {
               "@type": "LocalBusiness",
-              "@id": "https://agapeplumbinginc.com/#localbusiness",
+              "@id": "https://agapeplumbinginc.com/#organization",
               "name": "Agape Drain & Plumbing LLC",
               "telephone": "+1-227-223-9057",
               "email": "agape7plumbing@gmail.com",
               "url": "https://agapeplumbinginc.com/",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "109 Wheeler Ln",
                 "addressLocality": "Frederick",
                 "addressRegion": "MD",
                 "postalCode": "21702",
