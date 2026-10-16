@@ -57,27 +57,13 @@ const ServiceDetail = () => {
             "provider": {
               "@type": "LocalBusiness",
               "@id": "https://agapeplumbinginc.com/#localbusiness",
-              "name": "Agape Drain & Plumbing LLC",
+              "name": "Agape Drain And Plumbing, LLC",
               "telephone": "+1-227-223-9057",
               "email": "agape7plumbing@gmail.com",
-              "url": "https://agapeplumbinginc.com/",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "109 Wheeler Ln",
-                "addressLocality": "Frederick",
-                "addressRegion": "MD",
-                "postalCode": "21702",
-                "addressCountry": "US"
-              }
+              "url": "https://agapeplumbinginc.com/"
             },
             "serviceType": content.hero.title,
             "url": content.meta.canonical,
-            "offers": {
-              "@type": "Offer",
-              "availability": "https://schema.org/InStock",
-              "businessFunction": "https://purl.org/goodrelations/v1#Sell",
-              "description": "Professional " + content.hero.title.toLowerCase() + " services"
-            },
             "areaServed": {
               "@type": "State",
               "name": "Maryland"
@@ -98,7 +84,7 @@ const ServiceDetail = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
-        <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
+        <meta property="og:site_name" content="Agape Drain And Plumbing, LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
         <meta name="twitter:description" content={content.meta.description} />
@@ -132,9 +118,8 @@ const ServiceDetail = () => {
                 {content.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Call Now: (227) 223-9057
+                <Button asChild size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
+                  <a href="tel:+12272239057" className="inline-flex items-center"><Phone className="h-5 w-5 mr-2" />Call Now: (227) 223-9057</a>
                 </Button>
                 <Link 
                   to="/contact"
