@@ -56,7 +56,7 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">★ 10+ Years of Experience</span><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Frederick & Surrounding Areas</span><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Faithful Service • Honest Work</span></div>
+            <div className="flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Local Family-Owned Business</span><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Frederick & Surrounding Areas</span><span className="rounded-full bg-white/15 border border-white/25 px-4 py-2">Faithful Service • Honest Work</span></div>
             <div className="flex flex-col sm:flex-row gap-6">
               <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="w-full sm:w-auto">
                 <Button 
@@ -100,7 +100,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center">
                   <Shield className="h-5 w-5 mr-2" />
-                  <span className="text-sm font-bold">Licensed & Insured</span>
+                  <span className="text-sm font-bold">Local Family-Owned Business</span>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Hero = () => {
           <div className="relative w-full space-y-6">
             <figure className="overflow-hidden rounded-2xl border border-sky-200 shadow-xl bg-white">
               <img src="/agape-plumber-sui.jpg" alt="Agape Drain and Plumbing plumber Sui repairing plumbing beneath a kitchen sink in Frederick, Maryland" className="w-full h-[280px] sm:h-[340px] lg:h-[400px] object-cover object-top" loading="eager" fetchPriority="high" />
-              <figcaption className="px-5 py-3 text-plumbing-900 font-semibold text-sm">Professional plumbing service • 10+ years of experience</figcaption>
+              <figcaption className="px-5 py-3 text-plumbing-900 font-semibold text-sm">Local, family-owned plumbing service</figcaption>
             </figure>
             <div className="bg-white p-3 md:p-10 rounded-lg border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,0.3)] transform hover:translate-y-[-2px] transition-transform duration-300 w-full max-w-none">
               <div className="flex items-center mb-6 mt-4">
