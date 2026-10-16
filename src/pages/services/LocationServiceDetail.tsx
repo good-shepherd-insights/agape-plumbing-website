@@ -67,7 +67,7 @@ const LocationServiceDetail = () => {
             "provider": {
               "@type": "LocalBusiness",
               "@id": "https://agapeplumbinginc.com/#organization",
-              "name": "Agape Drain & Plumbing LLC",
+              "name": "Agape Drain And Plumbing, LLC",
               "telephone": "+1-227-223-9057",
               "email": "agape7plumbing@gmail.com",
               "url": "https://agapeplumbinginc.com/",
@@ -110,7 +110,7 @@ const LocationServiceDetail = () => {
         {/* <meta property="og:image" content="https://agapeplumbinginc.com/og-image.svg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Agape Drain & Plumbing LLC - Professional Plumbing Services in Frederick, MD" /> */}
+        <meta property="og:image:alt" content="Agape Drain And Plumbing, LLC - Professional Plumbing Services in Frederick, MD" /> */}
         <meta property="og:site_name" content="Agape Drain & Plumbing LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
@@ -140,15 +140,14 @@ const LocationServiceDetail = () => {
               {content.hero.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]">
-                <Phone className="h-5 w-5 mr-2" />
-                Call Now: (227) 223-9057
+              <Button asChild size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]">
+                <a href="tel:+12272239057" className="inline-flex items-center"><Phone className="h-5 w-5 mr-2" />Call Now: (227) 223-9057</a>
               </Button>
               <Link 
                 to="/contact"
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 hover:translate-y-[-4px]"
               >
-                Get Free Estimate
+                Request an Estimate
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
             </div>
