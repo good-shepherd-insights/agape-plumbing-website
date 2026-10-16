@@ -9,7 +9,7 @@ export const meta = {
   about: {
     title: "Family-Owned Plumber in Frederick, MD | About Agape",
     description: "Meet Agape Drain & Plumbing, a local family-owned business serving Frederick, MD. Get to know our approach to honest service and 24/7 emergency plumbing.",
-    keywords: "about Agape Plumbing, plumbing company history, plumbing contractors Frederick, licensed plumbers",
+    keywords: "about Agape Plumbing, family owned plumbing company, plumbing contractors Frederick, journeyman plumber",
     canonical: "https://agapeplumbinginc.com/about",
     ogImage: "https://agapeplumbinginc.com/og-image-about.svg"
   },
