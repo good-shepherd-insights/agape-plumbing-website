@@ -2,8 +2,8 @@ export const toiletServicesCopy = {
   hero: {
     title: "Professional Toilet Repair & Installation Services ",
     subtitle: "Expert Toilet Services for Residential and Commercial Properties",
-    description: "From fixing running toilets and clogs to installing new, water-efficient models, our licensed plumbers provide comprehensive toilet repair and installation services for residential and commercial properties.",
-    imageAlt: "Licensed plumber installing new toilet in residential bathroom",
+    description: "From fixing running toilets and clogs to installing new, water-efficient models, our plumbing team provide comprehensive toilet repair and installation services for residential and commercial properties.",
+    imageAlt: "plumber installing new toilet in residential bathroom",
   },
   intro: {
     title: "Complete Toilet Repair & Installation Solutions",
@@ -56,8 +56,8 @@ export const toiletServicesCopy = {
     ]
   },
   meta: {
-    title: "Toilet Repair | Clogged Toilet Fix | Agape",
-    description: "Professional toilet repair: running toilet fix, clogs, leaks, high-efficiency installation. Licensed plumbers for emergency toilet service.",
+    title: "Toilet Repair & Replacement in Frederick, MD | Agape",
+    description: "Toilet repairs, replacements, leaks, and clogs in Frederick, MD. View real project photos and call Agape at (227) 223-9057.",
     keywords: "toilet repair, clogged toilet fix, running toilet repair, toilet installation, toilet replacement, toilet clog repair, toilet leak repair, high efficiency toilet, emergency toilet repair, licensed toilet contractor",
     canonical: "https://agapeplumbinginc.com/services/toilet-services"
   },
