@@ -47,13 +47,13 @@ const Index = () => {
             <p className="text-gray-700 mb-8 max-w-3xl">See before-and-after photos from real plumbing projects completed by Agape Drain And Plumbing, LLC.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { image: '/water-heater-replacement.webp', title: 'Water heater replacement', link: '/services' },
-                { image: '/bathroom-faucet-valves.webp', title: 'Bathroom faucet and shutoff valve replacement', link: '/services' },
-                { image: '/shower-fixture-replacement.webp', title: 'Shower fixture replacement', link: '/services' },
-                { image: '/kitchen-faucet-replacement.webp', title: 'Kitchen faucet replacement', link: '/services' },
-                { image: '/toilet-replacement.webp', title: 'Toilet replacement', link: '/services' },
-                { image: '/pipe-valve-repair.webp', title: 'Pipe and valve repair', link: '/services' },
-                { image: '/kitchen-sink-faucet-drain-garbage-disposal-before-after.webp', title: 'Kitchen sink, faucet, drain and disposal installation', link: '/services' },
+                { image: '/water-heater-replacement.webp', title: 'Water heater replacement', link: '/services/water-heater-services' },
+                { image: '/bathroom-faucet-valves.webp', title: 'Bathroom faucet and shutoff valve replacement', link: '/services/faucets-fixtures' },
+                { image: '/shower-fixture-replacement.webp', title: 'Shower fixture replacement', link: '/services/faucets-fixtures' },
+                { image: '/kitchen-faucet-replacement.webp', title: 'Kitchen faucet replacement', link: '/services/kitchen-plumbing' },
+                { image: '/toilet-replacement.webp', title: 'Toilet replacement', link: '/services/toilet-services' },
+                { image: '/pipe-valve-repair.webp', title: 'Pipe and valve repair', link: '/services/pipe-repair' },
+                { image: '/kitchen-sink-faucet-drain-garbage-disposal-before-after.webp', title: 'Kitchen sink, faucet, drain and disposal installation', link: '/services/kitchen-plumbing' },
               ].map((project) => (
                 <a key={project.image} href={project.link} className="block overflow-hidden rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                   <img src={project.image} alt={`Before-and-after photos of ${project.title.toLowerCase()} completed by Agape Drain And Plumbing`} loading="lazy" decoding="async" className="w-full aspect-square object-contain bg-gray-50" />
