@@ -16,10 +16,10 @@ export const contact = {
       description: "We'll respond within 24 hours"
     },
     address: {
-      title: "Office Address",
+      title: "Our Service Area",
       lines: [
-        "109 Wheeler Ln",
-        "Frederick, MD 21702"
+        "Based in Frederick, MD",
+        "We travel to customers; no walk-in visits"
       ]
     },
     hours: {
