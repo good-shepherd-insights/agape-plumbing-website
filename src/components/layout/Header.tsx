@@ -53,7 +53,7 @@ const Header = () => {
             <img 
               src={logo} 
               width={440} 
-              height="auto" 
+              height={120} 
               alt={navigation.accessibility.companyLogo} 
               className="w-[190px] sm:w-[260px] lg:w-[360px] xl:w-[430px] h-auto max-w-full object-contain mr-2 transition-all duration-200" 
               loading="eager"
@@ -66,6 +66,8 @@ const Header = () => {
           className="md:hidden bg-plumbing-800 hover:bg-plumbing-700 text-white border-2 border-black p-2 rounded-md transition-transform hover:translate-y-[-2px] active:translate-y-0 shadow-md hover:shadow-lg active:shadow-[2px_2px_0_0_#000] duration-200"
           onClick={toggleMobileMenu}
           aria-label={navigation.mobileMenu.toggle}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="agape-mobile-navigation"
         >
           {mobileMenuOpen ? (
             <X className="h-5 w-5" />
@@ -97,6 +99,8 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div 
+          id="agape-mobile-navigation"
+          aria-hidden={!mobileMenuOpen}
           className={`fixed inset-0 bg-white z-50 md:hidden transition-transform duration-200 ease-in-out ${
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } border-l-4 border-black shadow-[-8px_0_12px_rgba(0,0,0,0.1)]`}
