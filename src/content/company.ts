@@ -8,7 +8,6 @@ export const company = {
     state: "MD",
     zip: "21702"
   },
-  license: "Licensed & Insured, Certified Backflow Prevention Technician",
-  foundingYear: "2016",
+  license: "Maryland journeyman plumber",
   founder: "Sui"
 };
