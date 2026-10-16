@@ -8,7 +8,7 @@ export const servicesList = {
       description: "24/7 emergency services for urgent plumbing issues including burst pipes, flooding, and sewer backups.",
       link: "/services/emergency-plumbing",
       linkDescription: "",
-      features: ["Available 24/7/365", "Fast response times", "Licensed professionals"]
+      features: ["Available 24/7/365", "Fast response times", "Call to confirm availability"]
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ export const servicesList = {
       description: "Professional drain cleaning services to remove clogs and prevent future blockages in your plumbing.",
       link: "/services/drain-cleaning",
       linkDescription: "",
-      features: ["Hydro jetting", "Camera inspections", "Preventative maintenance"]
+      features: ["Clogged sinks", "Slow drains", "Drain troubleshooting"]
     },
     {
       id: 8,
@@ -64,7 +64,7 @@ export const servicesList = {
       description: "Expert sewer line repair and replacement services to fix damaged pipes, address root intrusion, and restore proper flow to your sewer system.",
       link: "/services/sewer-services",
       linkDescription: "", 
-      features: ["Sewer line repair", "Full line replacement", "Trenchless solutions"]
+      features: ["Sewer backups", "Drain problems", "Repair options"]
     }
   ],
   cta: "View All Services"
