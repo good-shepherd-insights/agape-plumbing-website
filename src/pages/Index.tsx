@@ -56,7 +56,7 @@ const Index = () => {
                 { image: '/kitchen-sink-faucet-drain-garbage-disposal-before-after.webp', title: 'Kitchen sink, faucet, drain and disposal installation', link: '/services/kitchen-plumbing' },
               ].map((project) => (
                 <a key={project.image} href={project.link} className="block overflow-hidden rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                  <img src={project.image} alt={`Before-and-after photos of ${project.title.toLowerCase()} completed by Agape Drain And Plumbing`} loading="lazy" decoding="async" className="w-full aspect-square object-contain bg-gray-50" />
+                  <img src={project.image} alt={`Before-and-after photos of ${project.title.toLowerCase()} completed by Agape Drain And Plumbing`} loading="lazy" decoding="async" width="640" height="640" className="w-full aspect-square object-contain bg-gray-50" />
                   <h3 className="p-4 text-lg font-bold text-plumbing-800">{project.title}</h3>
                 </a>
               ))}
