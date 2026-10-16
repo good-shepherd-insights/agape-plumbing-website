@@ -17,7 +17,7 @@ export const sewerServicesCopy = {
         description: "We use high-definition sewer cameras to visually inspect your lines, accurately identifying the location and nature of sewer problems without guesswork.",
       },
       {
-        title: "Trenchless Options",
+        title: "Repair Options",
         description: "When possible, we utilize trenchless repair and replacement methods that minimize disruption to your property while effectively resolving sewer issues.",
       },
       {
@@ -56,8 +56,8 @@ export const sewerServicesCopy = {
     ]
   },
   meta: {
-    title: "Sewer Line Repair | Trenchless Services | Agape",
-    description: "Expert sewer line repair: camera inspection, trenchless repair, emergency sewer backup service. Licensed plumbers for main line and root removal.",
+    title: "Sewer & Drain Services in Frederick, MD | Agape",
+    description: "Sewer and drain problems in Frederick, MD? Contact Agape Drain & Plumbing to discuss backups, blockages, and repair options.",
     keywords: "sewer line repair, trenchless sewer repair, sewer camera inspection, sewer line replacement, sewer backup repair, emergency sewer service, sewer cleaning, sewer root removal, main sewer line repair, licensed sewer contractor",
     canonical: "https://agapeplumbinginc.com/services/sewer-services"
   },
