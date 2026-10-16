@@ -1,7 +1,7 @@
 export const services = {
   hero: {
     title: "Our Professional Plumbing Services",
-    description: "From emergency repairs to planned installations, our team of licensed plumbers is committed to providing quality service with integrity and expertise."
+    description: "From emergency repairs to planned installations, our plumbing team is committed to providing quality service with integrity and expertise."
   },
   emergency: {
     title: "Emergency Plumbing Services",
@@ -20,7 +20,7 @@ export const services = {
     benefits: [
       {
         title: "Fast Response Time",
-        description: "We aim to be at your door within 60 minutes when you have an emergency."
+        description: "Call us to confirm the earliest available emergency appointment."
       },
       {
         title: "24/7/365 Availability",
@@ -32,7 +32,7 @@ export const services = {
       },
       {
         title: "Transparent Pricing",
-        description: "Clear, upfront pricing with no hidden fees or overtime charges."
+        description: "We explain service costs and estimate options before work begins."
       }
     ]
   },
@@ -47,7 +47,7 @@ export const services = {
       "Water filtration systems",
       "Garbage disposal installation"
     ],
-    conclusion: "All installations are performed by licensed plumbers and backed by our workmanship guarantee."
+    conclusion: "Contact us to discuss installation requirements, project scope, and available service options."
   },
   installationProcess: {
     title: "Our Installation Process",
@@ -62,7 +62,7 @@ export const services = {
       },
       {
         title: "Professional Installation",
-        description: "Our licensed technicians complete the work according to code and best practices."
+        description: "Our team discusses the required work and applicable project requirements before installation."
       },
       {
         title: "Final Inspection and Testing",
@@ -168,7 +168,7 @@ export const services = {
     },
     {
       title: 'Licensed & Insured',
-      description: 'Fully licensed, bonded, and insured for your peace of mind'
+      description: 'Ask us about the licensing and insurance applicable to your project'
     },
     {
       title: 'Expert Technicians',
@@ -176,7 +176,7 @@ export const services = {
     },
     {
       title: 'Quality Guarantee',
-      description: 'We stand behind our work with comprehensive warranties'
+      description: 'Ask about any applicable workmanship or manufacturer warranty'
     }
   ]
 };
