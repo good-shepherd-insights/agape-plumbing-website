@@ -7,7 +7,7 @@ export const emergencyPlumbingCopy = {
   },
   intro: {
     title: "Fast & Reliable Emergency Plumbing Solutions",
-    description: "Plumbing emergencies don't wait for business hours, and neither do we. From sudden pipe bursts and major leaks to clogged drains causing significant overflow, our expert team is equipped to handle any urgent plumbing situation. We understand the stress and potential damage these issues can cause, which is why we prioritize rapid response to protect your home and peace of mind. Our certified plumbers use advanced diagnostic tools to quickly identify the problem and implement effective, lasting repairs, minimizing disruption and preventing further damage.",
+    description: "Plumbing emergencies don't wait for business hours, and neither do we. From sudden pipe bursts and major leaks to clogged drains causing significant overflow, our expert team is equipped to handle any urgent plumbing situation. We understand the stress and potential damage these issues can cause, which is why we prioritize rapid response to protect your home and peace of mind. Call us to describe the issue and confirm the earliest available service time.",
   },
   whyChooseUs: {
     title: "Why Choose Us for Emergency Plumbing?",
@@ -18,15 +18,15 @@ export const emergencyPlumbingCopy = {
       },
       {
         title: "Rapid Response Time",
-        description: "Our teams are strategically positioned to ensure the fastest possible response to your emergency call, reducing potential water damage and restoring functionality quickly.",
+        description: "Call to confirm current availability and an estimated arrival window.",
       },
       {
         title: "Experienced & Certified Plumbers",
-        description: "Our technicians are highly trained, licensed, and experienced in handling all types of plumbing emergencies with precision and professionalism.",
+        description: "Our team includes a Maryland journeyman plumber and handles common urgent household plumbing problems.",
       },
       {
         title: "Transparent Pricing",
-        description: "You'll receive clear, upfront pricing before any work begins, with no hidden fees, even for emergency services.",
+        description: "Ask about service charges and pricing when you call so you know what to expect.",
       },
     ],
   },
@@ -56,8 +56,8 @@ export const emergencyPlumbingCopy = {
     ]
   },
   meta: {
-    title: "Emergency Plumber | 24/7 Service | Agape",
-    description: "24/7 emergency plumber: burst pipes, water leaks, sewer backups, gas leaks. Licensed emergency plumbers for fast response.",
+    title: "24/7 Emergency Plumber in Frederick, MD | Agape",
+    description: "24/7 emergency plumbing help in Frederick, MD for burst pipes, leaks, and drain backups. Call Agape Drain & Plumbing at (227) 223-9057.",
     keywords: "emergency plumber, 24/7 plumber, burst pipe repair, water leak emergency, sewer backup emergency, gas leak plumber, emergency water heater repair, licensed emergency plumber",
     canonical: "https://agapeplumbinginc.com/services/emergency-plumbing"
   },
