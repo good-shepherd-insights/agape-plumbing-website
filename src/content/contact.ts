@@ -90,15 +90,15 @@ export const contact = {
     questions: [
       {
         question: "How quickly can you respond to an emergency?",
-        answer: "We aim to arrive within 60 minutes for emergency calls. Our technicians are on standby 24/7, including weekends and holidays."
+        answer: "We offer 24/7 emergency plumbing service. Call us to describe the issue and confirm the soonest available arrival time."
       },
       {
         question: "Do you offer free estimates?",
-        answer: "Yes, we provide free estimates for most plumbing services. Contact us to schedule an appointment with one of our technicians."
+        answer: "Contact us to discuss your plumbing needs and ask about estimate options before scheduling."
       },
       {
         question: "Are your plumbers licensed?",
-        answer: "Yes, all our plumbers are fully licensed, bonded, and insured. We maintain all required certifications and ongoing training."
+        answer: "Our team includes a Maryland journeyman plumber. Contact us if you need details about licensing or insurance for your project."
       }
     ]
   },
