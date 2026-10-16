@@ -89,8 +89,8 @@ const LocationServices = () => {
       icon: Clock
     },
     {
-      title: 'Licensed & Insured',
-      description: 'Fully licensed, bonded, and insured for your peace of mind',
+      title: 'Local Plumbing Experience',
+      description: 'Family-owned plumbing service with a Maryland journeyman plumber',
       icon: Star
     },
     {
@@ -139,15 +139,14 @@ const LocationServices = () => {
               Serving <span className="text-plumbing-300">{locationData.neighborhoods.join(', ')}</span> and all of <span className="text-plumbing-300">{locationData.county}</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
-                <Phone className="h-5 w-5 mr-2" />
-                Call Now: (227) 223-9057
+              <Button asChild size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-8 py-4">
+                <a href="tel:+12272239057" className="inline-flex items-center"><Phone className="h-5 w-5 mr-2" />Call Now: (227) 223-9057</a>
               </Button>
               <Link 
                 to="/contact"
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 hover:translate-y-[-4px]"
               >
-                Get Free Estimate
+                Request an Estimate
               </Link>
             </div>
           </div>
@@ -252,15 +251,14 @@ const LocationServices = () => {
                 </div>
                 <div className="bg-white p-8 border-4 border-black rounded-lg shadow-[15px_15px_0px_0px_rgba(0,0,0,0.2)]">
                   <h3 className="text-2xl font-bold mb-6 uppercase text-plumbing-800">
-                    Get Your Free Estimate
+                    Request an Estimate
                   </h3>
                   <p className="text-gray-600 mb-8">
-                    Ready to solve your plumbing problems? Contact us today for a free, no-obligation estimate.
+                    Ready to solve your plumbing problems? Contact us today for a estimate.
                   </p>
                   <div className="space-y-4">
-                    <Button className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
-                      <Phone className="h-5 w-5 mr-2" />
-                      Call (227) 223-9057
+                    <Button asChild className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
+                      <a href="tel:+12272239057" className="inline-flex items-center"><Phone className="h-5 w-5 mr-2" />Call (227) 223-9057</a>
                     </Button>
                     <Button variant="outline" className="w-full border-2 border-black rounded-md hover:translate-y-[-4px] text-black" size="lg">
                       Request Online Quote
