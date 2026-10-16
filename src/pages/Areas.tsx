@@ -39,8 +39,8 @@ const Areas = () => {
       icon: Clock
     },
     {
-      title: 'Licensed & Insured',
-      description: 'Fully licensed, bonded, and insured for your peace of mind',
+      title: 'Local Plumbing Experience',
+      description: 'Family-owned service with a Maryland journeyman plumber',
       icon: Star
     }
   ];
@@ -60,7 +60,7 @@ const Areas = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Agape Plumbing - Professional Plumbing Services" /> */}
-        <meta property="og:site_name" content="Agape Plumbing" />
+        <meta property="og:site_name" content="Agape Drain And Plumbing, LLC" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Service Areas | Agape Plumbing" />
         <meta name="twitter:description" content="Professional plumbing services across Frederick County, Montgomery County, and surrounding areas in Maryland." />
@@ -84,9 +84,8 @@ const Areas = () => {
               <span className="text-plumbing-200">Montgomery & Frederick Counties</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
-                <Phone className="h-5 w-5 mr-2" />
-                Call Now: (227) 223-9057
+              <Button asChild size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
+                <a href="tel:+12272239057" className="inline-flex items-center"><Phone className="h-5 w-5 mr-2" />Call Now: (227) 223-9057</a>
               </Button>
               <Button 
                 onClick={() => {
@@ -100,7 +99,7 @@ const Areas = () => {
                 }}
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800"
               >
-                Get Free Estimate
+                Request an Estimate
               </Button>
             </div>
           </div>
