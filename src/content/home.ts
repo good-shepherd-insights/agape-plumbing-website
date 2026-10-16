@@ -13,7 +13,7 @@ export const home = {
     requestFormTitle: "Request Service Online",
     requestFormButton: "Submit Request",
     requestFormConfirmation: "We'll contact you promptly to schedule your service",
-    estimatesAvailable: "Free Estimates Available!",
+    estimatesAvailable: "Ask About Estimates",
     form: {
         placeholders: {
           name: "Your Name",
@@ -36,7 +36,7 @@ export const home = {
       {
         id: 1,
         title: 'Licensed & Insured',
-        description: 'Fully bonded and insured for your protection and peace of mind.'
+        description: 'Our team includes a Maryland journeyman plumber. Ask about qualifications for your project.'
       },
       {
         id: 2,
@@ -51,12 +51,12 @@ export const home = {
       {
         id: 4,
         title: 'Fair & Transparent Pricing',
-        description: 'No hidden fees or surprise charges. We provide upfront pricing before any work begins.'
+        description: 'Ask about pricing and service charges when scheduling your visit.'
       },
       {
         id: 5,
         title: 'Satisfaction Guaranteed',
-        description: 'We stand behind our work with a 100% satisfaction guarantee on all services.'
+        description: 'We focus on careful work, clear communication, and customer satisfaction.'
       },
       {
         id: 6,
