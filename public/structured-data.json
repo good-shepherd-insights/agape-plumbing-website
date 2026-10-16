@@ -4,23 +4,22 @@
     {
       "@type": "Organization",
       "@id": "https://agapeplumbinginc.com/#organization",
-      "name": "Agape Drain & Plumbing LLC",
+      "name": "Agape Drain And Plumbing, LLC",
       "alternateName": "Agape Plumbing",
       "url": "https://agapeplumbinginc.com/",
       "logo": {
         "@type": "ImageObject",
         "@id": "https://agapeplumbinginc.com/#logo",
-        "url": "https://agapeplumbinginc.com/logo.png",
-        "contentUrl": "https://agapeplumbinginc.com/logo.png",
+        "url": "https://agapeplumbinginc.com/agape-logo.png",
+        "contentUrl": "https://agapeplumbinginc.com/agape-logo.png",
         "width": 300,
         "height": 100,
-        "caption": "Agape Drain & Plumbing LLC Logo"
+        "caption": "Agape Drain And Plumbing, LLC Logo"
       },
       "image": {
         "@id": "https://agapeplumbinginc.com/#logo"
       },
       "description": "Professional plumbing services providing reliable solutions for residential and commercial customers. Licensed, insured, and available 24/7 for emergency plumbing needs.",
-      "foundingDate": "2016",
       "founder": {
         "@type": "Person",
         "name": "Sui"
@@ -61,16 +60,10 @@
       ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "109 Wheeler Ln",
         "addressLocality": "Frederick",
         "addressRegion": "MD",
         "postalCode": "21702",
         "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 39.4143,
-        "longitude": -77.4105
       },
       "sameAs": [
         "https://www.facebook.com/agapeplumbing",
@@ -84,7 +77,7 @@
     {
       "@type": "LocalBusiness",
       "@id": "https://agapeplumbinginc.com/#localbusiness",
-      "name": "Agape Drain & Plumbing LLC",
+      "name": "Agape Drain And Plumbing, LLC",
       "image": {
         "@id": "https://agapeplumbinginc.com/#logo"
       },
@@ -100,7 +93,6 @@
       "description": "Professional plumbing contractor providing comprehensive plumbing services including emergency repairs, drain cleaning, water heater services, pipe repair, toilet services, faucet and fixture installation, kitchen plumbing, and sewer line services for residential and commercial customers.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "109 Wheeler Ln",
         "addressLocality": "Frederick",
         "addressRegion": "MD",
         "postalCode": "21702",
@@ -427,7 +419,7 @@
       "@type": "WebSite",
       "@id": "https://agapeplumbinginc.com/#website",
       "url": "https://agapeplumbinginc.com/",
-      "name": "Agape Drain & Plumbing LLC",
+      "name": "Agape Drain And Plumbing, LLC",
       "description": "Professional plumbing services in Frederick, MD and surrounding areas. 24/7 emergency service available.",
       "publisher": {
         "@id": "https://agapeplumbinginc.com/#organization"
@@ -507,7 +499,7 @@
           "name": "Are you licensed and insured?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Agape Drain & Plumbing LLC is fully licensed and insured. We are also certified backflow prevention technicians, ensuring all work meets professional standards and regulations."
+            "text": "Yes, Agape Drain And Plumbing, LLC is fully licensed and insured. We are also certified backflow prevention technicians, ensuring all work meets professional standards and regulations."
           }
         },
         {
