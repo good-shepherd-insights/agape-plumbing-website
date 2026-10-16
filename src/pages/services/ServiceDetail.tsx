@@ -125,7 +125,7 @@ const ServiceDetail = () => {
                   to="/contact"
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 hover:translate-y-[-4px]"
                 >
-                  Get Free Estimate
+                  Request an Estimate
                 </Link>
               </div>
             </div>
@@ -193,16 +193,15 @@ const ServiceDetail = () => {
                     {content.cta.description}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                    <Button size="lg" className="text-xl font-bold bg-white text-plumbing-800 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
-                      <Phone className="h-6 w-6 mr-2" />
-                      {content.cta.buttonText}
+                    <Button asChild size="lg" className="text-xl font-bold bg-white text-plumbing-800 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
+                      <a href="tel:+12272239057" className="inline-flex items-center"><Phone className="h-6 w-6 mr-2" />{content.cta.buttonText}</a>
                     </Button>
-                    <Button 
+                    <Button asChild
                       variant="outline" 
                       size="lg" 
                       className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-plumbing-800 text-xl font-bold rounded-md hover:translate-y-[-4px] px-10 py-6"
                     >
-                      Request Quote
+                      <Link to="/contact">Request an Estimate</Link>
                     </Button>
                   </div>
                 </div>
