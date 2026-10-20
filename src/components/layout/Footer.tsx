@@ -16,7 +16,7 @@ const Footer = () => {
   const copyright = footer.copyright?.replace('{year}', currentYear.toString()) || '';
   
   return (
-    <footer className="bg-plumbing-900 text-white pt-16 pb-8 border-t border-sky-800">
+    <footer className="bg-plumbing-900 text-white pt-16 pb-24 md:pb-8 border-t border-sky-800">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -87,6 +87,10 @@ const Footer = () => {
             )) || []}
           </div>
         </div>
+      </div>
+      <div className="fixed bottom-0 inset-x-0 z-40 flex gap-2 border-t border-sky-200 bg-white p-3 shadow-lg md:hidden" aria-label="Quick plumbing contact actions">
+        <a href={`tel:${company.phone.replace(/\D/g, '')}`} className="flex-1 inline-flex items-center justify-center gap-2 rounded-md bg-plumbing-800 px-3 py-3 font-bold text-white"><Phone className="h-5 w-5" />Call Now</a>
+        <Link to="/contact" className="flex-1 inline-flex items-center justify-center rounded-md border-2 border-plumbing-800 px-3 py-3 font-bold text-plumbing-800">Request Service</Link>
       </div>
     </footer>
   );
