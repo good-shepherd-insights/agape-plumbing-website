@@ -80,6 +80,20 @@ const Index = () => {
             </nav>
           </div>
         </section>
+        <section aria-labelledby="local-service-links-heading" className="py-12 bg-white">
+          <div className="container-custom px-4">
+            <h2 id="local-service-links-heading" className="text-2xl md:text-3xl font-bold text-plumbing-800 mb-3">Plumbing and Drain Services by City</h2>
+            <p className="text-gray-700 mb-5">Explore plumbing services in the Maryland communities we serve.</p>
+            <nav aria-label="Local plumbing and drain service pages" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              <a href="/services/frederick/drain-cleaning" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Frederick drain cleaning</a>
+              <a href="/services/frederick/emergency-plumbing" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Frederick emergency plumbing</a>
+              <a href="/services/gaithersburg/drain-cleaning" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Gaithersburg drain cleaning</a>
+              <a href="/services/gaithersburg/emergency-plumbing" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Gaithersburg emergency plumbing</a>
+              <a href="/services/rockville/emergency-plumbing" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Rockville emergency plumbing</a>
+              <a href="/services/rockville/pipe-repair" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Rockville pipe repair</a>
+            </nav>
+          </div>
+        </section>
         <ServiceAreas />
         <Cta />
       </main>
