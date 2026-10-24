@@ -49,8 +49,8 @@ const Index = () => {
               {[
                 { image: 'https://lh3.googleusercontent.com/HxssyisuAJCOy4TI9KRqv4tprQBayIXRY2FpJwflJkfVZqQHB-f8QSSynSwaKGRLY4NGohB98peKE7gf=s0', title: 'Single-handle shower valve replacement', link: '/services/faucets-fixtures' },
                 { image: 'https://lh3.googleusercontent.com/f7a9Qiy21rUVMzZteru3lhHFxl1cQdSi9JxgZWF9rVQr9nzfJFnAWht74IkdjbV9vLf04-SsRRxZGD9w=s0', title: 'Water shutoff valve replacement', link: '/services/pipe-repair' },
-                { image: 'https://lh3.googleusercontent.com/rT2k6We1CB3BlXO552muL9_iYU6Ve_VS4p5xAULgBEz22guLYN8dUtHYJn0bq_68dwu7HsXQZcWHAEw2=s0', title: 'Water supply valve and copper piping replacement', link: '/services/pipe-repair' },
-                { image: 'https://lh3.googleusercontent.com/mmKuBLDD6-RQhDfUUumoZFGTr2xk_YIb7Fh5IbucNzEKEDsSBv_ejSBZOEGjduS-_tircDmFkkGyJ-2S=s0', title: 'Toilet flange replacement', link: '/services/toilet-services' },
+                { image: 'https://lh3.googleusercontent.com/rT2k6We1CB3BlXO552muL9_iYU6Ve_VS4p5xAULgBEz22guLYN8dUtHYJn0bq_68dwu7HsXQZcWHAEw2=s0', title: 'Toilet flange replacement', link: '/services/toilet-services' },
+                { image: 'https://lh3.googleusercontent.com/mmKuBLDD6-RQhDfUUumoZFGTr2xk_YIb7Fh5IbucNzEKEDsSBv_ejSBZOEGjduS-_tircDmFkkGyJ-2S=s0', title: 'Water supply valve and copper piping replacement', link: '/services/pipe-repair' },
                 { image: '/water-heater-replacement.webp', title: 'Water heater replacement', link: '/services/water-heater-services' },
                 { image: '/bathroom-faucet-valves.webp', title: 'Bathroom faucet and shutoff valve replacement', link: '/services/faucets-fixtures' },
                 { image: '/shower-fixture-replacement.webp', title: 'Shower fixture replacement', link: '/services/faucets-fixtures' },
