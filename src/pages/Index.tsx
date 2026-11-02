@@ -69,11 +69,12 @@ const Index = () => {
         </section>
         <section aria-labelledby="frederick-plumbing-heading" className="py-14 bg-sky-50">
           <div className="container-custom px-4 max-w-5xl">
-            <h2 id="frederick-plumbing-heading" className="text-3xl md:text-4xl font-bold text-plumbing-800 mb-4">Drain Cleaning and Plumbing Help in Frederick, MD</h2>
-            <p className="text-gray-700 text-lg mb-5">Dealing with a slow sink, clogged shower, leaking pipe, or water heater problem? Agape Drain And Plumbing, LLC serves Frederick and nearby Maryland communities. Tell us what is happening so we can discuss the next steps and appointment availability.</p>
+            <h2 id="frederick-plumbing-heading" className="text-3xl md:text-4xl font-bold text-plumbing-800 mb-4">Plumbing Services, Drain Cleaning and Water Heater Repair in Frederick, MD</h2>
+            <p className="text-gray-700 text-lg mb-5">Need a plumber in Frederick, MD? Agape Drain And Plumbing, LLC helps local homeowners with clogged drains, leaking pipes, toilet repairs, water heater problems and emergency plumbing. We serve Frederick and nearby Maryland communities. Call to discuss your plumbing problem and service availability.</p>
             <nav aria-label="Popular Frederick plumbing services" className="flex flex-wrap gap-3">
               <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/drain-cleaning">Drain cleaning</a>
               <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/sewer-services">Sewer services</a>
+              <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/water-heater-services">Water heater repair and replacement</a>
               <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/emergency-plumbing">Emergency plumbing</a>
               <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/areas/frederick">Plumbing in Frederick</a>
               <a className="inline-block rounded-lg bg-plumbing-800 px-4 py-3 font-semibold text-white hover:opacity-90" href="/contact">Request plumbing service</a>
@@ -86,6 +87,7 @@ const Index = () => {
             <p className="text-gray-700 mb-5">Explore plumbing services in the Maryland communities we serve.</p>
             <nav aria-label="Local plumbing and drain service pages" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               <a href="/services/frederick/drain-cleaning" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Frederick drain cleaning</a>
+              <a href="/services/frederick/water-heater-services" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Frederick water heater services</a>
               <a href="/services/frederick/emergency-plumbing" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Frederick emergency plumbing</a>
               <a href="/services/gaithersburg/drain-cleaning" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Gaithersburg drain cleaning</a>
               <a href="/services/gaithersburg/emergency-plumbing" className="rounded-lg border p-4 text-plumbing-800 font-semibold hover:bg-sky-50">Gaithersburg emergency plumbing</a>
