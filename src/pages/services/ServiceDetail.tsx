@@ -132,6 +132,15 @@ const ServiceDetail = () => {
           </div>
         </section>
 
+        <section aria-label="Frequently asked service questions" className="bg-sky-50 py-12">
+          <div className="container-custom px-4 max-w-4xl">
+            <h2 className="text-3xl font-bold text-plumbing-800 mb-6">Questions About {content.hero.title.replace('|', ' ')}</h2>
+            <div className="space-y-5">
+              <div><h3 className="text-xl font-semibold">Does Agape offer {content.hero.title.replace('|', ' ').toLowerCase()} near Frederick, MD?</h3><p>Agape Drain And Plumbing, LLC serves Frederick and nearby Maryland communities. Call (227) 223-9057 to describe the issue and confirm availability.</p></div>
+              <div><h3 className="text-xl font-semibold">How do I request service?</h3><p>Call (227) 223-9057 or use our contact page. Tell us what is happening, where the property is located, and when you need help.</p></div>
+            </div>
+          </div>
+        </section>
         <div className="py-20">
           <div className="container-custom px-4">
             
