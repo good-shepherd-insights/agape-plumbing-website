@@ -15,6 +15,26 @@ export interface Location {
 }
 
 export const locations: Record<string, Location> = {
+  'timonium': {
+    slug: 'timonium',
+    name: 'Timonium',
+    fullName: 'Timonium, MD',
+    county: 'Baltimore County',
+    neighborhoods: ['Timonium', 'Lutherville-Timonium'],
+    landmarks: [],
+    commonIssues: ['Clogged household drains', 'Water heater problems', 'Leaking fixtures and pipes'],
+    serviceAreas: ['Timonium', 'Lutherville-Timonium', 'Nearby Baltimore County communities'],
+  },
+  'baltimore': {
+    slug: 'baltimore',
+    name: 'Baltimore',
+    fullName: 'Baltimore, MD',
+    county: 'Baltimore City',
+    neighborhoods: ['Baltimore City'],
+    landmarks: [],
+    commonIssues: ['Drain backups', 'Leaking pipes and fixtures', 'Water heater problems'],
+    serviceAreas: ['Baltimore City', 'Nearby communities'],
+  },
   'frederick': {
     slug: 'frederick',
     name: 'Frederick',
