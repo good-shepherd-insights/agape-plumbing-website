@@ -153,6 +153,16 @@ const LocationServices = () => {
         </div>
       </section>
 
+      <section aria-label={`Frequently asked plumbing questions in ${locationData.name}`} className="bg-sky-50 py-12">
+        <div className="container-custom px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-plumbing-800 mb-6">{`Plumbing FAQs for ${locationData.name}, Maryland`}</h2>
+          <div className="space-y-5">
+            <div><h3 className="text-xl font-semibold">Who provides plumbing service in {locationData.name}?</h3><p>Agape Drain And Plumbing, LLC serves {locationData.name} and nearby Maryland communities. Call (227) 223-9057 to discuss your repair and confirm service availability.</p></div>
+            <div><h3 className="text-xl font-semibold">Can I request emergency plumbing in {locationData.name}?</h3><p>Agape offers 24-hour emergency plumbing service. Call to describe the issue and confirm availability at your address.</p></div>
+            <div><h3 className="text-xl font-semibold">Can Agape help with clogged drains or water heater problems?</h3><p>Yes. Agape provides drain cleaning, water heater services, pipe repairs, and other plumbing services. Contact us for the next steps.</p></div>
+          </div>
+        </div>
+      </section>
       <main className="py-20 md:py-32">
         <div className="container-custom px-4">
           
