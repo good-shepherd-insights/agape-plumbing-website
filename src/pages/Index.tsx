@@ -47,6 +47,10 @@ const Index = () => {
             <p className="text-gray-700 mb-8 max-w-3xl">See before-and-after photos from real plumbing projects completed by Agape Drain And Plumbing, LLC.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
+                { image: '/Water%20Heater%20Replacement_%20Before%20and%20After.png', title: 'Water heater replacement before and after', link: '/services/water-heater-services' },
+                { image: '/Before%20and%20After%20Garbage%20Disposal%20Replacement.png', title: 'Garbage disposal replacement before and after', link: '/services/kitchen-plumbing' },
+                { image: '/Water%20Filtration%20System%20Upgrade.png', title: 'Water filtration system upgrade before and after', link: '/services' },
+                { image: '/Before%20and%20After%20Plumbing%20Valve%20Repair.png', title: 'Plumbing valve repair before and after', link: '/services/pipe-repair' },
                 { image: 'https://lh3.googleusercontent.com/HxssyisuAJCOy4TI9KRqv4tprQBayIXRY2FpJwflJkfVZqQHB-f8QSSynSwaKGRLY4NGohB98peKE7gf=s0', title: 'Single-handle shower valve replacement', link: '/services/faucets-fixtures' },
                 { image: 'https://lh3.googleusercontent.com/f7a9Qiy21rUVMzZteru3lhHFxl1cQdSi9JxgZWF9rVQr9nzfJFnAWht74IkdjbV9vLf04-SsRRxZGD9w=s0', title: 'Water shutoff valve replacement', link: '/services/pipe-repair' },
                 { image: 'https://lh3.googleusercontent.com/rT2k6We1CB3BlXO552muL9_iYU6Ve_VS4p5xAULgBEz22guLYN8dUtHYJn0bq_68dwu7HsXQZcWHAEw2=s0', title: 'Toilet flange replacement', link: '/services/toilet-services' },
