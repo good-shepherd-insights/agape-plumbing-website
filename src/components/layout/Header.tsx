@@ -144,6 +144,17 @@ const Header = () => {
           </nav>
         </div>
       </div>
+      {/* Persistent mobile call action for customers ready to book */}
+      {!mobileMenuOpen && (
+        <a
+          href={`tel:${company.phone.replace(/[^0-9+]/g, '')}`}
+          aria-label="Call Agape Drain And Plumbing for plumbing service"
+          className="md:hidden fixed bottom-3 left-4 right-4 z-40 flex items-center justify-center gap-2 rounded-lg bg-plumbing-800 px-5 py-3 text-base font-bold text-white shadow-lg border border-white"
+        >
+          <Phone className="h-5 w-5" aria-hidden="true" />
+          Call Agape: {company.phone}
+        </a>
+      )}
     </header>
   );
 };
