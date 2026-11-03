@@ -70,7 +70,7 @@ const Index = () => {
         <section aria-labelledby="frederick-plumbing-heading" className="py-14 bg-sky-50">
           <div className="container-custom px-4 max-w-5xl">
             <h2 id="frederick-plumbing-heading" className="text-3xl md:text-4xl font-bold text-plumbing-800 mb-4">Plumbing Services, Drain Cleaning and Water Heater Repair in Frederick, MD</h2>
-            <p className="text-gray-700 text-lg mb-5">Need a plumber in Frederick, MD? Agape Drain And Plumbing, LLC helps local homeowners with clogged drains, leaking pipes, toilet repairs, water heater problems and emergency plumbing. We serve Frederick and nearby Maryland communities. Call to discuss your plumbing problem and service availability.</p>
+            <p className="text-gray-700 text-lg mb-5">Need a plumber in Frederick, MD? Agape Drain And Plumbing, LLC helps local homeowners with clogged drains, leaking pipes, toilet repairs, water heater problems and emergency plumbing. We serve Frederick, Rockville, Gaithersburg, Lutherville-Timonium, and customers in the Baltimore area. Call to discuss your plumbing problem, confirm coverage at your address, and check service availability.</p>
             <nav aria-label="Popular Frederick plumbing services" className="flex flex-wrap gap-3">
               <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/drain-cleaning">Drain cleaning</a>
               <a className="inline-block rounded-lg border border-sky-300 bg-white px-4 py-3 font-semibold text-plumbing-800 hover:bg-sky-100" href="/services/sewer-services">Sewer services</a>
@@ -103,7 +103,7 @@ const Index = () => {
               <div><h3 className="text-xl font-semibold mb-2">Who can I call for plumbing repairs in Frederick, Maryland?</h3><p>Agape Drain And Plumbing, LLC serves Frederick and nearby Maryland communities with drain cleaning, pipe and toilet repairs, water heater services, and emergency plumbing. Call <a href="tel:+12272239057" className="underline">(227) 223-9057</a> to discuss your plumbing problem and appointment availability.</p></div>
               <div><h3 className="text-xl font-semibold mb-2">Does Agape offer emergency plumbing service?</h3><p>Yes. Agape offers 24-hour emergency plumbing service. Call to describe the problem, confirm coverage at your address, and discuss availability.</p></div>
               <div><h3 className="text-xl font-semibold mb-2">Does Agape repair water heaters and clogged drains?</h3><p>Yes. We offer <a className="underline" href="/services/water-heater-services">water heater services</a> and <a className="underline" href="/services/drain-cleaning">drain cleaning</a>. Contact us to discuss the issue and the next steps.</p></div>
-              <div><h3 className="text-xl font-semibold mb-2">What areas does Agape serve?</h3><p>Our service areas include Frederick, Gaithersburg, Rockville, and nearby Maryland communities. Check our <a className="underline" href="/areas">service areas</a> or call to confirm your address.</p></div>
+              <div><h3 className="text-xl font-semibold mb-2">What areas does Agape serve?</h3><p>Our service areas include Frederick, Gaithersburg, Rockville, Lutherville-Timonium, Baltimore, and nearby Maryland communities. Check our <a className="underline" href="/areas">service areas</a> or call to confirm your address.</p></div>
             </div>
           </div>
         </section>
