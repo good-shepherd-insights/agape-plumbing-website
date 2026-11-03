@@ -40,7 +40,7 @@ const Areas = () => {
     },
     {
       title: 'Local Plumbing Experience',
-      description: 'Family-owned service with a Maryland journeyman plumber',
+      description: 'Family-owned service focused on responsive communication and careful work',
       icon: Star
     }
   ];
@@ -49,7 +49,7 @@ const Areas = () => {
     <>
       <Helmet>
         <title>Service Areas | Professional Plumbing Services | Agape Plumbing</title>
-        <meta name="description" content="Agape Plumbing serves Montgomery County, Frederick County and surrounding areas. Find professional plumbing services in your location." />
+        <meta name="description" content="Agape Drain And Plumbing, LLC serves Frederick County, Montgomery County, Baltimore County, Baltimore City and surrounding Maryland communities. Find professional plumbing services in your location." />
         <meta name="keywords" content="plumbing service areas, Montgomery County plumber, Frederick County plumber, Maryland plumbing services" />
         <link rel="canonical" href="https://agapeplumbinginc.com/areas" />
         <meta property="og:title" content="Service Areas | Professional Plumbing Services | Agape Plumbing" />
@@ -81,7 +81,7 @@ const Areas = () => {
             </h1>
             <p className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto font-bold uppercase tracking-wide">
               Professional Plumbing Services Throughout <br className="hidden md:block" />
-              <span className="text-plumbing-200">Montgomery & Frederick Counties</span>
+              <span className="text-plumbing-200">Frederick, Montgomery & Baltimore Areas</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button asChild size="lg" className="text-lg font-bold bg-white text-plumbing-900 border-2 border-black rounded-md hover:bg-gray-100 h-11">
