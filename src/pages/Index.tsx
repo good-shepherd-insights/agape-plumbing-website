@@ -96,6 +96,17 @@ const Index = () => {
             </nav>
           </div>
         </section>
+        <section aria-labelledby="plumbing-faq-heading" className="py-14 bg-sky-50">
+          <div className="container-custom px-4 max-w-4xl">
+            <h2 id="plumbing-faq-heading" className="text-3xl font-bold text-plumbing-800 mb-6">Frequently Asked Questions About Plumbing in Frederick, MD</h2>
+            <div className="space-y-6">
+              <div><h3 className="text-xl font-semibold mb-2">Who can I call for plumbing repairs in Frederick, Maryland?</h3><p>Agape Drain And Plumbing, LLC serves Frederick and nearby Maryland communities with drain cleaning, pipe and toilet repairs, water heater services, and emergency plumbing. Call <a href="tel:+12272239057" className="underline">(227) 223-9057</a> to discuss your plumbing problem and appointment availability.</p></div>
+              <div><h3 className="text-xl font-semibold mb-2">Does Agape offer emergency plumbing service?</h3><p>Yes. Agape offers 24-hour emergency plumbing service. Call to describe the problem, confirm coverage at your address, and discuss availability.</p></div>
+              <div><h3 className="text-xl font-semibold mb-2">Does Agape repair water heaters and clogged drains?</h3><p>Yes. We offer <a className="underline" href="/services/water-heater-services">water heater services</a> and <a className="underline" href="/services/drain-cleaning">drain cleaning</a>. Contact us to discuss the issue and the next steps.</p></div>
+              <div><h3 className="text-xl font-semibold mb-2">What areas does Agape serve?</h3><p>Our service areas include Frederick, Gaithersburg, Rockville, and nearby Maryland communities. Check our <a className="underline" href="/areas">service areas</a> or call to confirm your address.</p></div>
+            </div>
+          </div>
+        </section>
         <ServiceAreas />
         <Cta />
       </main>
