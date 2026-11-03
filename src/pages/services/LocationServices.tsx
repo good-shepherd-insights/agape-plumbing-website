@@ -26,6 +26,13 @@ const LocationServices = () => {
     enableLogging: true
   });
 
+  const localIntro: Record<string, string> = {
+    frederick: 'From clogged kitchen drains to leaking pipes and water heater problems, Agape helps Frederick customers understand their repair options and request service by phone.',
+    gaithersburg: 'For Gaithersburg households dealing with slow drains, leaking fixtures or hot water issues, contact Agape to describe the problem and confirm service availability.',
+    rockville: 'Rockville residents can contact Agape about drain blockages, plumbing leaks, toilet repairs and water heater concerns. Call to discuss the issue and scheduling.',
+    timonium: 'Agape accepts plumbing inquiries from Timonium and Lutherville-Timonium, including water filtration system replacements, drain cleaning and plumbing repairs. Call to confirm availability for your address.',
+    baltimore: 'For plumbing repairs, clogged drains and water heater concerns in Baltimore, contact Agape to discuss the issue and confirm whether service is available at your address.',
+  };
   const services = [
     { 
       slug: 'drain-cleaning', 
@@ -174,7 +181,7 @@ const LocationServices = () => {
                 Complete Plumbing Solutions
               </h2>
               <p className="text-lg max-w-3xl mx-auto text-gray-600">
-                From emergency repairs to complete installations, we provide comprehensive plumbing services throughout {locationData.name}
+                {localIntro[locationData.slug] || `From emergency repairs to installations, contact us to discuss plumbing services in ${locationData.name}.`}
               </p>
             </div>
             
