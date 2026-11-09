@@ -1,12 +1,12 @@
 export const drainCleaningCopy = {
   hero: {
-    title: "Professional Drain Cleaning Services ",
-    subtitle: "Expert Drain Cleaning Solutions",
-    description: "From clogged sinks and showers to main line blockages, our skilled plumbers provide comprehensive drain cleaning services using advanced techniques and equipment to restore proper flow to your plumbing system.",
+    title: "Drain Cleaning and Clog Removal",
+    subtitle: "Drain Cleaning in Frederick, MD",
+    description: "Clogged kitchen sink, slow shower drain, or backed-up sewer line in Frederick, MD? Agape Drain And Plumbing helps homeowners diagnose drain blockages and choose the right cleaning or repair service. Call (227) 223-9057 to discuss the problem and schedule service.",
     imageAlt: "Plumber cleaning a residential drain",
   },
   intro: {
-    title: "Effective Drain Cleaning Solutions",
+    title: "Drain Cleaning for Frederick Homes",
     description: "Clogged drains are more than just an inconvenience—they can lead to water damage, foul odors, and even health hazards if not addressed properly. Our professional drain cleaning services go beyond temporary fixes, addressing the root cause of blockages to prevent recurring problems. We discuss the symptoms, assess the blockage, and recommend a practical cleaning or repair approach for the affected drain. Whether you're dealing with a slow-draining sink, a backed-up shower, or a main sewer line blockage, our experienced team can quickly diagnose and resolve the issue.",
   },
   whyChooseUs: {
@@ -32,7 +32,7 @@ export const drainCleaningCopy = {
   },
   cta: {
     title: "Dealing with Clogged Drains?",
-    description: "Contact our team today to schedule professional drain cleaning services. Restore proper flow to your plumbing system with our expert solutions.",
+    description: "Need drain cleaning in Frederick, Maryland? Call (227) 223-9057 for help with clogged sinks, tubs, showers, and drain backups. We will discuss your symptoms and appointment availability.",
     buttonText: "Schedule Drain Cleaning Service",
   },
   relatedServices: {
@@ -56,8 +56,8 @@ export const drainCleaningCopy = {
     ]
   },
   meta: {
-    title: "Drain Cleaning in Frederick, MD | Agape Plumbing",
-    description: "Drain cleaning and clog removal in Frederick, MD. Get help with slow sinks, backed-up showers, and blocked household drains. Call Agape at (227) 223-9057.",
+    title: "Drain Cleaning Frederick MD | Clogged Drains | Agape",
+    description: "Clogged sink, slow shower drain or sewer backup in Frederick, MD? Agape provides drain cleaning and clog removal. Call (227) 223-9057 to schedule service.",
     keywords: "drain cleaning, clog removal, hydro jetting, drain snaking, sewer line cleaning, emergency drain service, kitchen drain cleaning, bathroom drain cleaning, licensed drain cleaner",
     canonical: "https://agapeplumbinginc.com/services/drain-cleaning"
   },
