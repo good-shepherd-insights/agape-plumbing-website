@@ -333,9 +333,8 @@ const LocationServiceDetail = () => {
               Plumbing emergencies don't wait for business hours. Our local team is ready to respond quickly to protect your {content.location.fullName} property.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="text-xl font-bold bg-white text-plumbing-800 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]">
-                <Phone className="h-6 w-6 mr-2" />
-                Emergency Call: (227) 223-9057
+              <Button asChild size="lg" className="text-xl font-bold bg-white text-plumbing-800 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)]">
+                <a href="tel:+12272239057" className="inline-flex items-center justify-center"><Phone className="h-6 w-6 mr-2" />Emergency Call: (227) 223-9057</a>
               </Button>
             </div>
           </div>
