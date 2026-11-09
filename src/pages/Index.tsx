@@ -63,9 +63,11 @@ const Index = () => {
                 { image: '/pipe-valve-repair.webp', title: 'Pipe and valve repair', link: '/services/pipe-repair' },
                 { image: 'https://raw.githubusercontent.com/good-shepherd-insights/agape-plumbing-website/main/Kitchen%20Sink%20Replacement%20Before%20%26%20After.png', title: 'Kitchen sink replacement before and after', link: '/services/kitchen-plumbing' },
               ].map((project) => (
-                <a key={project.image} href={project.link} className="block overflow-hidden rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                  <img src={project.image} alt={`Before-and-after photos of ${project.title.toLowerCase()} completed by Agape Drain And Plumbing`} loading="lazy" decoding="async" width="640" height="640" className="w-full aspect-square object-contain bg-gray-50" />
-                  <h3 className="p-4 text-lg font-bold text-plumbing-800">{project.title}</h3>
+                <a key={project.image} href={project.link} className="flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">
+                  <div className="flex h-56 w-full items-center justify-center overflow-hidden bg-slate-50 p-2 sm:h-60 lg:h-64">
+                    <img src={project.image} alt={`Before-and-after photos of ${project.title.toLowerCase()} completed by Agape Drain And Plumbing`} loading="lazy" decoding="async" width="640" height="480" className="block h-full w-full object-contain object-center" />
+                  </div>
+                  <h3 className="flex min-h-20 items-center border-t border-gray-100 px-4 py-3 text-base font-bold leading-snug text-plumbing-800">{project.title}</h3>
                 </a>
               ))}
             </div>
