@@ -17,7 +17,7 @@ const serviceBenefits: Record<string, string> = {
 // Generate meta title using template: {Service} Near Me | {City}, {State Abbreviation} | Agape Drain & Plumbing
 const generateLocationServiceTitle = (serviceTitle: string, location: Location, serviceSlug: string): string => {
   const cleanServiceTitle = serviceTitle.replace(/\s+(Services?|Service)\s*$/i, '').trim();
-  return `${cleanServiceTitle} Near Me | ${location.name}, MD | Agape Drain & Plumbing`;
+  return `${cleanServiceTitle} in ${location.name}, MD | Agape Drain And Plumbing`;
 };
 
 // Service content mapping (same as existing)
@@ -103,14 +103,26 @@ export const useLocationServiceContent = (
 
 // Function to customize content for specific location
 const customizeContentForLocation = (baseContent: ServiceContent, location: Location, serviceSlug: string): ServiceContent => {
-  const serviceName = baseContent.hero.title.toLowerCase();
+  const frederickServiceDetails: Record<string, { description: string; intro: string; meta: string }> = {
+    'drain-cleaning': {
+      description: 'Need drain cleaning in Frederick, MD? Agape helps with clogged kitchen sinks, slow bathtub and shower drains, bathroom sink blockages, and sewer backups. Call (227) 223-9057 to discuss your drain problem and schedule service.',
+      intro: 'For drain cleaning in Frederick, Maryland, we help identify the source of slow drains, recurring clogs, and wastewater backups. We discuss the symptoms, assess the affected drain, and recommend an appropriate cleaning or repair approach. Call to confirm service availability for your address.',
+      meta: 'Drain cleaning in Frederick, MD for clogged sinks, shower drains and sewer backups. Call Agape Drain And Plumbing at (227) 223-9057 to schedule service.'
+    },
+    'emergency-plumbing': {
+      description: 'Need a 24/7 emergency plumber in Frederick, MD? Call Agape at (227) 223-9057 for burst pipes, leaking water lines, overflowing toilets and urgent drain backups. Confirm current availability and arrival time by phone.',
+      intro: 'For urgent plumbing problems in Frederick, Maryland, Agape offers 24/7 emergency plumbing service. If water is leaking, shut off the water supply if it is safe to do so. Call (227) 223-9057 to describe the issue, confirm coverage and check the earliest available service window.',
+      meta: '24/7 emergency plumber in Frederick, MD for burst pipes, major leaks and drain backups. Call Agape at (227) 223-9057 to check availability.'
+    }
+  };
+  const localDetails = location.slug === 'frederick' ? frederickServiceDetails[serviceSlug] : undefined;
   
   return {
     ...baseContent,
     hero: {
       ...baseContent.hero,
       title: `${baseContent.hero.title} in ${location.fullName}`,
-      description: baseContent.hero.description.replace(
+      description: localDetails?.description ?? baseContent.hero.description.replace(
         /Frederick, MD|Gaithersburg|Rockville/g, 
         location.fullName
       ),
@@ -118,7 +130,7 @@ const customizeContentForLocation = (baseContent: ServiceContent, location: Loca
     },
     intro: {
       ...baseContent.intro,
-      description: `${baseContent.intro.description} Our team proudly serves ${location.neighborhoods.join(', ')} and surrounding areas in ${location.county}. ${location.commonIssues.length > 0 ? `We understand the unique challenges in ${location.name}, including ${location.commonIssues.join(', ')}.` : ''}`,
+      description: `${localDetails?.intro ?? baseContent.intro.description} Our team proudly serves ${location.neighborhoods.join(', ')} and surrounding areas in ${location.county}. ${location.commonIssues.length > 0 ? `We understand the unique challenges in ${location.name}, including ${location.commonIssues.join(', ')}.` : ''}`,
     },
     cta: {
       ...baseContent.cta,
@@ -131,7 +143,7 @@ const customizeContentForLocation = (baseContent: ServiceContent, location: Loca
     meta: {
       ...baseContent.meta,
       title: generateLocationServiceTitle(baseContent.hero.title, location, serviceSlug),
-      description: baseContent.meta.description.replace(
+      description: localDetails?.meta ?? baseContent.meta.description.replace(
         /Frederick, MD|Frederick County, Gaithersburg, Rockville/g,
         `${location.fullName}, ${location.county}`
       ),
