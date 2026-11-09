@@ -242,9 +242,8 @@ const Areas = () => {
                     We're always expanding! Contact us to see if we can serve your location or to request service in your area.
                   </p>
                   <div className="space-y-4">
-                    <Button className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
-                      <Phone className="h-5 w-5 mr-2" />
-                      Call (227) 223-9057
+                    <Button asChild className="w-full text-lg font-bold py-6 bg-plumbing-800 border-2 border-black rounded-md hover:translate-y-[-4px]" size="lg">
+                      <a href="tel:+12272239057" className="inline-flex items-center justify-center"><Phone className="h-5 w-5 mr-2" />Call (227) 223-9057</a>
                     </Button>
                     <Button 
                       onClick={() => {
@@ -277,9 +276,8 @@ const Areas = () => {
               <p className="text-xl mb-8">
                 Don't wait! Our emergency plumbing team is available 24/7 throughout our service areas.
               </p>
-              <Button size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
-                <Phone className="h-6 w-6 mr-2" />
-                Emergency Service: (227) 223-9057
+              <Button asChild size="lg" className="text-xl font-bold bg-white text-red-600 border-2 border-black rounded-md hover:bg-gray-100 hover:translate-y-[-4px] px-10 py-6">
+                <a href="tel:+12272239057" className="inline-flex items-center justify-center"><Phone className="h-6 w-6 mr-2" />Emergency Service: (227) 223-9057</a>
               </Button>
             </div>
           </section>
