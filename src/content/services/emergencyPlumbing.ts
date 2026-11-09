@@ -1,20 +1,20 @@
 export const emergencyPlumbingCopy = {
   hero: {
-    title: "Emergency Plumbing Services ",
-    subtitle: "Your Trusted Emergency Plumbers Available 24/7",
-    description: "When plumbing disasters strike, you need immediate, reliable help. Our emergency plumbing services are available 24/7 to address urgent issues like burst pipes, severe leaks, and overflowing toilets, ensuring quick resolution and minimal damage.",
+    title: "24/7 Emergency Plumbing",
+    subtitle: "Emergency Plumber in Frederick, MD",
+    description: "Burst pipe, major water leak, overflowing toilet, or urgent drain backup in Frederick, MD? Agape Drain And Plumbing offers 24/7 emergency plumbing service. Call (227) 223-9057 to describe the issue, confirm service coverage, and check the earliest available arrival time.",
     imageAlt: "Emergency plumber fixing a burst pipe in residential home",
   },
   intro: {
-    title: "Fast & Reliable Emergency Plumbing Solutions",
-    description: "Plumbing emergencies don't wait for business hours, and neither do we. From sudden pipe bursts and major leaks to clogged drains causing significant overflow, our expert team is equipped to handle any urgent plumbing situation. We understand the stress and potential damage these issues can cause, which is why we prioritize rapid response to protect your home and peace of mind. Call us to describe the issue and confirm the earliest available service time.",
+    title: "Emergency Plumbing Help in Frederick",
+    description: "A burst pipe, leaking supply line, overflowing toilet, or backed-up drain can damage your home quickly. Agape serves Frederick and nearby Maryland communities with 24/7 emergency plumbing service. If water is actively leaking, shut off the water supply when it is safe to do so, then call (227) 223-9057. We will discuss the problem and confirm the earliest available service window; arrival times vary.",
   },
   whyChooseUs: {
     title: "Why Choose Us for Emergency Plumbing?",
     reasons: [
       {
         title: "24/7 Availability",
-        description: "Plumbing emergencies can happen at any time. We're here around the clock, every day of the year, to provide immediate assistance when you need it most.",
+        description: "Agape offers 24/7 emergency plumbing service. Call to check current availability and the earliest service window.",
       },
       {
         title: "Rapid Response Time",
@@ -22,7 +22,7 @@ export const emergencyPlumbingCopy = {
       },
       {
         title: "Experienced & Certified Plumbers",
-        description: "Our team includes a Maryland journeyman plumber and handles common urgent household plumbing problems.",
+        description: "Our plumbing team handles urgent household problems including water leaks, drain backups, and overflowing fixtures.",
       },
       {
         title: "Transparent Pricing",
@@ -32,7 +32,7 @@ export const emergencyPlumbingCopy = {
   },
   cta: {
     title: "Plumbing Emergency? We're Here to Help!",
-    description: "Don't let a plumbing emergency cause extensive damage to your property. Contact our 24/7 emergency plumbing team for immediate assistance.",
+    description: "Need an emergency plumber in Frederick, MD? Call (227) 223-9057 any time to describe the issue and confirm service availability.",
     buttonText: "Call Emergency Plumber Now",
   },
   relatedServices: {
@@ -56,8 +56,8 @@ export const emergencyPlumbingCopy = {
     ]
   },
   meta: {
-    title: "24/7 Emergency Plumber in Frederick, MD | Agape",
-    description: "24/7 emergency plumbing help in Frederick, MD for burst pipes, leaks, and drain backups. Call Agape Drain & Plumbing at (227) 223-9057.",
+    title: "Emergency Plumber Frederick MD | 24/7 | Agape",
+    description: "Need an emergency plumber in Frederick, MD? Agape offers 24/7 help for burst pipes, major leaks and drain backups. Call (227) 223-9057 for availability.",
     keywords: "emergency plumber, 24/7 plumber, burst pipe repair, water leak emergency, sewer backup emergency, gas leak plumber, emergency water heater repair, licensed emergency plumber",
     canonical: "https://agapeplumbinginc.com/services/emergency-plumbing"
   },
